@@ -1,0 +1,39 @@
+From: Helen Oyelaran <helen@parcelwise.example>
+To: dev@parcelwise.example, marta@parcelwise.example
+Subject: RE: URGENT: rotate all? pushback
+Date: Tue, 03 Mar 2026 11:15:00 +0100
+Message-ID: <52b83500b9cfb1941204@parcelwise.example>
+In-Reply-To: <88d5582ced86498f1b80@parcelwise.example>
+References: <717e8eae36c6d0e001c0@parcelwise.example> <33eb2f170f7a665ff0cf@parcelwise.example> <80b9523c74e92a4c41a5@parcelwise.example> <8382d7386f17c3ae705a@parcelwise.example> <5091b03b32b723e0c5fa@parcelwise.example> <88d5582ced86498f1b80@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear Dev,
+
+I support the full rotation, and I would gently add the finance framing for Marta: the dual-validity window means no revenue is interrupted, and the support cost is a day of Aisha's queue. Against that we hold the trust of roughly 310 customer accounts, several of whom — Swiftbox foremost — audit us on precisely this kind of discipline.
+
+Two requests: please keep a written record of which keys were rotated and when, and let me know today whether this situation triggers any notification obligations, so that nothing surprises us later.
+
+Kind regards,
+Helen
+
+Helen Oyelaran | Chief Financial Officer | Parcelwise B.V.
+
+On March 03, 2026, Dev Raman wrote:
+> On record, explicitly: full rotation. Your grep covers the fork's history, not the clones made before we noticed, and not whatever the scraper caches hold. "Only the strings I can see leaked" is exactly the assumption that turns a staging incident into a prod breach. The maybe I'm avoiding is worse than the friction I'm accepting.
+> 
+> Mitigations for the pain:
+> - Rotation runs token-by-token with a 24-hour dual-validity window, so existing syncs keep working until each customer swaps.
+> - Aisha gets the customer list and a support macro within the hour. Agreed that she hears it now, not after.
+> - Priority order: prod-adjacent integrations first, sandbox last.
+> 
+> Cheers,
+> Dev
+> Dev Raman | CTO | Parcelwise B.V.
+
+-- 
+Kind regards,
+Helen Oyelaran
+Chief Financial Officer
+Parcelwise B.V. | Rotterdam

@@ -1,0 +1,39 @@
+From: Greg Ferrante <greg@ferrante-ops.example>
+To: dev@parcelwise.example, priya@parcelwise.example, jonas@parcelwise.example
+Subject: RE: recap: standup + on-call rotation
+Date: Tue, 21 Apr 2026 23:41:00 +0200
+Message-ID: <a0fa548b063c10502f93@parcelwise.example>
+In-Reply-To: <c7a1e8b92d1a3e0c712f@parcelwise.example>
+References: <30378dcc71acbe443450@parcelwise.example> <c7a1e8b92d1a3e0c712f@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+nobody asked me about on call.
+
+my contract is teh migration + handover to jonas, thats it. not doing weekly rotations, not priced for it either. happy to jump on real incidents while im still around, but thats different from owning a pager.
+
+also 2 people for a 22 person company seems thin but not my call
+
+sent from my phone, sorry for typos
+-----Original Message-----
+From: Priya Natarajan <priya@parcelwise.example>
+Sent: Tue, 21 Apr 2026 09:52:00 +0200
+To: dev@parcelwise.example
+Subject: RE: recap: standup + on-call rotation
+
+Quick recap of my concern with this:
+
+1. Two people alternating weekly means Jonas and Ravi are effectively never both off the hook - that's a burnout pattern within a quarter
+2. In the roadmap review two weeks ago we discussed exactly this, and my understanding was that the rotation would include Greg and Elena once she's onboarded - four people, weekly, is far more sustainable
+3. Elena is a senior hire who has done on-call before; not putting her in from month two sets an odd precedent
+
+Happy to be corrected on what was actually agreed, but I don't think two is what we discussed.
+
+Thanks!
+Priya
+
+-- 
+Greg
+Ferrante Ops BV
+sent from my phone, sorry for typos

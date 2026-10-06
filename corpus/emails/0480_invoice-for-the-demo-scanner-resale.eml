@@ -1,0 +1,16 @@
+From: Dev Raman <dev@parcelwise.example>
+To: marta@parcelwise.example
+Subject: invoice for the demo scanner resale
+Date: Wed, 27 May 2026 19:17:00 +0200
+Message-ID: <2b97f79153fbfa7b5839@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Marta — a customer bought one of the demo scanner units (the resale we waved at during standup). I need to invoice them, but billing only does subscriptions; there is no SKU for hardware resale. my take: one-off invoice through Helen's manual process rather than building anything. worth five minutes of your time or just go to Helen directly?
+Cheers, Dev
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

@@ -1,0 +1,30 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: marta@parcelwise.example, dev@parcelwise.example
+Cc: lena@parcelwise.example
+Subject: rollout coordination vs focus Wednesdays - collision
+Date: Tue, 19 May 2026 16:44:00 +0200
+Message-ID: <082aeb89a749845554aa@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Heads-up before I build the rollout schedule:
+
+Quick recap of the problem:
+1. Phased rollout runs Wed May 13 (20%) to Wed May 27 (100%)
+2. During rollout weeks we need daily syncs, including Wednesdays, to catch issues from that morning's cohort fast
+3. Focus Wednesdays (the no-meeting trial from February) blocks exactly those syncs
+
+Options as I see them:
+- move daily syncs to Thursday-Friday only (slow feedback during the riskiest weeks), or
+- pause focus Wednesdays until the rollout is done
+
+I lean towards the second but it is Marta's call since it touches a company-wide arrangement. I know Greg and Aisha will have views on timing too.
+
+Thanks!
+Priya
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

@@ -1,0 +1,26 @@
+From: Dev Raman <dev@parcelwise.example>
+To: carla@swiftbox.example
+Cc: aisha@parcelwise.example
+Subject: RE: Swiftbox security questionnaire - item 12: third-party penetration testing
+Date: Tue, 21 Apr 2026 11:05:00 +0200
+Message-ID: <1371f0663758dcdbfe9c@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Carla,
+
+Straight answer on item 12: we do not currently have a third-party pentest in the last twelve months. Internal reviews and the audit trail from our hosting migration, yes; an external attestation, no. I am not going to dress up our internal work to pass the item.
+
+What I can commit to: engaging an external firm now, with the test completed and the report in your hands before your renewal paperwork needs to progress. Our internal practice is sound — the gap is the independent attestation, and that is a procurement exercise, not an engineering one.
+
+I will come back with the firm and the test window this week.
+
+Cheers,
+Dev
+Dev Raman | CTO | Parcelwise B.V.
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

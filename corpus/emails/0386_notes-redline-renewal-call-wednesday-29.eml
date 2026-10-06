@@ -1,0 +1,41 @@
+From: Lena Fischer <lena@parcelwise.example>
+To: marta@parcelwise.example, dev@parcelwise.example, priya@parcelwise.example, jonas@parcelwise.example, tomas@parcelwise.example, aisha@parcelwise.example
+Subject: Notes: Redline renewal call, Wednesday 29 April
+Date: Thu, 30 Apr 2026 09:48:00 +0200
+Message-ID: <c68e8490fe8a66395188@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Liebe Alle,
+
+Notes: Redline renewal call, Wednesday 29 April, 15:00-15:45, dial-in.
+
+Attendees: Marta, Tomás, Priya, Dev, Lena (notes); Redline: Bruno Alvarez, plus their ops lead.
+
+Discussed:
+- Renewal terms from last week; Bruno confirmed commercial terms are agreed
+- Bruno restated his condition: the driver app must work offline for the pilot, non-negotiable
+- Dev presented the phased option: read-only offline mode (cached routes and manifests, no editing) in ~1.5 engineer-weeks; full offline stays on the v3.1 roadmap
+- Bruno accepted the phased approach as long as read-only ships in v3 and he sees a demo build before the pilot starts
+
+Agreed: read-only offline mode goes back into v3. Full offline (with edit queuing) remains planned for v3.1. Work starts next week, ahead of the rollout plan.
+
+Actions:
+- Jonas: unpark the offline branch, strip the queued-edit path, target ~1.5 weeks
+- Dev: demo build to Bruno by 15 May
+- Tomás: send Bruno the updated renewal papers reflecting the offline commitment
+- Priya: fold the work into the launch plan
+- Lena: circulate these notes
+
+Danke,
+Lena
+
+Lena Fischer
+Operations & Office Manager, Parcelwise B.V.
+
+-- 
+Danke!
+Lena Fischer
+Ops & Office Manager
+Parcelwise B.V.

@@ -1,0 +1,35 @@
+From: Aisha Bello <aisha@parcelwise.example>
+To: priya@parcelwise.example, marta@parcelwise.example
+Subject: RE: v3 bug triage - Monday numbers
+Date: Mon, 23 Mar 2026 14:37:00 +0100
+Message-ID: <d34eeb8a97a877c72583@parcelwise.example>
+In-Reply-To: <ef1db9d1f0b7dd23b003@parcelwise.example>
+References: <ef1db9d1f0b7dd23b003@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi team 😊
+
+Just adding the customer angle to what Priya laid out. If we launch on the 15th with even half of those P1s open, our support queue the following week will be brutal, and I'd honestly rather have that conversation with Bruno before the Redline pilot than after. Swiftbox has also been asking when they can see the new dashboard, and Carla is the type to remember a broken demo far longer than a delayed one. A launch that slips three weeks hurts much less than a launch that breaks.
+
+Warm regards,
+Aisha
+
+On 23 Mar 2026, Priya Natarajan wrote:
+> Hi all,
+> 
+> Quick recap of today's triage against the 15 April launch:
+> 
+> 1. 41 open P1 bugs across driver sync, route optimization, and the dashboard
+> 2. Of those, 12 block the Redline pilot scenarios specifically
+> 3. Our burn-down says 23 business days of work; 15 April is 17 business days away
+> 4. On top of this, the Corvid app-tier cutover is booked for the weekend of 18-19 April, which collides with what would have been our launch week anyway
+> 
+> Even at full burn we land past 15 April. I'd rather say that now than on the 14th. Thanks!
+
+-- 
+Warmly,
+Aisha Bello
+Head of Customer Success
+Parcelwise B.V.

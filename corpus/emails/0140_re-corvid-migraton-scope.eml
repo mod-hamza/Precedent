@@ -1,0 +1,45 @@
+From: Greg Ferrante <greg@ferrante-ops.example>
+To: dev@parcelwise.example, helen@parcelwise.example
+Subject: re: corvid migraton scope
+Date: Tue, 24 Feb 2026 23:41:00 +0100
+Message-ID: <248ab62c5dd599a1a972@parcelwise.example>
+In-Reply-To: <2f3e8f0ec1f4642f5402@parcelwise.example>
+References: <2f3e8f0ec1f4642f5402@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+hi dev,
+
+looked at teh scope. its mostly lift and shift on teh app tier plus the db cutover, doable.
+
+- staging env: 2 days
+- app tier migraton + dns: 3 days
+- db move + validation: 2 days
+- rollback plan + buffer: 1 day
+
+my rate as before, all in i'd say 16-18k depending on how teh pg_cron stuff behaves. can start second week of march. sent from phone, will send proper pdf tomoorw.
+
+greg
+-----Original Message-----
+From: Dev Raman <dev@parcelwise.example>
+Sent: Mon, 23 Feb 2026 10:05:00 +0100
+To: helen@parcelwise.example, marta@parcelwise.example
+Subject: Corvid migration - we need outside hands
+
+Helen,
+
+Quick note on the Corvid migration. The team's timeline for v3 has zero slack, and I don't want Jonas pulled off the launch for a fortnight of infra work. Options:
+
+- In-house: Jonas + Ravi, roughly 3 weeks of combined effort, high risk to the v3 schedule
+- Ferrante (Greg, contractor we used for the scanner rollout): quoted informally he'd take the whole migration
+- The agency DevOps Rotterdam recommended: quoted EUR 34k, which I think is rich for what is a well-understood move
+
+My take: Greg is the pragmatic option, but he's not cheap either.
+
+Cheers, Dev
+
+-- 
+Greg
+Ferrante Ops BV
+sent from my phone, sorry for typos

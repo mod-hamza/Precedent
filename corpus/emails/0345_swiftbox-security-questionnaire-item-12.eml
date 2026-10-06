@@ -1,0 +1,26 @@
+From: Carla Dunne <carla@swiftbox.example>
+To: dev@parcelwise.example
+Cc: aisha@parcelwise.example
+Subject: Swiftbox security questionnaire - item 12: third-party penetration testing
+Date: Tue, 21 Apr 2026 09:18:00 +0200
+Message-ID: <7ca6489184719a802e0c@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear Dev,
+
+As promised during the SLA discussions, please find attached our standard security questionnaire ahead of the contract renewal. Most items are administrative and I expect straightforward answers.
+
+Item 12 is the one I will flag in advance: we require evidence of a third-party penetration test, conducted by an external firm, covering your production environment, dated within the last twelve months. Internal testing, self-assessment, or a bug-bounty report will not satisfy the requirement — our auditor checks the attesting firm's credentials, not just the existence of a report.
+
+Given your renewal cycle, we would need the report or a letter of engagement with a test date before we can progress the paperwork.
+
+Kind regards,
+Carla Dunne
+Head of Operations, Swiftbox
+
+-- 
+Regards,
+Carla Dunne
+Head of Operations, Swiftbox

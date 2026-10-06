@@ -1,0 +1,16 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: ingrid@parcelwise.example, dev@parcelwise.example
+Subject: interview feedback - elena voss (systems design round)
+Date: Mon, 02 Mar 2026 17:48:00 +0100
+Message-ID: <d4ae6052fba4ef09f2b8@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+did the systems design round with elena voss today.
+
+fwiw strongest candidate we've had for this role. she actually asked about our failure modes instead of talking about hers. nailed the queue/backpressure question, and drew a sane sharding plan for the tracking ingest without prompting.
+
+only knock: she hasn't touched react native. don't care, wrong role.
+
+would be mildly annoyed if we don't hire her.

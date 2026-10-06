@@ -1,0 +1,33 @@
+From: Marta Kowalczyk <marta@parcelwise.example>
+To: priya@parcelwise.example, dev@parcelwise.example, helen@parcelwise.example, tomas@parcelwise.example
+Subject: RE: Scan costs - proposal for a usage-based add-on
+Date: Wed, 06 May 2026 17:14:00 +0200
+Message-ID: <75ebc956ba6728e0515a@parcelwise.example>
+In-Reply-To: <d8f196b218b2a12d3a5a@parcelwise.example>
+References: <781f02bd3af8253091c4@parcelwise.example> <015e102108916604bea9@parcelwise.example> <e33f56b8fc6b1f311d65@parcelwise.example> <a85d84c9c09618a5ede5@parcelwise.example> <d8f196b218b2a12d3a5a@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+go. 0.08, pilot first, dashboards before invoicing. nobody bills a surprise.
+
+M
+Sent from my iPhone
+-----Original Message-----
+From: Priya Natarajan <priya@parcelwise.example>
+Sent: Wed, 06 May 2026 16:35:00 +0200
+To: marta@parcelwise.example
+Subject: RE: Scan costs - proposal for a usage-based add-on
+
+Quick recap:
+
+1. Scan Pack at €0.08/scan, flat rate, with a free allowance set above normal usage (I will propose the exact number after one more data pull). 2. Dev: metering is ready, dashboards to be built with the billing change. 3. Helen: 80% of accounts must be unaffected; revenue modelled on reduced heavy usage. 4. Tomás: pilot with two prospects first. 
+
+All feedback incorporated into the pricing review doc. Marta - with your go, spec goes to the team Friday and billing work slots after the June close.
+
+Thanks!
+Priya
+
+M
+
+Sent from my iPhone

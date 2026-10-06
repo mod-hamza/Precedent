@@ -1,0 +1,26 @@
+From: Kofi Mensah <kofi@parcelwise.example>
+To: priya@parcelwise.example
+Subject: PW-2231 — driver app crash on Android 14
+Date: Mon, 29 Jun 2026 12:47:00 +0200
+Message-ID: <85f1376f742de42c40ca@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Priya,
+
+Logged PW-2231: driver app crashes on Android 14 when opening the manifest from a push notification. Numbered repro steps:
+
+1. Android 14, app 3.3.0
+2. Receive the "new manifest" push
+3. Tap the notification instead of opening the app first
+4. Crash (stack trace attached in the ticket, ~80% repro rate on two test devices)
+
+Not reproducible on Android 13. Looks like a notification-intent handling issue. It's filed as P2 but I'd argue P1 given drivers tap notifications by reflex.
+
+Kofi Mensah
+QA, Parcelwise B.V.
+
+Regards,
+Kofi Mensah
+QA Contractor

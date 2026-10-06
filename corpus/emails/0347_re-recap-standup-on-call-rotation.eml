@@ -1,0 +1,38 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: dev@parcelwise.example
+Cc: jonas@parcelwise.example, ravi@parcelwise.example, greg@ferrante-ops.example
+Subject: RE: recap: standup + on-call rotation
+Date: Tue, 21 Apr 2026 09:52:00 +0200
+Message-ID: <c7a1e8b92d1a3e0c712f@parcelwise.example>
+In-Reply-To: <30378dcc71acbe443450@parcelwise.example>
+References: <30378dcc71acbe443450@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Quick recap of my concern with this:
+
+1. Two people alternating weekly means Jonas and Ravi are effectively never both off the hook - that's a burnout pattern within a quarter
+2. In the roadmap review two weeks ago we discussed exactly this, and my understanding was that the rotation would include Greg and Elena once she's onboarded - four people, weekly, is far more sustainable
+3. Elena is a senior hire who has done on-call before; not putting her in from month two sets an odd precedent
+
+Happy to be corrected on what was actually agreed, but I don't think two is what we discussed.
+
+Thanks!
+Priya
+
+On 21 Apr 2026, Dev Raman wrote:
+> Recap of this morning's standup, for those not present:
+> 
+> - app-tier migration follow-ups are closed, all green
+> - Elena starts today, Jonas is doing her onboarding, first task is the ingest backlog
+> - on-call: we're starting a weekly rotation next week. Two people, alternating: Jonas one week, Ravi the next. Simple, covers evenings and weekends, escalation to me if it's on fire beyond a P1
+> 
+> I'll send the Pagerly invite and the runbook links before Monday.
+> 
+> Cheers, Dev
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

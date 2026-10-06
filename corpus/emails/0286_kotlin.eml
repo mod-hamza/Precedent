@@ -1,0 +1,14 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: dev@parcelwise.example
+Subject: kotlin
+Date: Wed, 01 Apr 2026 22:47:00 +0200
+Message-ID: <340f4c6ecbb6daea8615@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+fwiw i've been rewriting the scanner sync service in kotlin on a branch and it's half the code and actually null-safe. go's error handling is four years of me pasting `if err != nil` and the whole ingest layer is rituals we don't remember the reasons for.
+
+kotlin on the JVM, keep the api surface, migrate service by service. the driver app is react native, that's fine, nobody touch that.
+
+i estimate 2 engineers for a quarter for the core services. think about it. or don't and we'll still be pasting if err != nil in 2028.

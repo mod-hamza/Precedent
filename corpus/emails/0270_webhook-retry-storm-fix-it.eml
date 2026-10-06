@@ -1,0 +1,15 @@
+From: Bruno Alvarez <bruno@redlinecouriers.example>
+To: dev@parcelwise.example
+Subject: webhook retry storm - fix it
+Date: Mon, 30 Mar 2026 12:31:00 +0200
+Message-ID: <3bd609af2623840dd45c@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dev. One of the small couriers on our network hammered your webhook endpoint all weekend — our dashboard counted 40k retries. Looks like their middleware, not your software, but your status page said absolutely nothing for two days. Sort that part out.
+Also, your Samir floated capping partner traffic at a fixed rate on your side. Brilliant idea, we fully support it — have your team switch it on this week, we'd be delighted. I do not want Redline traffic queued behind some weekend cowboy.
+Bruno Alvarez, COO, Redline Couriers
+
+Bruno Alvarez
+COO, Redline Couriers

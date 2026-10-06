@@ -1,0 +1,21 @@
+From: Greg Ferrante <greg@ferrante-ops.example>
+To: jonas@parcelwise.example
+Subject: log retention tweak
+Date: Wed, 06 May 2026 18:53:00 +0200
+Message-ID: <a98bea3aa6597aeea642@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+jonas
+
+app tier logs on corvid are set 30d, prod db side on nimbus still 90d. uneven. suggesting we pull app tier to 45d so we keep a bit more headroom for teh rollout debugging. costs pennies.
+
+also thinking out loud — could wire a little retention widget into the status dashboard so you all stop pinging me about it. would take an evening. say yes!
+
+greg (sent from phone, on a train, again)
+
+-- 
+Greg
+Ferrante Ops BV
+sent from my phone, sorry for typos

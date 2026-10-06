@@ -1,0 +1,33 @@
+From: Lena Fischer <lena@parcelwise.example>
+To: dev@parcelwise.example, jonas@parcelwise.example
+Cc: marta@parcelwise.example, helen@parcelwise.example
+Subject: RE: proposal: 2FA mandatory, deadline Apr 3
+Date: Fri, 20 Mar 2026 11:22:00 +0100
+Message-ID: <d5bf57576b3dc416b524@parcelwise.example>
+In-Reply-To: <f02d710840497bd8b26b@parcelwise.example>
+References: <1414b7608f2eb345f3fc@parcelwise.example> <3b03d3e7120e90d37d84@parcelwise.example> <f02d710840497bd8b26b@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hallo all,
+
+Practical bits from my side:
+
+- I will send the step-by-step setup instructions to everyone on Monday morning, with screenshots for the authenticator apps. Jonas: the doc will exist before the deadline 😊
+- I will order 6 hardware keys today (4 + 2 spare) and chase anyone who has not enabled 2FA by 27 March, so the last week is not a panic.
+- I will keep a simple checklist of who is done where, and send Dev a short status on 1 and 3 April.
+
+Danke,
+Lena
+
+On 2026-03-20, Marta Kowalczyk wrote:
+> 👍 hardware keys for the four, jonas is right.
+> 
+> Sent from my iPhone
+
+-- 
+Danke!
+Lena Fischer
+Ops & Office Manager
+Parcelwise B.V.

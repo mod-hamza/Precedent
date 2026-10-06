@@ -1,0 +1,48 @@
+From: Tomás Ibarra <tomas@parcelwise.example>
+To: priya@parcelwise.example, lena@parcelwise.example
+Subject: RE: Notes: product meeting, Thursday 2 April
+Date: Tue, 07 Apr 2026 09:21:00 +0200
+Message-ID: <bdc9212d2cb8bb2d450c@parcelwise.example>
+In-Reply-To: <9e0be291b729d2263df0@parcelwise.example>
+References: <9e0be291b729d2263df0@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hola Lena,
+
+Thanks for the notes! One heads-up before I brief the pipeline: if a prospect asks about offline driving (a couple of the Spanish couriers have), what do I say - v3.1, or should I route it to Priya? I don't want to promise a date for v3.1 before we have one 🚀
+
+Saludos,
+Tomás
+-----Original Message-----
+From: Lena Fischer <lena@parcelwise.example>
+Sent: Thu, 02 Apr 2026 17:12:00 +0200
+To: marta@parcelwise.example, dev@parcelwise.example, priya@parcelwise.example, jonas@parcelwise.example, tomas@parcelwise.example, aisha@parcelwise.example
+Subject: Notes: product meeting, Thursday 2 April
+
+Liebe Alle,
+
+Notes: v3 product meeting, Thursday 2 April, 10:00-11:00, meeting room Rotterdam.
+
+Attendees: Marta, Dev, Priya, Jonas, Tomás, Aisha, Lena (notes)
+
+Discussed:
+- Bug burn-down: 41 open P1s as of Monday, tracking down but slowly
+- Launch target: week of 11 May stands
+- Scope: offline mode sizing presented (approx. 6 engineer-weeks full offline, including local edit queuing and conflict resolution)
+- Alternative considered: cutting route optimization v2 instead - rejected, it is nearly done and already demoed to customers
+
+Agreed: offline mode is cut from v3 and will ship in v3.1. Route optimization v2 stays in v3. Priya owns updating the roadmap.
+
+Actions:
+- Priya: update roadmap and inform sales/support - by Monday 6 April
+- Jonas: park the offline branch, keep it rebase-ready for v3.1
+- Dev: fold the freed capacity into the P1 burn-down plan
+- Lena: circulate these notes
+
+Danke,
+Lena
+
+Lena Fischer
+Operations & Office Manager, Parcelwise B.V.

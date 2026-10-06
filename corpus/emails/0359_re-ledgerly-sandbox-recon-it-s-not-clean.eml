@@ -1,0 +1,36 @@
+From: Helen Oyelaran <helen@parcelwise.example>
+To: dev@parcelwise.example, marta@parcelwise.example
+Cc: jonas@parcelwise.example
+Subject: RE: ledgerly sandbox recon - it's not clean
+Date: Wed, 22 Apr 2026 13:36:00 +0200
+Message-ID: <3580a3c216db61b28b36@parcelwise.example>
+In-Reply-To: <1d51d57f5556fc0d5d7b@parcelwise.example>
+References: <1d51d57f5556fc0d5d7b@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear Dev,
+
+I understand the reasoning and I will not argue with the technical assessment, but I must flag the cash-flow implication: every additional month on PayForge costs us approximately €1,860 in fees versus Ledgerly, and we would now be running dual testing into June. That is real money for a company our size, and it is also a visible line item against the savings I promised the board for this year.
+
+I would gently suggest that if we do delay, we set the new date firmly and resist moving it twice - a sliding cutover is worse for the books than a late one. Could you indicate what the earliest credible date would be?
+
+Kind regards,
+Helen Oyelaran
+Chief Financial Officer, Parcelwise B.V.
+
+On 22-04-2026, Jonas Eklund wrote:
+> ran the reconciliation job against the ledgerly sandbox again last night. it's not clean.
+> 
+> - refunds: 6 of 41 test refunds failed to reconcile. ledgerly's batch settlement nets refunds against the next day's charges, so amounts don't match line by line. our recon expects gross line items.
+> - multi-currency: the PLN and SEK test invoices round trip with a cent-level rounding difference on fx conversion. sounds trivial but it fails the recon every time.
+> - 3 settlement reports this week didn't match the ledger at all, off by varying amounts. maya chen's team says it's a sandbox export bug and prod is fine, which is exactly what you'd say.
+> 
+> i can hack the recon to tolerate netting and rounding but then it stops catching real errors. fwiw.
+
+-- 
+Kind regards,
+Helen Oyelaran
+Chief Financial Officer
+Parcelwise B.V. | Rotterdam

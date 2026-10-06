@@ -1,0 +1,21 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: dev@parcelwise.example
+Subject: RE: kotlin
+Date: Thu, 02 Apr 2026 10:41:00 +0200
+Message-ID: <74464a67364c7079af62@parcelwise.example>
+In-Reply-To: <0631b82c557750d17c39@parcelwise.example>
+References: <340f4c6ecbb6daea8615@parcelwise.example> <9946ad7f0b2149d3846b@parcelwise.example> <0631b82c557750d17c39@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+after may is fine. branch stays, it runs in prod-shaped containers on my machine, evidence available on demand.
+
+On 02-04-2026, Dev Raman wrote:
+> Ravi: yes, same language, no you wouldn't need it for the current services.
+> 
+> Jonas: I'm not dismissing it, the null-safety point is fair and the branch I saw looked clean. But a rewrite of core services landing the same quarter as the v3 launch, the Ledgerly cutover and the Corvid migration is not happening, and two engineer-quarters is real money even if the code is half as long.
+> 
+> we'll talk. after May.
+> 
+> Cheers, Dev

@@ -1,0 +1,38 @@
+From: Lena Fischer <lena@parcelwise.example>
+To: marta@parcelwise.example, dev@parcelwise.example, helen@parcelwise.example, priya@parcelwise.example, tomas@parcelwise.example, aisha@parcelwise.example
+Subject: Notes: Leadership meeting 10 March
+Date: Tue, 10 Mar 2026 17:22:00 +0100
+Message-ID: <20ac91940d19f787c9f0@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Liebe Alle,
+
+Notes: Leadership meeting, Tuesday 10 March, 14:00, meeting room Rotterdam
+
+Attendees: Marta, Dev, Helen, Priya, Tomás, Aisha, Lena (notes)
+
+Discussed:
+- v3 status: Priya reported the bug count is trending down but launch risk is real; more on this next week
+- Payments: Helen presented the updated fee comparison (PayForge 2.9% + €0.30 vs Ledgerly 2.3% + €0.25, ≈ €1,860/month saved on ≈ €310k processed). Dev confirmed integration is 2-3 engineer-weeks plus one shadow billing cycle, and that this no longer collides with v3 if we start soon. Tomás flagged that Redline is now explicitly asking for local-currency invoicing ahead of the renewal.
+- Office: nothing new, sublet question postponed
+
+Agreed:
+- Direction of travel on payments is Ledgerly, pending Marta's final go and a cutover date
+- Sales will keep a list of accounts asking for local-currency invoicing
+
+Actions:
+- Dev: prepare a cutover plan for review
+- Helen: model cash-flow impact of two providers running in parallel for one cycle
+- Lena: circulate these notes
+
+Danke,
+Lena Fischer
+Ops & Office Manager, Parcelwise B.V.
+
+-- 
+Danke!
+Lena Fischer
+Ops & Office Manager
+Parcelwise B.V.

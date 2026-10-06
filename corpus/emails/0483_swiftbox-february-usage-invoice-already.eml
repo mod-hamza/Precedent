@@ -1,0 +1,14 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: priya@parcelwise.example, dev@parcelwise.example, samir@parcelwise.example
+Subject: swiftbox february usage - invoice already gone out?
+Date: Thu, 28 May 2026 12:53:00 +0200
+Message-ID: <585ef35e4e9b321ab7af@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+preparing the scan-count export for finance and i see february for swiftbox was billed on march 3, but the scan table shows a corrected count on march 6 (the retry double-count fix). delta is small, like 400 scans.
+
+so we're just eating the difference on that one? nobody asked me to re-issue anything, and helen's invoice list doesn't show a correction, fwiw.
+
+not urgent, i just don't want finance surprised when the numbers don't tie out

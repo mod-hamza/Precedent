@@ -1,0 +1,24 @@
+From: Aisha Bello <aisha@parcelwise.example>
+To: dev@parcelwise.example
+Subject: Overage line shows 520 scans - metering glitch?
+Date: Mon, 22 Jun 2026 14:47:00 +0200
+Message-ID: <eedc5f318d9c9c470bee@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Dev 😊
+
+A small customer (7 drivers) is questioning their June overage: it shows 520 scans, but their dashboard usage page says 505. I told them I'd verify rather than argue.
+
+Could you check whether the June metering job double-counted anything around the 9th? They scanned a big batch that morning after a queue backup, if that helps you look.
+
+No urgency beyond keeping a nice customer nice!
+
+Aisha
+
+-- 
+Warmly,
+Aisha Bello
+Head of Customer Success
+Parcelwise B.V.

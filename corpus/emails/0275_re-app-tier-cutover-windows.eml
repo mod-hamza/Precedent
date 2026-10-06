@@ -1,0 +1,35 @@
+From: Dev Raman <dev@parcelwise.example>
+To: greg@ferrante-ops.example, jonas@parcelwise.example
+Subject: RE: app tier cutover windows
+Date: Tue, 31 Mar 2026 09:26:00 +0200
+Message-ID: <a7f6922c603aade5c872@parcelwise.example>
+In-Reply-To: <eccb6bce4cb9219fad75@parcelwise.example>
+References: <eccb6bce4cb9219fad75@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+ok saturday then. 18-19, ravi shadowing, rollback rehearsed on the friday.
+
+Cheers, Dev
+-----Original Message-----
+From: Greg Ferrante <greg@ferrante-ops.example>
+Sent: Mon, 30 Mar 2026 22:58:00 +0200
+To: dev@parcelwise.example, jonas@parcelwise.example
+Subject: app tier cutover windows
+
+dev,
+
+need a weekend window for teh app tier cutover. two options:
+
+- sat 11 - sun 12 apr
+- sat 18 - sun 19 apr
+
+prefer teh 18-19, gives me more time on staging and teh pg_cron validation. 11-12 is doable but tight, id be working easter-ish week which i hate. lmk. sent from phone.
+
+greg
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

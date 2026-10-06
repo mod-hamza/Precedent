@@ -1,0 +1,20 @@
+From: Kofi Mensah <kofi@parcelwise.example>
+To: dev@parcelwise.example
+Subject: PW-1591: two customers, same webhook gap
+Date: Thu, 26 Mar 2026 14:47:00 +0100
+Message-ID: <1d8997274091a5e06972@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Morning Dev. Two separate support tickets look like the same defect. Logged as PW-1591.
+Steps to reproduce:
+1) Send a delivery-status update between roughly 09:12 and 09:19.
+2) Observe: the webhook call never reaches the customer endpoint.
+3) Expected: retry within 60 seconds; actual: nothing until the next poll (~15 min).
+Both reporters use the standard retry policy, no custom headers. Is this already known, or shall I write it up properly for the v3 backlog?
+Kofi
+
+Regards,
+Kofi Mensah
+QA Contractor

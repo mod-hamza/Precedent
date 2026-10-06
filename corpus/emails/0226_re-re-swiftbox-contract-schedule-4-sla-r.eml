@@ -1,0 +1,31 @@
+From: Dev Raman <dev@parcelwise.example>
+To: carla@swiftbox.example
+Cc: aisha@parcelwise.example, helen@parcelwise.example
+Subject: Re: RE: Swiftbox - contract schedule 4: SLA requirements before renewal
+Date: Tue, 17 Mar 2026 16:12:00 +0100
+Message-ID: <76be534065d86a07afaa@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Carla,
+
+Straight answer: we will not sign 99.99%. On our current architecture that number would be a promise we cannot keep, and I do not put numbers in contracts that our own graphs would contradict within a quarter.
+
+What we can commit to:
+- 99.9% monthly uptime on dashboard + API, measured externally.
+- Service credits: 5% of the monthly fee per 0.1% below target, capped at 25% of the monthly fee, sole remedy.
+- Public status page and incident reports within 48 hours.
+
+The Corvid migration (finishing this spring) improves the uptime headroom further, but the honest contractual number remains 99.9%.
+
+If your board treats 99.9% as a dealbreaker, I would rather discuss it on a call than in a questionnaire.
+
+Cheers,
+Dev
+Dev Raman | CTO | Parcelwise B.V.
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

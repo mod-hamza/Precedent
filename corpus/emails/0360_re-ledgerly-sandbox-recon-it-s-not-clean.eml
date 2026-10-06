@@ -1,0 +1,32 @@
+From: Dev Raman <dev@parcelwise.example>
+To: marta@parcelwise.example, helen@parcelwise.example, jonas@parcelwise.example
+Subject: RE: ledgerly sandbox recon - it's not clean
+Date: Wed, 22 Apr 2026 16:40:00 +0200
+Message-ID: <9de29e9799748ea242b2@parcelwise.example>
+In-Reply-To: <3580a3c216db61b28b36@parcelwise.example>
+References: <1d51d57f5556fc0d5d7b@parcelwise.example> <222e5df9412ea7bdd8f1@parcelwise.example> <3580a3c216db61b28b36@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Good news from Maya - they can emit gross refund lines and the sandbox export bug has a fix shipping. That removes two of the three blockers. The recon rewrite still needs to happen and be proven over a clean cycle.
+
+So: cutover moves to after the June billing cycle. I will own the recon rewrite and give Helen a firm date as soon as the first clean sandbox run completes. Helen - I hear you on the sliding date, you will get one date from me and I will hold to it.
+
+Cheers, Dev
+
+On 22 April 2026, Helen Oyelaran wrote:
+> Dear Dev,
+> 
+> I understand the reasoning and I will not argue with the technical assessment, but I must flag the cash-flow implication: every additional month on PayForge costs us approximately €1,860 in fees versus Ledgerly, and we would now be running dual testing into June. That is real money for a company our size, and it is also a visible line item against the savings I promised the board for this year.
+> 
+> I would gently suggest that if we do delay, we set the new date firmly and resist moving it twice - a sliding cutover is worse for the books than a late one. Could you indicate what the earliest credible date would be?
+> 
+> Kind regards,
+> Helen Oyelaran
+> Chief Financial Officer, Parcelwise B.V.
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

@@ -1,0 +1,23 @@
+From: Dev Raman <dev@parcelwise.example>
+To: marta@parcelwise.example, samir@parcelwise.example
+Subject: dashboard widget cache cleared
+Date: Thu, 19 Feb 2026 13:00:00 +0100
+Message-ID: <379fc48992a1e7abf396@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Team,
+
+- the stale 'deliveries this week' widget was a cache issue, not a data issue
+- flushed it at 12:40, numbers are correct again
+- no customer impact beyond slow-looking dashboards
+
+my take: no further action, but I want the cache TTL lowered from 6h to 1h.
+
+Cheers, Dev
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

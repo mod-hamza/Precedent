@@ -1,0 +1,25 @@
+From: Dev Raman <dev@parcelwise.example>
+To: helen@parcelwise.example, marta@parcelwise.example
+Subject: Corvid migration - we need outside hands
+Date: Mon, 23 Feb 2026 10:05:00 +0100
+Message-ID: <2f3e8f0ec1f4642f5402@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Helen,
+
+Quick note on the Corvid migration. The team's timeline for v3 has zero slack, and I don't want Jonas pulled off the launch for a fortnight of infra work. Options:
+
+- In-house: Jonas + Ravi, roughly 3 weeks of combined effort, high risk to the v3 schedule
+- Ferrante (Greg, contractor we used for the scanner rollout): quoted informally he'd take the whole migration
+- The agency DevOps Rotterdam recommended: quoted EUR 34k, which I think is rich for what is a well-understood move
+
+My take: Greg is the pragmatic option, but he's not cheap either.
+
+Cheers, Dev
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

@@ -1,0 +1,34 @@
+From: Ingrid Solberg <ingrid@parcelwise.example>
+To: jonas@parcelwise.example, dev@parcelwise.example
+Subject: RE: interview feedback - elena voss (systems design round)
+Date: Tue, 03 Mar 2026 09:22:00 +0100
+Message-ID: <f75d208960a2f3c62f1b@parcelwise.example>
+In-Reply-To: <55493abe468dd79a8803@parcelwise.example>
+References: <d4ae6052fba4ef09f2b8@parcelwise.example> <55493abe468dd79a8803@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Thank you both - that is remarkably aligned feedback, which does not always happen. I have one more reference call to complete and then I will circulate a short comparison of our final candidates, including Mark Teller from the earlier loop, so we can move to an offer while Elena is still available. She mentioned last week that another process is wrapping up, so speed does matter here.
+
+Warm regards,
+Ingrid
+
+On 02 March 2026, Dev Raman wrote:
+> Interview feedback - Elena Voss, senior backend (round 2 + coding).
+> 
+> my take: hire.
+> 
+> - systems design: clean event-driven design for tracking ingest; asked the right capacity and retention questions before sketching
+> - coding round: solid, readable, no framework worship, debugged the hidden off-by-one in under ten minutes (which is more than I can say for most)
+> - complement to jonas rather than a duplicate: she's stronger on data modeling, he's stronger on ops gnarliness
+> - communication: direct, no fluff. good fit
+> 
+> Only flag: limited mobile exposure, irrelevant for this opening.
+> 
+> Cheers, Dev
+
+-- 
+Met vriendelijke groet,
+Ingrid Solberg
+People & Culture, Parcelwise B.V.

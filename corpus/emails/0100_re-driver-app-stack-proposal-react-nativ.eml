@@ -1,0 +1,19 @@
+From: Dev Raman <dev@parcelwise.example>
+To: ravi@parcelwise.example, jonas@parcelwise.example, priya@parcelwise.example, marta@parcelwise.example
+Subject: RE: driver app stack - proposal: React Native (fwd)
+Date: Thu, 12 Feb 2026 10:33:00 +0100
+Message-ID: <e00a76afb6babd1e135d@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Going with React Native. Jonas's 15% native estimate is the budget, not an argument against.
+
+Ravi: one codebase, but we still test on both platforms - the wrapper project is yours. Jonas: scan the RN scanner wrappers that exist before we write one.
+
+Cheers, Dev
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

@@ -1,0 +1,26 @@
+From: Kofi Mensah <kofi@parcelwise.example>
+To: dev@parcelwise.example
+Subject: Bug: invoice PDF shows wrong currency symbol
+Date: Mon, 12 Jan 2026 08:42:00 +0100
+Message-ID: <002e5be80d5f52eb799c@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Good morning,
+
+Raising a small rendering bug I hit while checking invoice templates:
+
+PW-1108
+1. Generate an invoice PDF for an account with a UK-region locale setting.
+2. Open the PDF, check the amount line.
+3. Expected: EUR symbol as configured. Actual: the symbol renders as a placeholder box for two of the three font sizes.
+
+Reproduces 3 out of 3 attempts. Not urgent; the default locale is unaffected. Steps and screenshots are in the ticket.
+
+Regards,
+Kofi
+
+Regards,
+Kofi Mensah
+QA Contractor

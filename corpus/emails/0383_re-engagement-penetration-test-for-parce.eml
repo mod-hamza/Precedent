@@ -1,0 +1,34 @@
+From: Ines Marquez <ines@blackthorn-audit.example>
+To: helen@parcelwise.example
+Cc: dev@parcelwise.example
+Subject: RE: Engagement: penetration test for Parcelwise B.V. - June window
+Date: Wed, 29 Apr 2026 11:58:00 +0200
+Message-ID: <6770a299cf3a1c703a2d@parcelwise.example>
+In-Reply-To: <654d573ad8adb23908f6@parcelwise.example>
+References: <654d573ad8adb23908f6@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear Ms Oyelaran,
+
+Thank you for confirming. The week of 1 June 2026 is now reserved for Parcelwise B.V. — I will hold it contractually once the engagement letter is countersigned, which I am sending under separate cover today together with the first invoice.
+
+For Mr Raman, the practicalities: we will need read-only access to the staging environment two working days before the test starts, a named internal contact available during testing hours, and written authorisation for testing against the production endpoints listed in the scope annex. We will schedule a 45-minute scoping call with you next week to finalise the annex.
+
+Kind regards,
+Ines Marquez
+Blackthorn Audit
+
+On 29 April 2026, Helen Oyelaran wrote:
+> Dear Ms Marquez,
+> 
+> Further to the proposal your firm provided last week, I am pleased to confirm that Parcelwise B.V. would like to engage Blackthorn Audit for the penetration test as scoped: our production environment, comprising the web dashboard, the API, and the driver-app backend, including the retest of any findings.
+> 
+> On scheduling: we would like to secure your week of 1 June 2026 window, with the report to follow within ten working days thereafter. Our customers' renewal timeline makes the June window strongly preferable to any later date.
+> 
+> Could you please send the engagement letter and invoice schedule (50% on engagement, 50% on report delivery, as quoted) for signature? Mr Dev Raman, copied here, will be your technical contact for scoping and access arrangements.
+> 
+> Kind regards,
+> Helen Oyelaran
+> Chief Financial Officer | Parcelwise B.V.

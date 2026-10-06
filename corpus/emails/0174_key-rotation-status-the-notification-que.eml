@@ -1,0 +1,26 @@
+From: Dev Raman <dev@parcelwise.example>
+To: marta@parcelwise.example
+Cc: helen@parcelwise.example, aisha@parcelwise.example
+Subject: Key rotation status + the notification question
+Date: Wed, 04 Mar 2026 09:05:00 +0100
+Message-ID: <7202e9f3a5fba960938f@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Marta,
+
+Rotation status: 4 of 6 internal keys done overnight, customer integration tokens running now under the 24-hour dual-validity window, done by tonight. No broken syncs so far.
+
+The open item is customer notification. Ravi's timeline doc confirms the exposed fork was public for ~3 weeks. The staging key could not read customer data directly, but the token inventory shows 9 customer integrations whose credentials share the exposed prefix and must be treated as potentially compromised. My take: those 9 need to hear from us regardless of what the lawyers say — I would rather they hear it from us than from a security blogger.
+
+Can you and Helen make the call on whether and when we notify? If yes, Aisha drafts, I supply the technical wording.
+
+Cheers,
+Dev
+Dev Raman | CTO | Parcelwise B.V.
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

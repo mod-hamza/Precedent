@@ -1,0 +1,36 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: marta@parcelwise.example
+Cc: dev@parcelwise.example, helen@parcelwise.example, tomas@parcelwise.example
+Subject: RE: Scan costs - proposal for a usage-based add-on
+Date: Wed, 06 May 2026 16:35:00 +0200
+Message-ID: <d8f196b218b2a12d3a5a@parcelwise.example>
+In-Reply-To: <e33f56b8fc6b1f311d65@parcelwise.example>
+References: <781f02bd3af8253091c4@parcelwise.example> <015e102108916604bea9@parcelwise.example> <e33f56b8fc6b1f311d65@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Quick recap:
+
+1. Scan Pack at €0.08/scan, flat rate, with a free allowance set above normal usage (I will propose the exact number after one more data pull). 2. Dev: metering is ready, dashboards to be built with the billing change. 3. Helen: 80% of accounts must be unaffected; revenue modelled on reduced heavy usage. 4. Tomás: pilot with two prospects first. 
+
+All feedback incorporated into the pricing review doc. Marta - with your go, spec goes to the team Friday and billing work slots after the June close.
+
+Thanks!
+Priya
+
+On 6 May 2026, Helen Oyelaran wrote:
+> Dear Marta, dear Priya,
+> 
+> From a finance perspective I welcome the direction: usage-based components align revenue with the actual cost to serve, and our gross margin on the scan-heavy cohort is presently the weakest in the book. I would gently suggest two conditions before launch: first, that we model the revenue on the assumption that at least a few heavy users reduce their scan volume once it is metered, because some will; second, that the free allowance is set so that at least 80% of accounts see no change whatsoever on their invoice.
+> 
+> On the €0.08 rate itself I have no objection; it is defensible against our unit costs.
+> 
+> Kind regards,
+> Helen Oyelaran
+> Chief Financial Officer, Parcelwise B.V.
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

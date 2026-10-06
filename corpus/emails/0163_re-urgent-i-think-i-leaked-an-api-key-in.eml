@@ -1,0 +1,40 @@
+From: Dev Raman <dev@parcelwise.example>
+To: ravi@parcelwise.example, jonas@parcelwise.example
+Cc: helen@parcelwise.example, marta@parcelwise.example
+Subject: RE: URGENT: I think I leaked an API key in a public fork
+Date: Tue, 03 Mar 2026 09:31:00 +0100
+Message-ID: <80b9523c74e92a4c41a5@parcelwise.example>
+In-Reply-To: <717e8eae36c6d0e001c0@parcelwise.example>
+References: <717e8eae36c6d0e001c0@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Ravi — stop. Repo stays as is, no history rewriting, nothing. We triage, you don't fix solo.
+
+Decision: we rotate ALL API keys and customer integration tokens, starting now, today.
+
+Why all and not just the exposed one:
+- We cannot prove what else sat in that history. The fork has 200+ commits, several touching config files.
+- Assume anything public for 3 weeks has been scraped. Scrapers index everything, not the one key we happen to know about.
+- The cost of rotating everything is a day of customer friction.
+-----Original Message-----
+From: Ravi Menon <ravi@parcelwise.example>
+Sent: Tue, 03 Mar 2026 08:52:00 +0100
+To: dev@parcelwise.example
+Subject: URGENT: I think I leaked an API key in a public fork
+
+Dev,
+
+Sorry to bother, and I'm so sorry, but I think I've done something really bad. I was cleaning up branches last night and found that the driver-app-utils repo I forked in February has the staging API key hardcoded in commit 4f2c91a — and the fork is public on the shared Git host. I copied the config pattern from an older service and never thought about it.
+
+I checked just now and the fork is still publicly visible. It's been up for what looks like weeks. I've made the repo private but the commit history might be cached or cloned by now, I don't know how any of that works honestly.
+
+I am so sorry. What do I do? Should I delete the repo? Rewrite history? Please tell me what to do and I'll do it right away.
+
+Ravi
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

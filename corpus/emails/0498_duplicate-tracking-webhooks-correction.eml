@@ -1,0 +1,25 @@
+From: Kofi Mensah <kofi@parcelwise.example>
+To: samir@parcelwise.example
+Subject: Duplicate tracking webhooks — correction
+Date: Wed, 03 Jun 2026 15:38:00 +0200
+Message-ID: <343bab4f80e5e1bd01d1@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Samir,
+
+Follow-up on the duplicate tracking webhook reports from this morning.
+
+1. Initial finding: customer endpoint receiving each event twice.
+2. Correction: scratch that — I re-ran the capture and it is not duplicates. The payload contains two status blocks per event (one stale, one current), which merely looks like duplication in their logs.
+3. Their integration should read the block with the newer timestamp; I'll send them a one-paragraph note they can forward to their developer.
+
+No bug on our side as far as the evidence goes, but I'll keep the capture for a week in case it recurs.
+
+Regards,
+Kofi Mensah
+
+Regards,
+Kofi Mensah
+QA Contractor

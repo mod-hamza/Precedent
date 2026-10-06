@@ -1,0 +1,17 @@
+From: Bruno Alvarez <bruno@redlinecouriers.example>
+To: ravi@parcelwise.example
+Subject: 429s on our integration key
+Date: Wed, 18 Feb 2026 15:12:00 +0100
+Message-ID: <d20e5eccc271b3371048@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Ravi,
+
+Our dispatch integration is throwing rate limit errors again since this morning. Second time this month. What is the actual limit on our key and is it supposed to change mid-day?
+
+Bruno
+
+Bruno Alvarez
+COO, Redline Couriers

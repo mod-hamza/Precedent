@@ -1,0 +1,21 @@
+From: Ravi Menon <ravi@parcelwise.example>
+To: priya@parcelwise.example, ingrid@parcelwise.example
+Subject: Offline sync complaint — one account, recurring
+Date: Wed, 03 Jun 2026 17:38:00 +0200
+Message-ID: <7370fa120c1b7cab1493@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Priya, hi Ingrid,
+
+Sorry to bother you both. One of the smaller accounts keeps writing in about offline sync: their drivers work in a depot with poor coverage, and queued scan uploads sometimes sit for an hour before syncing. Nothing is lost — the queue holds and flushes fine — but they expected near-instant and the tickets keep coming (5 this quarter).
+
+I don't think it's a bug; it behaves as designed, just slower than they hoped. I wanted someone besides me to know before it turns into a renewal-time complaint. No rush on any answer, and sorry again for the long email!
+
+Ravi
+
+-- 
+Thanks for your patience,
+Ravi Menon
+Junior Engineer, Parcelwise

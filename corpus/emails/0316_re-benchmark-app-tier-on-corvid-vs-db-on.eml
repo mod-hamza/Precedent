@@ -1,0 +1,31 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: dev@parcelwise.example, greg@ferrante-ops.example
+Cc: marta@parcelwise.example
+Subject: RE: benchmark: app tier on corvid vs db on nimbus - latency
+Date: Thu, 09 Apr 2026 14:22:00 +0200
+Message-ID: <de0ea1928b7993d69513@parcelwise.example>
+In-Reply-To: <5a103cb72730ca717fad@parcelwise.example>
+References: <cd474938b5705cde5a18@parcelwise.example> <63bab374e1c74fc67393@parcelwise.example> <5a103cb72730ca717fad@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dev, agreeing with the hybrid call, but flagging the launch angle: the Apr 18-19 cutover weekend now sits right before our release-candidate window. Quick recap:
+
+1. App tier moves 18-19 Apr
+2. RC freeze the following week
+3. v3 launch, now targeting mid-May
+
+If the cutover slips even a day into the week, it eats RC testing. Can we get Greg's rollback rehearsal confirmed for Friday 17th in writing? Thanks!
+
+On 09-04-2026, Dev Raman wrote:
+> We're keeping the production database on NimbusHost managed Postgres. Only the app tier moves to Corvid.
+> 
+> 40 ms p95 added latency would break driver sync, and a full DB move with cross-provider replication this close to the v3 launch is exactly the kind of risk Greg himself won't sign up for. Hybrid it is; we can revisit the DB after the launch.
+> 
+> Cheers, Dev
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

@@ -1,0 +1,19 @@
+From: Tomás Ibarra <tomas@parcelwise.example>
+To: priya@parcelwise.example, dev@parcelwise.example, lena@parcelwise.example
+Subject: Webhook retry storm - Kurier Noord again
+Date: Fri, 27 Mar 2026 12:12:00 +0100
+Message-ID: <21bae5535124a389a294@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Team! 🚀
+
+That little webhook retry storm from Kurier Noord popped up again last night. I read Dev's fix from February and honestly? This stuff fascinates me. Great idea: let's just add exponential backoff with jitter to all retry queues and maybe a status page banner too!! I'm happy to write the customer comms for it, no sweat at all. Whoever picks it up, you've got my full support from the sidelines ✅
+
+Tomás
+
+-- 
+Saludos!
+Tomás Ibarra
+Head of Sales, Parcelwise

@@ -1,0 +1,21 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: priya@parcelwise.example, dev@parcelwise.example, tomas@parcelwise.example
+Subject: RE: FW: Renewal - non-negotiable points before we sign - NEED INPUT TONIGHT
+Date: Tue, 28 Apr 2026 19:26:00 +0200
+Message-ID: <4104e55df70fca1d98c8@parcelwise.example>
+In-Reply-To: <fb13dfb162db3ed2da33@parcelwise.example>
+References: <fb13dfb162db3ed2da33@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+read-only is the offline branch we parked, minus the hard part. the offline branch already caches routes and manifests; we just delete the queued-edit code path and grey out anything that writes. ~1.5 engineer-weeks, mostly me, ravi can do the ui greying. the sync code is the risk - it was written assuming online-only, so caching + reconnect revalidation needs real testing. doable if nobody touches my sprint for two weeks. fwiw.
+
+On Tuesday 28 April, Priya Natarajan wrote:
+> Quick recap of the situation and the options I see:
+> 
+> 1. Full offline (what we cut on 2 April): ~6 engineer-weeks. Does not fit before mid-May, full stop.
+> 2. Read-only offline: cached routes and manifests, no edits queued, everything else disabled when offline. Jonas - is that still the ~1.5 engineer-week estimate from the April sizing?
+> 3. Keep the cut and negotiate Bruno down. Risky: Redline is ~18% of revenue and the renewal is the quarter.
+> 
+> Jonas, Dev - I need real numbers before the 15:00 call tomorrow. Thanks!

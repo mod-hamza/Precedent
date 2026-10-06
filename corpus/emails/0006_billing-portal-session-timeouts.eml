@@ -1,0 +1,15 @@
+From: Carla Dunne <carla@swiftbox.example>
+To: priya@parcelwise.example
+Subject: Billing portal session timeouts
+Date: Wed, 07 Jan 2026 15:38:00 +0100
+Message-ID: <67be88f4108fd02919cb@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Ms Natarajan, our finance team reports that the billing portal logs them out after roughly five minutes of inactivity. We do not object to short sessions on principle — quite the opposite — but five minutes while reconciling invoices is impractical. Please advise whether the timeout can be adjusted, and provide the current session policy in writing for our records. Regards, Carla Dunne, Head of Operations, Swiftbox
+
+-- 
+Regards,
+Carla Dunne
+Head of Operations, Swiftbox

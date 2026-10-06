@@ -1,0 +1,12 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: priya@parcelwise.example
+Subject: PayForge statement reconciliation
+Date: Mon, 09 Feb 2026 15:12:00 +0100
+Message-ID: <ff9147cb0e1142b4a1a9@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+did the monthly statement reconciliation against our ledger. 312 payouts, all matched, totals within 4 cents of the statement (rounding, expected).
+
+one thing: two refunds show in our ledger but not on the statement yet, probably settling tomorrow. flagging so nobody panics when the dashboards disagree for a day.

@@ -1,0 +1,24 @@
+From: Ravi Menon <ravi@parcelwise.example>
+To: dev@parcelwise.example, jonas@parcelwise.example
+Subject: RE: driver app stack - proposal: React Native
+Date: Thu, 12 Feb 2026 11:14:00 +0100
+Message-ID: <23ecc0749c848675b472@parcelwise.example>
+In-Reply-To: <e00a76afb6babd1e135d@parcelwise.example>
+References: <c3e2b0354c9d99434c6d@parcelwise.example> <25cd504e823643ba876c@parcelwise.example> <c535dd8eda38b869427c@parcelwise.example> <c775f5661696eea0223d@parcelwise.example> <e00a76afb6babd1e135d@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Understood - testing on both it is. I'll start on React Native fundamentals this week and put together a shortlist of existing scanner wrappers by Monday. Thanks again!
+
+On 2026-02-12, Dev Raman wrote:
+> Going with React Native. Jonas's 15% native estimate is the budget, not an argument against.
+> 
+> Ravi: one codebase, but we still test on both platforms - the wrapper project is yours. Jonas: scan the RN scanner wrappers that exist before we write one.
+> 
+> Cheers, Dev
+
+-- 
+Thanks for your patience,
+Ravi Menon
+Junior Engineer, Parcelwise

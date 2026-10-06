@@ -1,0 +1,28 @@
+From: Dev Raman <dev@parcelwise.example>
+To: marta@parcelwise.example
+Cc: jonas@parcelwise.example, ingrid@parcelwise.example
+Subject: backend capacity before the v3 push
+Date: Mon, 19 Jan 2026 10:12:00 +0100
+Message-ID: <a189900110aea67ee5e6@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+my take: the backend team is now the bottleneck.
+
+- api backlog is at ~3.5 weeks and growing
+- jonas is solo on the scanner integration, zero slack
+- the driver-sync work keeps slipping, which is on the critical path for v3
+
+options as i see them:
+1. one senior backend hire, can own sync + integrations from month two
+2. two juniors, cheaper per head but needs me or jonas to babysit for months
+
+I lean option 1 but it's a budget call. Marta, can we get this moving this week? Recruiting lead time matters.
+
+Cheers, Dev
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

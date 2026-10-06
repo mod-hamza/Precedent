@@ -1,0 +1,22 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: dev@parcelwise.example, jonas@parcelwise.example
+Subject: scope options for the mid-May launch
+Date: Wed, 01 Apr 2026 09:15:00 +0200
+Message-ID: <ada5a8933ab408055bbf@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi both,
+
+Ahead of tomorrow's product meeting, the two big open items against the mid-May target:
+
+1. Offline mode for the driver app - Jonas, what's the honest sizing?
+2. Route optimization v2 - Dev, you said the heavy lifting is done?
+
+We can't comfortably fit both plus the 41-P1 burn-down. I'd like to walk into the meeting with real numbers, not vibes. Thanks!
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

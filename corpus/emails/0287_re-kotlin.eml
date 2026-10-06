@@ -1,0 +1,26 @@
+From: Ravi Menon <ravi@parcelwise.example>
+To: jonas@parcelwise.example, dev@parcelwise.example
+Subject: RE: kotlin
+Date: Thu, 02 Apr 2026 09:12:00 +0200
+Message-ID: <9946ad7f0b2149d3846b@parcelwise.example>
+In-Reply-To: <340f4c6ecbb6daea8615@parcelwise.example>
+References: <340f4c6ecbb6daea8615@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Sorry to jump in - is Kotlin the thing you write Android apps with? If we did this would I need to learn it before I can fix bugs in the sync service? Asking because I finally feel like I understand our current codebase a little bit.
+
+Ravi
+
+On 1 Apr 2026, Jonas Eklund wrote:
+> fwiw i've been rewriting the scanner sync service in kotlin on a branch and it's half the code and actually null-safe. go's error handling is four years of me pasting `if err != nil` and the whole ingest layer is rituals we don't remember the reasons for.
+> 
+> kotlin on the JVM, keep the api surface, migrate service by service. the driver app is react native, that's fine, nobody touch that.
+> 
+> i estimate 2 engineers for a quarter for the core services. think about it. or don't and we'll still be pasting if err != nil in 2028.
+
+-- 
+Thanks for your patience,
+Ravi Menon
+Junior Engineer, Parcelwise

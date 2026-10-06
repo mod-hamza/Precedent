@@ -1,0 +1,16 @@
+From: Billing <billing@registrar.example>
+To: ingrid@parcelwise.example
+Subject: Scheduled maintenance: NimbusHost platform - Sunday 21 June
+Date: Wed, 17 Jun 2026 10:09:00 +0200
+Message-ID: <dc142b19d4cef5da71f8@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear customer,
+
+Please be advised that the NimbusHost platform will undergo scheduled infrastructure maintenance on Sunday 21 June 2026 between 02:00 and 05:00 CEST. Control panel access may be briefly unavailable; hosted workloads are not expected to be affected.
+
+No action is required on your part.
+
+The NimbusHost Billing & Accounts Team

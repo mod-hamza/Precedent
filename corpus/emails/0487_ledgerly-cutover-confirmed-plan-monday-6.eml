@@ -1,0 +1,24 @@
+From: Dev Raman <dev@parcelwise.example>
+To: helen@parcelwise.example, jonas@parcelwise.example
+Cc: marta@parcelwise.example, aisha@parcelwise.example
+Subject: Ledgerly cutover - confirmed plan, Monday 6 July
+Date: Fri, 29 May 2026 14:12:00 +0200
+Message-ID: <b6c75d07ebd6c24ba469@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Helen, Jonas,
+
+Confirmed plan, as agreed yesterday and now fixed:
+
+- Cutover: Monday 6 July, first live Ledgerly settlement cycle starts that day
+- 29-30 June: final PayForge billing run, June books close on a single provider
+- 1-3 July: production config freeze, final ledgerly prod checks, dry run of the reconciliation job against the closed June ledger
+- 6 July: switch billing service to Ledgerly, PayForge moves to read-only
+- PayForge notice: 30 days, so I will send termination on 6 July; contract ends 5 August. Helen, that answers your minimum-fee question - no overlap beyond the notice we must honour.
+- Aisha: customer comms draft due 10 July, statement-name change flagged two weeks ahead per her request
+
+Rollback: PayForge stays live in read-only until 5 August, so we can fail back within one working day if a settlement misbehaves.
+
+Cheers, Dev
