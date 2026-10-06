@@ -1,13 +1,14 @@
 """Single entry point for every model call (PRD §5).
 
-- Roles FAST / CORE / REASON map to models via config.
-- Output is constrained with structured outputs (output_config.format json_schema) and validated by Pydantic;
-  one repair retry on validation failure.
+- Roles FAST / CORE / REASON map to models via config. Two providers: "openai" (any OpenAI-compatible endpoint; the
+  hackathon's Alibaba Cloud Model Studio) and "anthropic".
+- Output is constrained to a JSON schema (response_format json_schema, or json_object plus the schema in the prompt
+  where a model rejects json_schema) and validated by Pydantic; one repair retry on validation failure.
 - Every call is cached on sha256(model + prompt + schema + effort); re-runs are free and demos reproducible.
 - Token usage and cost are logged per stage in llm_calls.
 
-Note: the 5.x models reject `temperature`, so temperature 0 is only sent to older models (Haiku 4.5).
-Determinism for those comes from the cache.
+Note: Claude 5.x models reject `temperature`; temperature 0 is sent everywhere else. Determinism beyond that comes
+from the cache.
 """
 from __future__ import annotations
 
@@ -15,15 +16,17 @@ import asyncio
 import copy
 import json
 import os
+import re
 import sqlite3
 import time
 from typing import Any, TypeVar
 
 import anthropic
+import httpx
 from pydantic import BaseModel, ValidationError
 
 from .cache import LLMCache, cache_key
-from .config import PRICING, settings
+from .config import price, settings
 
 T = TypeVar("T", bound=BaseModel)
 
@@ -75,8 +78,11 @@ def _is_5x(model: str) -> bool:
 
 
 def _cost(model: str, tokens_in: int, tokens_out: int, cache_read: int = 0) -> float:
-    pin, pout = PRICING.get(model, (0.0, 0.0))
+    pin, pout = price(model)
     return (tokens_in * pin + cache_read * pin * 0.1 + tokens_out * pout) / 1_000_000
+
+
+_JSON_OBJECT_ONLY: set[str] = set()  # models that rejected response_format json_schema this process
 
 
 class LLM:
@@ -85,6 +91,7 @@ class LLM:
         self.run_id = run_id
         self.sem = asyncio.Semaphore(concurrency or settings.concurrency)
         self._client: anthropic.AsyncAnthropic | None = None
+        self._http: httpx.AsyncClient | None = None
 
     @property
     def client(self) -> anthropic.AsyncAnthropic:
@@ -131,6 +138,67 @@ class LLM:
         return out
 
     async def _call(self, cfg, system: str, user: str, json_schema: dict) -> tuple[str, int, int, float]:
+        if settings.provider == "anthropic":
+            return await self._call_anthropic(cfg, system, user, json_schema)
+        return await self._call_openai(cfg, system, user, json_schema)
+
+    @property
+    def http(self) -> httpx.AsyncClient:
+        if self._http is None:
+            if not settings.openai_base_url or not os.environ.get("OPENAI_COMPAT_API_KEY"):
+                raise LLMError("set OPENAI_COMPAT_BASE_URL and OPENAI_COMPAT_API_KEY (see .env.example)")
+            self._http = httpx.AsyncClient(
+                base_url=settings.openai_base_url.rstrip("/"), timeout=600,
+                headers={"Authorization": f"Bearer {os.environ['OPENAI_COMPAT_API_KEY']}"})
+        return self._http
+
+    async def _call_openai(self, cfg, system: str, user: str, json_schema: dict) -> tuple[str, int, int, float]:
+        body: dict[str, Any] = {
+            "model": cfg.model,
+            "messages": [
+                {"role": "system", "content": system + "\n\nRespond with one JSON object only (no prose, no code "
+                 "fences) matching this JSON Schema:\n" + json.dumps(json_schema, ensure_ascii=False)},
+                {"role": "user", "content": user},
+            ],
+            "max_tokens": cfg.max_tokens,
+            "temperature": 0,
+            "enable_thinking": cfg.thinking,
+        }
+        for attempt in range(6):
+            schema_mode = cfg.model not in _JSON_OBJECT_ONLY
+            body["response_format"] = ({"type": "json_schema", "json_schema": {"name": "output", "schema": json_schema,
+                                                                               "strict": True}}
+                                       if schema_mode else {"type": "json_object"})
+            try:
+                r = await self.http.post("/chat/completions", json=body)
+            except httpx.TransportError:
+                await asyncio.sleep(2 ** attempt)
+                continue
+            if r.status_code == 400 and schema_mode and "response_format" in r.text:
+                _JSON_OBJECT_ONLY.add(cfg.model)  # e.g. deepseek-v4.1-flash
+                continue
+            if r.status_code in (408, 429, 500, 502, 503, 504):
+                await asyncio.sleep(min(2 ** attempt, 30))
+                continue
+            if r.status_code != 200:
+                raise LLMError(f"{cfg.model} HTTP {r.status_code}: {r.text[:300]}")
+            break
+        else:
+            raise LLMError(f"{cfg.model}: retries exhausted")
+
+        data = r.json()
+        choice = data["choices"][0]
+        if choice.get("finish_reason") == "content_filter":
+            raise LLMRefusal(f"{cfg.model} declined the request")
+        if choice.get("finish_reason") == "length":
+            raise LLMError(f"{cfg.model} hit max_tokens={cfg.max_tokens}")
+        text = (choice["message"].get("content") or "").strip()
+        text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)
+        u = data.get("usage") or {}
+        tin, tout = u.get("prompt_tokens", 0), u.get("completion_tokens", 0)
+        return text, tin, tout, _cost(cfg.model, tin, tout)
+
+    async def _call_anthropic(self, cfg, system: str, user: str, json_schema: dict) -> tuple[str, int, int, float]:
         output_config: dict[str, Any] = {"format": {"type": "json_schema", "schema": json_schema}}
         if cfg.effort:
             output_config["effort"] = cfg.effort

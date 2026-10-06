@@ -8,8 +8,12 @@
 ```bash
 py -3.11 -m venv .venv            # or python3.11 -m venv .venv
 .venv/Scripts/python -m pip install -r requirements.txt
-cp .env.example .env              # add ANTHROPIC_API_KEY
+cp .env.example .env              # add OPENAI_COMPAT_API_KEY (hackathon Model Studio key)
 ```
+
+Models (OpenAI-compatible, Alibaba Cloud Model Studio): FAST `qwen3.8-flash` (reasoning off), CORE `qwen3.8-max`,
+REASON `deepseek-v4-pro`. Override any role with `PRECEDENT_<ROLE>_MODEL`. Embeddings run locally
+(sentence-transformers) because the plan has no embeddings endpoint.
 
 ## Run
 

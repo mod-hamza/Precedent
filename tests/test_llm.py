@@ -47,7 +47,7 @@ def test_cache_repair_and_cost(tmp_path, monkeypatch):
     assert out2 == out and len(calls) == 2  # served from cache
     rows = llm_mod.usage_by_stage(conn, "t")
     assert rows == [{"stage": "extract", "calls": 2, "cached": 1, "tokens_in": 2000, "tokens_out": 200,
-                     "cost_usd": round(2 * (1000 * 2 + 100 * 10) / 1e6, 4)}]
+                     "cost_usd": round(2 * llm_mod._cost(llm_mod.settings.role("CORE").model, 1000, 100), 4)}]
 
 
 def test_offline_mode_refuses_cache_miss(tmp_path, monkeypatch):
