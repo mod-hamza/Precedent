@@ -1,21 +1,21 @@
 # Precedent scorecard
 
-_Synthetic corpus; ground truth hidden from the pipeline._  commit `94eefb2`
+_Synthetic corpus; ground truth hidden from the pipeline._  commit `0de46ce`
 
-| Metric | Target | Dev |
-|---|---|---|
-| Decision recall | >= 85% | 98% (25 GT) |
-| Decision precision | >= 85% | 74% (33 predicted) |
-| Unmatched predictions judged genuine decisions (not in the 40 planted) | context | 8 of 8 |
-| Near-decision false positives | <= 2 of 10 | 0 of 5 |
-| Supersession-link accuracy | >= 80% | 90% (kind 90%) |
-| Status accuracy (matched) | - | 88% |
-| Conflicts detected | >= 2 of 3 | 2 of 2 |
-| Evidence support | >= 90% | 100% (strict 100%) |
-| Q&A accuracy | >= 85% | 68% of 19 |
-| 'No decision' correct | 5/5 | 4/4 |
-| Answer latency p50 | < 8 s | 15.8 s |
-| Triage recall | >= 98% | 100% |
+| Metric | Target | Dev | Holdout |
+|---|---|---|---|
+| Decision recall | >= 85% | 98% (25 GT) | 87% (15 GT) |
+| Decision precision | >= 85% | 74% (33 predicted) | 46% (28 predicted) |
+| Unmatched predictions judged genuine decisions (not in the 40 planted) | context | 8 of 8 | 12 of 15 |
+| Near-decision false positives | <= 2 of 10 | 0 of 5 | 0 of 5 |
+| Supersession-link accuracy | >= 80% | 90% (kind 90%) | 33% (kind 33%) |
+| Status accuracy (matched) | - | 88% | 92% |
+| Conflicts detected | >= 2 of 3 | 2 of 2 | 0 of 1 |
+| Evidence support | >= 90% | 100% (strict 100%) | 100% (strict 100%) |
+| Q&A accuracy | >= 85% | 68% of 19 | 68% of 11 |
+| 'No decision' correct | 5/5 | 4/4 | 1/1 |
+| Answer latency p50 | < 8 s | 15.8 s | 17.3 s |
+| Triage recall | >= 98% | 100% | 100% |
 
 Quote validity (all verified quotes are verbatim substrings): **100%** of 478 quotes. Pipeline wall-clock (Stages 1-5): **9.8 min**.
 
@@ -48,3 +48,23 @@ Quote validity (all verified quotes are verbatim substrings): **100%** of 478 qu
 | D23 | hit | active -> active | Engage Kofi Mensah as a QA contractor at three days per week from Monday 20 April through  |
 | D38 | hit | contested -> contested | Pro customers get a first-response SLA of either 2 business hours (as per Lena Fischer's m |
 | D39 | hit | contested -> contested | The on-call rotation starts next week with two people alternating weekly: Jonas Eklund one |
+
+## Holdout: decisions
+
+| GT | Result | Status (GT -> predicted) | Predicted |
+|---|---|---|---|
+| D24 | miss | superseded -> - |  |
+| D25 | hit | active -> active | The discount offered to Redline Couriers for the 2-year renewal is capped at 10%, overridi |
+| D26 | hit | active -> active | Parcelwise will not commit to 99.99% monthly uptime; the contractual SLA with Swiftbox wil |
+| D27 | hit | active -> active | Suspend Harbor Express service at the 60-day overdue mark, terminate at 90 days if the €27 |
+| D28 | hit | active -> active | Rotate all API keys and customer integration tokens (not just the exposed staging key) in  |
+| D29 | hit | active -> active | Notify all 9 customers potentially affected by the leaked credentials by Friday 6 March, w |
+| D30 | hit | active -> active | All staff accounts (email, Git host, cloud consoles, admin panels) must have 2FA enabled b |
+| D31 | hit | active -> active | Parcelwise engages Blackthorn Audit for a third-party penetration test of the production e |
+| D32 | miss | amended -> - |  |
+| D33 | hit | active -> active | Sublet the first floor of the Keizersgracht office starting 1 June 2026, recovering approx |
+| D34 | hit | superseded -> superseded | Commit to the Silver sponsorship tier at €6,000 for LogiConnect Europe 2026, including boo |
+| D35 | hit | active -> active | Downgrade LogiConnect Europe 2026 sponsorship from Silver tier (€6,000) to booth-only (€2, |
+| D36 | hit | active -> active | Keep the company name Parcelwise and do not proceed with the rebrand to Routewell; redirec |
+| D37 | hit | active -> active | Switch from Helpdesk-Co to Beacon Desk effective July 1, 2026, accepting Beacon Desk's quo |
+| D40 | hit | contested -> superseded | Marta Kowalczyk approved Chloe Winters' Q2 marketing budget request of €40,000. |

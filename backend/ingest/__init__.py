@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import time
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
@@ -28,6 +29,7 @@ def load_emails(paths: list[Path]) -> tuple[list[ParsedEmail], int]:
 
 async def run_stage0(conn: sqlite3.Connection, paths: list[Path], llm=None, run_id: str | None = None) -> dict:
     started = datetime.now(timezone.utc).isoformat()
+    t0 = time.perf_counter()
     emails, dupes = load_emails(paths)
     thread_of, thread_rows = build_threads(emails)
     people, addr_to_pid = await resolve_identities(emails, llm)
@@ -54,6 +56,7 @@ async def run_stage0(conn: sqlite3.Connection, paths: list[Path], llm=None, run_
         "multi_message_threads": sum(1 for t in thread_rows if t["n_msgs"] > 1),
         "people": len(people), "internal_people": sum(p["is_internal"] for p in people),
         "with_quoted": sum(1 for e in emails if e.quoted_text), "with_forward": sum(1 for e in emails if e.fwd_text),
+        "seconds": round(time.perf_counter() - t0, 1),
     }
     conn.execute("INSERT INTO runs(run_id, stage, started_at, finished_at, n_in, n_out, tokens_in, tokens_out, cost_usd, notes)"
                  " VALUES(?,?,?,?,?,?,0,0,0,?)",

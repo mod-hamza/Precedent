@@ -8,6 +8,10 @@ paste it into Qoder with this file and `PRD.md` open. Run the backend first:
 .venv/Scripts/python -m backend.demo serve      # offline demo data on http://127.0.0.1:8000
 ```
 
+Qoder CLI (optional, to run tasks from a terminal): install it per Qoder's docs, run its login once yourself (it
+opens your Qoder account in the browser), then work from the repo root so it can read `PRD.md`, `docs/API.md` and
+this file. The IDE works just as well.
+
 API reference with real example payloads: `docs/API.md`. All endpoints are under `/api`, JSON, no auth. Every GET
 accepts `?redact=1` (PII masking).
 

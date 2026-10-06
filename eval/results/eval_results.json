@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-06T20:00:07.586183+00:00",
- "git_commit": "94eefb2",
+ "generated_at": "2026-10-06T20:06:48.567259+00:00",
+ "git_commit": "0de46ce",
  "banner": "Synthetic corpus; ground truth hidden from the pipeline.",
  "targets": {
   "decision_recall": 0.85,
@@ -819,6 +819,553 @@
    "latency_p90_ms": 22305,
    "evaluated_at": "2026-10-06T20:00:07.508206+00:00",
    "git_commit": "94eefb2"
+  },
+  "holdout": {
+   "split": "holdout",
+   "n_gt": 15,
+   "n_pred": 28,
+   "judged_pairs": 24,
+   "decision_recall": 0.867,
+   "decision_precision": 0.464,
+   "partial_matches": 0,
+   "status_accuracy": 0.923,
+   "supersession_accuracy": 0.333,
+   "supersession_kind_accuracy": 0.333,
+   "edges": [
+    {
+     "src": "D25",
+     "dst": "D24",
+     "kind": "supersedes",
+     "recovered": false,
+     "kind_ok": false
+    },
+    {
+     "src": "D33",
+     "dst": "D32",
+     "kind": "amends",
+     "recovered": false,
+     "kind_ok": false
+    },
+    {
+     "src": "D35",
+     "dst": "D34",
+     "kind": "supersedes",
+     "recovered": true,
+     "kind_ok": true
+    }
+   ],
+   "conflicts": [
+    {
+     "gt": "D40",
+     "surfaced": false,
+     "contested_status": false,
+     "detected": false
+    }
+   ],
+   "conflicts_detected": 0,
+   "near_decisions": [
+    {
+     "id": "N06",
+     "topic": "Dedicated DevRel hire",
+     "trap": "Conditional future",
+     "false_positive": false,
+     "decisions": []
+    },
+    {
+     "id": "N07",
+     "topic": "Rename plans (Starter/Pro/Enterprise)",
+     "trap": "Abandoned",
+     "false_positive": false,
+     "decisions": []
+    },
+    {
+     "id": "N08",
+     "topic": "Adopt OKRs",
+     "trap": "Task assignment, not decision",
+     "false_positive": false,
+     "decisions": []
+    },
+    {
+     "id": "N09",
+     "topic": "Change email/calendar provider",
+     "trap": "Unanswered question",
+     "false_positive": false,
+     "decisions": []
+    },
+    {
+     "id": "N10",
+     "topic": "Launch in the US in Q4",
+     "trap": "Conditional, unmet",
+     "false_positive": false,
+     "decisions": []
+    }
+   ],
+   "near_decision_fp": 0,
+   "near_decision_n": 5,
+   "evidence_support_strict": 1.0,
+   "evidence_support": 1.0,
+   "decisions_table": [
+    {
+     "gt_id": "D24",
+     "gt_text": "Offer Redline Couriers a 15% discount for a 2-year renewal",
+     "gt_date": "2026-02-09",
+     "gt_status": "superseded",
+     "result": "miss",
+     "pred_id": null,
+     "pred_text": null,
+     "pred_date": null,
+     "pred_status": null
+    },
+    {
+     "gt_id": "D25",
+     "gt_text": "Cap the Redline renewal discount at 10% (2-year term)",
+     "gt_date": "2026-02-11",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0008",
+     "pred_text": "The discount offered to Redline Couriers for the 2-year renewal is capped at 10%, overriding the previously communicated 15% offer.",
+     "pred_date": "2026-02-11",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D26",
+     "gt_text": "Decline Swiftbox's request for a 99.99% uptime SLA; offer 99.9% with service credits",
+     "gt_date": "2026-03-17",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0027",
+     "pred_text": "Parcelwise will not commit to 99.99% monthly uptime; the contractual SLA with Swiftbox will be 99.9% monthly uptime on dashboard and API, measured externally, with service credits of 5% of the monthly fee per 0.1% below target, capped at 25% of the monthly fee and stated as sole remedy.",
+     "pred_date": "2026-03-17",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D27",
+     "gt_text": "Harbor Express: suspend service at 60 days overdue, terminate at 90 days unless paid (EUR 27,400 overdue)",
+     "gt_date": "2026-05-15",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0052",
+     "pred_text": "Suspend Harbor Express service at the 60-day overdue mark, terminate at 90 days if the €27,400 balance remains unpaid, and accept the €8,000 partial payment if it arrives.",
+     "pred_date": "2026-05-15",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D28",
+     "gt_text": "Rotate ALL API keys and customer integration tokens immediately",
+     "gt_date": "2026-03-03",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0017",
+     "pred_text": "Rotate all API keys and customer integration tokens (not just the exposed staging key) in response to the public fork leak.",
+     "pred_date": "2026-03-03",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D29",
+     "gt_text": "Notify the 9 affected customers within 72 hours of discovery (by 2026-03-06)",
+     "gt_date": "2026-03-04",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0022",
+     "pred_text": "Notify all 9 customers potentially affected by the leaked credentials by Friday 6 March, with letters that include each customer’s token rotation timestamp, state 'we rotated all credentials as a precaution' and 'no evidence of misuse', but do not claim 'no data was accessed'; Aisha Bello drafts, Dev Raman checks technical wording, Nadia reviews final text before sending.",
+     "pred_date": "2026-03-04",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D30",
+     "gt_text": "Require 2FA on all staff accounts by April 3",
+     "gt_date": "2026-03-20",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0028",
+     "pred_text": "All staff accounts (email, Git host, cloud consoles, admin panels) must have 2FA enabled by Friday 3 April 2026; accounts without 2FA after that date will lose access with no exceptions.",
+     "pred_date": "2026-03-20",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D31",
+     "gt_text": "Hire Blackthorn Audit for a pentest, EUR 12,000, scheduled for the week of June 1",
+     "gt_date": "2026-04-28",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0046",
+     "pred_text": "Parcelwise engages Blackthorn Audit for a third-party penetration test of the production environment (web dashboard, API, driver-app backend) including retest, at €12,000 ex-VAT, 50% on engagement / 50% on report delivery, with the test in the week of 1 June 2026 and report within ten working days; Dev Raman is technical contact, Jonas Eklund backup; the signed engagement letter is sent to Swiftbox.",
+     "pred_date": "2026-04-28",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D32",
+     "gt_text": "Renew the Rotterdam office lease for 12 months at the current EUR 6,200/month",
+     "gt_date": "2026-01-30",
+     "gt_status": "amended",
+     "result": "miss",
+     "pred_id": null,
+     "pred_text": null,
+     "pred_date": null,
+     "pred_status": null
+    },
+    {
+     "gt_id": "D33",
+     "gt_text": "Sublet half the office from June 1",
+     "gt_date": "2026-04-06",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0037",
+     "pred_text": "Sublet the first floor of the Keizersgracht office starting 1 June 2026, recovering approximately €3,100 per month, with the demo room and meeting rooms retained for internal use, and Lena Fischer handling execution.",
+     "pred_date": "2026-04-06",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D34",
+     "gt_text": "Sponsor LogiConnect Europe at the Silver tier (EUR 6,000)",
+     "gt_date": "2026-03-12",
+     "gt_status": "superseded",
+     "result": "hit",
+     "pred_id": "DEC-0026",
+     "pred_text": "Commit to the Silver sponsorship tier at €6,000 for LogiConnect Europe 2026, including booth, logo placement, lightning talk slot, and attendee contact list.",
+     "pred_date": "2026-03-12",
+     "pred_status": "superseded"
+    },
+    {
+     "gt_id": "D35",
+     "gt_text": "Downgrade to booth-only (EUR 2,500); drop the sponsorship",
+     "gt_date": "2026-03-27",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0033",
+     "pred_text": "Downgrade LogiConnect Europe 2026 sponsorship from Silver tier (€6,000) to booth-only (€2,500).",
+     "pred_date": "2026-03-27",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D36",
+     "gt_text": "Keep the Parcelwise name; no rebrand",
+     "gt_date": "2026-04-16",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0041",
+     "pred_text": "Keep the company name Parcelwise and do not proceed with the rebrand to Routewell; redirect marketing effort to the v3 launch.",
+     "pred_date": "2026-04-16",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D37",
+     "gt_text": "Replace the Helpdesk support tool with Beacon Desk effective July 1",
+     "gt_date": "2026-05-27",
+     "gt_status": "active",
+     "result": "hit",
+     "pred_id": "DEC-0054",
+     "pred_text": "Switch from Helpdesk-Co to Beacon Desk effective July 1, 2026, accepting Beacon Desk's quote of €5,400/year for 12 agents with year-two price lock, KB migration and implementation support included, and migration verified by June 27.",
+     "pred_date": "2026-05-27",
+     "pred_status": "active"
+    },
+    {
+     "gt_id": "D40",
+     "gt_text": "Q2 marketing budget",
+     "gt_date": "2026-02-27",
+     "gt_status": "contested",
+     "result": "hit",
+     "pred_id": "DEC-0015",
+     "pred_text": "Marta Kowalczyk approved Chloe Winters' Q2 marketing budget request of €40,000.",
+     "pred_date": "2026-02-27",
+     "pred_status": "superseded"
+    }
+   ],
+   "unmatched_predictions": [
+    {
+     "pred_id": "DEC-0006",
+     "text": "Renew the Keizersgracht office lease for 12 months at the current rate of €6,200 per month, with indexation deferred to the next term.",
+     "date": "2026-01-30",
+     "judged_genuine_decision": true,
+     "reason": "It is a commitment to a vendor with specific financial terms."
+    },
+    {
+     "pred_id": "DEC-0009",
+     "text": "If Bruno pushes back on the 10% discount, offer the v3 pilot seat and driver-app training hours as alternative concessions.",
+     "date": "2026-02-11",
+     "judged_genuine_decision": true,
+     "reason": "It establishes a conditional commitment regarding customer negotiation strategy and alternative concessions, which is a substantive business decision."
+    },
+    {
+     "pred_id": "DEC-0016",
+     "text": "The Q2 marketing budget is set at €30,000, prioritising the launch campaign and content production, with paid search scaled to fit.",
+     "date": "2026-03-02",
+     "judged_genuine_decision": true,
+     "reason": "The entry sets a specific Q2 marketing budget of €30,000 and specifies how it will be allocated (prioritising launch campaign and content production, with paid search scaled to fit), representing a settled commitment about money and scope."
+    },
+    {
+     "pred_id": "DEC-0018",
+     "text": "Rotation to proceed token-by-token with a 24-hour dual-validity window, prioritizing prod-adjacent integrations first and sandbox last, so existing syncs keep working until each customer swaps.",
+     "date": "2026-03-03",
+     "judged_genuine_decision": false,
+     "reason": "This is a logistical implementation plan for a token rotation, not a settled business commitment about money, scope, people, customers, vendors, policy, or an external commitment."
+    },
+    {
+     "pred_id": "DEC-0019",
+     "text": "Aisha Bello (Head of Customer Success) to receive the customer list and a support macro within the hour, and be informed of the rotation immediately rather than after completion.",
+     "date": "2026-03-03",
+     "judged_genuine_decision": false,
+     "reason": "This is a task assignment specifying that Aisha Bello will receive items and be informed, not a settled commitment about a business matter like money, scope, or policy."
+    },
+    {
+     "pred_id": "DEC-0020",
+     "text": "The public fork repo must be left as-is with no history rewriting or deletion; the team will triage before any fix.",
+     "date": "2026-03-03",
+     "judged_genuine_decision": true,
+     "reason": "This entry establishes a policy commitment regarding the public fork repo (no history rewriting, triage before fixes), which is a settled decision about scope and process."
+    },
+    {
+     "pred_id": "DEC-0021",
+     "text": "The content production line within the Q2 marketing budget is increased from €6,000 to €9,000, funded by reducing the contingency line.",
+     "date": "2026-03-03",
+     "judged_genuine_decision": true,
+     "reason": "It reallocates funds within the Q2 marketing budget, committing to increased spending on content production and reduced contingency, which is a settled financial decision."
+    },
+    {
+     "pred_id": "DEC-0029",
+     "text": "SMS is not an acceptable 2FA method; the baseline 2FA method for all staff is an authenticator app (TOTP).",
+     "date": "2026-03-20",
+     "judged_genuine_decision": true,
+     "reason": "Establishes a mandatory security policy (a settled commitment about policy and people)."
+    },
+    {
+     "pred_id": "DEC-0030",
+     "text": "Hardware security keys will be used for the four staff members with production access, with six keys (4 + 2 spare) to be ordered.",
+     "date": "2026-03-20",
+     "judged_genuine_decision": true,
+     "reason": "The entry commits to a security policy (using hardware keys) and specifies an order quantity, representing a resource allocation decision."
+    },
+    {
+     "pred_id": "DEC-0035",
+     "text": "Discount requests up to 5% are decided by Tomás Ibarra; above 5% they escalate to Marta Kowalczyk, and no discount numbers may be put in writing to a prospect before either of them approves.",
+     "date": "2026-03-31",
+     "judged_genuine_decision": true,
+     "reason": "It establishes a clear policy regarding discount approvals and communication, making a settled commitment about authority and process."
+    },
+    {
+     "pred_id": "DEC-0044",
+     "text": "Parcelwise (via Dev Raman) commits to engaging an external firm for a third-party penetration test of the production environment, with either the final report or a signed engagement letter stating the test window delivered to Swiftbox by 15 June 2026.",
+     "date": "2026-04-21",
+     "judged_genuine_decision": true,
+     "reason": "The entry records a settled commitment by Parcelwise to engage an external vendor for a specific security assessment, with a defined scope (third-party penetration test of production) and a concrete deliverable deadline (15 June 2026). This constitutes a business decision about vendors, scope, and external commitments."
+    },
+    {
+     "pred_id": "DEC-0051",
+     "text": "Chloe will create a low-effort mock US landing page as uncommitted preparation, with no commitment to launch.",
+     "date": "2026-05-08",
+     "judged_genuine_decision": false,
+     "reason": "This is a task assignment with no settled commitment; it is explicitly uncommitted preparation and trivial logistics."
+    },
+    {
+     "pred_id": "DEC-0055",
+     "text": "Keep old Helpdesk-Co tickets archived in read-only format for one year after migration.",
+     "date": "2026-05-27",
+     "judged_genuine_decision": true,
+     "reason": "It is a policy decision regarding data retention after migration, specifying format and duration."
+    },
+    {
+     "pred_id": "DEC-0059",
+     "text": "Lead the app-store release notes with the “faster planning” line; Chloe Winters owns the wording.",
+     "date": "2026-06-03",
+     "judged_genuine_decision": true,
+     "reason": "It is a settled commitment about the content emphasis in release notes (scope) and assigns ownership to a specific person, directly affecting customer communication."
+    },
+    {
+     "pred_id": "DEC-0060",
+     "text": "Friday 5 June deploy is app-tier only behind the feature flag, no database changes, window at 18:00 with Ravi on watch until 20:00, and a freeze on unrelated changes after 17:00.",
+     "date": "2026-06-03",
+     "judged_genuine_decision": true,
+     "reason": "It describes a concrete deployment plan with a set date, time, scope, assigned personnel, and a policy (change freeze), representing a settled business commitment."
+    }
+   ],
+   "unmatched_genuine": 12,
+   "triage_recall": 1.0,
+   "qa": [
+    {
+     "id": "Q12",
+     "question": "What discount did we agree for Redline's renewal, and was the earlier 15% approved?",
+     "expected": "Capped at 10% (2-year); the 15% was offered by Tomas without authority",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "The agreed discount for Redline's 2-year renewal is **10%**, decided by Marta Kowalczyk on 2026-02-11 [^1]. The earlier 15% discount was **never formally approved**: Tomás Ibarra communicated it to Bruno on 2026-02-09 citing verbal approval, but Helen Oyelaran found no written approval and escalated it because 15% would push blended gross margin to ~65.8%, below the board-mandated 68% floor [^2][^3]. Marta explicitly capped the discount at 10% [^1], and Tomás subsequently corrected the offer to Bruno, reframing the 15% as his own drafting error [^4].",
+     "confidence": "high",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": false,
+     "judge_reason": "The answer correctly states the agreed discount is capped at 10% for 2-year renewal, and that the 15% was offered by Tomas without approval (never formally approved). These facts match the reference. All claims are supported by the cited quotes and ledger entries.",
+     "score": 1.0,
+     "latency_ms": 17538
+    },
+    {
+     "id": "Q13",
+     "question": "What SLA are we offering Swiftbox?",
+     "expected": "99.9% with service credits; 99.99% declined",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "The contractual SLA offered to Swiftbox is **99.9% monthly uptime** on dashboard and API, measured externally, with service credits of 5% of the monthly fee per 0.1% below target, capped at 25% of the monthly fee and stated as sole remedy [^1]. Swiftbox's request for 99.99% uptime was rejected as unachievable on the current architecture [^2]. Carla Dunne accepted the 99.9% proposal and tabled it for Swiftbox's operations review [^3].",
+     "confidence": "medium",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": true,
+     "judge_reason": "The answer states that 'Carla Dunne accepted the 99.9% proposal,' but the cited quotes only say she will 'table' the proposal, not that she accepted it, and the ledger entry does not mention her actions. This claim is unsupported.",
+     "score": 0.5,
+     "latency_ms": 22076
+    },
+    {
+     "id": "Q14",
+     "question": "What happens to Harbor Express?",
+     "expected": "Suspend at 60 days overdue, terminate at 90 unless paid",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "Harbor Express will have its service suspended at the 60-day overdue mark and its agreement terminated at 90 days if the €27,400 balance remains unpaid; a partial payment of €8,000 will be accepted if it arrives [^1]. Access to the Parcelwise platform was confirmed to be suspended as of 25 May 2026 [^2]. The rationale was that writing off the debt would set a bad precedent and an open-ended payment plan would turn the receivable into an unagreed loan [^3].",
+     "confidence": "high",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": false,
+     "judge_reason": "The answer contains the core facts from the reference (suspend at 60 days overdue, terminate at 90 unless paid) along with additional correct details from the quotes and ledger entries, all of which are supported.",
+     "score": 1.0,
+     "latency_ms": 15183
+    },
+    {
+     "id": "Q15",
+     "question": "What did we do after the leaked API key?",
+     "expected": "Rotated all keys, notified 9 customers within 72h, 2FA by Apr 3",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "After the leaked API key, the company took three main actions:\n\n1. **Full credential rotation**: All API keys and customer integration tokens were rotated, not just the exposed staging key, because the fork had been public for ~3 weeks and they could not prove what else was exposed [^1]. The rotation was executed token-by-token with a 24-hour dual-validity window, prioritizing prod-adjacent integrations first and sandbox last, so existing syncs kept working [^2].\n\n2. **Customer notification**: All 9 potentially affected customers were to be notified by Friday 6 March, with letters stating \"we rotated all credentials as a precaution\" and \"no evidence of misuse\" but explicitly not claiming \"no data was accessed\" [^3].\n\n3. **Mandatory 2FA**: As a follow-up security measure, all staff accounts were required to have 2FA enabled by 3 April 2026, with SMS forbidden as a method, TOTP as the baseline, and hardware security keys for the four staff members with production access [^4].",
+     "confidence": "high",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": true,
+     "judge_reason": "The answer includes rotation of all keys, notification of 9 customers within 72h, and 2FA by April 3, matching the reference. However, it states the fork had been public for ~3 weeks as a reason for full rotation, which is not supported by the cited quotes or ledger entries.",
+     "score": 0.5,
+     "latency_ms": 23728
+    },
+    {
+     "id": "Q16",
+     "question": "Who is doing the pentest, when, and how much?",
+     "expected": "Blackthorn Audit, week of Jun 1, EUR 12,000",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "Blackthorn Audit is performing the penetration test of the production environment (web dashboard, API, and driver-app backend), including a retest of findings [^1]. The test is confirmed for the week of 1 June 2026, with the report due within ten working days thereafter [^2]. The fee is €12,000 ex-VAT, paid 50% on engagement and 50% on report delivery [^3].",
+     "confidence": "high",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": false,
+     "judge_reason": "The answer contains all the information from the reference: 'Blackthorn Audit', 'week of Jun 1', and 'EUR 12,000'. Extra details are supported by the provided quotes.",
+     "score": 1.0,
+     "latency_ms": 17170
+    },
+    {
+     "id": "Q17",
+     "question": "What is the status of the office?",
+     "expected": "Lease renewed 12 months at EUR 6,200/mo; half sublet from Jun 1",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "The Keizersgracht office lease was renewed on 30 January 2026 for 12 months at €6,200 per month, with indexation deferred to the next term [^1]. On 6 April 2026, Marta Kowalczyk approved subletting the first floor starting 1 June 2026, recovering approximately €3,100 per month, while the ground-floor demo room and meeting rooms remain for internal use [^2]. Both decisions are active, so the office is currently occupied on the ground floor with the first floor being sublet [^3].",
+     "confidence": "high",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": false,
+     "judge_reason": "The answer includes all key facts from the reference: lease renewed for 12 months at €6,200/month, sublet starting June 1 (effectively half sublet). Additional details are supported by the cited quotes and ledger entries.",
+     "score": 1.0,
+     "latency_ms": 14323
+    },
+    {
+     "id": "Q18",
+     "question": "Are we sponsoring LogiConnect?",
+     "expected": "No; booth-only EUR 2,500",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "Yes, the company is sponsoring LogiConnect Europe 2026 at the **booth-only tier (€2,500)**. Initially, Marta Kowalczyk approved the Silver tier at €6,000 on 2026-03-12 [^1], but this was superseded on 2026-03-27 when Helen Oyelaran raised cash-position concerns and Marta approved the downgrade to booth-only [^2]. Chloe Winters informed Paula Reyes of the switch, and Paula confirmed the booth-only arrangement at €2,500 the same day [^3].",
+     "confidence": "high",
+     "facts_present": false,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": true,
+     "judge_reason": "The reference answer states 'No' to sponsoring, while the answer claims 'Yes'. The indicated decision is only booth-only, not sponsorship. Thus the fact of whether they are sponsoring is not correctly represented.",
+     "score": 0.0,
+     "latency_ms": 12864
+    },
+    {
+     "id": "Q19",
+     "question": "Are we rebranding?",
+     "expected": "No",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "No. The rebrand to \"Routewell\" was explicitly rejected on 16 April 2026. Marta Kowalczyk decided to keep the company name **Parcelwise** and redirect marketing effort to the v3 launch instead [^1]. The decision followed cost concerns raised by Helen Oyelaran (€8k+ including trademark, contracts, and legal review) [^2] and customer-recognition and vendor re-vetting risks flagged by Aisha Bello [^3]. Chloe Winters, who had proposed the rebrand, conceded she would \"park it\" if sales and support saw it as a net negative [^4].",
+     "confidence": "high",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": false,
+     "judge_reason": "The answer correctly says 'No' to rebranding, matching the reference. The additional supporting information about the date and decision is corroborated by the cited quotes and ledger entry.",
+     "score": 1.0,
+     "latency_ms": 17326
+    },
+    {
+     "id": "Q20",
+     "question": "Which support tool and when?",
+     "expected": "Beacon Desk from Jul 1",
+     "expected_status": "found",
+     "status": "found",
+     "answer_md": "The company decided to switch from Helpdesk-Co to **Beacon Desk**, effective **July 1, 2026**, at €5,400/year for 12 agents with a year-two price lock, KB migration, and implementation support included.[^1] The decision was made by Marta Kowalczyk on 2026-05-27.[^2] No sign-off from finance or senior leadership was found in this mailbox before the decision was communicated externally.",
+     "confidence": "high",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": true,
+     "judge_reason": "The answer correctly identifies Beacon Desk effective July 1, matching the reference. However, it claims the decision was made by Marta Kowalczyk without support from the provided quotes or ledger entries, which do not name the decision-maker.",
+     "score": 0.5,
+     "latency_ms": 10947
+    },
+    {
+     "id": "Q23",
+     "question": "What is the Q2 marketing budget?",
+     "expected": "CONTESTED: EUR 40k vs EUR 30k",
+     "expected_status": "contested",
+     "status": "found",
+     "answer_md": "The Q2 marketing budget is **€30,000**, set by Helen Oyelaran on 2 March 2026 as part of the updated Q2 budget sheet, prioritising the launch campaign and content production with paid search scaled to fit [^1]. This superseded an earlier approval of €40,000 by Marta Kowalczyk on 27 February [^2]. On 3 March, the content production line within that €30,000 was increased from €6,000 to €9,000, funded by reducing the contingency line [^3]. The budget sheet was finalised as the working baseline on 6 March [^4].",
+     "confidence": "high",
+     "facts_present": false,
+     "status_ok": false,
+     "gold_cited": true,
+     "unsupported_claims": true,
+     "judge_reason": "The reference answer states the Q2 marketing budget is contested (EUR 40k vs EUR 30k). The answer to grade does not mention this contestation and instead presents EUR 30,000 as the definitive budget, so the key facts from the reference are missing.",
+     "score": 0.0,
+     "latency_ms": 18723
+    },
+    {
+     "id": "Q30",
+     "question": "Did we decide to launch in the US in Q4?",
+     "expected": "NO DECISION (conditional on Redline signing, which hasn't happened)",
+     "expected_status": "no_decision",
+     "status": "no_decision",
+     "answer_md": "No decision was found to launch in the US in Q4. The Q4 2026 US expansion was conditional on Redline signing a 2-year renewal; as of 2026-06-30 that condition had not been met, so no US push is planned.[^1] The only related decision was to prepare a low-effort mock US landing page as uncommitted preparation, explicitly with no commitment to launch.[^2]",
+     "confidence": "medium",
+     "facts_present": true,
+     "status_ok": true,
+     "gold_cited": true,
+     "unsupported_claims": false,
+     "judge_reason": "The answer correctly states no decision was made, notes the conditional on Redline signing, and that the condition was unmet. Extra detail about the mock page is supported by the cited quotes and ledger entries, and does not contradict the reference.",
+     "score": 1.0,
+     "latency_ms": 17983
+    }
+   ],
+   "qa_accuracy": 0.682,
+   "qa_n": 11,
+   "no_decision_correct": 1,
+   "no_decision_n": 1,
+   "latency_p50_ms": 17326,
+   "latency_p90_ms": 22076,
+   "evaluated_at": "2026-10-06T20:06:48.479953+00:00",
+   "git_commit": "0de46ce"
   }
  },
  "models": {
