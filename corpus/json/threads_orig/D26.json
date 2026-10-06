@@ -1,0 +1,71 @@
+{
+  "thread_id": "D26",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "carla@swiftbox.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": ["aisha@parcelwise.example"],
+      "sent_at": "2026-03-17T09:22:00+01:00",
+      "subject": "Swiftbox - contract schedule 4: SLA requirements before renewal",
+      "body": "Dear Dev,\n\nAhead of our contract renewal, I have completed our standard vendor review. Item 4 of the questionnaire concerns availability, and I must be transparent: our operations board will not approve a renewal unless the SLA guarantees 99.99% monthly uptime, measured on the dashboard and API endpoints.\n\nAt our dispatch volume, a single hour of unavailability during morning routes means manual dispatch across 60+ vehicles. That is the risk we are asking you to underwrite.\n\nPlease confirm whether Parcelwise can commit to 99.99%, and under what service-credit regime, by the end of next week. Our legal contact is Nadia Petrova at Okafor Lindqvist if your counsel wishes to correspond directly.\n\nKind regards,\nCarla Dunne\nHead of Operations, Swiftbox",
+      "in_reply_to_idx": null,
+      "role": "proposal"
+    },
+    {
+      "idx": 2,
+      "from": "dev@parcelwise.example",
+      "to": ["nadia@okafor-lindqvist.example"],
+      "cc": ["helen@parcelwise.example", "carla@swiftbox.example"],
+      "sent_at": "2026-03-17T11:47:00+01:00",
+      "subject": "Swiftbox SLA request - review of liability wording",
+      "body": "Nadia,\n\nSwiftbox (mid-size client, renewal in play) wants a 99.99% monthly uptime SLA. My take:\n\n- Our current architecture (single-region app tier, Postgres primary) cannot honestly support 99.99% month in, month out. That is five nines minus; it allows ~4.3 minutes of downtime per month.\n- 99.9% (~43 minutes/month) is defensible with the Corvid migration landed.\n- The open question is credit exposure if we sign it and miss it.\n\nCould you review the liability and service-credit wording before I reply to Carla? The alternative on the table is accepting 99.99% at a premium price, which I have not costed and do not recommend.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 3,
+      "from": "nadia@okafor-lindqvist.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": ["helen@parcelwise.example"],
+      "sent_at": "2026-03-17T14:35:00+01:00",
+      "subject": "RE: Swiftbox SLA request - review of liability wording",
+      "body": "Dear Mr Raman,\n\nFurther to your request, please find our preliminary position below.\n\n1. A 99.99% monthly availability commitment, supported by uncapped service credits, would constitute a liquidated-damages exposure that is disproportionate to the annual contract value in question. We advise against it.\n2. Should Parcelwise nonetheless wish to offer an enhanced commitment, any credit regime must be (a) capped at a defined percentage of the applicable monthly fees, (b) stated to be the customer's sole and exclusive remedy, and (c) expressly subject to exclusions for scheduled maintenance and force majeure.\n3. A 99.9% commitment with capped credits is consistent with market practice for software of this class and with the representations made in your standard terms.\n\nWe remain available to review the final schedule once drafted.\n\nYours sincerely,\nNadia Petrova\nOkafor Lindqvist Advocaten",
+      "in_reply_to_idx": 2,
+      "role": "discussion"
+    },
+    {
+      "idx": 4,
+      "from": "dev@parcelwise.example",
+      "to": ["carla@swiftbox.example"],
+      "cc": ["aisha@parcelwise.example", "helen@parcelwise.example"],
+      "sent_at": "2026-03-17T16:12:00+01:00",
+      "subject": "RE: Swiftbox - contract schedule 4: SLA requirements before renewal",
+      "body": "Carla,\n\nStraight answer: we will not sign 99.99%. On our current architecture that number would be a promise we cannot keep, and I do not put numbers in contracts that our own graphs would contradict within a quarter.\n\nWhat we can commit to:\n- 99.9% monthly uptime on dashboard + API, measured externally.\n- Service credits: 5% of the monthly fee per 0.1% below target, capped at 25% of the monthly fee, sole remedy.\n- Public status page and incident reports within 48 hours.\n\nThe Corvid migration (finishing this spring) improves the uptime headroom further, but the honest contractual number remains 99.9%.\n\nIf your board treats 99.9% as a dealbreaker, I would rather discuss it on a call than in a questionnaire.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+      "in_reply_to_idx": 3,
+      "role": "decisive"
+    },
+    {
+      "idx": 5,
+      "from": "carla@swiftbox.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": ["aisha@parcelwise.example"],
+      "sent_at": "2026-03-18T10:03:00+01:00",
+      "subject": "RE: Swiftbox - contract schedule 4: SLA requirements before renewal",
+      "body": "Dear Dev,\n\nThank you for a clear and refreshingly honest reply — our board sees few of those. I will table 99.9% with the capped-credit structure at Thursday's operations review. Two follow-ups, procedural rather than substantive:\n\n1. Please send the external measurement method (which monitor, which endpoints) so our auditor can reproduce it.\n2. The credits clause will need the exclusions enumerated exactly as your counsel drafted them. Please have the final wording to us before signature, not after.\n\nSeparately — and this is becoming a theme in our vendor reviews — expect a security questionnaire from us shortly. Your recent industry peers have not covered themselves in glory.\n\nKind regards,\nCarla Dunne\nHead of Operations, Swiftbox",
+      "in_reply_to_idx": 4,
+      "role": "discussion"
+    },
+    {
+      "idx": 6,
+      "from": "aisha@parcelwise.example",
+      "to": ["dev@parcelwise.example", "helen@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-18T11:26:00+01:00",
+      "subject": "RE: Swiftbox - contract schedule 4: SLA requirements before renewal",
+      "body": "Hi team 😊\n\nJust so you know: Swiftbox is not the only one asking. Two other accounts quizzed me about uptime numbers during renewal conversations this month, and I have been careful to say \"99.9% target, credits available\" and nothing more specific. So whatever Dev and Carla settle on, please let me know the exact wording so I stop improvising.\n\nAlso — Carla's questionnaire point is worth taking seriously. Their head of ops reads vendor docs the way Dev reads error logs. If we do well on it, it is a good reference story.\n\nAisha",
+      "in_reply_to_idx": 4,
+      "role": "chatter"
+    }
+  ]
+}

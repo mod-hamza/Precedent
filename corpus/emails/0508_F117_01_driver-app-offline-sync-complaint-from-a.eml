@@ -1,0 +1,22 @@
+From: Ravi Menon <ravi@parcelwise.example>
+To: helen@parcelwise.example
+Subject: driver app offline sync complaint (from a small account)
+Date: Mon, 08 Jun 2026 16:05:00 +0200
+Message-ID: <ea38e7fe5c4d.F117.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear Helen,
+
+Sorry to bother you directly. A dispatcher from a small account called support about the offline sync - routes edited offline sometimes show stale manifests after reconnecting. Jonas knows about it and thinks it's the cache not invalidating on reconnect.
+
+I told her on the phone 'oh yes, we'll definitely have that fixed for you within the week!' - sorry, I know I shouldn't promise timelines, that's really not my call to make. I just wanted you to hear it from me before she emails anyone.
+
+Sorry again,
+Ravi
+
+-- 
+Thanks for your patience,
+Ravi Menon
+Junior Engineer, Parcelwise

@@ -1,0 +1,78 @@
+{
+ "thread_id": "N09",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "lena@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-06-09T09:45:00+02:00",
+   "subject": "Email/calendar — our current suite is up for renewal in August",
+   "in_reply_to_idx": null,
+   "role": "discussion",
+   "body": "Liebe Alle,\n\nHeads-up: our email/calendar contract renews in August and the quote came in higher than last year. A competitor vendor (Mailmount) sent me an offer:\n\n- Switch cost: €1,900 one-off (migration of mailboxes, calendars, shared contacts)\n- Then €4,100/year vs our current renewal at ~€5,300\n- They claim shared-mailbox and delegation features are on par\n\nI have no strong opinion on the vendor, but the €1,200/year difference seems worth a look. Before I spend more time on this — do we want to pursue it or just renew? Happy to arrange a demo if so.\n\nDanke,\nLena"
+  },
+  {
+   "idx": 2,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "lena@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-06-10T10:12:00+02:00",
+   "subject": "RE: Email/calendar — our current suite is up for renewal in August",
+   "in_reply_to_idx": 1,
+   "role": "discussion",
+   "body": "Dear Lena,\n\nThank you for flagging this. The saving is indeed roughly €1,200 per year, which is not nothing, though I would want us to weigh the migration effort and the risk of disrupting everyone's calendars in the same period as the Ledgerly cutover. A demo would be a sensible next step — but the final call on switching such a company-wide tool is above my remit, so I would defer to Marta.\n\nKind regards,\nHelen\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V."
+  },
+  {
+   "idx": 3,
+   "from": "lena@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-06-10T10:30:00+02:00",
+   "subject": "RE: Email/calendar — our current suite is up for renewal in August",
+   "in_reply_to_idx": 2,
+   "role": "discussion",
+   "body": "Marta,\n\nShall I book the Mailmount demo for next week? Say the word and I'll set it up. Otherwise I'll just renew before the early-July deadline and we keep the status quo.\n\nDanke,\nLena"
+  },
+  {
+   "idx": 4,
+   "from": "greg@ferrante-ops.example",
+   "to": [
+    "lena@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-06-12T22:41:00+02:00",
+   "subject": "RE: Email/calendar — our current suite is up for renewal in August",
+   "in_reply_to_idx": 3,
+   "role": "chatter",
+   "body": "lenaa, saw this on the cc trail. fwiw mailmounts api is meh, no decent hooks for automation. not a blocker, just sayin. migrating mailboxes is a boring weekend nobody wants. can help if it ever happens tho — g (sent from mobile, sorry for typos)"
+  },
+  {
+   "idx": 5,
+   "from": "lena@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "cc": [
+    "greg@ferrante-ops.example"
+   ],
+   "sent_at": "2026-06-15T08:50:00+02:00",
+   "subject": "RE: Email/calendar — our current suite is up for renewal in August",
+   "in_reply_to_idx": 4,
+   "role": "chatter",
+   "body": "Thanks Greg, noted. Still waiting on a call from the top here — the renewal deadline is early July, so I'll nudge once more before then.\n\nDanke,\nLena"
+  }
+ ]
+}

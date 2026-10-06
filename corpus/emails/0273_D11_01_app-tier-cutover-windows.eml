@@ -1,0 +1,24 @@
+From: Greg Ferrante <greg@ferrante-ops.example>
+To: dev@parcelwise.example, jonas@parcelwise.example
+Subject: app tier cutover windows
+Date: Mon, 30 Mar 2026 22:58:00 +0200
+Message-ID: <4771302cb56f.D11.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+dev,
+
+need a weekend window for teh app tier cutover. two options:
+
+- sat 11 - sun 12 apr
+- sat 18 - sun 19 apr
+
+prefer teh 18-19, gives me more time on staging and teh pg_cron validation. 11-12 is doable but tight, id be working easter-ish week which i hate. lmk. sent from phone.
+
+greg
+
+-- 
+Greg
+Ferrante Ops BV
+sent from my phone, sorry for typos

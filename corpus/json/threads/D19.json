@@ -1,0 +1,69 @@
+{
+ "thread_id": "D19",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "jonas@parcelwise.example",
+    "ingrid@parcelwise.example"
+   ],
+   "sent_at": "2026-01-19T10:12:00+01:00",
+   "subject": "backend capacity before the v3 push",
+   "body": "my take: the backend team is now the bottleneck.\n\n- api backlog is at ~3.5 weeks and growing\n- jonas is solo on the scanner integration, zero slack\n- the driver-sync work keeps slipping, which is on the critical path for v3\n\noptions as i see them:\n1. one senior backend hire, can own sync + integrations from month two\n2. two juniors, cheaper per head but needs me or jonas to babysit for months\n\nI lean option 1 but it's a budget call. Marta, can we get this moving this week? Recruiting lead time matters.\n\nCheers, Dev",
+   "in_reply_to_idx": null,
+   "role": "discussion"
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "ingrid@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-01-21T14:40:00+01:00",
+   "subject": "RE: backend capacity before the v3 push",
+   "body": "Dear all,\n\nThank you Ingrid for the context, and Dev for the analysis. Having reviewed the current headcount plan, I can confirm that we have room for one senior engineering hire at a budget of up to EUR 95,000 per annum, excluding the usual employer costs.",
+   "in_reply_to_idx": 1,
+   "role": "confirmation"
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "ingrid@parcelwise.example"
+   ],
+   "cc": [
+    "dev@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-01-22T09:15:00+01:00",
+   "subject": "RE: backend capacity before the v3 push",
+   "body": "ok. one senior backend role, 95k ceiling. ingrid pls open it this week.\n\ndzięki\nM\n\nSent from my iPhone",
+   "in_reply_to_idx": 3,
+   "role": "decisive"
+  },
+  {
+   "idx": 5,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "ingrid@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example",
+    "jonas@parcelwise.example"
+   ],
+   "sent_at": "2026-01-23T11:02:00+01:00",
+   "subject": "RE: backend capacity before the v3 push",
+   "body": "ok good. I'll draft the technical profile with jonas and send it to ingrid before wednesday so the posting can go up end of week. must-haves: distributed queues, postgres at some scale, and someone who will actually ask about our failure modes in the interview instead of reciting buzzwords.\n\nCheers, Dev",
+   "in_reply_to_idx": 4,
+   "role": "confirmation"
+  }
+ ]
+}

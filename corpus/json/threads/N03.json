@@ -1,0 +1,70 @@
+{
+ "thread_id": "N03",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "owen@northbridge.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-18T12:35:00+00:00",
+   "subject": "RouteBee",
+   "body": "Marta - following up on our call just now.\n\nRouteBee. Small, but they have the Groningen/Friesland courier niche and decent tech. Founder wants out, I think a deal is there at a sensible number. Worth a hard look before someone else picks them up cheap.\n\nGet Helen to run the numbers and come back to me.\n\nOwen",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 2,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-18T14:02:00+01:00",
+   "subject": "routebee",
+   "body": "owen called. wants us to look at acquiring routebee (the groningen competitor). can you pull together their numbers and a view? no rush but not never.\n\nM",
+   "in_reply_to_idx": null,
+   "role": "discussion"
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-24T16:20:00+01:00",
+   "subject": "RE: routebee",
+   "body": "Dear Marta,\n\nAs requested I have put together what we can see of RouteBee. A few caveats first: this is based on their public filings and what Owen shared, not on any access to their books, so treat the precision accordingly.\n\nWhat we can establish:\n- Revenue in the region of EUR 38,000 per month, growing but slowly, and heavily concentrated in three northern courier accounts\n- Roughly four staff, including the founder, who appears to hold most of the equity\n- Tech is a reasonable fit with ours (their route engine would need work to integrate, my guess is two to three engineer-months)\n\nMy questions before any figure is discussed:\n1. Valuation. Owen says 'sensible' but sensible to whom? A small SaaS multiple on EUR 456k annual revenue could support anywhere between roughly EUR 500k and EUR 1.2m depending on growth and churn assumptions, and that range changes the conversation entirely.\n2. Structure. Would we consider an earn-out tied to the three anchor accounts staying, or is it all cash up front? I would gently suggest an earn-out is the only structure that protects us if the founder then leaves.\n3. Overlap. Some of their smaller customers are also ours; the incremental revenue is therefore less than it looks.\n4. Timing. We are carrying the migration spend and the launch; any cash consideration this year would compete with those priorities.\n\nI would gently suggest we need proper access to their numbers and churn data before this is anything more than an interesting idea. I am happy to draft an information request to the founder if you would like to take it further.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+   "in_reply_to_idx": 2,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-25T09:05:00+01:00",
+   "subject": "RE: routebee",
+   "body": "thx helen. good points, esp the earn-out one. park it for now, don't want a dilution conversation right before the launch. if owen pushes i'll send him your questions.\n\nM",
+   "in_reply_to_idx": 3,
+   "role": "discussion"
+  },
+  {
+   "idx": 5,
+   "from": "owen@northbridge.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-13T16:48:00+01:00",
+   "subject": "RE: RouteBee",
+   "body": "Marta - any movement on RouteBee? Founder's getting restless, there may be another interested party.\n\nOwen",
+   "in_reply_to_idx": 4,
+   "role": "discussion"
+  }
+ ]
+}

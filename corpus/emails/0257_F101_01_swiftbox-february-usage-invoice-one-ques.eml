@@ -1,0 +1,22 @@
+From: Ravi Menon <ravi@parcelwise.example>
+To: chloe@parcelwise.example, priya@parcelwise.example
+Subject: Swiftbox February usage invoice - one question
+Date: Wed, 25 Mar 2026 13:53:00 +0100
+Message-ID: <e2fd2c2bb89a.F101.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Chloe, hi Priya,
+
+Sorry to bother you both - I'm putting together the February usage invoice for Swiftbox and there's one line I can't reconcile against the dashboard: the scan count for the last week of the month looks lower in the export than in the UI. Probably just a timezone boundary thing, but I'd rather ask than guess.
+
+Priya, is there a documented rule for how usage weeks are cut? Chloe, no action needed from you unless you've heard something from their side.
+
+Thank you!
+Ravi
+
+-- 
+Thanks for your patience,
+Ravi Menon
+Junior Engineer, Parcelwise

@@ -1,0 +1,66 @@
+{
+ "thread_id": "D31_T1",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "carla@swiftbox.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-04-21T09:18:00+02:00",
+   "subject": "Swiftbox security questionnaire - item 12: third-party penetration testing",
+   "body": "Dear Dev,\n\nAs promised during the SLA discussions, please find attached our standard security questionnaire ahead of the contract renewal. Most items are administrative and I expect straightforward answers.\n\nItem 12 is the one I will flag in advance: we require evidence of a third-party penetration test, conducted by an external firm, covering your production environment, dated within the last twelve months. Internal testing, self-assessment, or a bug-bounty report will not satisfy the requirement — our auditor checks the attesting firm's credentials, not just the existence of a report.\n\nGiven your renewal cycle, we would need the report or a letter of engagement with a test date before we can progress the paperwork.\n\nKind regards,\nCarla Dunne\nHead of Operations, Swiftbox",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 2,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "carla@swiftbox.example"
+   ],
+   "cc": [
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-04-21T11:05:00+02:00",
+   "subject": "RE: Swiftbox security questionnaire - item 12: third-party penetration testing",
+   "body": "Carla,\n\nStraight answer on item 12: we do not currently have a third-party pentest in the last twelve months. Internal reviews and the audit trail from our hosting migration, yes; an external attestation, no. I am not going to dress up our internal work to pass the item.\n\nWhat I can commit to: engaging an external firm now, with the test completed and the report in your hands before your renewal paperwork needs to progress. Our internal practice is sound — the gap is the independent attestation, and that is a procurement exercise, not an engineering one.\n\nI will come back with the firm and the test window this week.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+   "in_reply_to_idx": 1,
+   "role": "discussion"
+  },
+  {
+   "idx": 3,
+   "from": "carla@swiftbox.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-04-21T13:44:00+02:00",
+   "subject": "RE: Swiftbox security questionnaire - item 12: third-party penetration testing",
+   "body": "Dear Dev,\n\nThank you for the direct answer; item 12 disappointments are usually preceded by creative wording, so I appreciate its absence.\n\nThe timeline: our renewal paperwork must be finalised by mid-June. For the auditor's file we need either the final report or a signed engagement letter stating the test window by 15 June at the latest. A test conducted in June satisfies the requirement provided the engagement is documented beforehand.\n\nKind regards,\nCarla Dunne\nHead of Operations, Swiftbox",
+   "in_reply_to_idx": 2,
+   "role": "discussion"
+  },
+  {
+   "idx": 4,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-04-21T15:29:00+02:00",
+   "subject": "FYI: Swiftbox renewal now requires a third-party pentest - need budget",
+   "body": "Helen,\n\nForwarding the exchange with Swiftbox below — their questionnaire requires a third-party pentest of our production environment, with a signed engagement by 15 June.\n\nThis is now a renewal condition for a solid mid-size account, and after the March key episode I would want one anyway. Can you pick a vendor budget line with me this week? I have two candidate firms and a rough idea of cost; the serious quotes should land by Monday.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+   "in_reply_to_idx": 3,
+   "role": "discussion"
+  }
+ ]
+}

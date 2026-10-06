@@ -1,0 +1,24 @@
+From: Dev Raman <dev@parcelwise.example>
+To: jonas@parcelwise.example, ravi@parcelwise.example, greg@ferrante-ops.example
+Cc: priya@parcelwise.example
+Subject: recap: standup + on-call rotation
+Date: Tue, 21 Apr 2026 09:18:00 +0200
+Message-ID: <cb2b21703ede.D39.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Recap of this morning's standup, for those not present:
+
+- app-tier migration follow-ups are closed, all green
+- Elena starts today, Jonas is doing her onboarding, first task is the ingest backlog
+- on-call: we're starting a weekly rotation next week. Two people, alternating: Jonas one week, Ravi the next. Simple, covers evenings and weekends, escalation to me if it's on fire beyond a P1
+
+I'll send the Pagerly invite and the runbook links before Monday.
+
+Cheers, Dev
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

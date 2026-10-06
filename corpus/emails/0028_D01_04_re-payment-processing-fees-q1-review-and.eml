@@ -1,0 +1,40 @@
+From: Helen Oyelaran <helen@parcelwise.example>
+To: marta@parcelwise.example
+Cc: dev@parcelwise.example, tomas@parcelwise.example
+Subject: RE: Payment processing fees - Q1 review and a recommendation
+Date: Tue, 20 Jan 2026 13:48:00 +0100
+Message-ID: <73ad745b7ac8.D01.004@parcelwise.example>
+In-Reply-To: <31db542cf7ab.D01.002@parcelwise.example>
+References: <f42aa06c3e87.D01.001@parcelwise.example> <31db542cf7ab.D01.002@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear Marta,
+
+To summarise so we can close this out: the saving is approximately €1,860 per month, Dev estimates the migration at 4-6 weeks of engineering time that conflicts with the v3 launch, and Tomás sees local-currency invoicing as a deal opener rather than a current requirement. My question, and I would like your read before I model anything further: do we attempt the switch now, or defer it until after the launch and revisit in the summer?
+
+I would gently suggest the latter, but the call is yours and I will support whichever you choose.
+
+Kind regards,
+Helen Oyelaran
+Chief Financial Officer, Parcelwise B.V.
+-----Original Message-----
+From: Dev Raman <dev@parcelwise.example>
+Sent: Tue, 20 Jan 2026 10:41:00 +0100
+To: helen@parcelwise.example, marta@parcelwise.example
+Subject: RE: Payment processing fees - Q1 review and a recommendation
+
+Helen,
+
+The saving is real, but my take: a payments migration is not a weekend job. We would need to re-plumb the billing service, redo PCI scoping, and keep dual settlement running for at least one full billing cycle so we can reconcile. Realistically that is 4-6 weeks of engineering time, and most of it touches the same billing code the v3 launch depends on.
+
+If we start this while v3 is in flight, one of the two slips. My bet would be the payments work, and then we are mid-migration when the launch traffic hits.
+
+Cheers, Dev
+
+-- 
+Kind regards,
+Helen Oyelaran
+Chief Financial Officer
+Parcelwise B.V. | Rotterdam

@@ -1,0 +1,26 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: marta@parcelwise.example, dev@parcelwise.example, helen@parcelwise.example
+Cc: tomas@parcelwise.example, aisha@parcelwise.example
+Subject: Scan costs - proposal for a usage-based add-on
+Date: Wed, 06 May 2026 09:20:00 +0200
+Message-ID: <29c28ee70ff5.D07.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Quick recap:
+
+1. Problem: scan volume per account varies by a factor of 30. Our heaviest Starter accounts (four courier companies doing parcel intake scanning) each process 40,000+ scans/month, and infra + storage cost us real money per scan, while every account pays the same flat fee.
+2. Cost data: the top 12 scan-heavy accounts cost us 3-4x more to serve than the Starter median.
+3. Proposal: a usage-based "Scan Pack" add-on at €0.08 per scan beyond a generous free allowance. Alternatives considered: (a) flat-rate add-on at €99/month - but it penalises light users and gives the heavy users no reason to reduce; (b) raising plan prices across the board - unfair to the 90% who barely scan.
+4. Billing impact: Dev has confirmed our usage metering can expose a per-account scan counter, so invoicing a per-unit line item is feasible. Ledgerly supports metered line items natively, which helps from July.
+
+Thoughts welcome - I would like to move this to pricing review this week.
+
+Thanks!
+Priya
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

@@ -1,0 +1,17 @@
+From: Tomás Ibarra <tomas@parcelwise.example>
+To: priya@parcelwise.example, dev@parcelwise.example, jonas@parcelwise.example
+Subject: RE: FW: Renewal - non-negotiable points before we sign - NEED INPUT TONIGHT
+Date: Wed, 29 Apr 2026 09:12:00 +0200
+Message-ID: <9c15abaa34ec.D16-T2.003@parcelwise.example>
+In-Reply-To: <e5a3c3153d10.D16-T2.002@parcelwise.example>
+References: <c2dff54beb8a.D16-T2.001@parcelwise.example> <e5a3c3153d10.D16-T2.002@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+So to be clear: Bruno says "offline" and we are debating shipping a read-only version and calling it offline ✅ I can maybe sell that, but only if it is genuinely useful in a tunnel - routes and manifests visible, driver not staring at a white screen. If he tests it and it feels like a brochure, we lose credibility on the whole renewal.
+
+Can we demo it to him before the pilot? Even a rough build? I need something to put on the table at 15:00 🚀
+
+On 28 April 2026, Jonas Eklund wrote:
+> read-only is the offline branch we parked, minus the hard part. the offline branch already caches routes and manifests; we just delete the queued-edit code path and grey out anything that writes. ~1.5 engineer-weeks, mostly me, ravi can do the ui greying. the sync code is the risk - it was written assuming online-only, so caching + reconnect revalidation needs real testing. doable if nobody touches my sprint for two weeks. fwiw.

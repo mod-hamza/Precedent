@@ -1,0 +1,48 @@
+{
+ "thread_id": "D20_T4",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "ingrid@parcelwise.example",
+   "to": [
+    "elena.voss@mailbox.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-09T11:30:00+01:00",
+   "subject": "Parcelwise B.V. - offer of employment (Senior Backend Engineer)",
+   "body": "Dear Elena,\n\nIt was a pleasure having you through our process, and the feedback from every interviewer was exceptional. I am delighted to formally offer you the position of Senior Backend Engineer at Parcelwise B.V. in Rotterdam, on the following terms:\n\n- Salary: EUR 92,000 per annum\n- Equity: 0.15% in stock options, vesting over four years with a one-year cliff\n- Start date: by mutual agreement, ideally within four to six weeks\n- Standard benefits as per the attached draft agreement (8% holiday allowance, 25 vacation days, pension scheme)\n\nWe would love to have you on board before the summer, as our platform launch is the perfect moment to join. Please let me know if you have any questions at all - I am in the office Mondays to Wednesdays, but I will make time for a call whenever suits you.\n\nWarm regards,\nIngrid Solberg\nPeople & Culture, Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 2,
+   "from": "elena.voss@mailbox.example",
+   "to": [
+    "ingrid@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-12T10:05:00+01:00",
+   "subject": "RE: Parcelwise B.V. - offer of employment (Senior Backend Engineer)",
+   "body": "Dear Ingrid,\n\nThank you for the offer, and for the transparency throughout the process - it genuinely stood out compared to the other company I was speaking with, which I have now withdrawn from.\n\nI am happy to accept. The terms as set out in your email work for me. On timing: I would need to give my current employer four weeks' notice, and I have one week of committed handover obligations after that, so the realistic start date is Tuesday 21 April 2026. I hope that works; I know the launch is a busy period, but I would rather start clean than leave loose ends behind me.\n\nOne small request: when the time comes, I would appreciate a short written summary of the key infrastructure and product choices made in the months before I join, so I can ask informed questions rather than naive ones. Jonas has already promised me the ingest pipeline tour.\n\nBest regards,\nElena Voss",
+   "in_reply_to_idx": 1,
+   "role": "confirmation"
+  },
+  {
+   "idx": 3,
+   "from": "ingrid@parcelwise.example",
+   "to": [
+    "elena.voss@mailbox.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-03-16T09:14:00+01:00",
+   "subject": "RE: Parcelwise B.V. - offer of employment (Senior Backend Engineer)",
+   "body": "Dear Elena,\n\nWonderful news - welcome aboard! I have countersigned the agreement and will send the final copy for your records today. Your start date of Tuesday 21 April 2026 is confirmed with the team, and I will begin the onboarding checklist (laptop, accounts, first-week schedule) well in advance. The written summary of recent architecture and product choices is a very reasonable request; I will coordinate it with Dev and make sure it is ready for your first week.\n\nIf anything changes on your side, please do let me know as early as you can.\n\nWarm regards,\nIngrid Solberg\nPeople & Culture, Parcelwise B.V.",
+   "in_reply_to_idx": 2,
+   "role": "confirmation"
+  }
+ ]
+}

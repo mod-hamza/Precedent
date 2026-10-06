@@ -1,0 +1,26 @@
+From: Carla Dunne <carla@swiftbox.example>
+To: dev@parcelwise.example
+Cc: aisha@parcelwise.example
+Subject: Swiftbox - contract schedule 4: SLA requirements before renewal
+Date: Tue, 17 Mar 2026 09:22:00 +0100
+Message-ID: <6dbbb3981610.D26.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear Dev,
+
+Ahead of our contract renewal, I have completed our standard vendor review. Item 4 of the questionnaire concerns availability, and I must be transparent: our operations board will not approve a renewal unless the SLA guarantees 99.99% monthly uptime, measured on the dashboard and API endpoints.
+
+At our dispatch volume, a single hour of unavailability during morning routes means manual dispatch across 60+ vehicles. That is the risk we are asking you to underwrite.
+
+Please confirm whether Parcelwise can commit to 99.99%, and under what service-credit regime, by the end of next week. Our legal contact is Nadia Petrova at Okafor Lindqvist if your counsel wishes to correspond directly.
+
+Kind regards,
+Carla Dunne
+Head of Operations, Swiftbox
+
+-- 
+Regards,
+Carla Dunne
+Head of Operations, Swiftbox

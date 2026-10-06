@@ -1,0 +1,104 @@
+{
+  "thread_id": "D38",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "lena@parcelwise.example",
+      "to": ["leadership@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-25T17:10:00+01:00",
+      "subject": "Notes: leadership meeting, Wed 25 March",
+      "body": "Liebe Alle,\n\nNotes from today's leadership meeting:\n\nAttendees: Marta, Dev, Helen, Priya, Tomás, Aisha, Lena\n\nDiscussed:\n- v3 launch timing (still on track for the current plan)\n- support load after the key rotation, Aisha's numbers look healthy\n- SLA expectations for the Pro plan, prompted by Swiftbox's contract questions\n\nAgreed:\n- Pro customers get a first-response SLA of 2 business hours, effective with the v3 launch\n- Standard plan keeps the current best-effort response, no formal SLA\n\nActions:\n- Aisha: update the support playbook and staffing model to match\n- Tomás: share the SLA terms with key accounts as contracts come up for renewal\n- Lena: circulate these notes\n\nDanke,\nLena",
+      "in_reply_to_idx": null,
+      "role": "recap"
+    },
+    {
+      "idx": 2,
+      "from": "aisha@parcelwise.example",
+      "to": ["lena@parcelwise.example", "leadership@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-26T09:34:00+01:00",
+      "subject": "RE: Notes: leadership meeting, Wed 25 March",
+      "body": "Hi team 😊\n\nThanks Lena, notes received and understood. Just so everyone knows what this means on my side: 2 business hours first response for Pro will need a small shift in the rota so the queue is watched continuously during business hours, and I'll fold that into the playbook this week. I'll also set up a monitoring alert so we can see how we're actually performing against it before we promise it too loudly anywhere.\n\nWarmly,\nAisha",
+      "in_reply_to_idx": 1,
+      "role": "confirmation"
+    },
+    {
+      "idx": 3,
+      "from": "tomas@parcelwise.example",
+      "to": ["carla.dunne@swiftbox.example"],
+      "cc": [],
+      "sent_at": "2026-04-03T15:22:00+02:00",
+      "subject": "RE: Swiftbox renewal - SLA terms",
+      "body": "Hola Carla,\n\nGood news on the SLA question from our call last week. From the v3 launch onwards, Parcelwise commits in writing to a first-response time of 1 hour for Pro-plan customers during business hours. That will be reflected in your renewal paperwork, and it is exactly the kind of commitment we can give a security-minded partner like Swiftbox.\n\nCombined with the 99.9% uptime terms Dev's team walked through with you, I hope this makes the renewal decision easy ✅\n\nSaludos,\nTomás Ibarra\nHead of Sales, Parcelwise B.V.",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 4,
+      "from": "tomas@parcelwise.example",
+      "to": ["leadership@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-03T15:40:00+02:00",
+      "subject": "Swiftbox renewal moving 🚀",
+      "body": "Hola equipo,\n\nSent Carla the SLA confirmation just now, 1-hour first response in writing as discussed, plus the uptime terms. She sounded very happy on the call, I expect the signed renewal within two weeks ✅\n\nSaludos,\nTomás",
+      "in_reply_to_idx": 3,
+      "role": "chatter"
+    },
+    {
+      "idx": 5,
+      "from": "samir@parcelwise.example",
+      "to": ["tomas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-07T10:05:00+02:00",
+      "subject": "Nordvik Logistics - SLA question",
+      "body": "hey!\n\nnordvik asked for the same SLA wording as swiftbox so I reused your email almost verbatim - told them one hour first response on Pro during business hours. they're small but growing, could be a nice Q3 close.\n\nworked fine, right?\n\ncheers,\nSamir",
+      "in_reply_to_idx": 4,
+      "role": "discussion"
+    },
+    {
+      "idx": 6,
+      "from": "tomas@parcelwise.example",
+      "to": ["samir@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-07T10:31:00+02:00",
+      "subject": "RE: Nordvik Logistics - SLA question",
+      "body": "Hey Samir,\n\nExactly right, that's the standard Pro commitment now, reuse it wherever it helps close 🚀 Just keep me in cc on anything contract-shaped.\n\nSaludos,\nTomás",
+      "in_reply_to_idx": 5,
+      "role": "confirmation"
+    },
+    {
+      "idx": 7,
+      "from": "aisha@parcelwise.example",
+      "to": ["tomas@parcelwise.example", "lena@parcelwise.example"],
+      "cc": ["dev@parcelwise.example"],
+      "sent_at": "2026-04-08T11:12:00+02:00",
+      "subject": "Discrepancy in the Pro first-response SLA - need to fix before it ships",
+      "body": "Hi Tomás, hi Lena,\n\nI'm finalising the support playbook and the public SLA page ahead of the launch, and I've hit a problem I can't resolve on my own.\n\nLena's notes from the March leadership meeting record the Pro first-response SLA as 2 business hours, and I've built the rota and monitoring around that. But I've now seen Tomás's email to Carla at Swiftbox (3 April) committing to a 1-hour first response in writing, and I understand Samir has used the same wording with Nordvik.\n\nThese are different numbers and one of them is now in writing to a customer. I genuinely don't know which one reflects what was agreed - can someone clarify? If we're really promising 1 hour, the support model needs another person on the queue, and I need to know that before, not after, the launch.\n\nA bit urgent given Swiftbox's renewal is apparently close to signature.\n\nAisha",
+      "in_reply_to_idx": 3,
+      "role": "objection"
+    },
+    {
+      "idx": 8,
+      "from": "tomas@parcelwise.example",
+      "to": ["aisha@parcelwise.example", "lena@parcelwise.example"],
+      "cc": ["dev@parcelwise.example"],
+      "sent_at": "2026-04-08T11:47:00+02:00",
+      "subject": "RE: Discrepancy in the Pro first-response SLA - need to fix before it ships",
+      "body": "Hola Aisha,\n\nI'm certain it was 1 hour. We discussed it in the March leadership meeting, I remember it clearly because Carla's requirements were the whole reason it came up, and I put it in writing to her immediately afterwards. I would never have put a number in an email to a customer without it being agreed.\n\nIf the rota is built around 2 hours then honestly the rota should be adjusted - the commitment is the commitment.\n\nSaludos,\nTomás",
+      "in_reply_to_idx": 7,
+      "role": "objection"
+    },
+    {
+      "idx": 9,
+      "from": "lena@parcelwise.example",
+      "to": ["aisha@parcelwise.example", "tomas@parcelwise.example"],
+      "cc": ["dev@parcelwise.example"],
+      "sent_at": "2026-04-09T08:56:00+02:00",
+      "subject": "RE: Discrepancy in the Pro first-response SLA - need to fix before it ships",
+      "body": "Hallo ihr beiden,\n\nI went back to my notes from the 25 March meeting this morning. What I wrote down at the time, and what I circulated the same evening, was 2 business hours - I would not have invented that number, it came out of the discussion as I heard it. I don't remember anyone saying 1 hour, and nobody corrected the notes when I sent them, which is normally how we catch these things.\n\nThat said, Tomás is equally sure, and he has a customer email to point at, so arguing from memory is getting us nowhere. I suggest we put this to Marta with both versions side by side and let her say which one we honour - and importantly, what we tell Carla and Nordvik if the written promise was wrong. Until then I'd ask nobody to quote the SLA externally.\n\nLena",
+      "in_reply_to_idx": 8,
+      "role": "recap"
+    }
+  ]
+}

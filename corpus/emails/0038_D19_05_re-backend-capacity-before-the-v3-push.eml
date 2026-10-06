@@ -1,0 +1,28 @@
+From: Dev Raman <dev@parcelwise.example>
+To: ingrid@parcelwise.example
+Cc: marta@parcelwise.example, jonas@parcelwise.example
+Subject: RE: backend capacity before the v3 push
+Date: Fri, 23 Jan 2026 11:02:00 +0100
+Message-ID: <f7de4399f538.D19.005@parcelwise.example>
+In-Reply-To: <63787cd9d13d.D19.004@parcelwise.example>
+References: <86cde608e9a9.D19.001@parcelwise.example> <7236088d426e.D19.002@parcelwise.example> <e65f77c06856.D19.003@parcelwise.example> <63787cd9d13d.D19.004@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+ok good. I'll draft the technical profile with jonas and send it to ingrid before wednesday so the posting can go up end of week. must-haves: distributed queues, postgres at some scale, and someone who will actually ask about our failure modes in the interview instead of reciting buzzwords.
+
+Cheers, Dev
+
+On 22 Jan 2026, Marta Kowalczyk wrote:
+> ok. one senior backend role, 95k ceiling. ingrid pls open it this week.
+> 
+> dzięki
+> M
+> 
+> Sent from my iPhone
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

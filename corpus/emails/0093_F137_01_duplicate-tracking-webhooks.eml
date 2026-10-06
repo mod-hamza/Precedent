@@ -1,0 +1,23 @@
+From: Carla Dunne <carla@swiftbox.example>
+To: samir@parcelwise.example
+Subject: Duplicate tracking webhooks
+Date: Wed, 11 Feb 2026 10:00:00 +0100
+Message-ID: <f4ddafe5d43b.F137.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Mr Haddad,
+
+Since Monday evening our staging integration has received each tracking webhook twice. Production appears unaffected. This is the kind of thing I am required to log, so please treat it formally: I need a ticket number, a cause, and a statement of whether our API tokens are in any way involved.
+
+Note that we updated nothing on our side before this began.
+
+Regards,
+Carla Dunne
+Head of Operations, Swiftbox
+
+-- 
+Regards,
+Carla Dunne
+Head of Operations, Swiftbox

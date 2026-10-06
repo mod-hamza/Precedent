@@ -1,0 +1,77 @@
+{
+ "thread_id": "D25",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "tomas@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "sent_at": "2026-02-11T08:55:00+01:00",
+   "subject": "Redline renewal - discount level needs review before contracts go out",
+   "body": "Dear Marta,\n\nI am escalating this because time is short: Tomás has offered Redline a 15% discount on a 2-year renewal, citing verbal approval. I have found no written approval, and 15% sits well above the 5% ceiling that sales may approve independently.\n\nThe financial effect is not cosmetic. Redline represents roughly 18% of our revenue, and a 15% concession on that base pulls our blended gross margin below the 68% floor we agreed with the board in November. I have modelled it: at 15% we land at approximately 65.8%; at 10% we stay at 68.4%, just above the floor.\n\nMay I gently suggest we cap the discount at 10% on a 2-year term before the contract reaches Bruno? Once it is signed at 15%, it is locked for two years.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "objection"
+  },
+  {
+   "idx": 2,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-11T09:14:00+01:00",
+   "subject": "RE: Redline renewal - discount level needs review before contracts go out",
+   "body": "10 max. 2-year term. we don't go under the 68% floor, not even for redline.\n\ntomás — new paper today, before bruno signs anything.\n\nSent from my iPhone",
+   "in_reply_to_idx": 1,
+   "role": "decisive"
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "tomas@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-02-11T10:02:00+01:00",
+   "subject": "RE: Redline renewal - discount level needs review before contracts go out",
+   "body": "no. 10.\n\nif bruno pushes, offer the v3 pilot seat and the driver-app training hours instead. that costs us nearly nothing and he values it. call him yourself, today.\n\nSent from my iPhone",
+   "in_reply_to_idx": 2,
+   "role": "decisive"
+  },
+  {
+   "idx": 5,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "bruno@redlinecouriers.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-11T15:26:00+01:00",
+   "subject": "Redline renewal - one correction to Monday's offer",
+   "body": "Hola Bruno,\n\nQuick correction before anything goes to signature, and I would rather you hear it from me directly: the discount number in Monday's email should have been 10%, not 15%. That was my error in the draft — apologies, it was sloppy of me.\n\nHere is what I can do to make the 2-year deal properly attractive at 10%: you get the dedicated v3 pilot slot from April 20 (your drivers on the new app months before general release), plus a full training programme for your dispatch team at no charge, plus price protection for the entire term.\n\nHonestly, Bruno — the pilot alone is worth more than the 5 points. Can we get on a call Thursday or Friday and close this properly?\n\nSaludos,\nTomás",
+   "in_reply_to_idx": null,
+   "role": "reversal"
+  },
+  {
+   "idx": 7,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-12T09:18:00+01:00",
+   "subject": "RE: Redline renewal - discount level needs review before contracts go out",
+   "body": "Dear all,\n\nFor completeness: the corrected contract will state a 10% discount on a 2-year term, which keeps us at 68.4% blended gross margin, above our floor. I will check the figures line by line before anything is sent to Bruno, so there are no further corrections.\n\nThe pilot and training concessions are cost-light and do not affect the margin calculation.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": 5,
+   "role": "confirmation"
+  }
+ ]
+}

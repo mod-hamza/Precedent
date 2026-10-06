@@ -1,0 +1,49 @@
+{
+  "thread_id": "D16-T2",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "priya@parcelwise.example",
+      "to": ["dev@parcelwise.example", "jonas@parcelwise.example", "tomas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-28T18:03:00+02:00",
+      "subject": "RE: FW: Renewal - non-negotiable points before we sign - NEED INPUT TONIGHT",
+      "in_reply_to_idx": null,
+      "role": "discussion",
+      "body": "Quick recap of the situation and the options I see:\n\n1. Full offline (what we cut on 2 April): ~6 engineer-weeks. Does not fit before mid-May, full stop.\n2. Read-only offline: cached routes and manifests, no edits queued, everything else disabled when offline. Jonas - is that still the ~1.5 engineer-week estimate from the April sizing?\n3. Keep the cut and negotiate Bruno down. Risky: Redline is ~18% of revenue and the renewal is the quarter.\n\nJonas, Dev - I need real numbers before the 15:00 call tomorrow. Thanks!"
+    },
+    {
+      "idx": 2,
+      "from": "jonas@parcelwise.example",
+      "to": ["priya@parcelwise.example", "dev@parcelwise.example", "tomas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-28T19:26:00+02:00",
+      "subject": "RE: FW: Renewal - non-negotiable points before we sign - NEED INPUT TONIGHT",
+      "in_reply_to_idx": 1,
+      "role": "discussion",
+      "body": "read-only is the offline branch we parked, minus the hard part. the offline branch already caches routes and manifests; we just delete the queued-edit code path and grey out anything that writes. ~1.5 engineer-weeks, mostly me, ravi can do the ui greying. the sync code is the risk - it was written assuming online-only, so caching + reconnect revalidation needs real testing. doable if nobody touches my sprint for two weeks. fwiw."
+    },
+    {
+      "idx": 3,
+      "from": "tomas@parcelwise.example",
+      "to": ["priya@parcelwise.example", "dev@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-29T09:12:00+02:00",
+      "subject": "RE: FW: Renewal - non-negotiable points before we sign - NEED INPUT TONIGHT",
+      "in_reply_to_idx": 2,
+      "role": "objection",
+      "body": "So to be clear: Bruno says \"offline\" and we are debating shipping a read-only version and calling it offline ✅ I can maybe sell that, but only if it is genuinely useful in a tunnel - routes and manifests visible, driver not staring at a white screen. If he tests it and it feels like a brochure, we lose credibility on the whole renewal.\n\nCan we demo it to him before the pilot? Even a rough build? I need something to put on the table at 15:00 🚀"
+    },
+    {
+      "idx": 4,
+      "from": "dev@parcelwise.example",
+      "to": ["priya@parcelwise.example", "jonas@parcelwise.example", "tomas@parcelwise.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-04-29T11:37:00+02:00",
+      "subject": "RE: FW: Renewal - non-negotiable points before we sign - NEED INPUT TONIGHT",
+      "in_reply_to_idx": 2,
+      "role": "discussion",
+      "body": "Summary for the 15:00 call:\n\n- Full offline: ~6 engineer-weeks, pushes everything out again. No.\n- Read-only offline (cached routes + manifests, no edits): ~1.5 engineer-weeks, Jonas confirms. Fits between now and the rollout window if it starts next week.\n- It is honest to call it offline mode for the driver's actual use case: he can see where to go and what he is carrying. He never needed to edit manifests in a tunnel.\n\nMy take: put read-only on the table tomorrow as \"offline mode, phase 1\", get the renewal signed, and full offline stays on the v3.1 roadmap where it already lives. Tomás, a rough build for demo: yes, Jonas can have something demo-able in about a week.\n\nCheers, Dev"
+    }
+  ]
+}

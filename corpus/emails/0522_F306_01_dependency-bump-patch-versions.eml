@@ -1,0 +1,14 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: marta@parcelwise.example
+Subject: dependency bump (patch versions)
+Date: Fri, 12 Jun 2026 16:09:00 +0200
+Message-ID: <01a4d9981012.F306.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+bumped the patch-level deps today. nothing exciting: two security patches, one build tool fix, tests all green. no api changes.
+
+fwiw the major version of the map lib is now two behind. not urgent.
+
+so we're going with the lts line for that one then? whatever, the patch bump stands on its own.

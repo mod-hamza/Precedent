@@ -1,0 +1,16 @@
+From: Support <support@parcelwise.example>
+To: marta@parcelwise.example
+Subject: duplicate tracking webhooks - small account
+Date: Wed, 20 May 2026 10:09:00 +0200
+Message-ID: <bc15dbe35267.F122.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Marta,
+
+A small account reported receiving every tracking webhook twice since Monday. We reproduced it - the webhook retry logic fires a second time even when the first delivery succeeds. Engineering is aware (Jonas has it on his list); no data corruption, purely duplicate notifications.
+
+Three customers affected in total, all small. Filing this to you only because the account owner cc'd you on their original complaint.
+
+Support Team

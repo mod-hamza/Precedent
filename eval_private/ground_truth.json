@@ -1,0 +1,2053 @@
+{
+ "decisions": [
+  {
+   "id": "D01",
+   "date": "2026-01-20",
+   "canonical_text": "Stay on PayForge for payments through the end of Q2",
+   "decider": "Marta",
+   "rationale": "avoid migration risk before the v3 launch; fee gap tolerable",
+   "alternatives": "switch to Ledgerly now",
+   "type": "explicit",
+   "status": "SUPERSEDED",
+   "links": [
+    {
+     "to": "D02",
+     "kind": "supersedes",
+     "full": true
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<f42aa06c3e87.D01.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<31db542cf7ab.D01.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<73ad745b7ac8.D01.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<b4d491a90244.D01.005@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<997d1212aea4.D01.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D02",
+   "date": "2026-03-11",
+   "canonical_text": "Switch payments from PayForge to Ledgerly",
+   "decider": "Marta",
+   "rationale": "fees 2.3% + EUR 0.25 vs 2.9% + EUR 0.30 (~EUR 1,860/month saved on ~EUR 310k processed); native local-currency invoicing; Redline asked for it",
+   "alternatives": "stay on PayForge; Bridgepay (dropped: no invoicing)",
+   "type": "explicit",
+   "status": "AMENDED",
+   "links": [
+    {
+     "to": "D01",
+     "kind": "supersedes",
+     "full": true
+    },
+    {
+     "to": "D03",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<0f023782edc0.D02_T1.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<1ca32acbd8b4.D02_T1.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<616feb07cf0a.D02_T1.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<73fdd85d8cd4.D02_T1.004@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<86940267361f.D02_T2.001@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<5be3a271c1b2.D02_T2.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<ce163a026a25.D02_T2.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<75f5d16b442d.D02_T3.001@parcelwise.example>",
+     "role": "recap"
+    },
+    {
+     "message_id": "<9b1194e85ac5.D02_T3.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<4cb258922d1e.D02_T3.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<ba8c26030bc3.D02_T3.005@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D03",
+   "date": "2026-04-22",
+   "canonical_text": "Delay the Ledgerly cutover (planned May 1) until after the June billing cycle",
+   "decider": "Dev (Marta concurs)",
+   "rationale": "sandbox reconciliation failed on refunds and multi-currency; 3 mismatched settlement reports",
+   "alternatives": "cut over May 1 and fix forward",
+   "type": "explicit",
+   "status": "AMENDED",
+   "links": [
+    {
+     "to": "D02",
+     "kind": "amends",
+     "full": "partial"
+    },
+    {
+     "to": "D04",
+     "kind": "refines",
+     "full": true
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<60c0c5e05a6c.D03.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<8305ab710de9.D03.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<078bc370d4e0.D03.005@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<cfb656696a83.D03.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D04",
+   "date": "2026-05-29",
+   "canonical_text": "Ledgerly cutover fixed for Monday 2026-07-06",
+   "decider": "Marta (in meeting recap), confirmed by Dev",
+   "rationale": "after June 30 billing close; reconciliation now passes",
+   "alternatives": "July 1",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D03",
+     "kind": "refines",
+     "full": true
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<f38b12b342f8.D04_T1.001@parcelwise.example>",
+     "role": "recap"
+    },
+    {
+     "message_id": "<0dcf6bfcf14b.D04_T1.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<264654f8e0e7.D04_T2.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<0f4a0cff15c1.D04_T2.002@parcelwise.example>",
+     "role": "chatter"
+    },
+    {
+     "message_id": "<9f644d85f7c2.D04_T2.003@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<43dafda29690.D04_T2.004@parcelwise.example>",
+     "role": "decisive"
+    }
+   ]
+  },
+  {
+   "id": "D05",
+   "date": "2026-01-28",
+   "canonical_text": "Raise Starter plan from EUR 49 to EUR 59/month effective 2026-03-01",
+   "decider": "Marta",
+   "rationale": "low churn elasticity; costs are up",
+   "alternatives": "EUR 55; no increase",
+   "type": "explicit",
+   "status": "AMENDED",
+   "links": [
+    {
+     "to": "D06",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<d7ca9e6a88e8.D05.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<32f149416f9e.D05.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<8a173a35c6b9.D05.005@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<7ce4e787616c.D05.006@parcelwise.example>",
+     "role": "decisive"
+    }
+   ]
+  },
+  {
+   "id": "D06",
+   "date": "2026-02-18",
+   "canonical_text": "Grandfather existing Starter customers at EUR 49 for 12 months; EUR 59 applies to new signups from Mar 1",
+   "decider": "Marta",
+   "rationale": "140 Starter accounts at risk, 3 loud complaints",
+   "alternatives": "full increase for everyone; EUR 54 compromise",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D05",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<1fb775bafef9.D06.001@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<f25d748c2851.D06.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<4efc851097f3.D06.004@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<f7aa860cb659.D06.006@parcelwise.example>",
+     "role": "decisive"
+    }
+   ]
+  },
+  {
+   "id": "D07",
+   "date": "2026-05-06",
+   "canonical_text": "Launch a usage-based Scan Pack add-on at EUR 0.08/scan",
+   "decider": "Priya (Marta approves)",
+   "rationale": "scan-heavy customers cost more to serve",
+   "alternatives": "flat EUR 99 add-on",
+   "type": "explicit",
+   "status": "SUPERSEDED",
+   "links": [
+    {
+     "to": "D08",
+     "kind": "supersedes",
+     "full": true
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<29c28ee70ff5.D07.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<fda242912863.D07.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<5fc03284e86a.D07.005@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<57f8820c18d6.D07.006@parcelwise.example>",
+     "role": "decisive"
+    }
+   ]
+  },
+  {
+   "id": "D08",
+   "date": "2026-06-10",
+   "canonical_text": "Drop Scan Pack; include 500 scans/month in the Pro plan instead",
+   "decider": "Marta",
+   "rationale": "customers found it confusing; sales cycles slowed; billing complexity during Ledgerly cutover",
+   "alternatives": "keep Scan Pack; flat add-on",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D07",
+     "kind": "supersedes",
+     "full": true
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<e86b3b377da8.D08.001@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<5fe25c3c3fe5.D08.004@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<6ad9a6d9e6a2.D08.005@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<a28ff3014003.D08.006@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<d617082675c4.D08.007@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D09",
+   "date": "2026-02-04",
+   "canonical_text": "Migrate hosting from NimbusHost to Corvid Cloud",
+   "decider": "Dev",
+   "rationale": "~30% cheaper compute; EU-region residency Swiftbox wants",
+   "alternatives": "stay; a third vendor",
+   "type": "explicit",
+   "status": "AMENDED",
+   "links": [
+    {
+     "to": "D12",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<5466ad15f2ac.D09.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<cb48c156361c.D09.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<b4f1bf839b0c.D09.004@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<ad173e45c5ea.D09.005@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D10",
+   "date": "2026-02-26",
+   "canonical_text": "Contract Greg Ferrante to run the migration with a budget cap of EUR 18,000",
+   "decider": "Helen",
+   "rationale": "team lacks capacity before the launch",
+   "alternatives": "in-house; agency quote of EUR 34k",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<c31f3ef3d53f.D10.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<9a888ddc5f91.D10.002@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<15db5e938bd1.D10.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<fa3403104ac8.D10.004@parcelwise.example>",
+     "role": "decisive"
+    }
+   ]
+  },
+  {
+   "id": "D11",
+   "date": "2026-03-31",
+   "canonical_text": "App-tier migration to Corvid scheduled for the weekend of Apr 18-19",
+   "decider": "Dev (casual confirmation)",
+   "rationale": "proposed by Greg, confirmed casually",
+   "alternatives": "other weekend",
+   "type": "implicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<4771302cb56f.D11.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<128fdcf780c0.D11.003@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<d676de2a3289.D11.004@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<90fe822e8ad8.D11.005@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D12",
+   "date": "2026-04-09",
+   "canonical_text": "Keep the production database on NimbusHost managed Postgres; only the app tier moves (hybrid)",
+   "decider": "Dev",
+   "rationale": "cross-provider latency adds ~40 ms p95 which would break driver sync; DB migration risk",
+   "alternatives": "full move with replication",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D09",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<3d7a17456979.D12.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<5fb6b1414caa.D12.003@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<4e7a246057b8.D12.005@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<84718c55b3df.D12.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D13",
+   "date": "2026-01-15",
+   "canonical_text": "v3 launch date is April 15",
+   "decider": "Marta with Priya",
+   "rationale": "Redline pilot starts Apr 20",
+   "alternatives": [],
+   "type": "explicit",
+   "status": "SUPERSEDED",
+   "links": [
+    {
+     "to": "D14",
+     "kind": "supersedes",
+     "full": true
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<48178e4697e7.D13.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<df3e36d93025.D13.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<9b1020c1ab11.D13.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<00c1d295cea5.D13.005@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D14",
+   "date": "2026-03-24",
+   "canonical_text": "v3 launch slips to mid-May (target week of May 11)",
+   "decider": "Priya/Marta (implicit)",
+   "rationale": "41 open P1 bugs plus the migration collision",
+   "alternatives": [],
+   "type": "implicit",
+   "status": "AMENDED",
+   "links": [
+    {
+     "to": "D13",
+     "kind": "supersedes",
+     "full": true
+    },
+    {
+     "to": "D18",
+     "kind": "refines",
+     "full": true
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<2290c050cf4f.D14.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<a4bfd4619839.D14.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<623d98038cf6.D14.005@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<b71cd2f429a4.D14.006@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<253200b4af70.D14.007@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D15",
+   "date": "2026-04-02",
+   "canonical_text": "Cut offline mode from v3; ship it in v3.1",
+   "decider": "Priya (recorded in Lena's recap of the Apr 2 product meeting)",
+   "rationale": "biggest schedule risk (~6 engineer-weeks)",
+   "alternatives": "cut route optimization instead",
+   "type": "explicit",
+   "status": "AMENDED",
+   "links": [
+    {
+     "to": "D16",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<93a1ad303261.D15.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<c1e8463f98c0.D15.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<5a6dbc17a0be.D15.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<1c48a2092317.D15.004@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<25cf5d766cfc.D15-recap.001@parcelwise.example>",
+     "role": "recap"
+    },
+    {
+     "message_id": "<9dca04e86e56.D15-recap.002@parcelwise.example>",
+     "role": "chatter"
+    },
+    {
+     "message_id": "<41ca83a80d02.D15-recap.003@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D16",
+   "date": "2026-04-30",
+   "canonical_text": "Re-add a read-only offline mode (cached routes and manifests, no edits) to v3",
+   "decider": "Marta",
+   "rationale": "Redline made it a renewal condition; read-only costs ~1.5 engineer-weeks",
+   "alternatives": "full offline; keep the cut",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D15",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<7774c888b4f0.D16-T1.001@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<63b829cd53eb.D16-T1.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<c2dff54beb8a.D16-T2.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<e5a3c3153d10.D16-T2.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<9c15abaa34ec.D16-T2.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<d79a7e72b113.D16-T2.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<8fd4e89dcbbc.D16-T3.001@parcelwise.example>",
+     "role": "recap"
+    },
+    {
+     "message_id": "<a9cddcf814b3.D16-T3.002@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<a76153f04e98.D16-T3.003@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D17",
+   "date": "2026-02-12",
+   "canonical_text": "Build the driver app in React Native",
+   "decider": "Dev (Jonas agrees)",
+   "rationale": "one codebase, team knows JS",
+   "alternatives": "native Swift/Kotlin; Flutter",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<cda9e8573b47.D17.001@parcelwise.example>",
+     "role": "chatter"
+    },
+    {
+     "message_id": "<0d57785422ed.D17.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<00fe7d496a2b.D17.005@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<c33779113122.D17.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D18",
+   "date": "2026-05-04",
+   "canonical_text": "Phased rollout: 20% of accounts on Wed May 13, 100% by May 27",
+   "decider": "Priya",
+   "rationale": "limit blast radius after the migration",
+   "alternatives": "big-bang launch",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D14",
+     "kind": "refines",
+     "full": true
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<6fd93ce3519e.D18.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<4f7bff191e25.D18.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<c350d502d0e9.D18.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<e9fe63696422.D18.005@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<38a986387d44.D18.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D19",
+   "date": "2026-01-22",
+   "canonical_text": "Open one senior backend engineer role, budget up to EUR 95k",
+   "decider": "Marta (Helen confirms)",
+   "rationale": "backend capacity bottleneck",
+   "alternatives": "two juniors",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<86cde608e9a9.D19.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<e65f77c06856.D19.003@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<63787cd9d13d.D19.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<f7de4399f538.D19.005@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D20",
+   "date": "2026-03-05",
+   "canonical_text": "Make an offer to Elena Voss at EUR 92k + 0.15% options",
+   "decider": "Marta",
+   "rationale": "strongest interview loop (Jonas and Dev scores); runner-up Mark Teller weaker on systems design",
+   "alternatives": "Mark Teller",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<ae40a3573bee.D20_T1.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<33011056b4b6.D20_T1.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<e7cfa5c01513.D20_T1.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<495d872f0f9a.D20_T2.001@parcelwise.example>",
+     "role": "recap"
+    },
+    {
+     "message_id": "<bd130ff0af15.D20_T2.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<e4f5cd197ef4.D20_T2.003@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<604294ca7082.D20_T3.001@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<45610a06060f.D20_T3.003@parcelwise.example>",
+     "role": "chatter"
+    },
+    {
+     "message_id": "<1aa65e29fe8b.D20_T3.002@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<f7e422ffd08d.D20_T4.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<8155ec1635aa.D20_T4.002@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<e625232b8c7e.D20_T4.003@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D21",
+   "date": "2026-02-24",
+   "canonical_text": "Try no-meeting Wednesdays company-wide",
+   "decider": "Marta (implicit: 'ok let's try it for a few weeks')",
+   "rationale": "proposal by Ingrid",
+   "alternatives": [],
+   "type": "implicit",
+   "status": "AMENDED",
+   "links": [
+    {
+     "to": "D22",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<701af6f2e568.D21.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<dc166b59a50a.D21.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<d7966ed0a651.D21.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<c58e9a668195.D21.005@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D22",
+   "date": "2026-05-20",
+   "canonical_text": "Suspend no-meeting Wednesdays until June 15 (launch rollout needs daily syncs)",
+   "decider": "Marta",
+   "rationale": "launch rollout needs daily syncs",
+   "alternatives": "keep as is",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D21",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<95e5161be7a9.D22.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<2b18b1010436.D22.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<efe28a215866.D22.003@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<dc89a4cbfe3f.D22.004@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D23",
+   "date": "2026-04-14",
+   "canonical_text": "Engage Kofi Mensah as a part-time QA contractor (3 days/week) instead of hiring a full-time QA",
+   "decider": "Helen/Priya (implicit)",
+   "rationale": "cost; Kofi available from the 20th",
+   "alternatives": "full-time QA hire",
+   "type": "implicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<f29185498bfb.D23.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<a5a115d950ce.D23.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<3a640e706785.D23.004@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<08ab4bd76675.D23.005@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<120dc360c690.D23.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D24",
+   "date": "2026-02-09",
+   "canonical_text": "Offer Redline Couriers a 15% discount for a 2-year renewal",
+   "decider": "Tomas (claims Marta approved; no supporting email)",
+   "rationale": "win the renewal",
+   "alternatives": "no discount",
+   "type": "explicit",
+   "status": "SUPERSEDED",
+   "links": [
+    {
+     "to": "D25",
+     "kind": "supersedes",
+     "full": true
+    }
+   ],
+   "split": "holdout",
+   "authority_flag": "Tomas may only discount <= 5%; 15% exceeded his authority",
+   "evidence_message_ids": [
+    {
+     "message_id": "<6aaaa57e3c8c.D24.001@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<e3e497081cb7.D24.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<db900320f951.D24.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<e67c7531c8ec.D24.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<8b84995e4c1f.D24.005@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "D25",
+   "date": "2026-02-11",
+   "canonical_text": "Cap the Redline renewal discount at 10% (2-year term)",
+   "decider": "Marta (after Helen escalated)",
+   "rationale": "gross-margin floor of 68%",
+   "alternatives": "15% discount",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D24",
+     "kind": "supersedes",
+     "full": true
+    }
+   ],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<44e863d42145.D25.001@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<5c8dbd18af6d.D25.002@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<67a533d1690d.D25.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<fc7f1bebfbaa.D25.005@parcelwise.example>",
+     "role": "reversal"
+    },
+    {
+     "message_id": "<e56e4450d470.D25.007@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D26",
+   "date": "2026-03-17",
+   "canonical_text": "Decline Swiftbox's request for a 99.99% uptime SLA; offer 99.9% with service credits",
+   "decider": "Dev (reviewed by Nadia)",
+   "rationale": "cannot guarantee 99.99% on current architecture; credit exposure",
+   "alternatives": "accept at a premium price",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<6dbbb3981610.D26.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<d907c1157893.D26.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<c805837da80e.D26.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<def259002b6d.D26.005@parcelwise.example>",
+     "role": "discussion"
+    }
+   ]
+  },
+  {
+   "id": "D27",
+   "date": "2026-05-15",
+   "canonical_text": "Harbor Express: suspend service at 60 days overdue, terminate at 90 days unless paid (EUR 27,400 overdue)",
+   "decider": "Helen (Marta and Nadia concur)",
+   "rationale": "collection policy",
+   "alternatives": "write off; payment plan",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<966fb50147bf.D27.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<7de8012e3193.D27.004@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<b9ea943050ac.D27.005@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<87d1153accdb.D27.006@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<1ab11acb32b9.D27.007@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D28",
+   "date": "2026-03-03",
+   "canonical_text": "Rotate ALL API keys and customer integration tokens immediately",
+   "decider": "Dev",
+   "rationale": "a key was found in a public fork of a repo",
+   "alternatives": "rotate only the exposed key",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<718a98262ca6.D28.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<d3032c44fab5.D28.003@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<ec3df4d5ad31.D28.006@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<70cff052d657.D28.007@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<4cf479123326.D28.008@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D29",
+   "date": "2026-03-04",
+   "canonical_text": "Notify the 9 affected customers within 72 hours of discovery (by 2026-03-06)",
+   "decider": "Marta (on Nadia's advice)",
+   "rationale": "data-protection notification duty",
+   "alternatives": [],
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<252874ea9da9.D29.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<bea8ed538ea7.D29.003@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<57a666ca1e4a.D29.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<57993dcb272a.D29.005@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<6a9dfe539346.D29.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D30",
+   "date": "2026-03-20",
+   "canonical_text": "Require 2FA on all staff accounts by April 3",
+   "decider": "Dev (implicit; Marta thumbs-up)",
+   "rationale": "security follow-up after key leak",
+   "alternatives": [],
+   "type": "implicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<e8ff98d50f56.D30.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<71884938ddfd.D30.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<b5f03577621f.D30.003@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<895a872d1dae.D30.004@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<96abe8e5efa4.D30.005@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "D31",
+   "date": "2026-04-28",
+   "canonical_text": "Hire Blackthorn Audit for a pentest, EUR 12,000, scheduled for the week of June 1",
+   "decider": "Helen (approves), Dev",
+   "rationale": "Swiftbox's security questionnaire requires a third-party pentest",
+   "alternatives": "Greyline (EUR 9k, not accepted by Swiftbox); skip",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<e417192d83f5.D31_T1.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<4a62bb5ca411.D31_T1.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<986722669a59.D31_T1.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<6ac65703505c.D31_T1.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<f64cf5f91da3.D31_T2.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<efd6e6e71d1c.D31_T2.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<e18b854b453f.D31_T2.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<4e5e39e699fe.D31_T2.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<ca4ad7073918.D31_T2.005@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<5ee590b58865.D31_T3.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<d25f0770fffc.D31_T3.002@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<8048f08629ea.D31_T3.003@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<8f5e36f65c9f.D31_T3.004@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D32",
+   "date": "2026-01-30",
+   "canonical_text": "Renew the Rotterdam office lease for 12 months at the current EUR 6,200/month",
+   "decider": "Helen and Lena (Marta ok)",
+   "rationale": "stability",
+   "alternatives": "move to coworking",
+   "type": "explicit",
+   "status": "AMENDED",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<5a8be728286d.D32.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<407bbfa79618.D32.003@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<038b9a50b4d7.D32.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<403f39d6a57c.D32.005@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D33",
+   "date": "2026-04-06",
+   "canonical_text": "Sublet half the office from June 1",
+   "decider": "Marta",
+   "rationale": "~40% of staff remote; recovers ~EUR 3,100/month",
+   "alternatives": "break the lease",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D32",
+     "kind": "amends",
+     "full": "partial"
+    }
+   ],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<b144e4dfcadf.D33.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<08368a7b95ec.D33.005@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<1a4cc10acaa0.D33.006@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<8917131292f8.D33.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<c350481b961e.D33.004@parcelwise.example>",
+     "role": "discussion"
+    }
+   ]
+  },
+  {
+   "id": "D34",
+   "date": "2026-03-12",
+   "canonical_text": "Sponsor LogiConnect Europe at the Silver tier (EUR 6,000)",
+   "decider": "Chloe (Marta approves)",
+   "rationale": "lead generation",
+   "alternatives": "booth only",
+   "type": "explicit",
+   "status": "SUPERSEDED",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<fd7761a8fc62.D34.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<e771b27f2729.D34.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<552a1f0d8db5.D34.005@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<870c07e39f51.D34.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D35",
+   "date": "2026-03-27",
+   "canonical_text": "Downgrade to booth-only (EUR 2,500); drop the sponsorship",
+   "decider": "Helen",
+   "rationale": "cash priority after migration costs; Silver benefits limited",
+   "alternatives": "keep Silver",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [
+    {
+     "to": "D34",
+     "kind": "supersedes",
+     "full": true
+    }
+   ],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<5db79215fe69.D35.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<a87ad0a23db6.D35.004@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<48ec6c37635c.D35.005@parcelwise.example>",
+     "role": "reversal"
+    },
+    {
+     "message_id": "<018748e5d598.D35.006@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D36",
+   "date": "2026-04-16",
+   "canonical_text": "Keep the Parcelwise name; no rebrand",
+   "decider": "Marta",
+   "rationale": "trademark/rebrand cost (>= EUR 8k) and customer recognition",
+   "alternatives": "rebrand to Routewell",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<2aa2b858c4c5.D36.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<e876a659822a.D36.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<41f877b82fb3.D36.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<ecdac9d7a5b2.D36.005@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<677833d4e9f9.D36.006@parcelwise.example>",
+     "role": "decisive"
+    }
+   ]
+  },
+  {
+   "id": "D37",
+   "date": "2026-05-27",
+   "canonical_text": "Replace the Helpdesk support tool with Beacon Desk effective July 1",
+   "decider": "Aisha (Marta approves, Helen on cost)",
+   "rationale": "Helpdesk renewal +40%; Beacon integrates with our API",
+   "alternatives": "stay on Helpdesk",
+   "type": "explicit",
+   "status": "ACTIVE",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<ad92ce0948a8.D37.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<72c843f8aed3.D37.006@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<5b2fedaf0748.D37.007@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<00cee24f3675.D37.008@parcelwise.example>",
+     "role": "confirmation"
+    }
+   ]
+  },
+  {
+   "id": "D38",
+   "date": "2026-03-25",
+   "canonical_text": "First-response SLA for Pro customers",
+   "decider": "CONTESTED",
+   "rationale": "Version A (Aisha; Lena's recap): 2 business hours. Version B (Tomas, Samir): 1 hour, promised to Carla at Swiftbox on 2026-04-03 in writing",
+   "alternatives": [],
+   "type": "conflict",
+   "status": "CONTESTED",
+   "links": [],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<5a30860135c2.D38.001@parcelwise.example>",
+     "role": "recap"
+    },
+    {
+     "message_id": "<b3761d4fe06e.D38.002@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<8d0d4d283b88.D38.006@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<aa801a70a0fc.D38.008@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<727eff0c4787.D38.009@parcelwise.example>",
+     "role": "recap"
+    }
+   ]
+  },
+  {
+   "id": "D39",
+   "date": "2026-04-21",
+   "canonical_text": "On-call rotation membership",
+   "decider": "CONTESTED",
+   "rationale": "Version A (Dev, standup recap): weekly rotation of Jonas + Ravi. Version B (Priya): includes Greg and Elena once onboarded",
+   "alternatives": [],
+   "type": "conflict",
+   "status": "CONTESTED",
+   "links": [],
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<cb2b21703ede.D39.001@parcelwise.example>",
+     "role": "recap"
+    },
+    {
+     "message_id": "<2a320ae4fa2d.D39.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<d90a1be57835.D39.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<54af2e9d552e.D39.004@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<1bf1e66230c4.D39.006@parcelwise.example>",
+     "role": "discussion"
+    }
+   ]
+  },
+  {
+   "id": "D40",
+   "date": "2026-02-27",
+   "canonical_text": "Q2 marketing budget",
+   "decider": "CONTESTED",
+   "rationale": "Version A (Chloe): EUR 40,000 approved (cites Marta's 'go' reply). Version B (Helen): EUR 30,000 approved (cites the budget sheet shared Mar 2)",
+   "alternatives": [],
+   "type": "conflict",
+   "status": "CONTESTED",
+   "links": [],
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<907e952939e1.D40.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<a62a895a283e.D40.002@parcelwise.example>",
+     "role": "decisive"
+    },
+    {
+     "message_id": "<bf3f645fe36e.D40.003@parcelwise.example>",
+     "role": "recap"
+    },
+    {
+     "message_id": "<ecc874d729f4.D40.005@parcelwise.example>",
+     "role": "confirmation"
+    },
+    {
+     "message_id": "<a134950b9d38.D40.007@parcelwise.example>",
+     "role": "recap"
+    }
+   ]
+  }
+ ],
+ "non_decisions": [
+  {
+   "id": "N01",
+   "topic": "4-day work week",
+   "outcome": "Floated by Ingrid/Chloe; Marta: 'let's revisit after launch.' Never revisited.",
+   "trap_type": "Deferred",
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<e2268783cee4.N01.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<8fdc69a2031e.N01.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<6eb96c5a5dfe.N01.004@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "N02",
+   "topic": "Lisbon satellite office",
+   "outcome": "Tomas pushed for Portuguese customers; Marta: 'interesting. not now.'",
+   "trap_type": "Polite deferral",
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<3050d9fd7009.N02.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<45c5b8c3eda9.N02.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<ef9f587c2207.N02.004@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "N03",
+   "topic": "Acquire RouteBee",
+   "outcome": "Owen proposed by phone; Marta asked Helen for numbers; Helen raised valuation questions; no conclusion.",
+   "trap_type": "Investigation != decision",
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<6e89926a07d9.N03.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<1ff7414315ff.N03.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<912f870bf40e.N03.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<07b26af9d380.N03.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<94867e516c76.N03.005@parcelwise.example>",
+     "role": "discussion"
+    }
+   ]
+  },
+  {
+   "id": "N04",
+   "topic": "Rewrite backend in Kotlin",
+   "outcome": "Jonas ranted; Dev: 'we'll talk.'",
+   "trap_type": "One person's opinion",
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<65e6f079dd0c.N04.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<2bafc3c90d59.N04.002@parcelwise.example>",
+     "role": "chatter"
+    },
+    {
+     "message_id": "<e3684bba29c6.N04.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<12c5aad20920.N04.004@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "N05",
+   "topic": "Free tier",
+   "outcome": "Chloe's proposal; Helen skeptical; Priya neutral; thread trails off.",
+   "trap_type": "Proposal, no approval",
+   "split": "dev",
+   "evidence_message_ids": [
+    {
+     "message_id": "<d2f054270394.N05.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<03cb4f14e10d.N05.002@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<1a17f511a218.N05.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<bed08f5ae8c3.N05.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<bb0b5c822579.N05.005@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "N06",
+   "topic": "Dedicated DevRel hire",
+   "outcome": "Marta: 'maybe Q3 if the numbers allow.'",
+   "trap_type": "Conditional future",
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<9a0c9b0f9479.N06.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<21e1f55d0371.N06.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<931f1ad8131c.N06.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<a1d1fa168d76.N06.004@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "N07",
+   "topic": "Rename plans (Starter/Pro/Enterprise)",
+   "outcome": "Chloe offered names; thread died.",
+   "trap_type": "Abandoned",
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<d1cea82f89d7.N07.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<b7e57f3aa592.N07.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<9b43bb5a92f4.N07.003@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "N08",
+   "topic": "Adopt OKRs",
+   "outcome": "Ingrid: 'I will draft a proposal.' Marta: 'send it.' No later message.",
+   "trap_type": "Task assignment, not decision",
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<2dfc2e825e6c.N08.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<6427003bc4b8.N08.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<909465ca3a15.N08.003@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "N09",
+   "topic": "Change email/calendar provider",
+   "outcome": "Lena asked; forwarded a vendor quote; nobody with authority replied.",
+   "trap_type": "Unanswered question",
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<32637804d289.N09.001@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<4fa994e0f4cd.N09.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<fda79aadfb50.N09.003@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<12c580aac102.N09.004@parcelwise.example>",
+     "role": "chatter"
+    },
+    {
+     "message_id": "<cb10159fd5ee.N09.005@parcelwise.example>",
+     "role": "chatter"
+    }
+   ]
+  },
+  {
+   "id": "N10",
+   "topic": "Launch in the US in Q4",
+   "outcome": "Tomas: conditional on Redline signing the 2-year renewal; Redline hadn't signed by 06-30 (Bruno: 'signing in July').",
+   "trap_type": "Conditional, unmet",
+   "split": "holdout",
+   "evidence_message_ids": [
+    {
+     "message_id": "<152af5d64576.N10.001@parcelwise.example>",
+     "role": "proposal"
+    },
+    {
+     "message_id": "<eaee4582ad2e.N10.002@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<a9faf4328d50.N10.003@parcelwise.example>",
+     "role": "objection"
+    },
+    {
+     "message_id": "<88d8d25d81a1.N10.004@parcelwise.example>",
+     "role": "discussion"
+    },
+    {
+     "message_id": "<c66c437e75b8.N10.005@parcelwise.example>",
+     "role": "recap"
+    }
+   ]
+  }
+ ],
+ "qa": [
+  {
+   "id": "Q01",
+   "question": "Which payment provider will we use from July, and when is the cutover?",
+   "expected": "Ledgerly; Mon 2026-07-06",
+   "evidence_decisions": [
+    "D04",
+    "D03",
+    "D02"
+   ]
+  },
+  {
+   "id": "Q02",
+   "question": "Why did we decide to switch payment providers?",
+   "expected": "lower fees (2.3% + EUR 0.25 vs 2.9% + EUR 0.30 ~ EUR 1,860/mo), local-currency invoicing, Redline's request",
+   "evidence_decisions": [
+    "D02"
+   ]
+  },
+  {
+   "id": "Q03",
+   "question": "Why was the Ledgerly cutover delayed from May 1?",
+   "expected": "failed sandbox reconciliation (refunds, multi-currency, 3 mismatched reports)",
+   "evidence_decisions": [
+    "D03"
+   ]
+  },
+  {
+   "id": "Q04",
+   "question": "What does the Starter plan cost, and does it apply to existing customers?",
+   "expected": "EUR 59 for new signups from Mar 1; existing grandfathered at EUR 49 for 12 months",
+   "evidence_decisions": [
+    "D05",
+    "D06"
+   ]
+  },
+  {
+   "id": "Q05",
+   "question": "Are we still launching Scan Pack?",
+   "expected": "No; dropped 06-10; 500 scans/month included in Pro",
+   "evidence_decisions": [
+    "D07",
+    "D08"
+   ]
+  },
+  {
+   "id": "Q06",
+   "question": "Where is the production database hosted?",
+   "expected": "NimbusHost managed Postgres; only the app tier moves to Corvid",
+   "evidence_decisions": [
+    "D12",
+    "D09"
+   ]
+  },
+  {
+   "id": "Q07",
+   "question": "Who runs the hosting migration and with what budget?",
+   "expected": "Greg Ferrante, cap EUR 18,000",
+   "evidence_decisions": [
+    "D10"
+   ]
+  },
+  {
+   "id": "Q08",
+   "question": "What is the v3 launch date and rollout plan?",
+   "expected": "Wed May 13 (slipped from Apr 15), phased 20% -> 100% by May 27",
+   "evidence_decisions": [
+    "D13",
+    "D14",
+    "D18"
+   ]
+  },
+  {
+   "id": "Q09",
+   "question": "Why did the April 15 launch date change?",
+   "expected": "41 open P1 bugs + migration collision",
+   "evidence_decisions": [
+    "D14"
+   ]
+  },
+  {
+   "id": "Q10",
+   "question": "Is offline mode in v3?",
+   "expected": "Read-only offline mode yes; full offline in v3.1",
+   "evidence_decisions": [
+    "D15",
+    "D16"
+   ]
+  },
+  {
+   "id": "Q11",
+   "question": "Who decided to re-add offline mode and why?",
+   "expected": "Marta; Redline made it a renewal condition",
+   "evidence_decisions": [
+    "D16"
+   ]
+  },
+  {
+   "id": "Q12",
+   "question": "What discount did we agree for Redline's renewal, and was the earlier 15% approved?",
+   "expected": "Capped at 10% (2-year); the 15% was offered by Tomas without authority",
+   "evidence_decisions": [
+    "D24",
+    "D25"
+   ]
+  },
+  {
+   "id": "Q13",
+   "question": "What SLA are we offering Swiftbox?",
+   "expected": "99.9% with service credits; 99.99% declined",
+   "evidence_decisions": [
+    "D26"
+   ]
+  },
+  {
+   "id": "Q14",
+   "question": "What happens to Harbor Express?",
+   "expected": "Suspend at 60 days overdue, terminate at 90 unless paid",
+   "evidence_decisions": [
+    "D27"
+   ]
+  },
+  {
+   "id": "Q15",
+   "question": "What did we do after the leaked API key?",
+   "expected": "Rotated all keys, notified 9 customers within 72h, 2FA by Apr 3",
+   "evidence_decisions": [
+    "D28",
+    "D29",
+    "D30"
+   ]
+  },
+  {
+   "id": "Q16",
+   "question": "Who is doing the pentest, when, and how much?",
+   "expected": "Blackthorn Audit, week of Jun 1, EUR 12,000",
+   "evidence_decisions": [
+    "D31"
+   ]
+  },
+  {
+   "id": "Q17",
+   "question": "What is the status of the office?",
+   "expected": "Lease renewed 12 months at EUR 6,200/mo; half sublet from Jun 1",
+   "evidence_decisions": [
+    "D32",
+    "D33"
+   ]
+  },
+  {
+   "id": "Q18",
+   "question": "Are we sponsoring LogiConnect?",
+   "expected": "No; booth-only EUR 2,500",
+   "evidence_decisions": [
+    "D34",
+    "D35"
+   ]
+  },
+  {
+   "id": "Q19",
+   "question": "Are we rebranding?",
+   "expected": "No",
+   "evidence_decisions": [
+    "D36"
+   ]
+  },
+  {
+   "id": "Q20",
+   "question": "Which support tool and when?",
+   "expected": "Beacon Desk from Jul 1",
+   "evidence_decisions": [
+    "D37"
+   ]
+  },
+  {
+   "id": "Q21",
+   "question": "What is the first-response SLA for Pro customers?",
+   "expected": "CONTESTED: 2 business hours vs 1 hour",
+   "evidence_decisions": [
+    "D38"
+   ]
+  },
+  {
+   "id": "Q22",
+   "question": "Who is on the on-call rotation?",
+   "expected": "CONTESTED: Jonas+Ravi vs including Greg and Elena",
+   "evidence_decisions": [
+    "D39"
+   ]
+  },
+  {
+   "id": "Q23",
+   "question": "What is the Q2 marketing budget?",
+   "expected": "CONTESTED: EUR 40k vs EUR 30k",
+   "evidence_decisions": [
+    "D40"
+   ]
+  },
+  {
+   "id": "Q24",
+   "question": "What was our payments plan as of Feb 1?",
+   "expected": "Stay on PayForge through Q2",
+   "evidence_decisions": [
+    "D01"
+   ]
+  },
+  {
+   "id": "Q25",
+   "question": "Who was hired for the senior backend role, and on what terms?",
+   "expected": "Elena Voss, EUR 92k + 0.15% options",
+   "evidence_decisions": [
+    "D20"
+   ]
+  },
+  {
+   "id": "Q26",
+   "question": "Did we decide to open a Lisbon office?",
+   "expected": "NO DECISION; closest: Tomas's pitch, Marta's 'not now'",
+   "evidence_decisions": [
+    "N02"
+   ]
+  },
+  {
+   "id": "Q27",
+   "question": "Did we decide to acquire RouteBee?",
+   "expected": "NO DECISION",
+   "evidence_decisions": [
+    "N03"
+   ]
+  },
+  {
+   "id": "Q28",
+   "question": "Did we decide to launch a free tier?",
+   "expected": "NO DECISION",
+   "evidence_decisions": [
+    "N05"
+   ]
+  },
+  {
+   "id": "Q29",
+   "question": "Did we decide to rewrite the backend in Kotlin?",
+   "expected": "NO DECISION",
+   "evidence_decisions": [
+    "N04"
+   ]
+  },
+  {
+   "id": "Q30",
+   "question": "Did we decide to launch in the US in Q4?",
+   "expected": "NO DECISION (conditional on Redline signing, which hasn't happened)",
+   "evidence_decisions": [
+    "N10"
+   ]
+  }
+ ]
+}

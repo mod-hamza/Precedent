@@ -1,0 +1,85 @@
+{
+ "thread_id": "D39",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "jonas@parcelwise.example",
+    "ravi@parcelwise.example",
+    "greg@ferrante-ops.example"
+   ],
+   "cc": [
+    "priya@parcelwise.example"
+   ],
+   "sent_at": "2026-04-21T09:18:00+02:00",
+   "subject": "recap: standup + on-call rotation",
+   "body": "Recap of this morning's standup, for those not present:\n\n- app-tier migration follow-ups are closed, all green\n- Elena starts today, Jonas is doing her onboarding, first task is the ingest backlog\n- on-call: we're starting a weekly rotation next week. Two people, alternating: Jonas one week, Ravi the next. Simple, covers evenings and weekends, escalation to me if it's on fire beyond a P1\n\nI'll send the Pagerly invite and the runbook links before Monday.\n\nCheers, Dev",
+   "in_reply_to_idx": null,
+   "role": "recap"
+  },
+  {
+   "idx": 2,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "jonas@parcelwise.example",
+    "ravi@parcelwise.example",
+    "greg@ferrante-ops.example"
+   ],
+   "sent_at": "2026-04-21T09:52:00+02:00",
+   "subject": "RE: recap: standup + on-call rotation",
+   "body": "Quick recap of my concern with this:\n\n1. Two people alternating weekly means Jonas and Ravi are effectively never both off the hook - that's a burnout pattern within a quarter\n2. In the roadmap review two weeks ago we discussed exactly this, and my understanding was that the rotation would include Greg and Elena once she's onboarded - four people, weekly, is far more sustainable\n3. Elena is a senior hire who has done on-call before; not putting her in from month two sets an odd precedent\n\nHappy to be corrected on what was actually agreed, but I don't think two is what we discussed.\n\nThanks!\nPriya",
+   "in_reply_to_idx": 1,
+   "role": "objection"
+  },
+  {
+   "idx": 3,
+   "from": "jonas@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example",
+    "priya@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-21T10:04:00+02:00",
+   "subject": "RE: recap: standup + on-call rotation",
+   "body": "two is fine. fwiw.\n\ngreg's a contractor, contractors on call is a weird arrangement, who pays him at 3am. and elena started this morning, she shouldn't carry a pager in week one.\n\nif burnout is the worry, pay ravi and me a stipend. cheaper than a meeting about it.",
+   "in_reply_to_idx": 2,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "greg@ferrante-ops.example",
+   "to": [
+    "dev@parcelwise.example",
+    "priya@parcelwise.example",
+    "jonas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-21T23:41:00+02:00",
+   "subject": "RE: recap: standup + on-call rotation",
+   "body": "nobody asked me about on call.\n\nmy contract is teh migration + handover to jonas, thats it. not doing weekly rotations, not priced for it either. happy to jump on real incidents while im still around, but thats different from owning a pager.\n\nalso 2 people for a 22 person company seems thin but not my call\n\nsent from my phone, sorry for typos",
+   "in_reply_to_idx": 2,
+   "role": "objection"
+  },
+  {
+   "idx": 6,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "jonas@parcelwise.example",
+    "ravi@parcelwise.example",
+    "greg@ferrante-ops.example"
+   ],
+   "sent_at": "2026-04-22T09:30:00+02:00",
+   "subject": "RE: recap: standup + on-call rotation",
+   "body": "Dev, I think we're talking past each other in cc, so let's just settle it properly: can we take 20 minutes in Thursday's product-eng sync and come out with one written rotation - who is in, when it starts, and what Greg is and isn't contracted for? Ravi's runbook point is fair regardless of who ends up on the list.\n\nThanks!\nPriya",
+   "in_reply_to_idx": 4,
+   "role": "discussion"
+  }
+ ]
+}

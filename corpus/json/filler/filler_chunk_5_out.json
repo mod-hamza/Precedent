@@ -1,0 +1,1225 @@
+[
+ {
+  "thread_id": "F241",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "jonas@parcelwise.example",
+    "to": ["ingrid@parcelwise.example", "priya@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-13T16:05:00+02:00",
+    "subject": "OOO tomorrow + friday",
+    "body": "out thu 14 and fri 15 may, back monday 18. auto reply text below, keep it as is unless it sounds too rude:\n\n---\nHi, I am out of office until Monday 18 May with limited access to email. For urgent driver-app issues please contact support@parcelwise.example.\n---\n\ningrid: pls drop it in the calendar tool. priya: standup notes thu/fri are on you. fwiw nothing is on fire before i leave.",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F013",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "bruno@redlinecouriers.example",
+    "to": ["ravi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-12T12:05:00+01:00",
+    "subject": "demo slot - today",
+    "body": "Ravi. Your colleagues keep sending me self-service booking links instead of booking an actual slot. I have 20 minutes free this afternoon at 15:00. Use them. If the answer is another scheduling portal I will call Marta directly.\n\nBruno Alvarez, COO, Redline Couriers",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "ravi@parcelwise.example",
+    "to": ["bruno@redlinecouriers.example"],
+    "cc": [],
+    "sent_at": "2026-03-12T12:31:00+01:00",
+    "subject": "Re: demo slot - today",
+    "body": "Hi Bruno, sorry about the booking-link runaround! 15:00 today works, I have sent a plain calendar invite (no portal, promise). I'll do a short walkthrough of the support-tool demo and leave time for your questions. Sorry again for the extra email ping-pong! Ravi",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F014",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "priya@parcelwise.example",
+    "to": ["helen@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-11T15:53:00+02:00",
+    "subject": "Redline check-in - clash with the retro",
+    "body": "Quick recap:\n1) The Redline check-in sits on tomorrow (Fri 12 June) at 14:00, which collides with the rollout retro. Proposal: move the check-in to Monday 15 June, 10:00.\n2) Helen, could you send the Redline contacts a one-line reschedule? You have the friendlier email signature of the two of us.\n3) Totally unrelated admin: courier pickup for my laptop repair tomorrow can do 10:30 or 14:00. I've gone with 10:30 so the machine is back before the weekend.\nThanks!\nPriya",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "helen@parcelwise.example",
+    "to": ["priya@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-11T16:22:00+02:00",
+    "subject": "Re: Redline check-in - clash with the retro",
+    "body": "Dear Priya, thank you for the clear summary. I shall send the reschedule note to the Redline office this afternoon and propose Monday 15 June at 10:00, asking them to confirm; I would gently suggest copying Aisha, as she keeps the relationship notes. The 10:30 collection for your laptop sounds eminently sensible — 14:00 always invites the last meeting of the day to overrun. Kind regards, Helen Oyelaran, Chief Financial Officer, Parcelwise B.V.",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   },
+   {
+    "idx": 3,
+    "from": "priya@parcelwise.example",
+    "to": ["helen@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-11T16:29:00+02:00",
+    "subject": "Re: Redline check-in - clash with the retro",
+    "body": "Perfect, thanks Helen — I'll leave Monday 10:00 in the calendar as the single source of truth and add Aisha. Thanks!\nPriya",
+    "in_reply_to_idx": 2,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F249",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "marta@parcelwise.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-02-25T13:31:00+01:00",
+    "subject": "ravi ooo",
+    "body": "ravi at the dentist tomorrow morning, back after lunch. his queue moves to you for the day. auto reply text he drafted is fine as is. 👍 maybe we look at the rotation properly after launch — no rush.\n\nsent from my iPhone",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F038",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "jonas@parcelwise.example",
+    "to": ["ingrid@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-23T17:58:00+02:00",
+    "subject": "blackthorn kickoff slot",
+    "body": "blackthorn kickoff needs an hour next week. i can do tue 30 or wed 1 july, after 15:00. ines suggested one hour, their side has two people. book whatever room, i'm flexible.\n\njonas",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "ingrid@parcelwise.example",
+    "to": ["jonas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-24T09:12:00+02:00",
+    "subject": "Re: blackthorn kickoff slot",
+    "body": "Good morning Jonas, booked: Tuesday 30 June, 15:00-16:00, Room 2. Invite is in your calendar; do let me know if Dev should be there as well and I will add him. Kind regards, Ingrid",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F191",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "marta@parcelwise.example",
+    "to": ["aisha@parcelwise.example", "dev@parcelwise.example", "priya@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-03T09:58:00+01:00",
+    "subject": "logiconnect scan list",
+    "body": "logiconnect sent the booth scan list, 40+ names in the attached sheet. someone please triage: anything that reads like a support complaint goes to aisha first, the rest waits for tomás on thursday. do not blast the whole list with a newsletter.\n\ndzięki. sent from my iPhone",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F308",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "dev@parcelwise.example",
+    "to": ["ravi@parcelwise.example", "tomas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-03T15:47:00+02:00",
+    "subject": "Friday deploy notes",
+    "body": "Notes for the Friday (5 June) deploy:\n- app tier only, behind the feature flag; rollback is simply flag-off\n- no database changes in this one, the DB stays untouched where it is\n- window is 18:00, Ravi on watch until 20:00\n- freeze anything unrelated after 17:00\nAlso, Tomás suggested leading the app-store release notes with the 'faster planning' line — sounds great, let's do it! Chloe owns the wording so she'll tidy whatever we draft.\n\nCheers, Dev",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F124",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "kofi@parcelwise.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-26T14:47:00+01:00",
+    "subject": "PW-1591: two customers, same webhook gap",
+    "body": "Morning Dev. Two separate support tickets look like the same defect. Logged as PW-1591.\nSteps to reproduce:\n1) Send a delivery-status update between roughly 09:12 and 09:19.\n2) Observe: the webhook call never reaches the customer endpoint.\n3) Expected: retry within 60 seconds; actual: nothing until the next poll (~15 min).\nBoth reporters use the standard retry policy, no custom headers. Is this already known, or shall I write it up properly for the v3 backlog?\nKofi",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "dev@parcelwise.example",
+    "to": ["kofi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-26T15:34:00+01:00",
+    "subject": "Re: PW-1591: two customers, same webhook gap",
+    "body": "my take: fits the queue-consumer restart at 09:10 that morning. retries only fire on the next poll when that happens, so the gap is real but not new. fixing it properly is in the v3 branch.\nBackporting it to 2.9 would be a Priya/launch-schedule question, not mine to wave through. Write it up for the backlog with your timing table, that's genuinely useful.\nCheers, Dev",
+    "in_reply_to_idx": 1,
+    "role": "objection"
+   },
+   {
+    "idx": 3,
+    "from": "kofi@parcelwise.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-26T16:41:00+01:00",
+    "subject": "Re: PW-1591: two customers, same webhook gap",
+    "body": "Understood, write-up coming tomorrow morning. One thought, purely hypothetical: what if we replayed the missed events for those two accounts from the event log? We could script it with a timestamp filter, maybe ten lines. No decision needed from you — say the word and I'll draft the steps, otherwise it just goes in the backlog note.\nKofi",
+    "in_reply_to_idx": 2,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F279",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "marta@parcelwise.example",
+    "to": ["aisha@parcelwise.example", "samir@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-24T13:23:00+01:00",
+    "subject": "king's day",
+    "body": "king's day is mon apr 27, office closed. lena suggests drinks fri apr 24, 16:00, roof terrace if dry. aisha: poll the team who's in, keep it simple, no big spend. samir: you're on snacks. no orange wigs this year.\nalso the swiftbox call on thursday moved to 15:00 — small meeting room, i booked it.\nM. sent from my iPhone",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "aisha@parcelwise.example",
+    "to": ["marta@parcelwise.example", "samir@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-24T13:58:00+01:00",
+    "subject": "Re: king's day",
+    "body": "Hi Marta 😊 Will do! I'll send a quick poll this afternoon — drinks and something to nibble, absolutely no fuss. And noted on the wigs, though I make no promises on Samir's behalf 😊 Aisha",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   },
+   {
+    "idx": 3,
+    "from": "samir@parcelwise.example",
+    "to": ["marta@parcelwise.example", "aisha@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-24T14:05:00+01:00",
+    "subject": "Re: king's day",
+    "body": "hey! poll works for me, and snacks are sorted — bitterballen plus veggie rolls so nobody sulks. and yes, no wigs (probably). samir",
+    "in_reply_to_idx": 2,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F232",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "products@scanhardware.example",
+    "to": ["priya@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-30T15:38:00+02:00",
+    "subject": "Partner bulletin: summer refresh for your workplace ☕",
+    "body": "Hello!\nAs a valued ScanHardware contact, we thought you'd like first look at our new partner offer with Bean Bros Office Coffee: 15% off your first three months of workplace coffee delivery, plus a free tasting box for teams over 10.\nAnd for the gadget-minded: ask about our scan-to-brew loyalty demo. Yes, really.\nOffer ends 31 July. Unsubscribe any time — link below.\n— ScanHardware Products Team",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "priya@parcelwise.example",
+    "to": ["products@scanhardware.example"],
+    "cc": [],
+    "sent_at": "2026-06-30T16:12:00+02:00",
+    "subject": "Re: Partner bulletin: summer refresh for your workplace ☕",
+    "body": "Hello, please remove priya@parcelwise.example from this list — I don't handle office coffee (or scan-to-brew, tempting as it sounds). Thanks! Priya",
+    "in_reply_to_idx": 1,
+    "role": "chatter"
+   },
+   {
+    "idx": 3,
+    "from": "products@scanhardware.example",
+    "to": ["priya@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-30T16:40:00+02:00",
+    "subject": "Re: Partner bulletin: summer refresh for your workplace ☕",
+    "body": "Hi Priya,\nDone — you have been unsubscribed and will not hear from us again. In the meantime, one last courtesy: code SUMMER10 gives 10% off any Bean Bros order through August.\nHappy brewing!\n— ScanHardware Products Team",
+    "in_reply_to_idx": 2,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F179",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "helen@parcelwise.example",
+    "to": ["jonas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-02-04T17:42:00+01:00",
+    "subject": "Booth lead - technical question",
+    "body": "Dear Jonas, one of the LogiConnect booth leads runs a 60-driver operation and asks specifically whether our current build supports handheld scanners outside our supported list. That is beyond my technical competence, so I would be grateful if you could have a brief look at their hardware line (in the sheet Tomás circulated) and indicate whether it is plausible, improbable, or 'send them a demo and see'. Separately, so we are going with the standard demo track for all booth leads from now on? I did not want to assume. Kind regards, Helen Oyelaran, Chief Financial Officer, Parcelwise B.V.",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F268",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "jonas@parcelwise.example",
+    "to": ["ravi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-26T18:00:00+01:00",
+    "subject": "window desk",
+    "body": "cleared the desk by the window for whoever we land for the senior backend role. spare monitor from storage works, keyboard is yours to lose, chair has a wobble (lena claims she has a spare wheel somewhere). ingrid says shortlist is coming soon, so when they start: act like the desk was always theirs. fwiw i get first coffee-round rights that week.\n\njonas",
+    "in_reply_to_idx": null,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F304",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "greg@ferrante-ops.example",
+    "to": ["jonas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-24T09:00:00+02:00",
+    "subject": "flaky test - quarantined",
+    "body": "jonas. quarantined teh flaky route-cache test on staging this morning. fails 1 in 5 runs, smells like clock drift not real breakage. dropped a marker in CI so it dont block teh pipeline. proper fix after launch i reckon, too tired to read that regex last night. sent from mobile, typos are teh norm.\n\ngreg",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "jonas@parcelwise.example",
+    "to": ["greg@ferrante-ops.example"],
+    "cc": [],
+    "sent_at": "2026-06-24T09:26:00+02:00",
+    "subject": "Re: flaky test - quarantined",
+    "body": "cheers. leave it quarantined, i'll pick it up next sprint. do not touch that regex, it bites back. jonas",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F213",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "promo@koffie.example",
+    "to": ["ravi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-26T15:42:00+02:00",
+    "subject": "Bries Koffie - juni update ☕",
+    "body": "Hoi Ravi!\nOnze juni-update: twee nieuwe single-origin blends binnen, en de zomerdecafé is terug. Verder goed om te weten: abonnementen worden vanaf deze maand verwerkt via PayForge, dus op je volgende afschrift staat PayForge als verwerker — niks om je zorgen over.\nProefpakket deze maand 15% voordeliger met code JUNI15.\nKoffiegroeten, Bries Koffie",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "ravi@parcelwise.example",
+    "to": ["promo@koffie.example"],
+    "cc": [],
+    "sent_at": "2026-06-26T16:01:00+02:00",
+    "subject": "Re: Bries Koffie - juni update ☕",
+    "body": "hi, I think I'm on this list by accident — I'm a software engineer and the office beans go through a colleague, not me. could you please unsubscribe me? thanks! ravi",
+    "in_reply_to_idx": 1,
+    "role": "chatter"
+   },
+   {
+    "idx": 3,
+    "from": "promo@koffie.example",
+    "to": ["ravi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-26T16:29:00+02:00",
+    "subject": "Re: Bries Koffie - juni update ☕",
+    "body": "Hoi Ravi, geen probleem — je bent uitgeschreven en ontvangt niets meer van ons. Toch nog één laatste cadeautje: met code JUNI15 had je 15% korting op het proefpakket... misschien voor thuis? Koffiegroeten, Bries Koffie",
+    "in_reply_to_idx": 2,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F111",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "samir@parcelwise.example",
+    "to": ["marta@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-02T15:31:00+02:00",
+    "subject": "csv export grumbles",
+    "body": "hey Marta! two accounts are grumbling that exported reports open as gibberish in their spreadsheet tool — looks like the CSV encoding thing again. what if we just defaulted exports to UTF-8 with that little BOM marker at the start? we could also offer a settings toggle but that feels like the heavier road. nobody's threatening to leave over it, so not urgent. want me to log it properly with screenshots? samir",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F064",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "aisha@parcelwise.example",
+    "to": ["dev@parcelwise.example", "tomas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-01T09:38:00+02:00",
+    "subject": "Q2 prepaid schedule - export help",
+    "body": "Hi team 😊 Happy June! Ahead of the Q2 close I'd like to sanity-check which annual-prepaid accounts have renewal dates landing this quarter, so the friendly reminders go out on time and nobody is surprised. Dev — is there a clean export for that in the dashboard, or is it still a manual list? Tomás — shout if you'd rather I route anything renewal-shaped to you first. 😊 Aisha",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "dev@parcelwise.example",
+    "to": ["aisha@parcelwise.example"],
+    "cc": ["tomas@parcelwise.example"],
+    "sent_at": "2026-06-01T11:04:00+02:00",
+    "subject": "Re: Q2 prepaid schedule - export help",
+    "body": "my take: dashboard → billing → cohort filter 'annual prepaid', then export CSV. caveat: some renewal dates came through the old import as null; those will show blank. i can script a backfill flag for the blanks but it won't be before thursday.\nCheers, Dev",
+    "in_reply_to_idx": 1,
+    "role": "discussion"
+   },
+   {
+    "idx": 3,
+    "from": "aisha@parcelwise.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": ["tomas@parcelwise.example"],
+    "sent_at": "2026-06-01T11:40:00+02:00",
+    "subject": "Re: Q2 prepaid schedule - export help",
+    "body": "That's perfect, thank you Dev 😊 I'll start with the dashboard export today and hold the blank-date ones aside until your Thursday script. Tomás, I'll copy you once the list is tidy. Aisha",
+    "in_reply_to_idx": 2,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F196",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "tomas@parcelwise.example",
+    "to": ["ravi@parcelwise.example", "lena@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-04-22T16:47:00+02:00",
+    "subject": "quick pricing check 🚀",
+    "body": "Hola equipo! ✅ A prospect is comparing us with a competitor and asked whether the old Starter price still exists — and I may have hinted it could perhaps be 'arranged'. Before I dig myself a deeper hole: can someone confirm what we can actually say out loud? Ravi, do you know which plan sheets are still live? Lena, are the printed price sheets in the office current? Saludos, Tomás",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "lena@parcelwise.example",
+    "to": ["tomas@parcelwise.example"],
+    "cc": ["ravi@parcelwise.example"],
+    "sent_at": "2026-04-22T17:12:00+02:00",
+    "subject": "Re: quick pricing check 🚀",
+    "body": "Hallo Tomás,\nBullets:\n- the printed sheets in the kitchen are from January — do not use them\n- plan pricing itself is Priya's terrain, not mine\n- for a straight 'what does it cost' answer, the website prices are the current ones\nDanke! Lena",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F046",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "ravi@parcelwise.example",
+    "to": ["ingrid@parcelwise.example", "chloe@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-04T17:05:00+02:00",
+    "subject": "slot with Bruno + room grab (sorry!)",
+    "body": "Hi Ingrid, sorry to bother — could you find me a slot with Bruno at Redline this week? His only guidance so far was 'any afternoon', which I suspect means he doesn't know either. Chloe: I grabbed the small meeting room for the Swiftbox call on Wednesday at 14:00 — hope that's fine, the big one was already taken. Sorry again for the last-minute asks! Ravi",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F165",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "marta@parcelwise.example",
+    "to": ["samir@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-31T12:09:00+02:00",
+    "subject": "re: the discount ask",
+    "body": "samir. route the discount request to tomás — up to 5% is his call, above that it comes to me. don't put numbers in writing to the prospect before either of us says them.\nalso: thursday sync at 11:00. scratch that — moved to 11:30, calendar is updated.\nM. sent from my iPhone",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F216",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "billing@registrar.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-04-22T13:23:00+02:00",
+    "subject": "Statement ready + product update",
+    "body": "Hello,\nYour monthly account statement for parcelwise.example is ready. The PDF is available in the control panel under Billing → Statements.\nAlso new this month: automated CSV export of billing events and scheduled reconciliation reports, available on all plans at no extra cost. Enable them under Settings → Exports.\nYou receive this message as the listed technical contact. Manage notification preferences in the control panel.",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F070",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "marta@parcelwise.example",
+    "to": ["chloe@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-02-02T18:23:00+01:00",
+    "subject": "q2 calendar",
+    "body": "chloe. helen wants the q2 campaign calendar mapped against the prepaid revenue schedule before anything goes out the door. send her the draft first this time, not after.\nM",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "chloe@parcelwise.example",
+    "to": ["marta@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-02-02T19:11:00+01:00",
+    "subject": "Re: q2 calendar",
+    "body": "Hi Marta! Super excited about this alignment — honestly it will make the whole quarter sing! 🚀 Draft is about 80% done; I'll send Helen the schedule-mapped version tomorrow morning so she sees it first, promise!\nChloe",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F275",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "aisha@parcelwise.example",
+    "to": ["jonas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-17T12:12:00+01:00",
+    "subject": "a gentle keyboard question 😊",
+    "body": "Hi Jonas 😊 Quick one, and please don't take this the wrong way — whoever sits near the printer has a keyboard that sounds like a pneumatic drill during our Tuesday sync. There is a suspicion in the room that it might be yours. If it is: no worries at all, maybe just a softer touch during meetings? If it isn't: then we have a mystery, and I apologise for even asking 😊 Aisha",
+    "in_reply_to_idx": null,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F125",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "bruno@redlinecouriers.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-30T12:31:00+02:00",
+    "subject": "webhook retry storm - fix it",
+    "body": "Dev. One of the small couriers on our network hammered your webhook endpoint all weekend — our dashboard counted 40k retries. Looks like their middleware, not your software, but your status page said absolutely nothing for two days. Sort that part out.\nAlso, your Samir floated capping partner traffic at a fixed rate on your side. Brilliant idea, we fully support it — have your team switch it on this week, we'd be delighted. I do not want Redline traffic queued behind some weekend cowboy.\nBruno Alvarez, COO, Redline Couriers",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F153",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "samir@parcelwise.example",
+    "to": ["marta@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-02T19:05:00+01:00",
+    "subject": "rain mode + grumpy driver",
+    "body": "hey Marta! a driver on one of the accounts swears the scanner won't scan in rain mode — something about the confirm gesture not registering with wet-screen gloves on. he's soaked and unimpressed. what if we just made rain mode skip the confirm gesture entirely? we could also bump the screen timeout a touch. no idea what's feasible, maybe worth asking dev tomorrow. just flagging before it becomes a support ticket. samir",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "marta@parcelwise.example",
+    "to": ["samir@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-02T19:44:00+01:00",
+    "subject": "Re: rain mode + grumpy driver",
+    "body": "log it with a video if you can get one. rain mode is ravi's corner. no promises before launch.\n\nM. sent from my iPhone",
+    "in_reply_to_idx": 1,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F265",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "helen@parcelwise.example",
+    "to": ["aisha@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-11T10:42:00+02:00",
+    "subject": "Bike challenge + plants",
+    "body": "Dear Aisha, I saw the sign-up sheet for the bike-to-work challenge and should very much like to join for the remaining weeks — please add my name under Thursdays, weather permitting, which in Rotterdam is of course a significant caveat. On a wholly different note: the office plants have been looking at me pleadingly, and with Lena buried in sublet viewings someone must own the watering rota. I would suggest Fridays, as the office is fullest then, and I am happy to take the first round this week. Kind regards, Helen Oyelaran, Chief Financial Officer, Parcelwise B.V.",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F023",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "helen@parcelwise.example",
+    "to": ["chloe@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-05T17:42:00+02:00",
+    "subject": "A short call to schedule",
+    "body": "Dear Chloe, would you be so kind as to find a 30-minute slot this week or early next for a short collections call regarding an overdue account? My availability is broadly open after 14:00. I heard through the corridor that you proposed making these conversations a friendly check-in first rather than a dunning letter — that is a charming idea and I am completely on board, let's do exactly that for this one. Kind regards, Helen Oyelaran, Chief Financial Officer, Parcelwise B.V.",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F272",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "tomas@parcelwise.example",
+    "to": ["ravi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-26T16:53:00+01:00",
+    "subject": "launch week fuel ✅",
+    "body": "Ravi! 🚀 Launch week needs proper fuel. My motion on the table: stroopwafels (obviously), salted crisps, and those fruit things Lena buys when she's being virtuous. Vote, veto, or add — I'm putting the order in tomorrow morning unless someone screams. Tomás ✅",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "ravi@parcelwise.example",
+    "to": ["tomas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-26T17:20:00+01:00",
+    "subject": "Re: launch week fuel ✅",
+    "body": "ha, votes: stroopwafels yes, crisps only the paprika ones, skip the virtuous fruit things. can we add more of that mint tea? the box by the coffee machine is dust. sorry for the strong opinions, ravi",
+    "in_reply_to_idx": 1,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F054",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "samir@parcelwise.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-30T16:31:00+02:00",
+    "subject": "onboarding booking + standup time",
+    "body": "hey! can we get onboarding on the books for the new starter account — ideally early next week so they're up and running before month end? nothing exotic, standard dashboard plus the app walkthrough. also heads up: monday stand-up moves to 09:15 from tomorrow — lena's calendar shows the room is free then, so just shift your alarms 15 minutes. samir",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "dev@parcelwise.example",
+    "to": ["samir@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-30T16:52:00+02:00",
+    "subject": "Re: onboarding booking + standup time",
+    "body": "standup 09:15 noted. send me two concrete windows for the onboarding and i'll take the earlier one.\nCheers, Dev",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F266",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "chloe@parcelwise.example",
+    "to": ["aisha@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-05T19:47:00+02:00",
+    "subject": "running club 🏃‍♀️ (deck inside!)",
+    "body": "Hi Aisha!! Super excited — the lunch running club is getting real traction! I mocked up a poster (link to the deck, slide 4 is my favourite). Proposal: a 5k loop along the Maas, Tuesdays and Thursdays, all paces welcome. So we're going with Tuesdays to start, right?? 🚀 Chloe",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "aisha@parcelwise.example",
+    "to": ["chloe@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-05T20:21:00+02:00",
+    "subject": "Re: running club 🏃‍♀️ (deck inside!)",
+    "body": "Hi Chloe 😊 Love the energy, and the poster looks amazing! Count me as a firm 'maybe' for now — June is absolute chaos with the cutover and the rollout, and I'd hate to commit and then no-show every week. I'll happily spread the word tomorrow though! 😊 Aisha",
+    "in_reply_to_idx": 1,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F159",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "helen@parcelwise.example",
+    "to": ["jonas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-20T13:05:00+01:00",
+    "subject": "Security questionnaire - technical sections",
+    "body": "Dear Jonas, a prospect has sent across a security questionnaire ahead of any commercial conversation — mostly the usual: hosting region, data retention, access controls, penetration-test cadence. I can answer the commercial parts, but sections 2 and 3 are firmly in your territory; could you complete them when you have a quiet moment? There is no deadline pressure yet. One question for my own understanding, so we are going with the standard questionnaire pack for all inbound requests now? I did not want to assume. Kind regards, Helen Oyelaran, Chief Financial Officer, Parcelwise B.V.",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F098",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "ravi@parcelwise.example",
+    "to": ["priya@parcelwise.example", "tomas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-28T11:58:00+01:00",
+    "subject": "insurance paperwork - serial numbers",
+    "body": "Hi both, sorry to bother — the insurer sent the renewal paperwork for the office and equipment policy, and it needs a signature plus an updated equipment list. I've started the list (laptops, monitors, the demo scanner units) but I'm missing serial numbers for the two newest demo handhelds. Sorry, I have no idea who bought those. Could one of you point me to the invoice or the box? No rush this week. Sorry again! Ravi",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F258",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "samir@parcelwise.example",
+    "to": ["aisha@parcelwise.example", "ingrid@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-20T16:05:00+02:00",
+    "subject": "fantasy league + one admin thing",
+    "body": "hey! ⚽ thinking about a proper fantasy football league next season — draft night in the office, sometime in august? Aisha you're obviously in, Ingrid you can be our neutral referee and tiebreaker 😄 separate admin thing: the courier comes Thursday for my laptop repair, pickup can be 10:30 or 14:00 — I've told them 10:30, less chance I'm stuck on a call. samir",
+    "in_reply_to_idx": null,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F075",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "kofi@parcelwise.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-04-23T09:05:00+02:00",
+    "subject": "migration paperwork - filing location",
+    "body": "Morning Dev. Helen's accountant asked for the migration invoices grouped by week so they can be matched against the timesheets. I have the timesheets; could you point me to where the hosting invoices are filed? I don't need amounts or access to anything sensitive — just the folder. Steps I'll follow once you tell me: 1) pull the invoices by date, 2) group per week, 3) hand the summary to Helen. Also the export should be CSV — scratch that, their tool wants xlsx, I'll convert at the end. Kofi",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F112",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "walt@harborexpress.example",
+    "to": ["lena@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-09T19:09:00+01:00",
+    "subject": "scanner pairing trouble",
+    "body": "Evening Lena, Walt Pruitt over at Harbor Express here — hope I'm not pestering you again. Two of our scanners stopped pairing after the drivers let the batteries run flat. We hold the pairing button and nothing blinks, not even a polite little flash. One of my boys heard the Swiftbox folks had pairing trouble once too, so I reckon it's a common quirk? If you could send over your pairing guide, let's do it that way first before anyone drives anywhere. Appreciate you all, truly. — Walt",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F132",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "carla@swiftbox.example",
+    "to": ["priya@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-07T15:38:00+01:00",
+    "subject": "Billing portal session timeouts",
+    "body": "Ms Natarajan, our finance team reports that the billing portal logs them out after roughly five minutes of inactivity. We do not object to short sessions on principle — quite the opposite — but five minutes while reconciling invoices is impractical. Please advise whether the timeout can be adjusted, and provide the current session policy in writing for our records. Regards, Carla Dunne, Head of Operations, Swiftbox",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "priya@parcelwise.example",
+    "to": ["carla@swiftbox.example"],
+    "cc": [],
+    "sent_at": "2026-01-08T09:41:00+01:00",
+    "subject": "Re: Billing portal session timeouts",
+    "body": "Hi Carla — thanks for flagging, five minutes does sound shorter than intended. My understanding is the portal uses one shared session policy and something changed in January; I've asked the platform team for the actual current value before promising anything. So we're moving to a 60-minute timeout for account-admin roles? I'd rather confirm than guess. I'll come back to you with the exact numbers this week. Thanks! Priya",
+    "in_reply_to_idx": 1,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F295",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "aisha@parcelwise.example",
+    "to": ["marta@parcelwise.example", "dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-17T16:38:00+02:00",
+    "subject": "Elena's checklist - two open boxes",
+    "body": "Hi Marta, hi Dev 😊 The onboarding checklist for Elena still shows two open admin items: the hardware form (monitor arm, second screen) and the pension form Ingrid sent back in April — both just need a tick and a scan. I'm happy to chase the paperwork, I only need to know whether the hardware bits should come out of IT stock or the new-starter budget, since the form asks. 😊 Aisha",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "dev@parcelwise.example",
+    "to": ["aisha@parcelwise.example", "marta@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-17T17:02:00+02:00",
+    "subject": "Re: Elena's checklist - two open boxes",
+    "body": "my take: IT stock — there are two spare monitor arms left over from the sublet clear-out doing nothing. i'll drop them at her desk tomorrow morning.\nCheers, Dev",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   },
+   {
+    "idx": 3,
+    "from": "marta@parcelwise.example",
+    "to": ["aisha@parcelwise.example", "dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-17T17:19:00+02:00",
+    "subject": "Re: Elena's checklist - two open boxes",
+    "body": "fine. and while we're tidying: all-hands moves to a fixed 16:00 slot every month, lena has the calendar. aisha, tick the boxes.\n\nM. sent from my iPhone",
+    "in_reply_to_idx": 2,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F016",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "jonas@parcelwise.example",
+    "to": ["lena@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-02-17T11:31:00+01:00",
+    "subject": "june team planning",
+    "body": "june team planning needs booking before the calendars melt. propose two days, week of jun 15, somewhere with wifi and coffee that isn't the office. fwiw i think the offsite day should be utrecht — one train, everyone survives, and the venue near the station did us well last time. great idea right? let's do that.\n\njonas",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "lena@parcelwise.example",
+    "to": ["jonas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-02-17T13:07:00+01:00",
+    "subject": "Re: june team planning",
+    "body": "Hallo Jonas,\nBullets:\n- week of Jun 15 works for the office calendar\n- I will request two options: day 1 in-office, day 2 off-site (Utrecht is on my list, along with one fallback)\n- the venue budget question goes to Helen, not me 😉\nDanke! Lena",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F193",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "tomas@parcelwise.example",
+    "to": ["helen@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-02-05T19:31:00+01:00",
+    "subject": "old price list question 🚀",
+    "body": "Hola Helen! Quick one before I answer a prospect: they found a two-year-old price list online listing Starter at €39 and asked whether we honour it. I said 'let me check with the money people' 😄. Am I right that the current published prices are simply the ones? Don't want to over-promise anything before the weekend! Tomás ✅",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "helen@parcelwise.example",
+    "to": ["tomas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-02-05T20:02:00+01:00",
+    "subject": "Re: old price list question 🚀",
+    "body": "Dear Tomás, thank you for checking before answering — I do appreciate that. You may confidently tell the prospect that the prices published on our website today are the applicable ones; historic lists are not honoured, and I would rather not manufacture exceptions before any commitment exists. Should the conversation ever progress to a bespoke arrangement, that would of course require approval above both our desks. Kind regards, Helen Oyelaran, Chief Financial Officer, Parcelwise B.V.",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F292",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "ravi@parcelwise.example",
+    "to": ["priya@parcelwise.example", "marta@parcelwise.example", "ingrid@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-07T16:17:00+02:00",
+    "subject": "Kofi's on-site days - admin logistics",
+    "body": "Hi all, sorry to bother — purely logistics about Kofi's on-site days: 1) which weekdays is he actually in the office, so I can put a desk on the floor plan? 2) does he need a visitor badge, or does he count as regular staff for the door system? Sorry if this is Ingrid's or Lena's turf — I got asked at standup and didn't know the answer. Ravi",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "ingrid@parcelwise.example",
+    "to": ["ravi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-07T16:49:00+02:00",
+    "subject": "Re: Kofi's on-site days - admin logistics",
+    "body": "Hi Ravi, no bother at all. The working pattern is three days per week, currently Tuesday to Thursday — though I would gently suggest confirming with Kofi himself before printing anything on the floor plan. For access: he is a contractor, so a guest badge from reception is the correct route; Lena keeps the stack at the front desk. Kind regards, Ingrid",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   },
+   {
+    "idx": 3,
+    "from": "ravi@parcelwise.example",
+    "to": ["ingrid@parcelwise.example"],
+    "cc": ["priya@parcelwise.example", "marta@parcelwise.example"],
+    "sent_at": "2026-05-07T17:05:00+02:00",
+    "subject": "Re: Kofi's on-site days - admin logistics",
+    "body": "Thanks Ingrid, exactly what I needed! I'll use the hot-desk by the window on Tue-Thu and grab a guest badge from Lena tomorrow. Sorry again for the extra email! Ravi",
+    "in_reply_to_idx": 2,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F142",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "support@parcelwise.example",
+    "to": ["aisha@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-28T16:31:00+01:00",
+    "subject": "Ticket #40113 forwarded - offline sync",
+    "body": "Hello Aisha, forwarding ticket #40113 from the queue: a driver on a Starter account reports the offline sync never completes — the app shows 47 of 52 items, then resets overnight. Device is an older Android build, app version 2.9. Customer wording: 'every morning the manifest is empty again'. Requesting CS input before we answer, since the account has history. Kind regards, Support",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "aisha@parcelwise.example",
+    "to": ["support@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-28T17:12:00+01:00",
+    "subject": "Re: Ticket #40113 forwarded - offline sync",
+    "body": "Hi team 😊 Thank you for the context! I know this account — the dispatcher called on Monday and has been remarkably patient. Two notes that might matter: they mostly drive a low-coverage corridor, and I believe the driver switches his phone to battery saver overnight, which could explain the reset. Could we check whether sync is suspended under battery saver in 2.9? I promised them an update by Friday. 😊 Aisha",
+    "in_reply_to_idx": 1,
+    "role": "discussion"
+   },
+   {
+    "idx": 3,
+    "from": "support@parcelwise.example",
+    "to": ["aisha@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-29T09:05:00+01:00",
+    "subject": "Re: Ticket #40113 forwarded - offline sync",
+    "body": "Hello Aisha, engineering confirms battery saver pauses background sync in 2.9, so the overnight reset matches the driver's setup. We have sent the customer the battery-optimisation whitelist instructions and marked the ticket pending-customer. We will keep it open until your promised Friday update either way. Kind regards, Support",
+    "in_reply_to_idx": 2,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F102",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "dev@parcelwise.example",
+    "to": ["marta@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-27T19:17:00+02:00",
+    "subject": "invoice for the demo scanner resale",
+    "body": "Marta — a customer bought one of the demo scanner units (the resale we waved at during standup). I need to invoice them, but billing only does subscriptions; there is no SKU for hardware resale. my take: one-off invoice through Helen's manual process rather than building anything. worth five minutes of your time or just go to Helen directly?\nCheers, Dev",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "marta@parcelwise.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-27T19:41:00+02:00",
+    "subject": "Re: invoice for the demo scanner resale",
+    "body": "helen. use her manual template. don't build a sku for one scanner.\n\nM. sent from my iPhone",
+    "in_reply_to_idx": 1,
+    "role": "confirmation"
+   },
+   {
+    "idx": 3,
+    "from": "dev@parcelwise.example",
+    "to": ["marta@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-28T09:33:00+02:00",
+    "subject": "Re: invoice for the demo scanner resale",
+    "body": "Done — Helen confirmed the manual template this morning, invoice goes out by Friday. Nothing gets built, everyone remains calm.\nCheers, Dev",
+    "in_reply_to_idx": 2,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F043",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "ravi@parcelwise.example",
+    "to": ["chloe@parcelwise.example", "tomas@parcelwise.example", "marta@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-15T14:00:00+01:00",
+    "subject": "leadership weekly booked + two small things",
+    "body": "Hi all, sorry to bother — leadership weekly is now booked in Room 1 for the whole quarter, Wednesdays 10:00, invites sent (Chloe, you have two clashes in Feb, the calendar will nag you). Two small housekeeping things: 1) I swapped parking spots 4 and 5 back, since Tomás's car doesn't fit behind the pillar — shout if that's wrong and I'll swap again. 2) The projector remote has vanished again; Lena is ordering a spare. Sorry for the wall of text! Ravi",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F103",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "kofi@parcelwise.example",
+    "to": ["dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-06T13:00:00+02:00",
+    "subject": "February usage export - QA test scans",
+    "body": "Afternoon Dev. While building the regression set for the billing export I noticed the February usage export includes the QA test scans I ran against the staging integration keys (my scripts, ref PW-1712, testing window 3-7 Feb). Two facts: 1) my test scans carry the env=QA tag; 2) the export as generated does not filter on that tag. So we're excluding QA-tagged usage from customer-facing invoices, right? I could not find it written down anywhere, and I would rather ask than assume. Kofi",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F274",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "priya@parcelwise.example",
+    "to": ["ravi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-07T11:38:00+02:00",
+    "subject": "parking + snacks",
+    "body": "Quick recap:\n1) Whoever parks the grey estate across two bays by the bike shed — the whole floor is judging you. If it belongs to a visitor, we forgive them.\n2) Launch-week snacks: ordering stroopwafels, paprika crisps and fruit, delivery Tuesday, same list Tomás circulated. Consider it sorted.\n3) If the grey estate is yours, the bays by the fence are free all week.\nThanks!\nPriya",
+    "in_reply_to_idx": null,
+    "role": "chatter"
+   }
+  ]
+ },
+ {
+  "thread_id": "F177",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "marta@parcelwise.example",
+    "to": ["ravi@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-17T10:09:00+02:00",
+    "subject": "quiet trial account",
+    "body": "ravi. one of the may trial batch went quiet after day six — no logins, no scans. FYI see below, your own note from last week about the day-5 email nudge. did that ever actually ship, or is it still a draft?\n\n> From: ravi@parcelwise.example\n> Sent: 10 June, 17:42\n> draft nudge email for day-5 trials is written — short, friendly, one line about the demo video. still needs scheduling.\n\nM. sent from my iPhone",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "ravi@parcelwise.example",
+    "to": ["marta@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-06-17T10:47:00+02:00",
+    "subject": "Re: quiet trial account",
+    "body": "Hi Marta, sorry for the slow answer! No — the day-5 nudge is still a draft, the copy is written but it never got scheduled. That one's on me, sorry. I can line it up properly this week and tell you which trials it would have caught. Ravi",
+    "in_reply_to_idx": 1,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F163",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "aisha@parcelwise.example",
+    "to": ["chloe@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-05-07T19:53:00+02:00",
+    "subject": "heads-up: a happy July renewal",
+    "body": "Hi Chloe 😊 A gentle heads-up from the CS side: one of our July-renewal accounts has been quietly engaging with everything we publish lately — webinars, release notes, all of it. Good mood, zero complaints, but they will want to talk roadmap during renewal season. Nothing for you to do right now, just flagging so our marketing timing in June is kind to them. 😊 Aisha",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F192",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "samir@parcelwise.example",
+    "to": ["tomas@parcelwise.example", "dev@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-22T11:58:00+01:00",
+    "subject": "prospect pricing question",
+    "body": "hey! prospect asked a simple question I couldn't answer: if they sign now, do they keep the current Starter price forever, or does the rumoured increase hit them too? I said 'honestly, no idea'. what am I allowed to tell them? samir",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "tomas@parcelwise.example",
+    "to": ["samir@parcelwise.example"],
+    "cc": ["dev@parcelwise.example"],
+    "sent_at": "2026-01-22T12:36:00+01:00",
+    "subject": "Re: prospect pricing question",
+    "body": "Hola Samir! ✅ Tell them early movers always get looked after — wink wink. Jokes aside: do NOT promise anything in writing, and nothing above a standard discount without sign-off. I'll ping you the moment we know where pricing lands. 🚀 Tomás",
+    "in_reply_to_idx": 1,
+    "role": "discussion"
+   },
+   {
+    "idx": 3,
+    "from": "dev@parcelwise.example",
+    "to": ["samir@parcelwise.example", "tomas@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-22T13:02:00+01:00",
+    "subject": "Re: prospect pricing question",
+    "body": "my take: there is no separate 'old plans' tier — every account is on the same plans, and the increase you heard about is still only an internal idea. safe answer: current published prices apply at signup. anything fancier is a commercial question, not an architecture one.\nCheers, Dev",
+    "in_reply_to_idx": 2,
+    "role": "confirmation"
+   }
+  ]
+ },
+ {
+  "thread_id": "F202",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "products@scanhardware.example",
+    "to": ["ingrid@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-24T19:38:00+01:00",
+    "subject": "Your website vs the competition - Q2 slots",
+    "body": "Hello Ingrid,\nI noticed parcelwise.example ranks below competitors for 'route planning software' and related searches. Our Q2 SEO audit slots are filling quickly: for a one-time €499 you receive a 40-page report, keyword map and three months of ranking tracking.\nReply with the word AUDIT to reserve this week's remaining slot.\n— ScanHardware Growth Team\n(Unsubscribe by replying REMOVE.)",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "products@scanhardware.example",
+    "to": ["ingrid@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-03-25T09:15:00+01:00",
+    "subject": "Re: Your website vs the competition - Q2 slots",
+    "body": "Good morning Ingrid,\nFollowing up on yesterday's note — shall I reserve Thursday's audit slot for parcelwise.example? So we're going ahead with the audit, then? A simple yes and I'll do the rest.\n— ScanHardware Growth Team",
+    "in_reply_to_idx": 1,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F166",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "marta@parcelwise.example",
+    "to": ["ravi@parcelwise.example", "aisha@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-04-23T16:31:00+02:00",
+    "subject": "swiftbox seats - chatter only",
+    "body": "swiftbox keeps mentioning more dashboard seats for their ops team in casual calls. no quote, no commitment — chatter for now. ravi: what would extra seats actually touch, technically? aisha: have they said why they want them? just thinking out loud.\n\nM. sent from my iPhone",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   },
+   {
+    "idx": 2,
+    "from": "ravi@parcelwise.example",
+    "to": ["marta@parcelwise.example"],
+    "cc": ["aisha@parcelwise.example"],
+    "sent_at": "2026-04-23T17:22:00+02:00",
+    "subject": "Re: swiftbox seats - chatter only",
+    "body": "Hi Marta, sorry for the slow reply! Technically seats are just account flags, so extra ones would be cheap — the more interesting question is what if we tied them to the API rate limits instead? We could also simply raise the seat cap and change nothing else. I haven't touched anything, purely thinking out loud like you said. Ravi",
+    "in_reply_to_idx": 1,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F206",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "events@corvidcloud.example",
+    "to": ["helen@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-04-15T13:05:00+02:00",
+    "subject": "Corvid Cloud spring events - you're invited",
+    "body": "Hello,\nOur spring event series is open for registration:\n1) Webinar, 29 April: 'FinOps — reading your cloud invoice without crying'.\n2) Partner session, 6 May: a sponsored briefing with Meridian Bank on interest rates and cash reserves for scale-ups. Seats limited.\n3) In-person meetup, 21 May, Amsterdam: architecture clinic with our solution engineers.\nAll sessions are free; register via the links in your account portal. Manage event emails in preferences.",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ },
+ {
+  "thread_id": "F307",
+  "messages": [
+   {
+    "idx": 1,
+    "from": "ravi@parcelwise.example",
+    "to": ["priya@parcelwise.example"],
+    "cc": [],
+    "sent_at": "2026-01-08T18:00:00+01:00",
+    "subject": "noisy staging alert suppressed (sorry!)",
+    "body": "Hi Priya, sorry to bother you with infra noise — the staging disk-space alert has been firing 6-8 times a day since Monday and it is always the same false alarm (log rotation, known quirk). I've muted just that one alert on staging only; production alerts are untouched. Sorry if that was actually Dev's call to make — I can undo it right away if so! Could someone review the mute next week? Sorry again! Ravi",
+    "in_reply_to_idx": null,
+    "role": "discussion"
+   }
+  ]
+ }
+]

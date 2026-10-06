@@ -1,0 +1,32 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: helen@parcelwise.example, dev@parcelwise.example
+Subject: RE: QA coverage gap before the v3 rollout
+Date: Tue, 14 Apr 2026 10:41:00 +0200
+Message-ID: <3a640e706785.D23.004@parcelwise.example>
+In-Reply-To: <a5a115d950ce.D23.003@parcelwise.example>
+References: <f29185498bfb.D23.001@parcelwise.example> <fa80c943bb35.D23.002@parcelwise.example> <a5a115d950ce.D23.003@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Good news on the contractor question: I called Kofi Mensah, who did the QA contract for the tracking-api rewrite last year (Dev, you rated him highly at the time, repro steps always immaculate). He is freelance now and Kofi's available from the 20th.
+
+If that timing works, he could run the first regression pass before the May 13 cohort and be embedded for the whole rollout window.
+
+Thanks!
+Priya
+-----Original Message-----
+From: Dev Raman <dev@parcelwise.example>
+Sent: Fri, 10 Apr 2026 09:03:00 +0200
+To: priya@parcelwise.example, helen@parcelwise.example
+Subject: RE: QA coverage gap before the v3 rollout
+
+my take: contractor.
+
+- the work in May is regression passes between rollout cohorts - well-defined, bounded, perfect contractor work
+- a full-time hire would take 2+ months to source and onboard, which lands us after the 100% cutoff on May 27. useless timing
+- if we later want permanent QA capacity we can convert, and we'll know from real work whether we need test-automation skills or manual-first
+
+One condition: the person needs to write up defects properly (repro steps, build, severity), not just 'it's broken'. Most can't.
+
+Cheers, Dev

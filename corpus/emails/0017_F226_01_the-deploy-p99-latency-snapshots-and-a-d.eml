@@ -1,0 +1,20 @@
+From: Noreply <noreply@nimbushost.example>
+To: jonas@parcelwise.example
+Subject: The Deploy: p99 latency, snapshots, and a database you can time travel in
+Date: Wed, 14 Jan 2026 13:31:00 +0100
+Message-ID: <f71bd07e67c6.F226.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Jonas,
+
+This month in The Deploy:
+
+* Time-travel snapshots: roll any managed database back 7 days. Yes, really.
+* New EU regions with lower egress pricing.
+* Engineering blog: how we cut failover to 40 seconds.
+
+Because you run Postgres workloads with us, you can join the snapshot beta before public launch — reply BETA.
+
+— The NimbusHost crew

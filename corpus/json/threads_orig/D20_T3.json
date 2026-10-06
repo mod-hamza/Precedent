@@ -1,0 +1,38 @@
+{
+  "thread_id": "D20_T3",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "marta@parcelwise.example",
+      "to": ["ingrid@parcelwise.example"],
+      "cc": ["dev@parcelwise.example", "helen@parcelwise.example"],
+      "sent_at": "2026-03-05T08:41:00+01:00",
+      "subject": "RE: Senior backend role - candidate comparison and recommendation",
+      "body": "elena. offer 92k + 0.15% options. skip teller.\n\nM\n\nSent from my iPhone",
+      "in_reply_to_idx": null,
+      "role": "decisive"
+    },
+    {
+      "idx": 2,
+      "from": "ingrid@parcelwise.example",
+      "to": ["marta@parcelwise.example"],
+      "cc": ["dev@parcelwise.example", "helen@parcelwise.example"],
+      "sent_at": "2026-03-09T09:02:00+01:00",
+      "subject": "RE: Senior backend role - candidate comparison and recommendation",
+      "body": "Dear Marta,\n\nApologies for the slow reply - I am part-time Mondays to Wednesdays and only saw this on my return this morning. The offer letter is drafted at the terms you set and will go out to Elena today.\n\nThank you also for the clarity on Mark; I will let him know this week that the process is closed.\n\nWarm regards,\nIngrid Solberg\nPeople & Culture, Parcelwise B.V.",
+      "in_reply_to_idx": 1,
+      "role": "confirmation"
+    },
+    {
+      "idx": 3,
+      "from": "dev@parcelwise.example",
+      "to": ["jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-05T09:12:00+01:00",
+      "subject": "RE: Senior backend role - candidate comparison and recommendation",
+      "body": "you got your wish. offer going to elena. start prepping yourself to not be the only one who understands the ingest pipeline.\n\nCheers, Dev",
+      "in_reply_to_idx": null,
+      "role": "chatter"
+    }
+  ]
+}

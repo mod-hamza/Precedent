@@ -1,0 +1,34 @@
+{
+ "thread_id": "D16-T1",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "bruno@redlinecouriers.example",
+   "to": [
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-28T16:42:00+02:00",
+   "subject": "Renewal - non-negotiable points before we sign",
+   "in_reply_to_idx": null,
+   "role": "objection",
+   "body": "Tomás,\n\nAhead of tomorrow's call, so nobody wastes time: the renewal terms you sent are close, but I have one condition that is not a bargaining chip. Our drivers lose signal in the port terminals and the Antwerp tunnels on a daily basis. Your current app simply stops working and dispatch has no idea what the driver last saw. I need the v3 app to work offline - cached routes, cached manifests, at minimum - on day one of the pilot, or there is no renewal and I will say so to Marta directly.\n\nYou told me in February the app already handled this. It does not. Sort it out.\n\nBruno Alvarez\nCOO, Redline Couriers"
+  },
+  {
+   "idx": 2,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "priya@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-04-28T17:15:00+02:00",
+   "subject": "FW: Renewal - non-negotiable points before we sign - NEED INPUT TONIGHT",
+   "in_reply_to_idx": null,
+   "role": "discussion",
+   "body": "Team, see below. Bruno is in one of his moods but this one is real ✅ We cut offline mode from v3 two weeks ago and he has just made it the renewal condition 🚀\n\nThe call with Redline is tomorrow (Wednesday) 15:00. I need to know tonight whether some form of offline is technically possible before the 100% rollout, and what it costs us. Priya, Dev - what are our options? Please cc me on everything, I do not want to walk into that call blind.\n\nSaludos,\nTomás"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+From: Helen Oyelaran <helen@parcelwise.example>
+To: marta@parcelwise.example, dev@parcelwise.example
+Subject: PayForge fees - updated analysis and what a switch would take
+Date: Tue, 03 Mar 2026 09:14:00 +0100
+Message-ID: <0f023782edc0.D02_T1.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Dear Marta, dear Dev,
+
+Following up on my January analysis of the payment fees. February volume was again close to €310k processed, and PayForge's 2.9% plus €0.30 per transaction cost us just over €9,700 for the month. Ledgerly's formal quote remains 2.3% plus €0.25, which on the same volume saves approximately €1,860 per month. Since January that argument has only grown, and we are now two months into paying a premium of roughly €3,700 in total for staying put.
+
+I asked Dev for a view on integration effort before recommending anything. Dev, could you summarise your estimate for the team here? I would gently suggest that at this run-rate every month of delay has a measurable cost, but I am aware of the engineering constraint ahead of v3 and would not want to force a false choice.
+
+Kind regards,
+Helen Oyelaran
+Chief Financial Officer, Parcelwise B.V.
+
+-- 
+Kind regards,
+Helen Oyelaran
+Chief Financial Officer
+Parcelwise B.V. | Rotterdam

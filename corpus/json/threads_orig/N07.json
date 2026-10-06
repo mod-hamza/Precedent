@@ -1,0 +1,38 @@
+{
+  "thread_id": "N07",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "chloe@parcelwise.example",
+      "to": ["priya@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-20T11:30:00+02:00",
+      "subject": "Plan names — quick brainstorm",
+      "in_reply_to_idx": null,
+      "role": "proposal",
+      "body": "Hi Priya!\n\nSince we're tidying the pricing page for v3 anyway — 'Starter / Pro / Enterprise' is so 2019. Some alternatives, riffing on the logistics vibe:\n\n- Courier / Fleet / Command\n- Small / — no wait, nobody wants to buy \"Small\"\n- Dash / Drive / Depot\n- Pulse / Pilot / Prime\n\nI personally love Dash / Drive / Depot, it alliterates AND it scales. I can mock up the pricing page variants this week!\n\nChloe"
+    },
+    {
+      "idx": 2,
+      "from": "priya@parcelwise.example",
+      "to": ["chloe@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-20T13:05:00+02:00",
+      "subject": "RE: Plan names — quick brainstorm",
+      "in_reply_to_idx": 1,
+      "role": "discussion",
+      "body": "Hi Chloe,\n\nFun exercise, but a caution from the product side: every rename touches billing, the pricing page, invoices, docs and every proposal template — and we're mid-Ledgerly-prep, so plan-name churn right now would create real billing complexity. If it happens at all it should be after the cutover and probably after launch.\n\nThanks!\nPriya"
+    },
+    {
+      "idx": 3,
+      "from": "chloe@parcelwise.example",
+      "to": ["priya@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-20T13:22:00+02:00",
+      "subject": "RE: Plan names — quick brainstorm",
+      "in_reply_to_idx": 2,
+      "role": "chatter",
+      "body": "Fair! I'll park the mocks until things calm down. For the record Depot is the best name, when we revisit, remember I called it 😄\n\nChloe"
+    }
+  ]
+}

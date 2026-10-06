@@ -1,0 +1,60 @@
+{
+  "thread_id": "D30",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "dev@parcelwise.example",
+      "to": ["marta@parcelwise.example", "helen@parcelwise.example"],
+      "cc": ["jonas@parcelwise.example", "ravi@parcelwise.example", "lena@parcelwise.example"],
+      "sent_at": "2026-03-20T10:14:00+01:00",
+      "subject": "proposal: 2FA mandatory, deadline Apr 3",
+      "body": "Proposal, after last month's exercise:\n\n- 2FA becomes mandatory on all staff accounts — email, Git host, cloud consoles, admin panels — not just the ones it is currently optional on.\n- Deadline: Friday 3 April. Hard deadline, not aspirational. Accounts without 2FA after that date lose access, no exceptions, mine included.\n- Method: authenticator app (TOTP) as the baseline. SMS is not acceptable as a method — it is the weakest link dressed up as security.\n- Hardware keys: I would like them for the four of us with production access; roughly €50 each, so under Helen's no-drama threshold.\n\nAfter the key episode, the cheapest possible insurance against the next one is making stolen passwords alone useless. This is the cheapest such insurance on the market.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+      "in_reply_to_idx": null,
+      "role": "proposal"
+    },
+    {
+      "idx": 2,
+      "from": "jonas@parcelwise.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": ["marta@parcelwise.example", "helen@parcelwise.example"],
+      "sent_at": "2026-03-20T10:36:00+01:00",
+      "subject": "re: proposal: 2FA mandatory, deadline Apr 3",
+      "body": "fine with it, one condition: we buy real hardware keys for prod access, not totp for the people who can drop the database. a phone app on the same phone that gets the sms codes is not a second factor in any meaningful sense.\n\nalso someone should write the setup doc before the deadline, not after. last password policy rollout half the company locked themselves out on day one.",
+      "in_reply_to_idx": 1,
+      "role": "objection"
+    },
+    {
+      "idx": 3,
+      "from": "marta@parcelwise.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": ["helen@parcelwise.example", "lena@parcelwise.example"],
+      "sent_at": "2026-03-20T10:41:00+01:00",
+      "subject": "RE: proposal: 2FA mandatory, deadline Apr 3",
+      "body": "👍 hardware keys for the four, jonas is right.\n\nSent from my iPhone",
+      "in_reply_to_idx": 1,
+      "role": "decisive"
+    },
+    {
+      "idx": 4,
+      "from": "lena@parcelwise.example",
+      "to": ["dev@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": ["marta@parcelwise.example", "helen@parcelwise.example"],
+      "sent_at": "2026-03-20T11:22:00+01:00",
+      "subject": "RE: proposal: 2FA mandatory, deadline Apr 3",
+      "body": "Hallo all,\n\nPractical bits from my side:\n\n- I will send the step-by-step setup instructions to everyone on Monday morning, with screenshots for the authenticator apps. Jonas: the doc will exist before the deadline 😊\n- I will order 6 hardware keys today (4 + 2 spare) and chase anyone who has not enabled 2FA by 27 March, so the last week is not a panic.\n- I will keep a simple checklist of who is done where, and send Dev a short status on 1 and 3 April.\n\nDanke,\nLena",
+      "in_reply_to_idx": 3,
+      "role": "confirmation"
+    },
+    {
+      "idx": 5,
+      "from": "ravi@parcelwise.example",
+      "to": ["lena@parcelwise.example"],
+      "cc": ["dev@parcelwise.example"],
+      "sent_at": "2026-03-20T11:47:00+01:00",
+      "subject": "RE: proposal: 2FA mandatory, deadline Apr 3",
+      "body": "Hi Lena,\n\nSorry to bother — could the Monday instructions include a note for people who switch phones often? Mine is two years old and I've been meaning to replace it, and I don't want to lock myself out of everything the week I do. Sorry if that's a silly question, happy to figure it out myself if it's covered in the standard docs.\n\nRavi",
+      "in_reply_to_idx": 4,
+      "role": "chatter"
+    }
+  ]
+}

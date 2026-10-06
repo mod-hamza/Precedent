@@ -1,0 +1,73 @@
+{
+ "thread_id": "D06",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "aisha@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "tomas@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "cc": [
+    "priya@parcelwise.example"
+   ],
+   "sent_at": "2026-02-18T09:12:00+01:00",
+   "subject": "Starter price increase - the complaints have started",
+   "body": "Hi team 😊\n\nJust so everyone knows what is landing in our inbox since the €59 notice went out: we have had three genuinely upset customers in two days, and a steady trickle of questions beyond that. Inge from Veldhuis Koeriers called in tears - she has been with us since 2023 and runs her whole dispatch on Starter. Hans at Biesbosch Transport emailed to say he is \"actively looking at RouteBee\". And Marco from Skipperslog replied to the invoice email directly asking whether loyalty counts for nothing.\n\nThe tone matters here: these are not feature requests, they feel the increase is unfair because it hits everyone at once, loyal customers included. If any of the three actually leaves that is a bad story for us in a tight-knit sector. Is there anything we can offer them?\n\nWarm regards,\nAisha\n\nAisha Bello\nHead of Customer Success, Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "objection"
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [
+    "priya@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-02-18T11:26:00+01:00",
+   "subject": "RE: Starter price increase - the complaints have started",
+   "body": "Dear Marta,\n\nI must present the counter-view on full grandfathering. Of the roughly 140 Starter accounts, the existing base represents the overwhelming majority of the projected uplift from the €49 to €59 change; applying €59 only to new signups reduces the expected monthly gain from approximately €9-11k to a figure I estimate below €1k, because new Starter signups in a typical month are few. We would carry the entire customer-relations cost of having announced an increase while collecting almost none of its benefit.\n\nI would gently suggest a middle path if the relationship risk is real: grandfather for a fixed period (say 12 months, then €59), or a lower intermediate price for existing accounts. Unlimited grandfathering is, from where I sit, the least defensible of the options.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+   "in_reply_to_idx": 1,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "helen@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-02-18T13:44:00+01:00",
+   "subject": "RE: Starter price increase - the complaints have started",
+   "body": "Quick recap of the data behind this:\n\n1. Aisha's three complainants are real but the base rate matters: support logged 11 price-related contacts out of ~140 Starter accounts since Monday. 2. Our churn model had assumed some price-driven churn at €59; what we are seeing is consistent with the pessimistic case, not worse. 3. Helen's point is correct - grandfathering forever erases ~90% of the uplift. A 12-month grandfather captures roughly half of it, because churn among Starter accounts clusters in the first year of the subscription anyway. 4. Suggestion: existing accounts grandfathered at €49 for 12 months, €59 for new signups from 1 March, and we revisit the existing base in February 2027.\n\nThanks!\nPriya",
+   "in_reply_to_idx": 3,
+   "role": "proposal"
+  },
+  {
+   "idx": 6,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "priya@parcelwise.example",
+    "helen@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-02-18T16:52:00+01:00",
+   "subject": "RE: Starter price increase - the complaints have started",
+   "body": "priya's version. existing accounts stay at 49 for 12 months, 59 for new from 1 march. aisha, talking points welcome.\n\nM\nSent from my iPhone",
+   "in_reply_to_idx": 4,
+   "role": "decisive"
+  }
+ ]
+}

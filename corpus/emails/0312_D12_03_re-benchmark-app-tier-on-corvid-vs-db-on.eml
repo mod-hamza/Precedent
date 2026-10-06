@@ -1,0 +1,33 @@
+From: Dev Raman <dev@parcelwise.example>
+To: jonas@parcelwise.example, greg@ferrante-ops.example, helen@parcelwise.example, priya@parcelwise.example
+Subject: RE: benchmark: app tier on corvid vs db on nimbus - latency
+Date: Thu, 09 Apr 2026 08:55:00 +0200
+Message-ID: <5fb6b1414caa.D12.003@parcelwise.example>
+In-Reply-To: <3d7a17456979.D12.001@parcelwise.example>
+References: <3d7a17456979.D12.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+We're keeping the production database on NimbusHost managed Postgres. Only the app tier moves to Corvid.
+
+40 ms p95 added latency would break driver sync, and a full DB move with cross-provider replication this close to the v3 launch is exactly the kind of risk Greg himself won't sign up for. Hybrid it is; we can revisit the DB after the launch.
+
+Cheers, Dev
+-----Original Message-----
+From: Jonas Eklund <jonas@parcelwise.example>
+Sent: Tue, 07 Apr 2026 10:12:00 +0200
+To: dev@parcelwise.example, greg@ferrante-ops.example
+Subject: benchmark: app tier on corvid vs db on nimbus - latency
+
+ran the driver-sync workload from a corvid app node against the nimbus managed postgres, and against a corvid-hosted copy of the same db.
+
+- same-provider (corvid -> corvid): p95 write 22 ms
+- cross-provider (corvid app -> nimbus db): p95 61 ms
+
+that's ~40 ms p95 added just from crossing providers. driver sync polls every few seconds, this shows up as real lag in the app. numbers and the load script are in the repo under benchmarks/cross-provider.
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

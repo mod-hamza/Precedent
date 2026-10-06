@@ -1,0 +1,33 @@
+From: Marta Kowalczyk <marta@parcelwise.example>
+To: dev@parcelwise.example
+Cc: helen@parcelwise.example, lena@parcelwise.example
+Subject: RE: proposal: 2FA mandatory, deadline Apr 3
+Date: Fri, 20 Mar 2026 10:41:00 +0100
+Message-ID: <b5f03577621f.D30.003@parcelwise.example>
+In-Reply-To: <e8ff98d50f56.D30.001@parcelwise.example>
+References: <e8ff98d50f56.D30.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+👍 hardware keys for the four, jonas is right.
+
+Sent from my iPhone
+
+On 20 March 2026, Dev Raman wrote:
+> Proposal, after last month's exercise:
+> 
+> - 2FA becomes mandatory on all staff accounts — email, Git host, cloud consoles, admin panels — not just the ones it is currently optional on.
+> - Deadline: Friday 3 April. Hard deadline, not aspirational. Accounts without 2FA after that date lose access, no exceptions, mine included.
+> - Method: authenticator app (TOTP) as the baseline. SMS is not acceptable as a method — it is the weakest link dressed up as security.
+> - Hardware keys: I would like them for the four of us with production access; roughly €50 each, so under Helen's no-drama threshold.
+> 
+> After the key episode, the cheapest possible insurance against the next one is making stolen passwords alone useless. This is the cheapest such insurance on the market.
+> 
+> Cheers,
+> Dev
+> Dev Raman | CTO | Parcelwise B.V.
+
+M
+
+Sent from my iPhone

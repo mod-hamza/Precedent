@@ -1,0 +1,49 @@
+{
+ "thread_id": "D20_T2",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "ingrid@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-03-04T10:15:00+01:00",
+   "subject": "Senior backend role - candidate comparison and recommendation",
+   "body": "Dear Marta, Dev,\n\nA short comparison of our two finalists for the senior backend role, for completeness:\n\n1. Elena Voss - strongest overall loop we have run in my time here. Jonas rates her systems design round the best of the cycle; Dev's write-up is equally positive (clean event-driven design, right capacity questions, direct communicator). References checked out. Available within roughly four to six weeks.\n\n2. Mark Teller - a solid engineer and pleasant throughout the process, but noticeably weaker on systems design: he did not probe failure modes, and his sharding sketch needed significant steering. He would likely grow into the role, but we would be hiring potential rather than proven capacity, and we need capacity now given the v3 timeline.\n\nCompensation expectation for Elena is within the approved band. I would gently suggest we move quickly - she has a competing process at a logistics scale-up in Utrecht.\n\nHappy to discuss on Wednesday if useful.\n\nWarm regards,\nIngrid Solberg\nPeople & Culture, Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "recap"
+  },
+  {
+   "idx": 2,
+   "from": "jonas@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "ingrid@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-04T12:40:00+01:00",
+   "subject": "RE: Senior backend role - candidate comparison and recommendation",
+   "body": "did a round with teller too. fwiw he's fine. fine is not what we need. elena was on another level in the same exercise.\n\nthat's all.",
+   "in_reply_to_idx": 1,
+   "role": "discussion"
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "ingrid@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-04T15:07:00+01:00",
+   "subject": "RE: Senior backend role - candidate comparison and recommendation",
+   "body": "Dear all,\n\nI have no objection on the financial side; the approved ceiling of EUR 95,000 accommodates Ingrid's note on compensation expectations, and the offer structure we discussed last month remains affordable within the current plan. I would gently suggest that a fortnight's delay for further deliberation risks losing the stronger candidate to the Utrecht process, which would cost us more in the long run than any difference in salary.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+   "in_reply_to_idx": 1,
+   "role": "confirmation"
+  }
+ ]
+}

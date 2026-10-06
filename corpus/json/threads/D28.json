@@ -1,0 +1,81 @@
+{
+ "thread_id": "D28",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "ravi@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "jonas@parcelwise.example"
+   ],
+   "sent_at": "2026-03-03T08:52:00+01:00",
+   "subject": "URGENT: I think I leaked an API key in a public fork",
+   "body": "Dev,\n\nSorry to bother, and I'm so sorry, but I think I've done something really bad. I was cleaning up branches last night and found that the driver-app-utils repo I forked in February has the staging API key hardcoded in commit 4f2c91a — and the fork is public on the shared Git host. I copied the config pattern from an older service and never thought about it.\n\nI checked just now and the fork is still publicly visible. It's been up for what looks like weeks. I've made the repo private but the commit history might be cached or cloned by now, I don't know how any of that works honestly.\n\nI am so sorry. What do I do? Should I delete the repo? Rewrite history? Please tell me what to do and I'll do it right away.\n\nRavi",
+   "in_reply_to_idx": null,
+   "role": "discussion"
+  },
+  {
+   "idx": 3,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "ravi@parcelwise.example",
+    "jonas@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-03-03T09:31:00+01:00",
+   "subject": "RE: URGENT: I think I leaked an API key in a public fork",
+   "body": "Ravi — stop. Repo stays as is, no history rewriting, nothing. We triage, you don't fix solo.\n\nDecision: we rotate ALL API keys and customer integration tokens, starting now, today.\n\nWhy all and not just the exposed one:\n- We cannot prove what else sat in that history. The fork has 200+ commits, several touching config files.\n- Assume anything public for 3 weeks has been scraped. Scrapers index everything, not the one key we happen to know about.\n- The cost of rotating everything is a day of customer friction.",
+   "in_reply_to_idx": 1,
+   "role": "decisive"
+  },
+  {
+   "idx": 6,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "jonas@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-03-03T10:40:00+01:00",
+   "subject": "RE: URGENT: rotate all? pushback",
+   "body": "On record, explicitly: full rotation. Your grep covers the fork's history, not the clones made before we noticed, and not whatever the scraper caches hold. \"Only the strings I can see leaked\" is exactly the assumption that turns a staging incident into a prod breach. The maybe I'm avoiding is worse than the friction I'm accepting.\n\nMitigations for the pain:\n- Rotation runs token-by-token with a 24-hour dual-validity window, so existing syncs keep working until each customer swaps.\n- Aisha gets the customer list and a support macro within the hour. Agreed that she hears it now, not after.\n- Priority order: prod-adjacent integrations first, sandbox last.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+   "in_reply_to_idx": 3,
+   "role": "decisive"
+  },
+  {
+   "idx": 7,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-03T11:15:00+01:00",
+   "subject": "RE: URGENT: rotate all? pushback",
+   "body": "Dear Dev,\n\nI support the full rotation, and I would gently add the finance framing for Marta: the dual-validity window means no revenue is interrupted, and the support cost is a day of Aisha's queue. Against that we hold the trust of roughly 310 customer accounts, several of whom — Swiftbox foremost — audit us on precisely this kind of discipline.\n\nTwo requests: please keep a written record of which keys were rotated and when, and let me know today whether this situation triggers any notification obligations, so that nothing surprises us later.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": 6,
+   "role": "confirmation"
+  },
+  {
+   "idx": 8,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-03T11:29:00+01:00",
+   "subject": "RE: URGENT: rotate all? pushback",
+   "body": "agree with dev. all keys. tell me when it's done.\n\nSent from my iPhone",
+   "in_reply_to_idx": 6,
+   "role": "confirmation"
+  }
+ ]
+}

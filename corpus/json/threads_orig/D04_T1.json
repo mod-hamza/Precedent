@@ -1,0 +1,27 @@
+{
+  "thread_id": "D04_T1",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "lena@parcelwise.example",
+      "to": ["marta@parcelwise.example", "dev@parcelwise.example", "helen@parcelwise.example", "priya@parcelwise.example", "tomas@parcelwise.example", "aisha@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-29T08:47:00+02:00",
+      "subject": "Notes: Leadership meeting 28 May",
+      "body": "Liebe Alle,\n\nNotes: Leadership meeting, Thursday 28 May, 14:00, meeting room Rotterdam\n\nAttendees: Marta, Dev, Helen, Priya, Tomás, Lena (notes)\n\nDiscussed:\n- Ledgerly cutover: Dev reported the reconciliation rewrite is done and the last two full sandbox cycles reconciled cleanly, including refunds and multi-currency. Jonas confirmed independently. Helen asked whether we could still make 1 July; Dev recommended after the June 30 billing close instead, so the first live settlement cycle starts from a closed ledger. 1 July would mean switching mid-cycle and partially reconciled June books.\n- v3 rollout: phased rollout completed on schedule, 100% of accounts live since 27 May. No payment-related incidents so far.\n- Office sublet: two interested parties, viewings next week\n\nAgreed:\n- Ledgerly cutover is fixed for Monday 6 July, after the June 30 billing close. Marta confirmed in the meeting. Dev to circulate the final plan.\n- No further changes to the payments timeline without Marta and Dev both agreeing.\n\nActions:\n- Dev: send the confirmed cutover plan to Helen and Jonas\n- Aisha: prepare the customer communication for the card-statement change (draft due 10 July)\n- Lena: book the war room for 6-7 July\n\nDanke,\nLena Fischer\nOps & Office Manager, Parcelwise B.V.",
+      "in_reply_to_idx": null,
+      "role": "recap"
+    },
+    {
+      "idx": 2,
+      "from": "helen@parcelwise.example",
+      "to": ["marta@parcelwise.example", "dev@parcelwise.example"],
+      "cc": ["lena@parcelwise.example"],
+      "sent_at": "2026-05-29T09:30:00+02:00",
+      "subject": "RE: Notes: Leadership meeting 28 May",
+      "body": "Dear Marta, dear Dev,\n\nThank you Lena for the notes. One point of clarification so my model matches reality: with cutover on Monday 6 July, July will be the first full month processed entirely through Ledgerly, and we should see the approximately €1,860 monthly saving reflected from that month's books onward. If the numbers deviate materially from that figure in July or August I will want to know why, so please do keep the fee reporting granular by provider during the transition.\n\nI would also gently remind everyone that PayForge will keep charging their minimum platform fee until we formally terminate - Dev, please include the notice period in the plan so we are not paying two platforms a day longer than necessary.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    }
+  ]
+}

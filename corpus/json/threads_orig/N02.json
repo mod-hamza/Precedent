@@ -1,0 +1,49 @@
+{
+  "thread_id": "N02",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "tomas@parcelwise.example",
+      "to": ["marta@parcelwise.example"],
+      "cc": ["helen@parcelwise.example"],
+      "sent_at": "2026-02-12T11:24:00+01:00",
+      "subject": "Lisbon satellite office - big opportunity 🚀",
+      "body": "Hola Marta,\n\nFollowing up on my hunch from the pipeline review: Portuguese courier market is growing fast, we already get inbound from Lisbon area (two leads last quarter!), and labour costs there are meaningfully lower than Rotterdam. A small satellite office - 3-4 people, sales plus maybe one support - would let us cover Portugal and Spain properly without relocating anyone.\n\nI've seen some affordable spaces near the Alcântara area, roughly half our per-m² cost here. Helen, would love your take on the numbers if this gains traction ✅\n\nCan we put it on the agenda for the next leadership meeting?\n\nSaludos,\nTomás",
+      "in_reply_to_idx": null,
+      "role": "proposal"
+    },
+    {
+      "idx": 2,
+      "from": "samir@parcelwise.example",
+      "to": ["tomas@parcelwise.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-02-13T09:58:00+01:00",
+      "subject": "RE: Lisbon satellite office - big opportunity 🚀",
+      "body": "hey!\n\nwould love this - my Portuguese is rusty but usable, and I'd volunteer for a scouting trip 😉 the two Iberian leads together are maybe €2k/mrr so early days, but Tomás is right that nobody is covering that region properly.\n\ncheers,\nSamir",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 3,
+      "from": "marta@parcelwise.example",
+      "to": ["tomas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-17T08:55:00+01:00",
+      "subject": "RE: Lisbon satellite office - big opportunity 🚀",
+      "body": "interesting. not now. we're mid-launch and mid-lease and helen's plate is full. if iberian pipeline ever justifies it, we look again.\n\nM",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 4,
+      "from": "tomas@parcelwise.example",
+      "to": ["marta@parcelwise.example", "samir@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-17T09:30:00+01:00",
+      "subject": "RE: Lisbon satellite office - big opportunity 🚀",
+      "body": "Understood, park it ✅ I'll keep an eye on the Iberian pipeline and bring it back with real numbers if it grows. Samir, keep feeding me any PT/ES inbound!\n\nSaludos,\nTomás",
+      "in_reply_to_idx": 3,
+      "role": "chatter"
+    }
+  ]
+}

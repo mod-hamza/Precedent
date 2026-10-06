@@ -1,0 +1,49 @@
+{
+  "thread_id": "D02_T1",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "helen@parcelwise.example",
+      "to": ["marta@parcelwise.example", "dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-03T09:14:00+01:00",
+      "subject": "PayForge fees - updated analysis and what a switch would take",
+      "body": "Dear Marta, dear Dev,\n\nFollowing up on my January analysis of the payment fees. February volume was again close to €310k processed, and PayForge's 2.9% plus €0.30 per transaction cost us just over €9,700 for the month. Ledgerly's formal quote remains 2.3% plus €0.25, which on the same volume saves approximately €1,860 per month. Since January that argument has only grown, and we are now two months into paying a premium of roughly €3,700 in total for staying put.\n\nI asked Dev for a view on integration effort before recommending anything. Dev, could you summarise your estimate for the team here? I would gently suggest that at this run-rate every month of delay has a measurable cost, but I am aware of the engineering constraint ahead of v3 and would not want to force a false choice.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+      "in_reply_to_idx": null,
+      "role": "proposal"
+    },
+    {
+      "idx": 2,
+      "from": "dev@parcelwise.example",
+      "to": ["helen@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-03T11:02:00+01:00",
+      "subject": "RE: PayForge fees - updated analysis and what a switch would take",
+      "body": "Helen,\n\nMy take, with numbers:\n- Integration itself is smaller than I feared in January. Ledgerly's API is decent and I had Jonas spike it for two days. Call it 2-3 engineer-weeks for the billing service, webhooks, and invoice generation.\n- The tail is reconciliation: we need one full billing cycle running both providers in shadow mode, so realistically 4-6 weeks end to end.\n- Their native multi-currency invoicing removes a whole module we would otherwise build ourselves, which is maybe another 2 weeks we do not have to spend.\n\nHonest assessment: this no longer competes with v3 the way I thought it did in January, provided we start the shadow-mode cycle soon rather than mid-launch.\n\nCheers, Dev",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 3,
+      "from": "jonas@parcelwise.example",
+      "to": ["dev@parcelwise.example", "helen@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-03T14:27:00+01:00",
+      "subject": "RE: PayForge fees - updated analysis and what a switch would take",
+      "body": "spiked it as dev said. their sandbox is actually usable, which is more than i can say for payforge's.\n\none thing nobody mentioned: refunds. payforge does them in-line, ledgerly batches them overnight. nobody will notice except aisha's team on the phone with an angry customer once or twice a month. fwiw.\n\nalso their webhook signing uses the same hmac scheme as everyone else, so no drama there.",
+      "in_reply_to_idx": 2,
+      "role": "discussion"
+    },
+    {
+      "idx": 4,
+      "from": "helen@parcelwise.example",
+      "to": ["marta@parcelwise.example"],
+      "cc": ["dev@parcelwise.example", "jonas@parcelwise.example"],
+      "sent_at": "2026-03-04T08:55:00+01:00",
+      "subject": "RE: PayForge fees - updated analysis and what a switch would take",
+      "body": "Dear Marta,\n\nWith Dev's revised estimate of 2-3 engineer-weeks plus a shadow cycle, and Jonas confirming the technical risk is manageable, I would gently suggest we now put this on the agenda for the next leadership meeting. The economics have not changed: approximately €1,860 per month saved on roughly €310k of processed volume, and that is before any value from local-currency invoicing, which I understand sales is hearing more and more about.\n\nMay I propose we discuss it under finance on Tuesday? I will bring the comparison sheet.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+      "in_reply_to_idx": 3,
+      "role": "proposal"
+    }
+  ]
+}

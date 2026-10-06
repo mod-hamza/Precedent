@@ -1,0 +1,44 @@
+From: Aisha Bello <aisha@parcelwise.example>
+To: priya@parcelwise.example, marta@parcelwise.example
+Subject: RE: rollout coordination vs focus Wednesdays - collision
+Date: Tue, 19 May 2026 17:38:00 +0200
+Message-ID: <2b18b1010436.D22.002@parcelwise.example>
+In-Reply-To: <95e5161be7a9.D22.001@parcelwise.example>
+References: <95e5161be7a9.D22.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi team 😊
+
+Just to add my two cents: support volume spiked noticeably on the first rollout Wednesday, and having the whole company unreachable for internal coordination for a day made the escalation path slower than I would have liked. I don't have strong feelings about the policy itself - it's been lovely for the team, honestly - but for these three weeks I'd rather we can all reach each other.
+
+Warmly,
+Aisha
+-----Original Message-----
+From: Priya Natarajan <priya@parcelwise.example>
+Sent: Tue, 19 May 2026 16:44:00 +0200
+To: marta@parcelwise.example, dev@parcelwise.example
+Subject: rollout coordination vs focus Wednesdays - collision
+
+Heads-up before I build the rollout schedule:
+
+Quick recap of the problem:
+1. Phased rollout runs Wed May 13 (20%) to Wed May 27 (100%)
+2. During rollout weeks we need daily syncs, including Wednesdays, to catch issues from that morning's cohort fast
+3. Focus Wednesdays (the no-meeting trial from February) blocks exactly those syncs
+
+Options as I see them:
+- move daily syncs to Thursday-Friday only (slow feedback during the riskiest weeks), or
+- pause focus Wednesdays until the rollout is done
+
+I lean towards the second but it is Marta's call since it touches a company-wide arrangement. I know Greg and Aisha will have views on timing too.
+
+Thanks!
+Priya
+
+-- 
+Warmly,
+Aisha Bello
+Head of Customer Success
+Parcelwise B.V.

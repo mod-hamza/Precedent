@@ -1,0 +1,29 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: helen@parcelwise.example, dev@parcelwise.example
+Cc: marta@parcelwise.example
+Subject: QA coverage gap before the v3 rollout
+Date: Wed, 08 Apr 2026 10:12:00 +0200
+Message-ID: <f29185498bfb.D23.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi both,
+
+Quick recap of the gap:
+
+1. Bug triage last week surfaced that regression testing is effectively manual and ad hoc right now
+2. With the phased rollout in May we will need real regression passes between cohorts (May 13, then the 100% step)
+3. Nobody on the eng team has spare cycles - Jonas and Ravi are on the migration and Elena is only just starting
+
+Options: hire a full-time QA engineer, or bring in a contractor for the launch window and see how far structured manual + light automation gets us.
+
+Dev, you've worked with contractors before - thoughts? Helen, I don't know what the cost delta looks like.
+
+Thanks!
+Priya
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

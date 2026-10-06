@@ -1,0 +1,71 @@
+{
+  "thread_id": "D03",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "jonas@parcelwise.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-22T09:47:00+02:00",
+      "subject": "ledgerly sandbox recon - it's not clean",
+      "body": "ran the reconciliation job against the ledgerly sandbox again last night. it's not clean.\n\n- refunds: 6 of 41 test refunds failed to reconcile. ledgerly's batch settlement nets refunds against the next day's charges, so amounts don't match line by line. our recon expects gross line items.\n- multi-currency: the PLN and SEK test invoices round trip with a cent-level rounding difference on fx conversion. sounds trivial but it fails the recon every time.\n- 3 settlement reports this week didn't match the ledger at all, off by varying amounts. maya chen's team says it's a sandbox export bug and prod is fine, which is exactly what you'd say.\n\ni can hack the recon to tolerate netting and rounding but then it stops catching real errors. fwiw.",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 2,
+      "from": "dev@parcelwise.example",
+      "to": ["jonas@parcelwise.example", "helen@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-22T11:15:00+02:00",
+      "subject": "RE: ledgerly sandbox recon - it's not clean",
+      "body": "Thanks Jonas. Analysis:\n\n- The refund netting is a schema mismatch, not a bug on their side. Fixable, but it means rewriting the reconciliation job before we can trust any settlement report. That is roughly a week of work I do not want to rush.\n- The FX rounding needs a decision on where rounding happens (their side or ours) and a rule documented with Ledgerly.\n- The 3 mismatched reports worry me most. If we cut over on 1 May as planned and even one real settlement is wrong, we are reconciling a live provider with a tool we know was failing the week before.\n\nMy take: the 1 May cutover is dead. We fix the recon, rerun it clean for at least one full sandbox cycle, and then go. I know that lands after the May billing run.\n\nCheers, Dev",
+      "in_reply_to_idx": 1,
+      "role": "objection"
+    },
+    {
+      "idx": 3,
+      "from": "helen@parcelwise.example",
+      "to": ["dev@parcelwise.example", "marta@parcelwise.example"],
+      "cc": ["jonas@parcelwise.example"],
+      "sent_at": "2026-04-22T13:36:00+02:00",
+      "subject": "RE: ledgerly sandbox recon - it's not clean",
+      "body": "Dear Dev,\n\nI understand the reasoning and I will not argue with the technical assessment, but I must flag the cash-flow implication: every additional month on PayForge costs us approximately €1,860 in fees versus Ledgerly, and we would now be running dual testing into June. That is real money for a company our size, and it is also a visible line item against the savings I promised the board for this year.\n\nI would gently suggest that if we do delay, we set the new date firmly and resist moving it twice - a sliding cutover is worse for the books than a late one. Could you indicate what the earliest credible date would be?\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+      "in_reply_to_idx": 2,
+      "role": "objection"
+    },
+    {
+      "idx": 4,
+      "from": "maya.chen@ledgerly.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": ["jonas@parcelwise.example"],
+      "sent_at": "2026-04-22T15:02:00+02:00",
+      "subject": "RE: ledgerly sandbox recon - it's not clean",
+      "body": "Hi Dev,\n\nConfirming what my colleague said on the ticket: the three mismatched exports were caused by a known sandbox reporting bug, fix is in their release train this week. Production settlement reporting is unaffected - we can show you prod-mode reporting under NDA if that helps your review.\n\nOn refunds: we can also emit a gross refund line item alongside the netted settlement if that simplifies your reconciliation. Worth a call?\n\nBest,\nMaya Chen\nAccount Manager, Ledgerly",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 5,
+      "from": "dev@parcelwise.example",
+      "to": ["marta@parcelwise.example", "helen@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-22T16:40:00+02:00",
+      "subject": "RE: ledgerly sandbox recon - it's not clean",
+      "body": "Good news from Maya - they can emit gross refund lines and the sandbox export bug has a fix shipping. That removes two of the three blockers. The recon rewrite still needs to happen and be proven over a clean cycle.\n\nSo: cutover moves to after the June billing cycle. I will own the recon rewrite and give Helen a firm date as soon as the first clean sandbox run completes. Helen - I hear you on the sliding date, you will get one date from me and I will hold to it.\n\nCheers, Dev",
+      "in_reply_to_idx": 3,
+      "role": "decisive"
+    },
+    {
+      "idx": 6,
+      "from": "marta@parcelwise.example",
+      "to": ["dev@parcelwise.example", "helen@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-22T17:05:00+02:00",
+      "subject": "RE: ledgerly sandbox recon - it's not clean",
+      "body": "fine. better a clean july than a broken may. dzięki dev.\n\nM\nSent from my iPhone",
+      "in_reply_to_idx": 5,
+      "role": "confirmation"
+    }
+  ]
+}

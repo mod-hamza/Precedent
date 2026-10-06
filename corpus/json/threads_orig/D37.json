@@ -1,0 +1,93 @@
+{
+  "thread_id": "D37",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "sales@helpdesk-co.example",
+      "to": ["aisha@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-19T09:15:00+02:00",
+      "subject": "Helpdesk renewal — new pricing for 2026/27",
+      "in_reply_to_idx": null,
+      "role": "discussion",
+      "body": "Dear Ms Bello,\n\nYour Helpdesk subscription is due for renewal on 1 July 2026. I am writing to share our new pricing ahead of the renewal: your annual fee will increase from €4,800 to €6,720, reflecting our updated per-agent rates and the platform improvements shipped this year (new reporting suite, SSO, expanded knowledge base).\n\nIf you renew before 15 June we can apply an early-bird discount of 5%. I would be happy to schedule a call to walk you through the changes.\n\nKind regards,\nMarc Zuidema\nAccount Management, Helpdesk Co."
+    },
+    {
+      "idx": 2,
+      "from": "aisha@parcelwise.example",
+      "to": ["marta@parcelwise.example", "helen@parcelwise.example", "dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-20T10:42:00+02:00",
+      "subject": "Helpdesk renewal +40% — time to look at Beacon Desk",
+      "in_reply_to_idx": 1,
+      "role": "proposal",
+      "body": "Hi team 😊\n\nThe Helpdesk renewal just landed (below) and it's a 40% increase — €4,800 to €6,720. That's a lot for a reporting suite we barely use.\n\nGood news: I've been trialling Beacon Desk for two weeks with a test project and it's genuinely better for us. Highlights:\n\n- Native integration with our API — tickets auto-link to the customer's account and recent delivery issues, so I stop copy-pasting account numbers\n- €5,400/yr for 12 agents, flat, no surprise uplifts in year two (in writing)\n- Migration of our knowledge base is included; Beacon's rep says the historical ticket import takes a day\n\nThe team prefers it too — Ravi and Kofi both said the queue views are much faster. I'd propose we switch effective July 1, when the current term ends. Happy to walk anyone through the trial.\n\nAisha"
+    },
+    {
+      "idx": 3,
+      "from": "helen@parcelwise.example",
+      "to": ["aisha@parcelwise.example", "marta@parcelwise.example"],
+      "cc": ["dev@parcelwise.example"],
+      "sent_at": "2026-05-21T14:37:00+02:00",
+      "subject": "RE: Helpdesk renewal +40% — time to look at Beacon Desk",
+      "in_reply_to_idx": 2,
+      "role": "discussion",
+      "body": "Dear Aisha, dear Marta,\n\nI have reviewed both proposals and on cost alone the case is clear: €5,400 flat versus €6,720 (or €6,384 with their early-bird) is a saving of roughly €1,300 per year against the renewal, and more importantly it removes a vendor who has just shown us a 40% uplift appetite. I can support the move from a budget perspective, subject to one condition: please obtain written confirmation of the second-year pricing before we sign, so we are not surprised again next spring.\n\nI would gently add that July 1 is four days after the Ledgerly cutover on July 6 — apologies, I mean the cutover is July 6 so the support tool switch on July 1 lands just before it. During billing cutover week our ticket volume may spike, so I would ask that the knowledge base migration be completed and verified before June 27.\n\nKind regards,\nHelen\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V."
+    },
+    {
+      "idx": 4,
+      "from": "jonas@parcelwise.example",
+      "to": ["aisha@parcelwise.example", "dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-25T09:05:00+02:00",
+      "subject": "RE: Helpdesk renewal +40% — time to look at Beacon Desk",
+      "in_reply_to_idx": 3,
+      "role": "discussion",
+      "body": "fwiw the beacon api integration is real, i poked their sandbox last week — ticket creation from our webhook took me an afternoon. migration looks fine too. only annoyance: their sso needs a config change on our side, an hour max.\n\nno signature needed for this either ;)"
+    },
+    {
+      "idx": 5,
+      "from": "aisha@parcelwise.example",
+      "to": ["sales@beacondesk.example"],
+      "cc": ["helen@parcelwise.example"],
+      "sent_at": "2026-05-26T11:20:00+02:00",
+      "subject": "Beacon Desk — formal quote request for 12 agents",
+      "in_reply_to_idx": null,
+      "role": "discussion",
+      "body": "Hi Femke,\n\nFollowing our trial call — could you send the formal quote for 12 agents at €5,400/year, including: (1) written confirmation that year-two pricing stays flat, (2) the knowledge base migration at no extra cost, and (3) implementation support targeted for a July 1 go-live, with migration completed before June 27?\n\nIf all three are in the quote we're ready to proceed.\n\nThanks!\nAisha Bello\nHead of Customer Success, Parcelwise B.V."
+    },
+    {
+      "idx": 6,
+      "from": "femke.dekker@beacondesk.example",
+      "to": ["aisha@parcelwise.example"],
+      "cc": ["helen@parcelwise.example"],
+      "sent_at": "2026-05-26T16:48:00+02:00",
+      "subject": "RE: Beacon Desk — formal quote request for 12 agents",
+      "in_reply_to_idx": 5,
+      "role": "confirmation",
+      "body": "Hi Aisha,\n\nQuote attached and all three points confirmed in writing: €5,400/year for 12 agents, year-two price locked at the same rate, KB migration and implementation support included with go-live July 1 and migration verified by June 27.\n\nOne practical note: we'll need a read-only export from your current tool about a week before go-live — I'll coordinate the exact date with you.\n\nKind regards,\nFemke Dekker\nCustomer Solutions, Beacon Desk"
+    },
+    {
+      "idx": 7,
+      "from": "marta@parcelwise.example",
+      "to": ["aisha@parcelwise.example", "helen@parcelwise.example", "dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-27T09:03:00+02:00",
+      "subject": "RE: Helpdesk renewal +40% — time to look at Beacon Desk",
+      "in_reply_to_idx": 6,
+      "role": "decisive",
+      "body": "ok, beacon from july 1. aisha handle it. don't renew helpdesk.\n\nM\nSent from my iPhone"
+    },
+    {
+      "idx": 8,
+      "from": "aisha@parcelwise.example",
+      "to": ["marta@parcelwise.example", "helen@parcelwise.example", "dev@parcelwise.example"],
+      "cc": ["femke.dekker@beacondesk.example"],
+      "sent_at": "2026-05-27T10:15:00+02:00",
+      "subject": "RE: Helpdesk renewal +40% — time to look at Beacon Desk",
+      "in_reply_to_idx": 7,
+      "role": "confirmation",
+      "body": "Done 😊 Signing with Beacon today, and I'll decline the Helpdesk renewal before their June 15 early-bird deadline so there's no ambiguity. Femke — please count on the export around June 22.\n\nAlso, I promised the team we'd keep the old tickets archived read-only for a year — I'll confirm the export format with Beacon covers that.\n\nAisha"
+    }
+  ]
+}

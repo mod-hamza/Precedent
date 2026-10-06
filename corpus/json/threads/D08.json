@@ -1,0 +1,86 @@
+{
+ "thread_id": "D08",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "priya@parcelwise.example"
+   ],
+   "cc": [
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-06-10T09:05:00+02:00",
+   "subject": "Scan Pack is killing deals - I need us to look at this",
+   "body": "Hola equipo,\n\nStraight talk: Scan Pack has become the thing every deal stumbles on 🚨 Prospects love the pitch until the pricing conversation turns to \"how many scans will you do per month?\" - nobody knows the answer, so everyone assumes the worst, and my average sales cycle for scan-using accounts has gone from three weeks to nearly seven. Two prospects this week asked me to \"come back when the pricing is simpler\". That is the polite version.\n\nOur competitors sell one number. We are selling a base plan plus a variable component that requires the customer to forecast their own scanner behaviour. For the mid-market, that friction alone loses deals. Can we please revisit this?\n\nSaludos,\nTomás",
+   "in_reply_to_idx": null,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-06-10T14:03:00+02:00",
+   "subject": "RE: Scan Pack is killing deals - I need us to look at this",
+   "body": "Quick recap, and I will be honest that I am reluctant here:\n\n1. Scan Pack exists because a handful of accounts genuinely cost us 3-4x the median to serve, and that cost has not gone away. 2. But the feedback is consistent and loud: sales friction (Tomás), 23 confusion tickets (Aisha), and real billing risk in the cutover window (Dev). 3. Middle option would be keeping Scan Pack only for the top few heavy accounts - but that is bespoke pricing, which I dislike even more. 4. My suggestion: drop Scan Pack and include 500 scans/month in the Pro plan. It keeps a signal in the pricing for scan-heavy buyers, gets them onto a higher plan tier instead of a metered bill, and 500 covers what a normal courier actually does. We give up some margin on the heaviest users, but they were costing us goodwill we cannot afford either.\n\nThanks!\nPriya",
+   "in_reply_to_idx": 1,
+   "role": "proposal"
+  },
+  {
+   "idx": 5,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "priya@parcelwise.example"
+   ],
+   "cc": [
+    "dev@parcelwise.example"
+   ],
+   "sent_at": "2026-06-10T15:18:00+02:00",
+   "subject": "RE: Scan Pack is killing deals - I need us to look at this",
+   "body": "Dear Marta,\n\nI will not block this: I accept that a pricing construct which confuses customers, slows sales and complicates a cutover is costing us more than the margin it protects. I would gently note for the record that the scan-heavy cohort was roughly €3k/month of usage revenue at risk of reduction, and I will model the net effect of moving those accounts to Pro at the new allowance once Priya has final numbers. One request: whatever we announce to customers with existing Scan Pack arrangements, let us make the transition seamless for their next invoice, not their next quarter.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+   "in_reply_to_idx": 4,
+   "role": "objection"
+  },
+  {
+   "idx": 6,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "priya@parcelwise.example",
+    "dev@parcelwise.example",
+    "tomas@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-06-10T16:41:00+02:00",
+   "subject": "RE: Scan Pack is killing deals - I need us to look at this",
+   "body": "drop scan pack. 500 scans in pro. dev, keep it out of the cutover.\n\nM\nSent from my iPhone",
+   "in_reply_to_idx": 5,
+   "role": "decisive"
+  },
+  {
+   "idx": 7,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "priya@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-06-10T16:55:00+02:00",
+   "subject": "RE: Scan Pack is killing deals - I need us to look at this",
+   "body": "Thank you!! \"One plan, 500 scans included\" is a pitch I can make on the phone in one sentence ✅🚀 I'll rewrite the two stuck proposals today.",
+   "in_reply_to_idx": 6,
+   "role": "confirmation"
+  }
+ ]
+}

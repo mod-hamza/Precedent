@@ -1,0 +1,71 @@
+{
+  "thread_id": "D36",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "chloe@parcelwise.example",
+      "to": ["marta@parcelwise.example", "tomas@parcelwise.example", "priya@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-13T10:35:00+02:00",
+      "subject": "Big idea: rebrand to \"Routewell\" before v3",
+      "in_reply_to_idx": null,
+      "role": "proposal",
+      "body": "Hi all!\n\nSuper excited to finally share this — I've been sitting on it for weeks. With v3 shipping, we have a once-in-a-cycle window to rebrand to **Routewell** 🚀\n\nThe thinking:\n- \"Parcelwise\" sounds like parcel tracking only; \"Routewell\" owns the whole route-planning category\n- New name = new story for the v3 launch, PR pickup, the works\n- I mocked up a moodboard + naming rationale (deck: share.parcelwise.example/chloe/routewell-moodboard)\n- Domain routewell.example is available (I checked, and it's ~€900 for the premium one)\n\nRough budget estimate for the full rebrand: logo refresh, website, app store listings, templates, signage — I'll get firm quotes, but I'm guessing €6–8k. Totally worth it for a category-defining name!\n\nChloe"
+    },
+    {
+      "idx": 2,
+      "from": "helen@parcelwise.example",
+      "to": ["marta@parcelwise.example", "chloe@parcelwise.example", "tomas@parcelwise.example", "priya@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-13T15:27:00+02:00",
+      "subject": "RE: Big idea: rebrand to \"Routewell\" before v3",
+      "in_reply_to_idx": 1,
+      "role": "objection",
+      "body": "Dear all,\n\nBefore anyone falls in love with the name, a few figures. A realistic rebrand budget is not €6–8k but rather €8,000 or more once we include the trademark filing in the relevant classes, updated contracts and invoice templates in the billing system, and the lawyer's time to review the new name for conflicts. The €900 premium domain is the smallest line item.\n\nMore importantly, we have roughly 310 customer accounts who know us as Parcelwise — several of them found us precisely because of that name. I would gently suggest that spending €8k+ to become harder to find is not a sound use of cash in a quarter that already carries the migration, the pentest and the launch.\n\nKind regards,\nHelen\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V."
+    },
+    {
+      "idx": 3,
+      "from": "aisha@parcelwise.example",
+      "to": ["marta@parcelwise.example", "chloe@parcelwise.example", "helen@parcelwise.example"],
+      "cc": ["tomas@parcelwise.example", "priya@parcelwise.example"],
+      "sent_at": "2026-04-14T09:18:00+02:00",
+      "subject": "RE: Big idea: rebrand to \"Routewell\" before v3",
+      "in_reply_to_idx": 2,
+      "role": "objection",
+      "body": "Hi team 😊\n\nAdding the support view to what Helen said: customer recognition is real. Three of my accounts call us just \"Parcelwise\" in the way they save our support address, and Redline's ops team literally has us in their ERP as \"Parcelwise BV\" — a name change means re-vetting us in their vendor system, and I would rather not give Bruno a reason to open procurement again during renewal season.\n\nI'd also worry about the confusion in the weeks right after the v3 rollout — support tickets already ask \"is v3 the same product?\" as it is.\n\nAisha"
+    },
+    {
+      "idx": 4,
+      "from": "tomas@parcelwise.example",
+      "to": ["marta@parcelwise.example", "chloe@parcelwise.example", "helen@parcelwise.example", "aisha@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-14T11:52:00+02:00",
+      "subject": "RE: Big idea: rebrand to \"Routewell\" before v3",
+      "in_reply_to_idx": 3,
+      "role": "discussion",
+      "body": "Hola,\n\nMixed feelings. \"Routewell\" tests well in my head 🚀 but in practice I sell the track record: 310 accounts, Redline, Swiftbox. A new name resets all of that to zero and I'd spend the first two sales calls of every deal explaining who we used to be. Not right before the launch. Maybe later as a v3.1 story if the brand really caps us.\n\nTomás"
+    },
+    {
+      "idx": 5,
+      "from": "chloe@parcelwise.example",
+      "to": ["marta@parcelwise.example", "tomas@parcelwise.example", "helen@parcelwise.example", "aisha@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-15T14:08:00+02:00",
+      "subject": "RE: Big idea: rebrand to \"Routewell\" before v3",
+      "in_reply_to_idx": 4,
+      "role": "discussion",
+      "body": "Okay okay, I hear you all! 😅 Counterpoint one last time: we could do a soft transition — \"Parcelwise by Routewell\" on the website only, zero customer-facing risk. But honestly if sales and support both see it as a net negative this quarter, I can park it. Don't want to die on this hill.\n\nChloe"
+    },
+    {
+      "idx": 6,
+      "from": "marta@parcelwise.example",
+      "to": ["chloe@parcelwise.example", "helen@parcelwise.example", "aisha@parcelwise.example", "tomas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-16T09:05:00+02:00",
+      "subject": "RE: Big idea: rebrand to \"Routewell\" before v3",
+      "in_reply_to_idx": 5,
+      "role": "decisive",
+      "body": "keep parcelwise. not spending 8k to hide from our own customers. chloe, put the energy into the v3 launch instead.\n\nM"
+    }
+  ]
+}

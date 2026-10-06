@@ -1,0 +1,561 @@
+message_id,file,split,bucket,decision_ids,role,traps
+<dbfc2455360b.F176.001@parcelwise.example>,0001_F176_01_credit-check-on-a-big-prospect-actually.eml,holdout,filler,,chatter,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<6bd30fe3a90c.F273.001@parcelwise.example>,0002_F273_01_new-desk-setup-small-welcome-gesture.eml,dev,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<1c302c3c3709.F236.001@parcelwise.example>,0003_F236_01_quick-call-this-week.eml,dev,filler,,discussion,
+<f8fe6787c43c.F086.001@parcelwise.example>,0004_F086_01_credit-note-double-charge.eml,dev,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<4ca2b7c35b96.F172.001@parcelwise.example>,0005_F172_01_quick-one-prospect-on-old-plan-pricing.eml,holdout,filler,,discussion,
+<3aa6104dbbdd.F132.001@parcelwise.example>,0006_F132_01_billing-portal-session-timeouts.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<d1f716abcba0.F307.001@parcelwise.example>,0007_F307_01_noisy-staging-alert-suppressed-sorry.eml,dev,filler,,discussion,
+<82033bb45258.F248.001@parcelwise.example>,0008_F248_01_ooo-tmrw.eml,dev,filler,,chatter,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<1e942a2939df.F052.001@parcelwise.example>,0009_F052_01_onboarding-sessions-let-s-get-these-goin.eml,holdout,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<6f354209b289.F146.001@parcelwise.example>,0010_F146_01_bug-invoice-pdf-shows-wrong-currency-sym.eml,holdout,filler,,discussion,
+<35b633be08dd.F003.001@parcelwise.example>,0011_F003_01_beacon-desk-demo-slot-proposal.eml,dev,filler,,discussion,trivial logistics decision: pick the wallpaper/design of the launch countdown channel
+<48178e4697e7.D13.001@parcelwise.example>,0012_D13_01_v3-launch-date-proposing-wednesday-15-ap.eml,dev,decision,D13,proposal,
+<0cd2dee438c1.F114.001@parcelwise.example>,0013_F114_01_harbor-express-extension-on-usage-report.eml,dev,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<e4f270efee09.F082.001@parcelwise.example>,0014_F082_01_samir-mileage-claim.eml,dev,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<a5ad6649f073.F303.001@parcelwise.example>,0015_F303_01_small-log-retention-change.eml,dev,filler,,discussion,
+<df3e36d93025.D13.003@parcelwise.example>,0016_D13_03_re-v3-launch-date-proposing-wednesday-15.eml,dev,decision,D13,objection,
+<f71bd07e67c6.F226.001@parcelwise.example>,0017_F226_01_the-deploy-p99-latency-snapshots-and-a-d.eml,dev,filler,,chatter,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<9b1020c1ab11.D13.004@parcelwise.example>,0018_D13_04_re-v3-launch-date-proposing-wednesday-15.eml,dev,decision,D13,decisive,
+<00c1d295cea5.D13.005@parcelwise.example>,0019_D13_05_re-v3-launch-date-proposing-wednesday-15.eml,dev,decision,D13,confirmation,
+<738a93623727.F043.001@parcelwise.example>,0020_F043_01_leadership-weekly-booked-two-small-thing.eml,dev,filler,,discussion,trivial logistics decision: decide the parking spot swap between two staff
+<196a03af244d.F215.001@parcelwise.example>,0021_F215_01_greener-office-zero-effort.eml,dev,filler,,discussion,
+<5d3dfc23e652.F262.001@parcelwise.example>,0022_F262_01_lol-p95-latency-meme-and-one-tiny-thing.eml,dev,filler,,chatter,trivial logistics decision: choose the standing desk colour for the new hire
+<86cde608e9a9.D19.001@parcelwise.example>,0023_D19_01_backend-capacity-before-the-v3-push.eml,dev,decision,D19,discussion,
+<f42aa06c3e87.D01.001@parcelwise.example>,0024_D01_01_payment-processing-fees-q1-review-and-a.eml,dev,decision,D01,discussion,
+<721d5b00ca7d.F182.001@parcelwise.example>,0025_F182_01_prospect-security-questionnaire.eml,dev,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<31db542cf7ab.D01.002@parcelwise.example>,0026_D01_02_re-payment-processing-fees-q1-review-and.eml,dev,decision,D01,objection,
+<1ae3236e22a7.F159.001@parcelwise.example>,0027_F159_01_security-questionnaire-technical-section.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<73ad745b7ac8.D01.004@parcelwise.example>,0028_D01_04_re-payment-processing-fees-q1-review-and.eml,dev,decision,D01,discussion,
+<7e1605577134.F214.001@parcelwise.example>,0029_F214_01_perks-partner-office-coffee-for-teams.eml,dev,filler,,chatter,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<b4d491a90244.D01.005@parcelwise.example>,0030_D01_05_re-payment-processing-fees-q1-review-and.eml,dev,decision,D01,decisive,
+<997d1212aea4.D01.006@parcelwise.example>,0031_D01_06_re-payment-processing-fees-q1-review-and.eml,dev,decision,D01,confirmation,
+<a7ed5ff4c8fd.F033.001@parcelwise.example>,0032_F033_01_leadership-weekly-slot-from-february.eml,holdout,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<fdd947b15b8b.F149.001@parcelwise.example>,0033_F149_01_driver-can-t-scan-in-rain-mode.eml,dev,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<e65f77c06856.D19.003@parcelwise.example>,0034_D19_03_re-backend-capacity-before-the-v3-push-f.eml,dev,decision,D19,confirmation,
+<63787cd9d13d.D19.004@parcelwise.example>,0035_D19_04_re-backend-capacity-before-the-v3-push.eml,dev,decision,D19,decisive,
+<a025950f1f45.F192.001@parcelwise.example>,0036_F192_01_prospect-pricing-question.eml,dev,filler,,discussion,
+<f5871b439378.F088.001@parcelwise.example>,0037_F088_01_q2-prepaid-revenue-schedule-check-fyi-be.eml,holdout,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<f7de4399f538.D19.005@parcelwise.example>,0038_D19_05_re-backend-capacity-before-the-v3-push.eml,dev,decision,D19,confirmation,
+<b797ec4d6f45.F291.001@parcelwise.example>,0039_F291_01_birthday-list-for-the-intranet-snack-que.eml,dev,filler,,discussion,trivial logistics decision: decide the office snack order for launch week
+<5a8be728286d.D32.001@parcelwise.example>,0040_D32_01_keizersgracht-unit-lease-expiry-1-april.eml,holdout,decision,D32,discussion,
+<e2c990a3caf8.F145.001@parcelwise.example>,0041_F145_01_data-deletion-confirmation-account-4471.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<e2268783cee4.N01.001@parcelwise.example>,0042_N01_01_idea-4-day-work-week-pilot-super-excited.eml,dev,non_decision,N01,proposal,
+<5ef7226ca280.F268.001@parcelwise.example>,0043_F268_01_window-desk.eml,dev,filler,,chatter,
+<db8f401e459d.F147.001@parcelwise.example>,0044_F147_01_map-tile-slowness-complaints-trickling-i.eml,dev,filler,,discussion,
+<5dfd36cab843.F071.001@parcelwise.example>,0045_F071_01_insurance-renewal-paperwork.eml,dev,filler,,discussion,
+<aabd9214e556.F011.001@parcelwise.example>,0046_F011_01_scheduling-our-call-one-constraint.eml,dev,filler,,discussion,
+<d0653f530683.F169.001@parcelwise.example>,0047_F169_01_prospect-asking-about-scan-pricing.eml,dev,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<d7ca9e6a88e8.D05.001@parcelwise.example>,0048_D05_01_starter-plan-pricing-analysis-and-propos.eml,dev,decision,D05,proposal,
+<32f149416f9e.D05.002@parcelwise.example>,0049_D05_02_re-starter-plan-pricing-analysis-and-pro.eml,dev,decision,D05,objection,
+<415ffea03215.F098.001@parcelwise.example>,0050_F098_01_insurance-paperwork-serial-numbers.eml,dev,filler,,discussion,
+<8b04dd685b84.F142.001@parcelwise.example>,0051_F142_01_ticket-40113-forwarded-offline-sync.eml,dev,filler,,discussion,
+<8a173a35c6b9.D05.005@parcelwise.example>,0052_D05_05_re-starter-plan-pricing-analysis-and-pro.eml,dev,decision,D05,discussion,
+<7ce4e787616c.D05.006@parcelwise.example>,0053_D05_06_re-starter-plan-pricing-analysis-and-pro.eml,dev,decision,D05,decisive,
+<17f5cdee50e3.F269.001@parcelwise.example>,0054_F269_01_cake-logistics-yes-really.eml,dev,filler,,chatter,trivial logistics decision: pick the wallpaper/design of the launch countdown channel
+<b065f7143ba1.F128.001@parcelwise.example>,0055_F128_01_office-account-login-loop-sorry-to-bothe.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<62847b2acc77.F309.001@parcelwise.example>,0056_F309_01_weekend-monitoring-summary-all-quiet.eml,dev,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<407bbfa79618.D32.003@parcelwise.example>,0057_D32_03_re-keizersgracht-unit-lease-expiry-1-apr.eml,holdout,decision,D32,proposal,
+<038b9a50b4d7.D32.004@parcelwise.example>,0058_D32_04_re-keizersgracht-unit-lease-expiry-1-apr.eml,holdout,decision,D32,decisive,
+<403f39d6a57c.D32.005@parcelwise.example>,0059_D32_05_re-keizersgracht-unit-lease-expiry-1-apr.eml,holdout,decision,D32,confirmation,
+<8fdc69a2031e.N01.003@parcelwise.example>,0060_N01_03_re-idea-4-day-work-week-pilot-super-exci.eml,dev,non_decision,N01,discussion,
+<5466ad15f2ac.D09.001@parcelwise.example>,0061_D09_01_hosting-proposal-to-move-off-nimbushost.eml,dev,decision,D09,proposal,
+<6eb96c5a5dfe.N01.004@parcelwise.example>,0062_N01_04_re-idea-4-day-work-week-pilot-super-exci.eml,dev,non_decision,N01,chatter,
+<e02a48c4adcd.F157.001@parcelwise.example>,0063_F157_01_prospect-wants-eu-data-residency-in-writ.eml,holdout,filler,,discussion,
+<53cd6b710151.F070.001@parcelwise.example>,0064_F070_01_q2-calendar.eml,dev,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<87db3dd4c0d6.F297.001@parcelwise.example>,0065_F297_01_emergency-contact-details-quick-update-p.eml,dev,filler,,discussion,
+<cb48c156361c.D09.003@parcelwise.example>,0066_D09_03_re-hosting-proposal-to-move-off-nimbusho.eml,dev,decision,D09,objection,
+<7bfff78372c4.F093.001@parcelwise.example>,0067_F093_01_bank-feed-matching-small-snag.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<6b5ef93b40a0.F027.001@parcelwise.example>,0068_F027_01_v3-qa-dry-run-slot-and-launch-week-snack.eml,dev,filler,,discussion,trivial logistics decision: decide the office snack order for launch week
+<b4f1bf839b0c.D09.004@parcelwise.example>,0069_D09_04_re-hosting-proposal-to-move-off-nimbusho.eml,dev,decision,D09,confirmation,
+<ad173e45c5ea.D09.005@parcelwise.example>,0070_D09_05_re-hosting-proposal-to-move-off-nimbusho.eml,dev,decision,D09,confirmation,
+<b0f5587475ac.F108.001@parcelwise.example>,0071_F108_01_billing-portal-session-timeouts.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<cd52ba5aae0e.F179.001@parcelwise.example>,0072_F179_01_booth-lead-technical-question.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<1a5513427ce2.F194.001@parcelwise.example>,0073_F194_01_renewal-heads-up-july-customer.eml,holdout,filler,,discussion,
+<706bd2653a7e.F164.001@parcelwise.example>,0074_F164_01_demo-request-rotterdam-bike-courier-star.eml,holdout,filler,,discussion,
+<b18d208648fc.F253.001@parcelwise.example>,0075_F253_01_marta-out-thursday-and-friday.eml,dev,filler,,chatter,
+<2d00e18c14a4.F193.001@parcelwise.example>,0076_F193_01_old-price-list-question.eml,holdout,filler,,discussion,
+<5e15bcac7224.F026.001@parcelwise.example>,0077_F026_01_swiftbox-quarterly-review-call.eml,dev,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<e1fdb72bbc7b.F047.001@parcelwise.example>,0078_F047_01_beacon-desk-demo-actually-hold-off.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<6aaaa57e3c8c.D24.001@parcelwise.example>,0079_D24_01_redline-renewal-a-proposal-you-are-going.eml,holdout,decision,D24,decisive,
+<e3e497081cb7.D24.002@parcelwise.example>,0080_D24_02_fyi-redline-renewal-offer-sent-15-for-2.eml,holdout,decision,D24,discussion,
+<db900320f951.D24.003@parcelwise.example>,0081_D24_03_re-fyi-redline-renewal-offer-sent-15-for.eml,holdout,decision,D24,objection,
+<e67c7531c8ec.D24.004@parcelwise.example>,0082_D24_04_re-fyi-redline-renewal-offer-sent-15-for.eml,holdout,decision,D24,discussion,
+<59f0ea2af15e.F219.001@parcelwise.example>,0083_F219_01_logiconnect-europe-2026-partner-sessions.eml,holdout,filler,,chatter,
+<8b84995e4c1f.D24.005@parcelwise.example>,0084_D24_05_redline.eml,holdout,decision,D24,chatter,
+<061db62b65c5.F231.001@parcelwise.example>,0085_F231_01_see-what-your-customers-see-free-analyti.eml,holdout,filler,,discussion,
+<bb2a42a007b5.F104.001@parcelwise.example>,0086_F104_01_payforge-statement-reconciliation.eml,holdout,filler,,discussion,
+<9ce7ce27a585.F287.001@parcelwise.example>,0087_F287_01_ergonomics-assessment-printer-thing-sorr.eml,dev,filler,,discussion,trivial logistics decision: choose between two printer maintenance slots
+<778fe43d763a.F029.001@parcelwise.example>,0088_F029_01_calendar-clash-jonas-and-me.eml,dev,filler,,discussion,trivial logistics decision: move the retro to Thursday because Wednesday is meeting-free
+<cda9e8573b47.D17.001@parcelwise.example>,0089_D17_01_driver-app-tech-stack-sorry-to-bother.eml,dev,decision,D17,chatter,
+<5ef2e147fd89.F243.001@parcelwise.example>,0090_F243_01_helen-out-today.eml,dev,filler,,chatter,
+<44e863d42145.D25.001@parcelwise.example>,0091_D25_01_redline-renewal-discount-level-needs-rev.eml,holdout,decision,D25,objection,
+<5c8dbd18af6d.D25.002@parcelwise.example>,0092_D25_02_re-redline-renewal-discount-level-needs.eml,holdout,decision,D25,decisive,
+<f4ddafe5d43b.F137.001@parcelwise.example>,0093_F137_01_duplicate-tracking-webhooks.eml,holdout,filler,,discussion,
+<67a533d1690d.D25.004@parcelwise.example>,0094_D25_04_re-redline-renewal-discount-level-needs.eml,holdout,decision,D25,decisive,
+<0d57785422ed.D17.003@parcelwise.example>,0095_D17_03_re-driver-app-stack-proposal-react-nativ.eml,dev,decision,D17,objection,
+<19f0092a1c51.F283.001@parcelwise.example>,0096_F283_01_stand-up-time-the-keyboard-situation.eml,dev,filler,,chatter,trivial logistics decision: move Monday stand-up 15 minutes later; sender just informs the team
+<fc7f1bebfbaa.D25.005@parcelwise.example>,0097_D25_05_redline-renewal-one-correction-to-monday.eml,holdout,decision,D25,reversal,
+<11cede65630d.F085.001@parcelwise.example>,0098_F085_01_nimbushost-invoice-query.eml,holdout,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<e56e4450d470.D25.007@parcelwise.example>,0099_D25_07_re-redline-renewal-discount-level-needs.eml,holdout,decision,D25,confirmation,
+<00fe7d496a2b.D17.005@parcelwise.example>,0100_D17_05_re-driver-app-stack-proposal-react-nativ.eml,dev,decision,D17,decisive,
+<c33779113122.D17.006@parcelwise.example>,0101_D17_06_re-driver-app-stack-proposal-react-nativ.eml,dev,decision,D17,confirmation,
+<3050d9fd7009.N02.001@parcelwise.example>,0102_N02_01_lisbon-satellite-office-big-opportunity.eml,dev,non_decision,N02,proposal,
+<8b9e4f399f07.F004.001@parcelwise.example>,0103_F004_01_leadership-weekly-room-booking.eml,dev,filler,,discussion,trivial logistics decision: book the small meeting room for the Swiftbox call; no significance beyond the booking
+<0cdcb415fcb4.F220.001@parcelwise.example>,0104_F220_01_you-re-invited-scale-support-without-sca.eml,dev,filler,,chatter,
+<c99d7a4a5a28.F207.001@parcelwise.example>,0105_F207_01_kvk-member-bulletin-february-edition.eml,holdout,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<b6ba93b72c9b.F094.001@parcelwise.example>,0106_F094_01_invoice-needed-scanner-hardware-resale.eml,holdout,filler,,discussion,
+<b049ce7b9cdd.F184.001@parcelwise.example>,0107_F184_01_july-renewal-heads-up.eml,holdout,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<89bd5e8e584f.F065.001@parcelwise.example>,0108_F065_01_re-design-asset-subscription-renewal-400.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<e0bf7ae9f4a0.F218.001@parcelwise.example>,0109_F218_01_beacon-bulletin-rates-robots-and-roundin.eml,dev,filler,,chatter,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<45c5b8c3eda9.N02.003@parcelwise.example>,0110_N02_03_re-lisbon-satellite-office-big-opportuni.eml,dev,non_decision,N02,discussion,
+<ef9f587c2207.N02.004@parcelwise.example>,0111_N02_04_re-lisbon-satellite-office-big-opportuni.eml,dev,non_decision,N02,chatter,
+<32fb3e896985.F016.001@parcelwise.example>,0112_F016_01_june-team-planning.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<aed0e8268e7e.F235.001@parcelwise.example>,0113_F235_01_release-notes-firmware-4-7-helpdesk-conn.eml,holdout,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<1fb775bafef9.D06.001@parcelwise.example>,0114_D06_01_starter-price-increase-the-complaints-ha.eml,dev,decision,D06,objection,
+<e6675c6ebb6b.F160.001@parcelwise.example>,0115_F160_01_demo-request-rotterdam-bike-courier-star.eml,holdout,filler,,discussion,
+<f25d748c2851.D06.003@parcelwise.example>,0116_D06_03_re-starter-price-increase-the-complaints.eml,dev,decision,D06,objection,
+<4efc851097f3.D06.004@parcelwise.example>,0117_D06_04_re-starter-price-increase-the-complaints.eml,dev,decision,D06,proposal,
+<8ce4b29a4748.F162.001@parcelwise.example>,0118_F162_01_inbound-lead-from-ghent.eml,dev,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<0ccf842218f4.F141.001@parcelwise.example>,0119_F141_01_429s-on-our-integration-key.eml,holdout,filler,,discussion,
+<f7aa860cb659.D06.006@parcelwise.example>,0120_D06_06_re-starter-price-increase-the-complaints.eml,dev,decision,D06,decisive,
+<782c9408f1c4.F247.001@parcelwise.example>,0121_F247_01_away-tomorrow.eml,holdout,filler,,chatter,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<93d41b305017.F055.001@parcelwise.example>,0122_F055_01_calendar-clash-your-demo-vs-priya-s-revi.eml,dev,filler,,discussion,
+<e244ebf2138a.F022.001@parcelwise.example>,0123_F022_01_harbor-express-collections-call-and-a-co.eml,dev,filler,,discussion,trivial logistics decision: pick which coffee machine vendor sample to keep
+<7eca989bd4a1.F301.001@parcelwise.example>,0124_F301_01_dashboard-widget-cache-cleared.eml,holdout,filler,,discussion,
+<2324769e6605.F209.001@parcelwise.example>,0125_F209_01_what-s-new-release-notes-are-here.eml,dev,filler,,discussion,
+<d24066b6751b.F223.001@parcelwise.example>,0126_F223_01_kvk-newsletter-event-programme-update.eml,dev,filler,,discussion,
+<c0068c2b33cd.F217.001@parcelwise.example>,0127_F217_01_your-website-could-rank-40-higher-free-a.eml,holdout,filler,,chatter,Include a forward ('FYI see below') of a trivial earlier note
+<bc1720c2acd3.F227.001@parcelwise.example>,0128_F227_01_your-beacon-desk-trial-still-open.eml,dev,filler,,discussion,
+<c31f3ef3d53f.D10.001@parcelwise.example>,0129_D10_01_corvid-migration-we-need-outside-hands.eml,dev,decision,D10,discussion,
+<bac9c6bb77ba.F034.001@parcelwise.example>,0130_F034_01_scanner-vendor-demo.eml,holdout,filler,,discussion,
+<701af6f2e568.D21.001@parcelwise.example>,0131_D21_01_proposal-protected-focus-time-on-wednesd.eml,dev,decision,D21,proposal,
+<dc166b59a50a.D21.002@parcelwise.example>,0132_D21_02_re-proposal-protected-focus-time-on-wedn.eml,dev,decision,D21,objection,
+<7a3659a72e7c.F050.001@parcelwise.example>,0133_F050_01_redline-check-in-possible-to-move.eml,holdout,filler,,discussion,
+<9a0c9b0f9479.N06.001@parcelwise.example>,0134_N06_01_idea-dedicated-devrel-hire.eml,holdout,non_decision,N06,proposal,
+<6c875cc2e05c.F299.001@parcelwise.example>,0135_F299_01_admin-note-spare-keys-watering-rota.eml,dev,filler,,discussion,trivial logistics decision: choose the day for the office plant watering rota
+<d7966ed0a651.D21.004@parcelwise.example>,0136_D21_04_re-proposal-protected-focus-time-on-wedn.eml,dev,decision,D21,decisive,
+<c58e9a668195.D21.005@parcelwise.example>,0137_D21_05_re-proposal-protected-focus-time-on-wedn.eml,dev,decision,D21,confirmation,
+<ba2fb982d310.F290.001@parcelwise.example>,0138_F290_01_payslip-question-on-behalf-of-ravi.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<c35c8d7a7947.F208.001@parcelwise.example>,0139_F208_01_bundle-hosting-with-your-scanners-nimbus.eml,holdout,filler,,chatter,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<9a888ddc5f91.D10.002@parcelwise.example>,0140_D10_02_re-corvid-migraton-scope.eml,dev,decision,D10,proposal,
+<15db5e938bd1.D10.003@parcelwise.example>,0141_D10_03_re-corvid-migration-we-need-outside-hand.eml,dev,decision,D10,objection,
+<21e1f55d0371.N06.002@parcelwise.example>,0142_N06_02_re-idea-dedicated-devrel-hire.eml,holdout,non_decision,N06,discussion,
+<96e7e2a00a03.F115.001@parcelwise.example>,0143_F115_01_webhook-retry-storm-tiny-courier-tiny-fi.eml,holdout,filler,,discussion,
+<e5bceef89470.F249.001@parcelwise.example>,0144_F249_01_ravi-ooo.eml,dev,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<931f1ad8131c.N06.003@parcelwise.example>,0145_N06_03_re-idea-dedicated-devrel-hire.eml,holdout,non_decision,N06,discussion,
+<a1d1fa168d76.N06.004@parcelwise.example>,0146_N06_04_re-idea-dedicated-devrel-hire.eml,holdout,non_decision,N06,chatter,
+<4b7e97d5bc59.F185.001@parcelwise.example>,0147_F185_01_win-back-draft-for-the-assendelft-accoun.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<0701704a3c92.F107.001@parcelwise.example>,0148_F107_01_billing-portal-kicks-us-out-every-10-min.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<fa3403104ac8.D10.004@parcelwise.example>,0149_D10_04_re-re-corvid-migration-we-need-outside-h.eml,dev,decision,D10,decisive,
+<ffe2625903ed.F031.001@parcelwise.example>,0150_F031_01_qa-dry-run-slot.eml,dev,filler,,discussion,
+<907e952939e1.D40.001@parcelwise.example>,0151_D40_01_q2-marketing-budget-ask.eml,holdout,decision,D40,proposal,
+<a62a895a283e.D40.002@parcelwise.example>,0152_D40_02_re-q2-marketing-budget-ask.eml,holdout,decision,D40,decisive,
+<37c0565d136a.F171.001@parcelwise.example>,0153_F171_01_ghent-courier-inbound-cross-functional-m.eml,dev,filler,,discussion,
+<bf3f645fe36e.D40.003@parcelwise.example>,0154_D40_03_q2-budget-sheet-updated-draft-for-review.eml,holdout,decision,D40,recap,
+<7956e0a7d1a8.F090.001@parcelwise.example>,0155_F090_01_usage-overage-metering-glitch-resolved.eml,holdout,filler,,discussion,
+<ae40a3573bee.D20_T1.001@parcelwise.example>,0156_D20_T1_01_interview-feedback-elena-voss-systems-de.eml,dev,decision,D20,discussion,
+<5f19238844e6.F041.001@parcelwise.example>,0157_F041_01_v3-qa-dry-run-need-a-slot.eml,dev,filler,,discussion,trivial logistics decision: move the retro to Thursday because Wednesday is meeting-free
+<89bc5dd9c81b.F153.001@parcelwise.example>,0158_F153_01_rain-mode-grumpy-driver.eml,holdout,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<33011056b4b6.D20_T1.002@parcelwise.example>,0159_D20_T1_02_interview-feedback-elena-voss-round-2-my.eml,dev,decision,D20,discussion,
+<718a98262ca6.D28.001@parcelwise.example>,0160_D28_01_urgent-i-think-i-leaked-an-api-key-in-a.eml,holdout,decision,D28,discussion,
+<0f023782edc0.D02_T1.001@parcelwise.example>,0161_D02_T1_01_payforge-fees-updated-analysis-and-what.eml,dev,decision,D02,proposal,
+<e7cfa5c01513.D20_T1.003@parcelwise.example>,0162_D20_T1_03_re-interview-feedback-elena-voss-systems.eml,dev,decision,D20,discussion,
+<d3032c44fab5.D28.003@parcelwise.example>,0163_D28_03_re-urgent-i-think-i-leaked-an-api-key-in.eml,holdout,decision,D28,decisive,
+<8690f85448e2.F191.001@parcelwise.example>,0164_F191_01_logiconnect-scan-list.eml,dev,filler,,discussion,
+<ec3df4d5ad31.D28.006@parcelwise.example>,0165_D28_06_re-urgent-rotate-all-pushback.eml,holdout,decision,D28,decisive,
+<1ca32acbd8b4.D02_T1.002@parcelwise.example>,0166_D02_T1_02_re-payforge-fees-updated-analysis-and-wh.eml,dev,decision,D02,discussion,
+<70cff052d657.D28.007@parcelwise.example>,0167_D28_07_re-urgent-rotate-all-pushback.eml,holdout,decision,D28,confirmation,
+<4cf479123326.D28.008@parcelwise.example>,0168_D28_08_re-urgent-rotate-all-pushback.eml,holdout,decision,D28,confirmation,
+<ecc874d729f4.D40.005@parcelwise.example>,0169_D40_05_re-q2-budget-sheet-updated-draft-for-rev.eml,holdout,decision,D40,confirmation,
+<616feb07cf0a.D02_T1.003@parcelwise.example>,0170_D02_T1_03_re-payforge-fees-updated-analysis-and-wh.eml,dev,decision,D02,discussion,
+<084cfb6b7795.F051.001@parcelwise.example>,0171_F051_01_onboarding-session-booking-plant-rota.eml,dev,filler,,discussion,trivial logistics decision: choose the day for the office plant watering rota
+<31bc8447397a.F178.001@parcelwise.example>,0172_F178_01_swiftbox-seat-chatter.eml,holdout,filler,,discussion,
+<73fdd85d8cd4.D02_T1.004@parcelwise.example>,0173_D02_T1_04_re-payforge-fees-updated-analysis-and-wh.eml,dev,decision,D02,proposal,
+<252874ea9da9.D29.001@parcelwise.example>,0174_D29_01_key-rotation-status-the-notification-que.eml,holdout,decision,D29,proposal,
+<495d872f0f9a.D20_T2.001@parcelwise.example>,0175_D20_T2_01_senior-backend-role-candidate-comparison.eml,dev,decision,D20,recap,
+<db7c19fae2c4.F083.001@parcelwise.example>,0176_F083_01_expense-report-question-jonas-s-not-mine.eml,dev,filler,,discussion,
+<bea8ed538ea7.D29.003@parcelwise.example>,0177_D29_03_re-key-rotation-status-the-notification.eml,holdout,decision,D29,decisive,
+<bd130ff0af15.D20_T2.002@parcelwise.example>,0178_D20_T2_02_re-senior-backend-role-candidate-compari.eml,dev,decision,D20,discussion,
+<57a666ca1e4a.D29.004@parcelwise.example>,0179_D29_04_re-key-rotation-status-the-notification.eml,holdout,decision,D29,discussion,
+<57993dcb272a.D29.005@parcelwise.example>,0180_D29_05_re-key-rotation-status-the-notification.eml,holdout,decision,D29,discussion,
+<45910e7804ee.F119.001@parcelwise.example>,0181_F119_01_webhook-gap-same-report-from-two-custome.eml,holdout,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<e4f5cd197ef4.D20_T2.003@parcelwise.example>,0182_D20_T2_03_re-senior-backend-role-candidate-compari.eml,dev,decision,D20,confirmation,
+<6a9dfe539346.D29.006@parcelwise.example>,0183_D29_06_re-key-rotation-status-the-notification.eml,holdout,decision,D29,confirmation,
+<e800b05839ed.F158.001@parcelwise.example>,0184_F158_01_pipeline-hygiene-nudge.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<604294ca7082.D20_T3.001@parcelwise.example>,0185_D20_T3_01_re-senior-backend-role-candidate-compari.eml,dev,decision,D20,decisive,
+<45610a06060f.D20_T3.003@parcelwise.example>,0186_D20_T3_03_re-senior-backend-role-candidate-compari.eml,dev,decision,D20,chatter,
+<a134950b9d38.D40.007@parcelwise.example>,0187_D40_07_q2-budget-sheet-comments-received-finali.eml,holdout,decision,D40,recap,
+<86940267361f.D02_T2.001@parcelwise.example>,0188_D02_T2_01_invoicing-in-eur-only-this-is-now-a-prob.eml,dev,decision,D02,objection,
+<5fd4aaf6479b.F140.001@parcelwise.example>,0189_F140_01_rate-limit-hitting-our-night-batch.eml,holdout,filler,,discussion,
+<5be3a271c1b2.D02_T2.002@parcelwise.example>,0190_D02_T2_02_re-re-invoicing-in-eur-only-this-is-now.eml,dev,decision,D02,discussion,
+<ce163a026a25.D02_T2.003@parcelwise.example>,0191_D02_T2_03_re-invoicing-in-eur-only-this-is-now-a-p.eml,dev,decision,D02,discussion,
+<31024e96d8be.F121.001@parcelwise.example>,0192_F121_01_ticket-8841-login-loop-after-password-re.eml,holdout,filler,,discussion,
+<7c37e735c526.F255.001@parcelwise.example>,0193_F255_01_lena-out-who-covers-the-office-bits.eml,holdout,filler,,discussion,
+<fc24797b2e74.F229.001@parcelwise.example>,0194_F229_01_hire-smarter-14-day-trial-for-growing-te.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<1f050a62b09d.F205.001@parcelwise.example>,0195_F205_01_explainer-eu-e-invoicing-rules-and-what.eml,dev,filler,,chatter,
+<1aa65e29fe8b.D20_T3.002@parcelwise.example>,0196_D20_T3_02_re-senior-backend-role-candidate-compari.eml,dev,decision,D20,confirmation,
+<f7e422ffd08d.D20_T4.001@parcelwise.example>,0197_D20_T4_01_parcelwise-b-v-offer-of-employment-senio.eml,dev,decision,D20,proposal,
+<ca686fb13efc.F300.001@parcelwise.example>,0198_F300_01_office-key-handover-admin-note.eml,dev,filler,,discussion,trivial logistics decision: book the small meeting room for the Swiftbox call; no significance beyond the booking
+<9fbe7b1c64ca.F168.001@parcelwise.example>,0199_F168_01_renewal-heads-up-de-haan-logistics-july.eml,holdout,filler,,discussion,
+<4257d67c4e0b.F112.001@parcelwise.example>,0200_F112_01_scanner-pairing-trouble.eml,dev,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<7b0a9134b0ed.F048.001@parcelwise.example>,0201_F048_01_redline-check-in-needs-a-new-slot.eml,dev,filler,,discussion,
+<fd7761a8fc62.D34.001@parcelwise.example>,0202_D34_01_logiconnect-europe-2026-partnership-tier.eml,holdout,decision,D34,discussion,
+<9d1a394b7914.F204.001@parcelwise.example>,0203_F204_01_invite-webinar-roadmaps-that-don-t-lie-f.eml,dev,filler,,chatter,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<391dabf7ed29.F067.001@parcelwise.example>,0204_F067_01_conference-expense-booking-via-paula-rey.eml,holdout,filler,,discussion,
+<75f5d16b442d.D02_T3.001@parcelwise.example>,0205_D02_T3_01_notes-leadership-meeting-10-march.eml,dev,decision,D02,recap,
+<9b1194e85ac5.D02_T3.002@parcelwise.example>,0206_D02_T3_02_re-notes-leadership-meeting-10-march.eml,dev,decision,D02,objection,
+<4cb258922d1e.D02_T3.004@parcelwise.example>,0207_D02_T3_04_re-notes-leadership-meeting-10-march-fwd.eml,dev,decision,D02,decisive,
+<ba8c26030bc3.D02_T3.005@parcelwise.example>,0208_D02_T3_05_re-notes-leadership-meeting-10-march.eml,dev,decision,D02,confirmation,
+<3f894d9e69b7.F260.001@parcelwise.example>,0209_F260_01_snacks-team-lunch-date.eml,dev,filler,,chatter,trivial logistics decision: pick the date of the team lunch for Elena's first week
+<227cb4fe3864.F135.001@parcelwise.example>,0210_F135_01_billing-portal-logs-me-out-mid-invoice.eml,holdout,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<db585ddcbd3a.F058.001@parcelwise.example>,0211_F058_01_book-time-with-bruno.eml,dev,filler,,discussion,
+<e771b27f2729.D34.003@parcelwise.example>,0212_D34_03_re-logiconnect-europe-2026-partnership-t.eml,holdout,decision,D34,objection,
+<b74856f2d658.F081.001@parcelwise.example>,0213_F081_01_redline-invoice-who-do-they-address-it-t.eml,holdout,filler,,discussion,
+<552a1f0d8db5.D34.005@parcelwise.example>,0214_D34_05_re-logiconnect-europe-2026-partnership-t.eml,holdout,decision,D34,decisive,
+<8155ec1635aa.D20_T4.002@parcelwise.example>,0215_D20_T4_02_re-parcelwise-b-v-offer-of-employment-se.eml,dev,decision,D20,confirmation,
+<870c07e39f51.D34.006@parcelwise.example>,0216_D34_06_re-logiconnect-europe-2026-partnership-t.eml,holdout,decision,D34,confirmation,
+<97553de977fd.F013.001@parcelwise.example>,0217_F013_01_demo-slot-today.eml,dev,filler,,discussion,
+<e5ca6438b1ea.F057.001@parcelwise.example>,0218_F057_01_bruno-call-plant-rota.eml,dev,filler,,discussion,trivial logistics decision: choose the day for the office plant watering rota
+<e625232b8c7e.D20_T4.003@parcelwise.example>,0219_D20_T4_03_re-parcelwise-b-v-offer-of-employment-se.eml,dev,decision,D20,confirmation,
+<06740a9742de.F143.001@parcelwise.example>,0220_F143_01_driver-app-offline-sync-manifests-not-up.eml,dev,filler,,discussion,
+<21c18cc8bde5.F019.001@parcelwise.example>,0221_F019_01_thursday-demo-lunch-going-with-wraps.eml,dev,filler,,chatter,trivial logistics decision: order lunch for the Thursday demo (wrap platter vs pizza) — sender settles it themselves
+<6dbbb3981610.D26.001@parcelwise.example>,0222_D26_01_swiftbox-contract-schedule-4-sla-require.eml,holdout,decision,D26,proposal,
+<5daab38f7493.F275.001@parcelwise.example>,0223_F275_01_a-gentle-keyboard-question.eml,dev,filler,,chatter,
+<da7cd5c019d4.F021.001@parcelwise.example>,0224_F021_01_booking-the-corvid-cloud-technical-revie.eml,dev,filler,,discussion,trivial logistics decision: decide the parking spot swap between two staff
+<d907c1157893.D26.003@parcelwise.example>,0225_D26_03_re-swiftbox-sla-request-review-of-liabil.eml,holdout,decision,D26,discussion,
+<c805837da80e.D26.004@parcelwise.example>,0226_D26_04_re-re-swiftbox-contract-schedule-4-sla-r.eml,holdout,decision,D26,decisive,
+<94afdb1b64c7.F136.001@parcelwise.example>,0227_F136_01_export-stuck-large-customer-end-of-day.eml,dev,filler,,discussion,
+<38501222b681.F008.001@parcelwise.example>,0228_F008_01_elena-s-first-week-1-1s.eml,dev,filler,,discussion,trivial logistics decision: settle who takes the demo iPad to the client meeting
+<def259002b6d.D26.005@parcelwise.example>,0229_D26_05_re-swiftbox-contract-schedule-4-sla-requ.eml,holdout,decision,D26,discussion,
+<6e89926a07d9.N03.001@parcelwise.example>,0230_N03_01_routebee.eml,dev,non_decision,N03,proposal,
+<b3de10a37aaa.F017.001@parcelwise.example>,0231_F017_01_pricing-page-review-find-a-slot.eml,holdout,filler,,discussion,
+<1ff7414315ff.N03.002@parcelwise.example>,0232_N03_02_routebee.eml,dev,non_decision,N03,discussion,
+<03ac0e28c178.F126.001@parcelwise.example>,0233_F126_01_driver-can-t-scan-in-rain-mode-tickets-p.eml,dev,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<866944709f6b.F298.001@parcelwise.example>,0234_F298_01_holiday-balance-query.eml,dev,filler,,discussion,
+<60424701d85e.F110.001@parcelwise.example>,0235_F110_01_scanner-pairing-failing-at-swiftbox.eml,holdout,filler,,discussion,
+<e8ff98d50f56.D30.001@parcelwise.example>,0236_D30_01_proposal-2fa-mandatory-deadline-apr-3.eml,holdout,decision,D30,proposal,
+<71884938ddfd.D30.002@parcelwise.example>,0237_D30_02_re-proposal-2fa-mandatory-deadline-apr-3.eml,holdout,decision,D30,objection,
+<b5f03577621f.D30.003@parcelwise.example>,0238_D30_03_re-proposal-2fa-mandatory-deadline-apr-3.eml,holdout,decision,D30,decisive,
+<22a58d00afc1.F175.001@parcelwise.example>,0239_F175_01_prospect-question-on-driver-app-timeline.eml,holdout,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<895a872d1dae.D30.004@parcelwise.example>,0240_D30_04_re-proposal-2fa-mandatory-deadline-apr-3.eml,holdout,decision,D30,confirmation,
+<b38c2a07a495.F099.001@parcelwise.example>,0241_F099_01_nimbushost-invoice-po-reference.eml,dev,filler,,discussion,
+<96abe8e5efa4.D30.005@parcelwise.example>,0242_D30_05_re-proposal-2fa-mandatory-deadline-apr-3.eml,holdout,decision,D30,chatter,
+<ca360bc81751.F180.001@parcelwise.example>,0243_F180_01_koerier-zuid-win-back-draft.eml,holdout,filler,,discussion,
+<2290c050cf4f.D14.001@parcelwise.example>,0244_D14_01_v3-bug-triage-monday-numbers.eml,dev,decision,D14,discussion,
+<a4bfd4619839.D14.003@parcelwise.example>,0245_D14_03_re-v3-bug-triage-monday-numbers.eml,dev,decision,D14,objection,
+<20486b430eca.F212.001@parcelwise.example>,0246_F212_01_kvk-digest-spring-edition.eml,holdout,filler,,discussion,
+<f0d03b538f76.F091.001@parcelwise.example>,0247_F091_01_vat-quarter-your-expense-receipts.eml,dev,filler,,discussion,
+<6e25275f9dc4.F087.001@parcelwise.example>,0248_F087_01_invoice-number-sequence-quick-question.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<623d98038cf6.D14.005@parcelwise.example>,0249_D14_05_re-v3-bug-triage-monday-numbers.eml,dev,decision,D14,proposal,
+<b71cd2f429a4.D14.006@parcelwise.example>,0250_D14_06_re-v3-bug-triage-monday-numbers.eml,dev,decision,D14,decisive,
+<253200b4af70.D14.007@parcelwise.example>,0251_D14_07_re-v3-bug-triage-monday-numbers.eml,dev,decision,D14,confirmation,
+<068a251888da.F279.001@parcelwise.example>,0252_F279_01_king-s-day.eml,dev,filler,,discussion,trivial logistics decision: book the small meeting room for the Swiftbox call; no significance beyond the booking
+<912f870bf40e.N03.003@parcelwise.example>,0253_N03_03_re-routebee.eml,dev,non_decision,N03,objection,
+<ab25ae9fd715.F245.001@parcelwise.example>,0254_F245_01_out-this-afternoon.eml,dev,filler,,chatter,Include a forward ('FYI see below') of a trivial earlier note
+<e1b00a439b5a.F202.001@parcelwise.example>,0255_F202_01_your-website-vs-the-competition-q2-slots.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<07b26af9d380.N03.004@parcelwise.example>,0256_N03_04_re-routebee.eml,dev,non_decision,N03,discussion,
+<e2fd2c2bb89a.F101.001@parcelwise.example>,0257_F101_01_swiftbox-february-usage-invoice-one-ques.eml,holdout,filler,,discussion,
+<5db79215fe69.D35.001@parcelwise.example>,0258_D35_01_logiconnect-sponsorship-proposed-change.eml,holdout,decision,D35,proposal,
+<5a30860135c2.D38.001@parcelwise.example>,0259_D38_01_notes-leadership-meeting-wed-25-march.eml,dev,decision,D38,recap,
+<a9f32e6c1624.F018.001@parcelwise.example>,0260_F018_01_call-with-bruno.eml,dev,filler,,discussion,
+<b3761d4fe06e.D38.002@parcelwise.example>,0261_D38_02_re-notes-leadership-meeting-wed-25-march.eml,dev,decision,D38,confirmation,
+<e92dcbd89c7a.F124.001@parcelwise.example>,0262_F124_01_pw-1591-two-customers-same-webhook-gap.eml,dev,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<657e6f0de96b.F272.001@parcelwise.example>,0263_F272_01_launch-week-fuel.eml,dev,filler,,discussion,trivial logistics decision: decide the office snack order for launch week
+<252dcb63e357.F190.001@parcelwise.example>,0264_F190_01_inbound-ghent-courier-12-drivers-is-our.eml,dev,filler,,discussion,
+<a87ad0a23db6.D35.004@parcelwise.example>,0265_D35_04_re-logiconnect-sponsorship-proposed-chan.eml,holdout,decision,D35,decisive,
+<48ec6c37635c.D35.005@parcelwise.example>,0266_D35_05_re-logiconnect-europe-2026-partnership-t.eml,holdout,decision,D35,reversal,
+<b12d9deea27c.F134.001@parcelwise.example>,0267_F134_01_webhook-retry-storm-kurier-noord-again.eml,dev,filler,,chatter,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<018748e5d598.D35.006@parcelwise.example>,0268_D35_06_re-logiconnect-europe-2026-partnership-t.eml,holdout,decision,D35,confirmation,
+<a2decd09f79f.F072.001@parcelwise.example>,0269_F072_01_petty-cash-tin-is-empty-again.eml,dev,filler,,discussion,
+<924fed05ac4b.F125.001@parcelwise.example>,0270_F125_01_webhook-retry-storm-fix-it.eml,dev,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<08cff3a4db97.F032.001@parcelwise.example>,0271_F032_01_elena-s-first-week-1-1s-grab-a-slot.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<02d9357a17d7.F054.001@parcelwise.example>,0272_F054_01_onboarding-booking-standup-time.eml,dev,filler,,discussion,trivial logistics decision: move Monday stand-up 15 minutes later; sender just informs the team
+<4771302cb56f.D11.001@parcelwise.example>,0273_D11_01_app-tier-cutover-windows.eml,dev,decision,D11,proposal,
+<5b62cdff493d.F296.001@parcelwise.example>,0274_F296_01_onboarding-paperwork-checklist-elena-sta.eml,dev,filler,,discussion,trivial logistics decision: book the small meeting room for the Swiftbox call; no significance beyond the booking
+<128fdcf780c0.D11.003@parcelwise.example>,0275_D11_03_re-app-tier-cutover-windows.eml,dev,decision,D11,decisive,
+<d676de2a3289.D11.004@parcelwise.example>,0276_D11_04_re-app-tier-cutover-windows.eml,dev,decision,D11,confirmation,
+<f0fb0aaa955b.F165.001@parcelwise.example>,0277_F165_01_re-the-discount-ask.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<90fe822e8ad8.D11.005@parcelwise.example>,0278_D11_05_re-app-tier-cutover-windows.eml,dev,decision,D11,confirmation,
+<b2064136c997.F281.001@parcelwise.example>,0279_F281_01_jonas-vs-calendar-invites-round-47.eml,dev,filler,,discussion,trivial logistics decision: move the retro to Thursday because Wednesday is meeting-free
+<bc30e39460a5.F113.001@parcelwise.example>,0280_F113_01_driver-can-t-scan-in-rain-mode.eml,holdout,filler,,discussion,
+<93a1ad303261.D15.001@parcelwise.example>,0281_D15_01_scope-options-for-the-mid-may-launch.eml,dev,decision,D15,discussion,
+<b144e4dfcadf.D33.001@parcelwise.example>,0282_D33_01_office-costs-proposal-to-sublet-half-the.eml,holdout,decision,D33,proposal,
+<c1e8463f98c0.D15.002@parcelwise.example>,0283_D15_02_re-scope-options-for-the-mid-may-launch.eml,dev,decision,D15,discussion,
+<5a6dbc17a0be.D15.003@parcelwise.example>,0284_D15_03_re-scope-options-for-the-mid-may-launch.eml,dev,decision,D15,objection,
+<1c48a2092317.D15.004@parcelwise.example>,0285_D15_04_re-scope-options-for-the-mid-may-launch.eml,dev,decision,D15,proposal,
+<65e6f079dd0c.N04.001@parcelwise.example>,0286_N04_01_kotlin.eml,dev,non_decision,N04,proposal,
+<2bafc3c90d59.N04.002@parcelwise.example>,0287_N04_02_re-kotlin.eml,dev,non_decision,N04,chatter,
+<e3684bba29c6.N04.003@parcelwise.example>,0288_N04_03_re-kotlin.eml,dev,non_decision,N04,discussion,
+<12c5aad20920.N04.004@parcelwise.example>,0289_N04_04_re-kotlin.eml,dev,non_decision,N04,chatter,
+<84b9d66faa18.F007.001@parcelwise.example>,0290_F007_01_monday-stand-up-new-time-small-change.eml,dev,filler,,discussion,trivial logistics decision: move Monday stand-up 15 minutes later; sender just informs the team
+<f20fbddbdc73.F005.001@parcelwise.example>,0291_F005_01_kofi-onboarding-sessions.eml,dev,filler,,discussion,
+<4a1c53a8e6af.F152.001@parcelwise.example>,0292_F152_01_billing-portal-session-timeouts.eml,holdout,filler,,discussion,
+<25cf5d766cfc.D15-recap.001@parcelwise.example>,0293_D15-recap_01_notes-product-meeting-thursday-2-april.eml,dev,decision,D15,recap,
+<08368a7b95ec.D33.005@parcelwise.example>,0294_D33_05_re-office-costs-proposal-to-sublet-half.eml,holdout,decision,D33,decisive,
+<9dca04e86e56.D15-recap.002@parcelwise.example>,0295_D15-recap_02_re-notes-product-meeting-thursday-2-apri.eml,dev,decision,D15,chatter,
+<1a4cc10acaa0.D33.006@parcelwise.example>,0296_D33_06_re-office-costs-proposal-to-sublet-half.eml,holdout,decision,D33,confirmation,
+<8917131292f8.D33.003@parcelwise.example>,0297_D33_03_re-office-costs-proposal-to-sublet-half.eml,holdout,decision,D33,objection,
+<41ca83a80d02.D15-recap.003@parcelwise.example>,0298_D15-recap_03_re-notes-product-meeting-thursday-2-apri.eml,dev,decision,D15,confirmation,
+<c34043fbc0e2.F002.001@parcelwise.example>,0299_F002_01_v3-qa-dry-run-slot-needed.eml,dev,filler,,discussion,
+<3d7a17456979.D12.001@parcelwise.example>,0300_D12_01_benchmark-app-tier-on-corvid-vs-db-on-ni.eml,dev,decision,D12,discussion,
+<8d0d4d283b88.D38.006@parcelwise.example>,0301_D38_06_re-nordvik-logistics-sla-question.eml,dev,decision,D38,confirmation,
+<1dec2bfe615d.F189.001@parcelwise.example>,0302_F189_01_prospect-asking-about-old-pricing.eml,dev,filler,,discussion,
+<c350481b961e.D33.004@parcelwise.example>,0303_D33_04_re-office-costs-proposal-to-sublet-half.eml,holdout,decision,D33,discussion,
+<7328d4662b47.F010.001@parcelwise.example>,0304_F010_01_onboarding-session-for-veldpost-and-one.eml,dev,filler,,discussion,trivial logistics decision: set the default time for the monthly all-hands to 16:00
+<86831a9505f7.F037.001@parcelwise.example>,0305_F037_01_v3-qa-dry-run-your-availability.eml,dev,filler,,discussion,
+<3cf6aabc3ce6.F096.001@parcelwise.example>,0306_F096_01_usage-overage-tooltip-copy.eml,dev,filler,,discussion,
+<4f0ab8c16d40.F203.001@parcelwise.example>,0307_F203_01_cut-hiring-admin-by-60-talentpilot-for-p.eml,holdout,filler,,chatter,
+<c21eb3f2acea.F156.001@parcelwise.example>,0308_F156_01_swiftbox-seat-expansion-chatter.eml,dev,filler,,discussion,
+<f29185498bfb.D23.001@parcelwise.example>,0309_D23_01_qa-coverage-gap-before-the-v3-rollout.eml,dev,decision,D23,discussion,
+<aa801a70a0fc.D38.008@parcelwise.example>,0310_D38_08_re-discrepancy-in-the-pro-first-response.eml,dev,decision,D38,objection,
+<740e4fcacfec.F009.001@parcelwise.example>,0311_F009_01_onboarding-booking-snack-order.eml,dev,filler,,discussion,trivial logistics decision: decide the office snack order for launch week
+<5fb6b1414caa.D12.003@parcelwise.example>,0312_D12_03_re-benchmark-app-tier-on-corvid-vs-db-on.eml,dev,decision,D12,decisive,
+<727eff0c4787.D38.009@parcelwise.example>,0313_D38_09_re-discrepancy-in-the-pro-first-response.eml,dev,decision,D38,recap,
+<3f30614c31ff.F061.001@parcelwise.example>,0314_F061_01_usage-overage-line-item-display-question.eml,dev,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<5b71fa9dad46.F271.001@parcelwise.example>,0315_F271_01_re-fantasy-football-league.eml,holdout,filler,,chatter,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<4e7a246057b8.D12.005@parcelwise.example>,0316_D12_05_re-benchmark-app-tier-on-corvid-vs-db-on.eml,dev,decision,D12,objection,
+<84718c55b3df.D12.006@parcelwise.example>,0317_D12_06_re-benchmark-app-tier-on-corvid-vs-db-on.eml,dev,decision,D12,confirmation,
+<a90b56030e56.F025.001@parcelwise.example>,0318_F025_01_retro-moves-to-thursday.eml,dev,filler,,discussion,trivial logistics decision: move the retro to Thursday because Wednesday is meeting-free
+<a5a115d950ce.D23.003@parcelwise.example>,0319_D23_03_re-qa-coverage-gap-before-the-v3-rollout.eml,dev,decision,D23,discussion,
+<2aa2b858c4c5.D36.001@parcelwise.example>,0320_D36_01_big-idea-rebrand-to-routewell-before-v3.eml,holdout,decision,D36,proposal,
+<46cabc8205a0.F078.001@parcelwise.example>,0321_F078_01_expense-report-question-from-jonas.eml,dev,filler,,discussion,
+<e876a659822a.D36.002@parcelwise.example>,0322_D36_02_re-big-idea-rebrand-to-routewell-before.eml,holdout,decision,D36,objection,
+<94867e516c76.N03.005@parcelwise.example>,0323_N03_05_re-routebee.eml,dev,non_decision,N03,discussion,
+<41f877b82fb3.D36.003@parcelwise.example>,0324_D36_03_re-big-idea-rebrand-to-routewell-before.eml,holdout,decision,D36,objection,
+<3a640e706785.D23.004@parcelwise.example>,0325_D23_04_re-qa-coverage-gap-before-the-v3-rollout.eml,dev,decision,D23,proposal,
+<1f99f373b1c8.F285.001@parcelwise.example>,0326_F285_01_welcome-sign-for-elena-s-desk-retro-move.eml,dev,filler,,chatter,trivial logistics decision: move the retro to Thursday because Wednesday is meeting-free
+<08ab4bd76675.D23.005@parcelwise.example>,0327_D23_05_re-qa-coverage-gap-before-the-v3-rollout.eml,dev,decision,D23,confirmation,
+<120dc360c690.D23.006@parcelwise.example>,0328_D23_06_re-qa-coverage-gap-before-the-v3-rollout.eml,dev,decision,D23,confirmation,
+<99c9a2e2b712.F084.001@parcelwise.example>,0329_F084_01_nimbushost-invoice-query.eml,dev,filler,,discussion,
+<397efc432118.F076.001@parcelwise.example>,0330_F076_01_harbor-express-reminder-step.eml,holdout,filler,,discussion,
+<0b127766778f.F062.001@parcelwise.example>,0331_F062_01_swiftbox-february-usage-invoice-which-po.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<4fbbe33d9328.F286.001@parcelwise.example>,0332_F286_01_holiday-balance-question.eml,holdout,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<d98d4365b548.F211.001@parcelwise.example>,0333_F211_01_last-call-tomorrow-s-webinar-5-growth-ex.eml,holdout,filler,,chatter,
+<a5d16cae8483.F106.001@parcelwise.example>,0334_F106_01_harbor-express-extension-on-the-usage-re.eml,holdout,filler,,discussion,
+<69a153dd6699.F206.001@parcelwise.example>,0335_F206_01_corvid-cloud-spring-events-you-re-invite.eml,dev,filler,,discussion,
+<ecdac9d7a5b2.D36.005@parcelwise.example>,0336_D36_05_re-big-idea-rebrand-to-routewell-before.eml,holdout,decision,D36,discussion,
+<efbc478d5b7c.F118.001@parcelwise.example>,0337_F118_01_invoice-pdf-shows-instead-of-eur.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<677833d4e9f9.D36.006@parcelwise.example>,0338_D36_06_re-big-idea-rebrand-to-routewell-before.eml,holdout,decision,D36,decisive,
+<b47ba31e3bd5.F200.001@parcelwise.example>,0339_F200_01_demo-request-rotterdam-bike-courier-star.eml,holdout,filler,,discussion,
+<296f0e6ba9b8.F181.001@parcelwise.example>,0340_F181_01_pricing-question-prospect-on-old-plans.eml,dev,filler,,discussion,
+<d1cea82f89d7.N07.001@parcelwise.example>,0341_N07_01_plan-names-quick-brainstorm.eml,holdout,non_decision,N07,proposal,
+<b7e57f3aa592.N07.002@parcelwise.example>,0342_N07_02_re-plan-names-quick-brainstorm.eml,holdout,non_decision,N07,discussion,
+<762f2c622408.F131.001@parcelwise.example>,0343_F131_01_re-data-deletion-for-the-old-test-accoun.eml,dev,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<9b43bb5a92f4.N07.003@parcelwise.example>,0344_N07_03_re-plan-names-quick-brainstorm.eml,holdout,non_decision,N07,chatter,
+<e417192d83f5.D31_T1.001@parcelwise.example>,0345_D31_T1_01_swiftbox-security-questionnaire-item-12.eml,holdout,decision,D31,proposal,
+<cb2b21703ede.D39.001@parcelwise.example>,0346_D39_01_recap-standup-on-call-rotation.eml,dev,decision,D39,recap,
+<2a320ae4fa2d.D39.002@parcelwise.example>,0347_D39_02_re-recap-standup-on-call-rotation.eml,dev,decision,D39,objection,
+<d90a1be57835.D39.003@parcelwise.example>,0348_D39_03_re-recap-standup-on-call-rotation.eml,dev,decision,D39,objection,
+<4a62bb5ca411.D31_T1.002@parcelwise.example>,0349_D31_T1_02_re-swiftbox-security-questionnaire-item.eml,holdout,decision,D31,discussion,
+<e44bbbf20c37.F073.001@parcelwise.example>,0350_F073_01_design-tooling-renewal-admin-question.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<986722669a59.D31_T1.003@parcelwise.example>,0351_D31_T1_03_re-swiftbox-security-questionnaire-item.eml,holdout,decision,D31,discussion,
+<6ac65703505c.D31_T1.004@parcelwise.example>,0352_D31_T1_04_fyi-swiftbox-renewal-now-requires-a-thir.eml,holdout,decision,D31,discussion,
+<54af2e9d552e.D39.004@parcelwise.example>,0353_D39_04_re-recap-standup-on-call-rotation.eml,dev,decision,D39,objection,
+<1bf1e66230c4.D39.006@parcelwise.example>,0354_D39_06_re-recap-standup-on-call-rotation.eml,dev,decision,D39,discussion,
+<0eab1c0d07cc.F261.001@parcelwise.example>,0355_F261_01_it-lives-photo-attached.eml,holdout,filler,,discussion,
+<60c0c5e05a6c.D03.001@parcelwise.example>,0356_D03_01_ledgerly-sandbox-recon-it-s-not-clean.eml,dev,decision,D03,discussion,
+<d45ab0597176.F068.001@parcelwise.example>,0357_F068_01_redline-monthly-invoice-clarification-on.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<290c5dbe8767.F216.001@parcelwise.example>,0358_F216_01_statement-ready-product-update.eml,dev,filler,,discussion,
+<8305ab710de9.D03.003@parcelwise.example>,0359_D03_03_re-ledgerly-sandbox-recon-it-s-not-clean.eml,dev,decision,D03,objection,
+<078bc370d4e0.D03.005@parcelwise.example>,0360_D03_05_re-ledgerly-sandbox-recon-it-s-not-clean.eml,dev,decision,D03,decisive,
+<a6b4b1066dd3.F196.001@parcelwise.example>,0361_F196_01_quick-pricing-check.eml,dev,filler,,discussion,
+<cfb656696a83.D03.006@parcelwise.example>,0362_D03_06_re-ledgerly-sandbox-recon-it-s-not-clean.eml,dev,decision,D03,confirmation,
+<f43f757038a3.F075.001@parcelwise.example>,0363_F075_01_migration-paperwork-filing-location.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<511529369427.F039.001@parcelwise.example>,0364_F039_01_scheduling-joint-session-incl-redline.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<9889dcf51786.F166.001@parcelwise.example>,0365_F166_01_swiftbox-seats-chatter-only.eml,dev,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<226769816536.F012.001@parcelwise.example>,0366_F012_01_retro-move-it.eml,holdout,filler,,discussion,
+<f64cf5f91da3.D31_T2.001@parcelwise.example>,0367_D31_T2_01_pentest-quotes-blackthorn-12-000-vs-grey.eml,holdout,decision,D31,proposal,
+<efd6e6e71d1c.D31_T2.002@parcelwise.example>,0368_D31_T2_02_re-pentest-quotes-blackthorn-12-000-vs-g.eml,holdout,decision,D31,objection,
+<f8951fed6fc0.F198.001@parcelwise.example>,0369_F198_01_referral-visit-tuesday.eml,dev,filler,,discussion,
+<e18b854b453f.D31_T2.003@parcelwise.example>,0370_D31_T2_03_re-pentest-quotes-blackthorn-12-000-vs-g.eml,holdout,decision,D31,discussion,
+<4e5e39e699fe.D31_T2.004@parcelwise.example>,0371_D31_T2_04_re-pentest-quotes-blackthorn-12-000-vs-g.eml,holdout,decision,D31,decisive,
+<ca4ad7073918.D31_T2.005@parcelwise.example>,0372_D31_T2_05_re-pentest-quotes-blackthorn-12-000-vs-g.eml,holdout,decision,D31,confirmation,
+<7304c94bb0b2.F045.001@parcelwise.example>,0373_F045_01_kofi-onboarding-sessions-proposed-slots.eml,dev,filler,,discussion,
+<7774c888b4f0.D16-T1.001@parcelwise.example>,0374_D16-T1_01_renewal-non-negotiable-points-before-we.eml,dev,decision,D16,objection,
+<63b829cd53eb.D16-T1.002@parcelwise.example>,0375_D16-T1_02_fw-renewal-non-negotiable-points-before.eml,dev,decision,D16,discussion,
+<c2dff54beb8a.D16-T2.001@parcelwise.example>,0376_D16-T2_01_re-fw-renewal-non-negotiable-points-befo.eml,dev,decision,D16,discussion,
+<c73b17648109.F228.001@parcelwise.example>,0377_F228_01_partner-offer-business-reserve-account-a.eml,dev,filler,,chatter,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<b45f65bb4423.F049.001@parcelwise.example>,0378_F049_01_redline-check-in-new-time-logistics.eml,dev,filler,,discussion,trivial logistics decision: settle who takes the demo iPad to the client meeting
+<e5a3c3153d10.D16-T2.002@parcelwise.example>,0379_D16-T2_02_re-fw-renewal-non-negotiable-points-befo.eml,dev,decision,D16,discussion,
+<9c15abaa34ec.D16-T2.003@parcelwise.example>,0380_D16-T2_03_re-fw-renewal-non-negotiable-points-befo.eml,dev,decision,D16,objection,
+<5ee590b58865.D31_T3.001@parcelwise.example>,0381_D31_T3_01_engagement-penetration-test-for-parcelwi.eml,holdout,decision,D31,proposal,
+<d79a7e72b113.D16-T2.004@parcelwise.example>,0382_D16-T2_04_re-fw-renewal-non-negotiable-points-befo.eml,dev,decision,D16,discussion,
+<d25f0770fffc.D31_T3.002@parcelwise.example>,0383_D31_T3_02_re-engagement-penetration-test-for-parce.eml,holdout,decision,D31,confirmation,
+<8048f08629ea.D31_T3.003@parcelwise.example>,0384_D31_T3_03_re-engagement-penetration-test-for-parce.eml,holdout,decision,D31,confirmation,
+<b2e9c5c5ebc1.F105.001@parcelwise.example>,0385_F105_01_accountant-wants-the-migration-cost-brea.eml,holdout,filler,,discussion,
+<8fd4e89dcbbc.D16-T3.001@parcelwise.example>,0386_D16-T3_01_notes-redline-renewal-call-wednesday-29.eml,dev,decision,D16,recap,
+<a9cddcf814b3.D16-T3.002@parcelwise.example>,0387_D16-T3_02_re-notes-redline-renewal-call-wednesday.eml,dev,decision,D16,decisive,
+<a76153f04e98.D16-T3.003@parcelwise.example>,0388_D16-T3_03_re-notes-redline-renewal-call-wednesday.eml,dev,decision,D16,confirmation,
+<34fe638c4e75.F139.001@parcelwise.example>,0389_F139_01_export-seems-stuck-at-80.eml,dev,filler,,discussion,
+<53399ce7ccc7.F035.001@parcelwise.example>,0390_F035_01_corvid-technical-review-book-it.eml,dev,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<eb2dc9e61b49.F042.001@parcelwise.example>,0391_F042_01_elena-s-first-week-1-1s.eml,holdout,filler,,discussion,
+<6fd93ce3519e.D18.001@parcelwise.example>,0392_D18_01_v3-rollout-plan-proposing-phased-not-big.eml,dev,decision,D18,proposal,
+<8f5e36f65c9f.D31_T3.004@parcelwise.example>,0393_D31_T3_04_blackthorn-engagement-signed-pentest-wee.eml,holdout,decision,D31,confirmation,
+<4f7bff191e25.D18.002@parcelwise.example>,0394_D18_02_re-v3-rollout-plan-proposing-phased-not.eml,dev,decision,D18,objection,
+<36523b9ced4c.F282.001@parcelwise.example>,0395_F282_01_fantasy-league.eml,holdout,filler,,chatter,
+<c350d502d0e9.D18.004@parcelwise.example>,0396_D18_04_re-v3-rollout-plan-proposing-phased-not.eml,dev,decision,D18,discussion,
+<e9fe63696422.D18.005@parcelwise.example>,0397_D18_05_re-v3-rollout-plan-proposing-phased-not.eml,dev,decision,D18,confirmation,
+<38a986387d44.D18.006@parcelwise.example>,0398_D18_06_re-v3-rollout-plan-proposing-phased-not.eml,dev,decision,D18,confirmation,
+<79b5419e3ce6.F046.001@parcelwise.example>,0399_F046_01_slot-with-bruno-room-grab-sorry.eml,dev,filler,,discussion,trivial logistics decision: book the small meeting room for the Swiftbox call; no significance beyond the booking
+<18d2faf03f68.F234.001@parcelwise.example>,0400_F234_01_hiring-drivers-meet-refhire-made-for-cou.eml,holdout,filler,,chatter,Include a forward ('FYI see below') of a trivial earlier note
+<bbef0102df88.F288.001@parcelwise.example>,0401_F288_01_ergonomics-assessment.eml,holdout,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<3a8e56fe4aea.F056.001@parcelwise.example>,0402_F056_01_retro-moved-fyi-see-below.eml,holdout,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<85a60d1ab822.F023.001@parcelwise.example>,0403_F023_01_a-short-call-to-schedule.eml,dev,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<3c8bb29f340e.F266.001@parcelwise.example>,0404_F266_01_running-club-deck-inside.eml,holdout,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<13f37c6e2a03.F063.001@parcelwise.example>,0405_F063_01_invoice-question-scanner-hardware-resale.eml,holdout,filler,,discussion,
+<29c28ee70ff5.D07.001@parcelwise.example>,0406_D07_01_scan-costs-proposal-for-a-usage-based-ad.eml,dev,decision,D07,proposal,
+<d2f054270394.N05.001@parcelwise.example>,0407_N05_01_proposal-a-free-tier-as-a-growth-lever.eml,dev,non_decision,N05,proposal,
+<594fcf9f3b5d.F259.001@parcelwise.example>,0408_F259_01_the-coffee-machine.eml,holdout,filler,,discussion,
+<ae01910b5256.F103.001@parcelwise.example>,0409_F103_01_february-usage-export-qa-test-scans.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<fda242912863.D07.003@parcelwise.example>,0410_D07_03_re-scan-costs-proposal-for-a-usage-based.eml,dev,decision,D07,discussion,
+<5fc03284e86a.D07.005@parcelwise.example>,0411_D07_05_re-scan-costs-proposal-for-a-usage-based.eml,dev,decision,D07,proposal,
+<57f8820c18d6.D07.006@parcelwise.example>,0412_D07_06_re-scan-costs-proposal-for-a-usage-based.eml,dev,decision,D07,decisive,
+<825181cb3a19.F310.001@parcelwise.example>,0413_F310_01_log-retention-tweak.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<7dc775b34099.F109.001@parcelwise.example>,0414_F109_01_customer-confused-by-new-plan-page.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<03cb4f14e10d.N05.002@parcelwise.example>,0415_N05_02_re-proposal-a-free-tier-as-a-growth-leve.eml,dev,non_decision,N05,objection,
+<31147a0b65a6.F274.001@parcelwise.example>,0416_F274_01_parking-snacks.eml,dev,filler,,chatter,trivial logistics decision: decide the office snack order for launch week
+<83b49867c644.F254.001@parcelwise.example>,0417_F254_01_jonas-away-rest-of-week.eml,holdout,filler,,chatter,
+<f14e9b89910c.F292.001@parcelwise.example>,0418_F292_01_kofi-s-on-site-days-admin-logistics.eml,dev,filler,,discussion,
+<58792cfee783.F163.001@parcelwise.example>,0419_F163_01_heads-up-a-happy-july-renewal.eml,dev,filler,,discussion,
+<639bd3663313.F150.001@parcelwise.example>,0420_F150_01_duplicate-webhooks-what-do-i-tell-the-cu.eml,dev,filler,,discussion,
+<1a17f511a218.N05.003@parcelwise.example>,0421_N05_03_re-proposal-a-free-tier-as-a-growth-leve.eml,dev,non_decision,N05,discussion,
+<152af5d64576.N10.001@parcelwise.example>,0422_N10_01_us-expansion-the-redline-domino.eml,holdout,non_decision,N10,proposal,
+<eaee4582ad2e.N10.002@parcelwise.example>,0423_N10_02_re-us-expansion-the-redline-domino.eml,holdout,non_decision,N10,discussion,
+<26eb923e2232.F264.001@parcelwise.example>,0424_F264_01_parking-hero-spotted-on-level-2.eml,holdout,filler,,chatter,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<89ecb83fdd09.F237.001@parcelwise.example>,0425_F237_01_re-your-question-for-jonas-he-is-away.eml,dev,filler,,chatter,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<a9faf4328d50.N10.003@parcelwise.example>,0426_N10_03_re-us-expansion-the-redline-domino.eml,holdout,non_decision,N10,objection,
+<88d8d25d81a1.N10.004@parcelwise.example>,0427_N10_04_re-us-expansion-the-redline-domino.eml,holdout,non_decision,N10,discussion,
+<2dfc2e825e6c.N08.001@parcelwise.example>,0428_N08_01_okrs-a-suggestion-for-next-quarter.eml,holdout,non_decision,N08,proposal,
+<6427003bc4b8.N08.002@parcelwise.example>,0429_N08_02_re-okrs-a-suggestion-for-next-quarter.eml,holdout,non_decision,N08,discussion,
+<ddb5fa16ab3d.F289.001@parcelwise.example>,0430_F289_01_onboarding-checklist-for-elena-paperwork.eml,dev,filler,,discussion,trivial logistics decision: settle who takes the demo iPad to the client meeting
+<a431e0e364ef.F240.001@parcelwise.example>,0431_F240_01_greg-is-on-auto-reply.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<909465ca3a15.N08.003@parcelwise.example>,0432_N08_03_re-okrs-a-suggestion-for-next-quarter.eml,holdout,non_decision,N08,chatter,
+<bed08f5ae8c3.N05.004@parcelwise.example>,0433_N05_04_re-proposal-a-free-tier-as-a-growth-leve.eml,dev,non_decision,N05,discussion,
+<9e20a55081bd.F230.001@parcelwise.example>,0434_F230_01_your-monthly-business-insight-report-is.eml,dev,filler,,discussion,
+<0b1bc1551890.F129.001@parcelwise.example>,0435_F129_01_scanner-trouble-in-the-rain.eml,holdout,filler,,discussion,
+<691f4eff9101.F241.001@parcelwise.example>,0436_F241_01_ooo-tomorrow-friday.eml,holdout,filler,,discussion,
+<966fb50147bf.D27.001@parcelwise.example>,0437_D27_01_our-outstanding-balance-an-honest-word-f.eml,holdout,decision,D27,discussion,
+<7de8012e3193.D27.004@parcelwise.example>,0438_D27_04_harbor-express-27-400-overdue-propose-su.eml,holdout,decision,D27,proposal,
+<b9ea943050ac.D27.005@parcelwise.example>,0439_D27_05_re-harbor-express-27-400-overdue-propose.eml,holdout,decision,D27,confirmation,
+<87d1153accdb.D27.006@parcelwise.example>,0440_D27_06_re-harbor-express-27-400-overdue-propose.eml,holdout,decision,D27,decisive,
+<afe95b9ac219.F080.001@parcelwise.example>,0441_F080_01_invoice-number-sequence.eml,dev,filler,,discussion,
+<1ab11acb32b9.D27.007@parcelwise.example>,0442_D27_07_harbor-express-formal-notice-of-service.eml,holdout,decision,D27,confirmation,
+<7d2d693d2d3c.F302.001@parcelwise.example>,0443_F302_01_dns-ttl-note.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<e7161adb5cad.F133.001@parcelwise.example>,0444_F133_01_small-data-deletion-request-how-do-i-han.eml,dev,filler,,discussion,
+<420169dcfa9f.F210.001@parcelwise.example>,0445_F210_01_conference-season-fuel-20-off-bean-bundl.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<b35729ecb653.F015.001@parcelwise.example>,0446_F015_01_beacon-desk-demo-thursday.eml,dev,filler,,discussion,trivial logistics decision: order lunch for the Thursday demo (wrap platter vs pizza) — sender settles it themselves
+<8a853f9d9cae.F066.001@parcelwise.example>,0447_F066_01_payforge-statement-two-card-charges-to-l.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<5c03d98bddc1.F195.001@parcelwise.example>,0448_F195_01_swiftbox-chatter-more-seats.eml,dev,filler,,discussion,
+<ad92ce0948a8.D37.001@parcelwise.example>,0449_D37_01_helpdesk-renewal-new-pricing-for-2026-27.eml,holdout,decision,D37,discussion,
+<21197d0b11b4.F267.001@parcelwise.example>,0450_F267_01_cycling-coffee-machine-samples.eml,dev,filler,,chatter,trivial logistics decision: pick which coffee machine vendor sample to keep
+<2d9a106d0c5c.F173.001@parcelwise.example>,0451_F173_01_scan-pack-question-from-a-prospect.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<95e5161be7a9.D22.001@parcelwise.example>,0452_D22_01_rollout-coordination-vs-focus-wednesdays.eml,dev,decision,D22,discussion,
+<2b18b1010436.D22.002@parcelwise.example>,0453_D22_02_re-rollout-coordination-vs-focus-wednesd.eml,dev,decision,D22,objection,
+<bc9929ed3878.F199.001@parcelwise.example>,0454_F199_01_small-discount-ask.eml,dev,filler,,discussion,
+<efe28a215866.D22.003@parcelwise.example>,0455_D22_03_re-rollout-coordination-vs-focus-wednesd.eml,dev,decision,D22,decisive,
+<48476219883f.F250.001@parcelwise.example>,0456_F250_01_lena-out-thu-fri-bridge-day.eml,dev,filler,,chatter,Include a forward ('FYI see below') of a trivial earlier note
+<dc89a4cbfe3f.D22.004@parcelwise.example>,0457_D22_04_re-rollout-coordination-vs-focus-wednesd.eml,dev,decision,D22,confirmation,
+<bc15dbe35267.F122.001@parcelwise.example>,0458_F122_01_duplicate-tracking-webhooks-small-accoun.eml,dev,filler,,discussion,
+<0528c87069fd.F155.001@parcelwise.example>,0459_F155_01_eta-question-from-a-customer-of-ours.eml,holdout,filler,,discussion,
+<f48cdd8cf141.F238.001@parcelwise.example>,0460_F238_01_chloe-ooo.eml,dev,filler,,discussion,
+<b1d3be036c78.F258.001@parcelwise.example>,0461_F258_01_fantasy-league-one-admin-thing.eml,dev,filler,,chatter,trivial logistics decision: choose the courier pickup time for a laptop repair (10:30 vs 14:00)
+<f91f9b08e637.F030.001@parcelwise.example>,0462_F030_01_harbor-express-collections-call-do-i-joi.eml,holdout,filler,,discussion,
+<cba1e614885e.F053.001@parcelwise.example>,0463_F053_01_bruno-meeting-launch-channel-look.eml,dev,filler,,discussion,trivial logistics decision: pick the wallpaper/design of the launch countdown channel
+<1d258d952782.F059.001@parcelwise.example>,0464_F059_01_swiftbox-quarterly-review-call-logistics.eml,dev,filler,,discussion,trivial logistics decision: settle who takes the demo iPad to the client meeting
+<cc55a7b0ae6d.F079.001@parcelwise.example>,0465_F079_01_design-tooling-renewal-fyi-see-below.eml,dev,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<debd6b75b5a0.F024.001@parcelwise.example>,0466_F024_01_swiftbox-quarterly-review-call-slot-opti.eml,holdout,filler,,discussion,
+<f93fdd9b33c7.F116.001@parcelwise.example>,0467_F116_01_eta-accuracy-question-redline-sub-accoun.eml,holdout,filler,,discussion,
+<095dcd4dac3e.F100.001@parcelwise.example>,0468_F100_01_redline-invoice-their-ap-query.eml,holdout,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<d72076438581.F244.001@parcelwise.example>,0469_F244_01_out-this-afternoon.eml,dev,filler,,discussion,
+<95b89c4a0feb.F201.001@parcelwise.example>,0470_F201_01_kvk-bulletin-may-june-edition.eml,holdout,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<f00abd487317.F276.001@parcelwise.example>,0471_F276_01_nationale-fietsdagen-bike-to-work-challe.eml,dev,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<72c843f8aed3.D37.006@parcelwise.example>,0472_D37_06_re-beacon-desk-formal-quote-request-for.eml,holdout,decision,D37,confirmation,
+<bb0b5c822579.N05.005@parcelwise.example>,0473_N05_05_re-proposal-a-free-tier-as-a-growth-leve.eml,dev,non_decision,N05,chatter,
+<7f403de9084e.F167.001@parcelwise.example>,0474_F167_01_referral-intro-incoming.eml,holdout,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<5b2fedaf0748.D37.007@parcelwise.example>,0475_D37_07_re-helpdesk-renewal-40-time-to-look-at-b.eml,holdout,decision,D37,decisive,
+<6ba225f4b4c0.F127.001@parcelwise.example>,0476_F127_01_scanning-fails-in-rain-mode-again.eml,dev,filler,,discussion,
+<00cee24f3675.D37.008@parcelwise.example>,0477_D37_08_re-helpdesk-renewal-40-time-to-look-at-b.eml,holdout,decision,D37,confirmation,
+<e634f8e95441.F186.001@parcelwise.example>,0478_F186_01_heads-up-mid-account-looking-quiet.eml,holdout,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<8bc0cd345fee.F148.001@parcelwise.example>,0479_F148_01_eta-accuracy-question.eml,dev,filler,,discussion,
+<86fa35a0abef.F102.001@parcelwise.example>,0480_F102_01_invoice-for-the-demo-scanner-resale.eml,holdout,filler,,discussion,
+<36aedd45d2ee.F257.001@parcelwise.example>,0481_F257_01_suggestion-for-tom-s-s-next-deck.eml,holdout,filler,,chatter,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<1adba34a1506.F077.001@parcelwise.example>,0482_F077_01_design-tooling-renewal.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<1d74d5c32ced.F097.001@parcelwise.example>,0483_F097_01_swiftbox-february-usage-invoice-already.eml,holdout,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<7b12f8aaa378.F233.001@parcelwise.example>,0484_F233_01_product-notice-legacy-scanner-accessory.eml,holdout,filler,,chatter,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<f38b12b342f8.D04_T1.001@parcelwise.example>,0485_D04_T1_01_notes-leadership-meeting-28-may.eml,dev,decision,D04,recap,
+<0dcf6bfcf14b.D04_T1.002@parcelwise.example>,0486_D04_T1_02_re-notes-leadership-meeting-28-may.eml,dev,decision,D04,discussion,
+<264654f8e0e7.D04_T2.001@parcelwise.example>,0487_D04_T2_01_ledgerly-cutover-confirmed-plan-monday-6.eml,dev,decision,D04,proposal,
+<0f4a0cff15c1.D04_T2.002@parcelwise.example>,0488_D04_T2_02_re-ledgerly-cutover-confirmed-plan-monda.eml,dev,decision,D04,chatter,
+<9f644d85f7c2.D04_T2.003@parcelwise.example>,0489_D04_T2_03_re-ledgerly-cutover-confirmed-plan-monda.eml,dev,decision,D04,confirmation,
+<43dafda29690.D04_T2.004@parcelwise.example>,0490_D04_T2_04_re-ledgerly-cutover-confirmed-plan-monda.eml,dev,decision,D04,decisive,
+<db416966db94.F064.001@parcelwise.example>,0491_F064_01_q2-prepaid-schedule-export-help.eml,dev,filler,,discussion,
+<f73232265293.F197.001@parcelwise.example>,0492_F197_01_small-discount-request-within-tom-s-s-ma.eml,dev,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<d694751d8ac2.F095.001@parcelwise.example>,0493_F095_01_nimbushost-invoice-which-cost-center.eml,dev,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<edc57eb8a2a5.F305.001@parcelwise.example>,0494_F305_01_noisy-staging-disk-alert-suppressed.eml,dev,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<e1e5003d96dd.F111.001@parcelwise.example>,0495_F111_01_csv-export-grumbles.eml,holdout,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<86e049e35649.F170.001@parcelwise.example>,0496_F170_01_swiftbox-seats-onboarding-wave.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<ee5266772ed8.F006.001@parcelwise.example>,0497_F006_01_time-with-bruno.eml,dev,filler,,discussion,trivial logistics decision: move the retro to Thursday because Wednesday is meeting-free
+<df09777eb6a9.F151.001@parcelwise.example>,0498_F151_01_duplicate-tracking-webhooks-correction.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<3bec550257d0.F308.001@parcelwise.example>,0499_F308_01_friday-deploy-notes.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<f8d953d9f58b.F224.001@parcelwise.example>,0500_F224_01_partner-offer-office-coffee-delivered.eml,holdout,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<7b546d512001.F144.001@parcelwise.example>,0501_F144_01_offline-sync-complaint-one-account-recur.eml,dev,filler,,discussion,
+<f0dab9643553.F154.001@parcelwise.example>,0502_F154_01_customer-confused-by-new-plan-page.eml,holdout,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<0e6c023f3168.F020.001@parcelwise.example>,0503_F020_01_pentest-debrief-slot.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<dfdbe67fd236.F252.001@parcelwise.example>,0504_F252_01_out-tomorrow-pm.eml,holdout,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<c12188b5d7c1.F092.001@parcelwise.example>,0505_F092_01_expense-reports-one-small-question.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<099a66ce62c1.F246.001@parcelwise.example>,0506_F246_01_owen-is-away-board-catch-up-postponed.eml,holdout,filler,,chatter,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<0f70ba583643.F069.001@parcelwise.example>,0507_F069_01_nimbushost-invoice-is-this-ours.eml,holdout,filler,,discussion,
+<ea38e7fe5c4d.F117.001@parcelwise.example>,0508_F117_01_driver-app-offline-sync-complaint-from-a.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<32637804d289.N09.001@parcelwise.example>,0509_N09_01_email-calendar-our-current-suite-is-up-f.eml,holdout,non_decision,N09,discussion,
+<4232cd4edaae.F001.001@parcelwise.example>,0510_F001_01_redline-check-in-need-to-move-it.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<e86b3b377da8.D08.001@parcelwise.example>,0511_D08_01_scan-pack-is-killing-deals-i-need-us-to.eml,dev,decision,D08,objection,
+<4fa994e0f4cd.N09.002@parcelwise.example>,0512_N09_02_re-email-calendar-our-current-suite-is-u.eml,holdout,non_decision,N09,discussion,
+<fda79aadfb50.N09.003@parcelwise.example>,0513_N09_03_re-email-calendar-our-current-suite-is-u.eml,holdout,non_decision,N09,discussion,
+<5fe25c3c3fe5.D08.004@parcelwise.example>,0514_D08_04_re-scan-pack-is-killing-deals-i-need-us.eml,dev,decision,D08,proposal,
+<6ad9a6d9e6a2.D08.005@parcelwise.example>,0515_D08_05_re-scan-pack-is-killing-deals-i-need-us.eml,dev,decision,D08,objection,
+<a28ff3014003.D08.006@parcelwise.example>,0516_D08_06_re-scan-pack-is-killing-deals-i-need-us.eml,dev,decision,D08,decisive,
+<d617082675c4.D08.007@parcelwise.example>,0517_D08_07_re-scan-pack-is-killing-deals-i-need-us.eml,dev,decision,D08,confirmation,
+<4ec72217430f.F221.001@parcelwise.example>,0518_F221_01_invitation-corvid-cloud-summer-webinar-s.eml,dev,filler,,discussion,
+<708ef4b61d8f.F265.001@parcelwise.example>,0519_F265_01_bike-challenge-plants.eml,dev,filler,,discussion,trivial logistics decision: choose the day for the office plant watering rota
+<ffe7a7c04fc2.F014.001@parcelwise.example>,0520_F014_01_redline-check-in-clash-with-the-retro.eml,dev,filler,,discussion,trivial logistics decision: choose the courier pickup time for a laptop repair (10:30 vs 14:00)
+<b5b846c8eaa3.F044.001@parcelwise.example>,0521_F044_01_1-1-moved-to-thursday.eml,dev,filler,,discussion,
+<01a4d9981012.F306.001@parcelwise.example>,0522_F306_01_dependency-bump-patch-versions.eml,dev,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<12c580aac102.N09.004@parcelwise.example>,0523_N09_04_re-email-calendar-our-current-suite-is-u.eml,holdout,non_decision,N09,chatter,
+<cb10159fd5ee.N09.005@parcelwise.example>,0524_N09_05_re-email-calendar-our-current-suite-is-u.eml,holdout,non_decision,N09,chatter,
+<defa6f7928f7.F187.001@parcelwise.example>,0525_F187_01_prospect-asking-about-scan-pack.eml,holdout,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<a4f8e24125fb.F277.001@parcelwise.example>,0526_F277_01_jonas-and-the-calendar-invites-again.eml,dev,filler,,chatter,trivial logistics decision: choose the day for the office plant watering rota
+<90297b82e352.F242.001@parcelwise.example>,0527_F242_01_away.eml,dev,filler,,chatter,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<5c2f590c54b9.F123.001@parcelwise.example>,0528_F123_01_customer-export-hanging-it-pulls-billing.eml,dev,filler,,discussion,
+<5e57ccb39dfb.F294.001@parcelwise.example>,0529_F294_01_laptop-ergonomics-assessment-scheduling.eml,dev,filler,,discussion,
+<130f6abe0db9.F188.001@parcelwise.example>,0530_F188_01_prospect-wants-eu-data-residency-in-writ.eml,dev,filler,,discussion,"Include hypothetical language ('what if we...', 'we could...') without any commitment"
+<91927b42420e.F074.001@parcelwise.example>,0531_F074_01_accountant-asking-for-migration-cost-bre.eml,holdout,filler,,discussion,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<f9e0a9bd937a.F225.001@parcelwise.example>,0532_F225_01_scheduled-maintenance-nimbushost-platfor.eml,holdout,filler,,discussion,
+<500521aef832.F177.001@parcelwise.example>,0533_F177_01_quiet-trial-account.eml,dev,filler,,discussion,Include a forward ('FYI see below') of a trivial earlier note
+<c7ca20a98b7e.F284.001@parcelwise.example>,0534_F284_01_king-s-day-belated-team-lunch-demo-ipad.eml,dev,filler,,discussion,trivial logistics decision: settle who takes the demo iPad to the client meeting
+<72b04caffff9.F295.001@parcelwise.example>,0535_F295_01_elena-s-checklist-two-open-boxes.eml,dev,filler,,discussion,trivial logistics decision: set the default time for the monthly all-hands to 16:00
+<ed61cd2613af.F183.001@parcelwise.example>,0536_F183_01_prospect-question-on-scan-pack-can-you-s.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<191a8d3bae1a.F256.001@parcelwise.example>,0537_F256_01_rain-migration-weekend-and-a-parking-not.eml,dev,filler,,chatter,Include a forward ('FYI see below') of a trivial earlier note
+<1655ae131337.F239.001@parcelwise.example>,0538_F239_01_ravi-out-this-afternoon.eml,dev,filler,,chatter,
+<991c630c0d8c.F036.001@parcelwise.example>,0539_F036_01_qa-dry-run-slot.eml,holdout,filler,,discussion,Include a question that sounds like a decision ('so we're going with X?') that receives no answer
+<a58b66c9bcda.F028.001@parcelwise.example>,0540_F028_01_onboarding-slot-for-the-new-customer.eml,dev,filler,,discussion,
+<289a3571c252.F161.001@parcelwise.example>,0541_F161_01_prospect-visiting-one-practical-question.eml,dev,filler,,discussion,
+<23ab6077f37a.F060.001@parcelwise.example>,0542_F060_01_moving-our-1-1-school-pickup.eml,dev,filler,,discussion,
+<9d3f07f6686c.F263.001@parcelwise.example>,0543_F263_01_office-fantasy-football-league.eml,dev,filler,,chatter,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<c417ce4ee547.F251.001@parcelwise.example>,0544_F251_01_ooo-tmrw-training-day.eml,holdout,filler,,chatter,"Include an enthusiastic agreement to something the sender has no authority over, but nothing happens"
+<56a902b02927.F293.001@parcelwise.example>,0545_F293_01_review-cycle-reminder-printer-slot.eml,dev,filler,,discussion,trivial logistics decision: choose between two printer maintenance slots
+<c131309c5432.F089.001@parcelwise.example>,0546_F089_01_overage-line-shows-520-scans-metering-gl.eml,holdout,filler,,discussion,
+<2edc026eacb6.F040.001@parcelwise.example>,0547_F040_01_1-1-moved-school-pickup.eml,dev,filler,,discussion,trivial logistics decision: pick the date of the team lunch for Elena's first week
+<99c2b5fc9397.F270.001@parcelwise.example>,0548_F270_01_coffee-machine-verdict-elena-s-lunch.eml,dev,filler,,chatter,trivial logistics decision: pick the date of the team lunch for Elena's first week
+<fa172395f486.F038.001@parcelwise.example>,0549_F038_01_blackthorn-kickoff-slot.eml,dev,filler,,discussion,
+<9105ba97de37.F304.001@parcelwise.example>,0550_F304_01_flaky-test-quarantined.eml,dev,filler,,discussion,
+<4b61da5314ea.F222.001@parcelwise.example>,0551_F222_01_chloe-3-open-engineering-roles-at-parcel.eml,dev,filler,,chatter,
+<d16ac0358e96.F138.001@parcelwise.example>,0552_F138_01_integration-hitting-rate-limits.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<288c4dded1f7.F280.001@parcelwise.example>,0553_F280_01_keyboard.eml,dev,filler,,discussion,Include decision-sounding phrases like 'let's do it' or 👍 but ensure no actual commitment or authority is expressed; the topic stays open
+<3617f7cee353.F213.001@parcelwise.example>,0554_F213_01_bries-koffie-juni-update.eml,dev,filler,,discussion,
+<347079a5c7c8.F120.001@parcelwise.example>,0555_F120_01_pw-2231-driver-app-crash-on-android-14.eml,holdout,filler,,discussion,
+<2b59213429d4.F130.001@parcelwise.example>,0556_F130_01_login-loop-after-password-reset.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<c66c437e75b8.N10.005@parcelwise.example>,0557_N10_05_re-us-expansion-the-redline-domino.eml,holdout,non_decision,N10,recap,
+<89f245e238cc.F174.001@parcelwise.example>,0558_F174_01_swiftbox-seats.eml,dev,filler,,discussion,"Include a retraction ('scratch that', 'ignore my last email') about something trivial"
+<f202d1365b68.F232.001@parcelwise.example>,0559_F232_01_partner-bulletin-summer-refresh-for-your.eml,dev,filler,,discussion,
+<659c5d8172dd.F278.001@parcelwise.example>,0560_F278_01_coffee-machine-final-round.eml,dev,filler,,chatter,

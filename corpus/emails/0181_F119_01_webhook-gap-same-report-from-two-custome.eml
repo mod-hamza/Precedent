@@ -1,0 +1,23 @@
+From: Aisha Bello <aisha@parcelwise.example>
+To: ingrid@parcelwise.example, chloe@parcelwise.example
+Subject: Webhook gap - same report from two customers
+Date: Wed, 04 Mar 2026 15:00:00 +0100
+Message-ID: <45910e7804ee.F119.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Ingrid and Chloe 😊
+
+Two customers reported the same thing within an hour of each other: webhook deliveries occasionally skip when we redeploy, roughly a 60-90 second gap. Neither lost data permanently, but both would like status updates during deploys.
+
+I'm wondering if a small "maintenance mode" banner would reassure them. Chloe, could this be a comms thing you'd enjoy owning? Ingrid, any process thoughts welcome. No rush, nobody is angry yet, but I'd love to keep it that way!
+
+Warmly,
+Aisha
+
+-- 
+Warmly,
+Aisha Bello
+Head of Customer Success
+Parcelwise B.V.

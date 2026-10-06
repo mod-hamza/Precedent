@@ -1,0 +1,28 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: dev@parcelwise.example, jonas@parcelwise.example
+Cc: lena@parcelwise.example
+Subject: RE: scope options for the mid-May launch
+Date: Wed, 01 Apr 2026 16:58:00 +0200
+Message-ID: <1c48a2092317.D15.004@parcelwise.example>
+In-Reply-To: <5a6dbc17a0be.D15.003@parcelwise.example>
+References: <93a1ad303261.D15.001@parcelwise.example> <c1e8463f98c0.D15.002@parcelwise.example> <5a6dbc17a0be.D15.003@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Agreed with Dev's read - offline is the item to cut from v3. Jonas's numbers make it unarguable: 6 engineer-weeks against a mid-May target that is already tight. Route optimization stays. I'll propose exactly that at tomorrow's product meeting so it's on the record. Thanks!
+
+On 01-04-2026, Dev Raman wrote:
+> Route optimization v2 is feature-complete, it's just bugs and tuning from here - call it 1 engineer-week of remaining effort. So the choice is really:
+> 
+> - Ship offline mode -> launch moves to late June or later
+> - Cut offline mode -> mid-May holds
+> 
+> If we cut something, offline is the one. Route optimization is already customer-visible in the dashboard demos, and pulling it now would be more disruptive to what we've promised. My take: offline goes to v3.1.
+> 
+> Cheers, Dev
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

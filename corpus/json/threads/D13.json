@@ -1,0 +1,66 @@
+{
+ "thread_id": "D13",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-13T11:20:00+01:00",
+   "subject": "v3 launch date - proposing Wednesday 15 April",
+   "body": "Hi all,\n\nQuick recap of where v3 stands and a date proposal:\n\n1. Route optimization and the new dashboard are on track for feature-complete by mid-March\n2. Redline's pilot is confirmed to start Monday 20 April - Bruno has it in his ops calendar\n3. That gives us a launch window of the week before the pilot\n\nI propose we launch v3 on Wednesday 15 April. That leaves a clear week for pilot onboarding support and a buffer weekend for anything ugly. Thanks!",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 3,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "priya@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-14T09:38:00+01:00",
+   "subject": "RE: v3 launch date - proposing Wednesday 15 April",
+   "body": "Concern: 15 April is tight. We also committed to the Corvid hosting migration in March, so launch prep and infrastructure work overlap in the same month. If feature-complete slips even two weeks, the 15th disappears entirely. I'm not saying no - I'm saying we should treat the 15th as ambitious, not promised.\n\nMy take: hold the 15th, but nobody sells a hard date to customers until we clear feature-complete in March.\n\nCheers, Dev",
+   "in_reply_to_idx": 1,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "priya@parcelwise.example",
+    "dev@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-15T08:12:00+01:00",
+   "subject": "RE: v3 launch date - proposing Wednesday 15 April",
+   "body": "15 kwietnia. dev, korvid idzie pierwsze. chloe dostanie date od priyi.\n\nSent from my iPhone",
+   "in_reply_to_idx": 3,
+   "role": "decisive"
+  },
+  {
+   "idx": 5,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example",
+    "tomas@parcelwise.example",
+    "chloe@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-01-15T09:05:00+01:00",
+   "subject": "RE: v3 launch date - proposing Wednesday 15 April",
+   "body": "Confirmed: v3 launches Wednesday 15 April. Chloe, the date is yours to build the campaign on - I'll send you the messaging brief by Friday. Dev, understood on the Corvid work going first; I've moved the RC freeze earlier in the plan accordingly. Thanks!",
+   "in_reply_to_idx": 4,
+   "role": "confirmation"
+  }
+ ]
+}

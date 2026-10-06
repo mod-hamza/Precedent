@@ -1,0 +1,71 @@
+{
+  "thread_id": "D12",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "jonas@parcelwise.example",
+      "to": ["dev@parcelwise.example", "greg@ferrante-ops.example"],
+      "cc": [],
+      "sent_at": "2026-04-07T10:12:00+02:00",
+      "subject": "benchmark: app tier on corvid vs db on nimbus - latency",
+      "body": "ran the driver-sync workload from a corvid app node against the nimbus managed postgres, and against a corvid-hosted copy of the same db.\n\n- same-provider (corvid -> corvid): p95 write 22 ms\n- cross-provider (corvid app -> nimbus db): p95 61 ms\n\nthat's ~40 ms p95 added just from crossing providers. driver sync polls every few seconds, this shows up as real lag in the app. numbers and the load script are in the repo under benchmarks/cross-provider.",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 2,
+      "from": "greg@ferrante-ops.example",
+      "to": ["dev@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-07T21:47:00+02:00",
+      "subject": "RE: benchmark: app tier on corvid vs db on nimbus - latency",
+      "body": "saw teh numbers. alternative: move teh db too, full migration, with replication running both ways for a week then flip. adds maybe 4-5k to my scope and a lot more moving parts. doable but i wouldnt promise it before teh launch. sent from phone late, greg",
+      "in_reply_to_idx": 1,
+      "role": "proposal"
+    },
+    {
+      "idx": 3,
+      "from": "dev@parcelwise.example",
+      "to": ["jonas@parcelwise.example", "greg@ferrante-ops.example", "helen@parcelwise.example", "priya@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-09T08:55:00+02:00",
+      "subject": "RE: benchmark: app tier on corvid vs db on nimbus - latency",
+      "body": "We're keeping the production database on NimbusHost managed Postgres. Only the app tier moves to Corvid.\n\n40 ms p95 added latency would break driver sync, and a full DB move with cross-provider replication this close to the v3 launch is exactly the kind of risk Greg himself won't sign up for. Hybrid it is; we can revisit the DB after the launch.\n\nCheers, Dev",
+      "in_reply_to_idx": 2,
+      "role": "decisive"
+    },
+    {
+      "idx": 4,
+      "from": "helen@parcelwise.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-04-09T10:30:00+02:00",
+      "subject": "RE: benchmark: app tier on corvid vs db on nimbus - latency",
+      "body": "Dear Dev,\n\nUnderstood. For the record, this means we will keep paying NimbusHost for the managed Postgres alongside the Corvid compute for the time being, so the monthly saving is lower than the original estimate, roughly EUR 900 rather than EUR 1,400 by my calculation. The NimbusHost cancellation notice of 15 March only covered the compute contract, which fortunately works in our favour here.\n\nKind regards, Helen\n\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+      "in_reply_to_idx": 3,
+      "role": "discussion"
+    },
+    {
+      "idx": 5,
+      "from": "priya@parcelwise.example",
+      "to": ["dev@parcelwise.example", "greg@ferrante-ops.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-04-09T14:22:00+02:00",
+      "subject": "RE: benchmark: app tier on corvid vs db on nimbus - latency",
+      "body": "Dev, agreeing with the hybrid call, but flagging the launch angle: the Apr 18-19 cutover weekend now sits right before our release-candidate window. Quick recap:\n\n1. App tier moves 18-19 Apr\n2. RC freeze the following week\n3. v3 launch, now targeting mid-May\n\nIf the cutover slips even a day into the week, it eats RC testing. Can we get Greg's rollback rehearsal confirmed for Friday 17th in writing? Thanks!",
+      "in_reply_to_idx": 3,
+      "role": "objection"
+    },
+    {
+      "idx": 6,
+      "from": "dev@parcelwise.example",
+      "to": ["priya@parcelwise.example", "greg@ferrante-ops.example"],
+      "cc": [],
+      "sent_at": "2026-04-09T16:48:00+02:00",
+      "subject": "RE: benchmark: app tier on corvid vs db on nimbus - latency",
+      "body": "Fair point Priya. Greg, please confirm the Friday 17th rehearsal and a hard stop: if staging isn't green by Saturday 18th 14:00, we roll back and retry the following weekend, no heroic fixes during RC week.\n\nCheers, Dev",
+      "in_reply_to_idx": 5,
+      "role": "confirmation"
+    }
+  ]
+}

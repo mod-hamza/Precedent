@@ -1,0 +1,58 @@
+{
+ "thread_id": "N04",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "jonas@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-01T22:47:00+02:00",
+   "subject": "kotlin",
+   "body": "fwiw i've been rewriting the scanner sync service in kotlin on a branch and it's half the code and actually null-safe. go's error handling is four years of me pasting `if err != nil` and the whole ingest layer is rituals we don't remember the reasons for.\n\nkotlin on the JVM, keep the api surface, migrate service by service. the driver app is react native, that's fine, nobody touch that.\n\ni estimate 2 engineers for a quarter for the core services. think about it. or don't and we'll still be pasting if err != nil in 2028.",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 2,
+   "from": "ravi@parcelwise.example",
+   "to": [
+    "jonas@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-02T09:12:00+02:00",
+   "subject": "RE: kotlin",
+   "body": "Sorry to jump in - is Kotlin the thing you write Android apps with? If we did this would I need to learn it before I can fix bugs in the sync service? Asking because I finally feel like I understand our current codebase a little bit.\n\nRavi",
+   "in_reply_to_idx": 1,
+   "role": "chatter"
+  },
+  {
+   "idx": 3,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "jonas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-02T10:30:00+02:00",
+   "subject": "RE: kotlin",
+   "body": "Ravi: yes, same language, no you wouldn't need it for the current services.\n\nJonas: I'm not dismissing it, the null-safety point is fair and the branch I saw looked clean. But a rewrite of core services landing the same quarter as the v3 launch, the Ledgerly cutover and the Corvid migration is not happening, and two engineer-quarters is real money even if the code is half as long.\n\nwe'll talk. after May.\n\nCheers, Dev",
+   "in_reply_to_idx": 1,
+   "role": "discussion"
+  },
+  {
+   "idx": 4,
+   "from": "jonas@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-02T10:41:00+02:00",
+   "subject": "RE: kotlin",
+   "body": "after may is fine. branch stays, it runs in prod-shaped containers on my machine, evidence available on demand.",
+   "in_reply_to_idx": 3,
+   "role": "chatter"
+  }
+ ]
+}

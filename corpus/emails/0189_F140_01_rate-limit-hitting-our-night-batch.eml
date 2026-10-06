@@ -1,0 +1,18 @@
+From: Bruno Alvarez <bruno@redlinecouriers.example>
+To: ingrid@parcelwise.example
+Subject: Rate limit hitting our night batch
+Date: Thu, 05 Mar 2026 11:00:00 +0100
+Message-ID: <5fd4aaf6479b.F140.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Ingrid,
+
+Our nightly integration started throwing 429s around 02:00. Every night this week. Who do I talk to about the rate limit on our key? I don't have time for a ticket queue on this.
+
+Bruno Alvarez
+COO, Redline Couriers
+
+Bruno Alvarez
+COO, Redline Couriers

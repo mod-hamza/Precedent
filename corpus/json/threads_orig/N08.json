@@ -1,0 +1,38 @@
+{
+  "thread_id": "N08",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "ingrid@parcelwise.example",
+      "to": ["marta@parcelwise.example"],
+      "cc": ["lena@parcelwise.example"],
+      "sent_at": "2026-05-11T10:20:00+02:00",
+      "subject": "OKRs — a suggestion for next quarter",
+      "in_reply_to_idx": null,
+      "role": "proposal",
+      "body": "Hi Marta,\n\nI hope your week is going well. Following the leadership conversations about how we track goals, I would like to suggest we consider OKRs for Q3, as a lighter alternative to the current planning doc. Several teams I have spoken to find it clarifies priorities without adding much process.\n\nI would be happy to draft a proposal — how it could work at our size, what it would cost in time, and a pilot suggestion for the Support and Product teams. I want to be careful we do not adopt process for its own sake, particularly right after the launch.\n\nWarm regards,\nIngrid"
+    },
+    {
+      "idx": 2,
+      "from": "marta@parcelwise.example",
+      "to": ["ingrid@parcelwise.example"],
+      "cc": ["lena@parcelwise.example"],
+      "sent_at": "2026-05-11T15:47:00+02:00",
+      "subject": "RE: OKRs — a suggestion for next quarter",
+      "in_reply_to_idx": 1,
+      "role": "discussion",
+      "body": "send it.\n\nM\nSent from my iPhone"
+    },
+    {
+      "idx": 3,
+      "from": "ingrid@parcelwise.example",
+      "to": ["marta@parcelwise.example"],
+      "cc": ["lena@parcelwise.example"],
+      "sent_at": "2026-05-12T09:05:00+02:00",
+      "subject": "RE: OKRs — a suggestion for next quarter",
+      "in_reply_to_idx": 2,
+      "role": "chatter",
+      "body": "Will do — I'm part-time Mon-Wed so it will likely be with you early next week.\n\nWarm regards,\nIngrid"
+    }
+  ]
+}

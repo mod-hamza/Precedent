@@ -1,0 +1,38 @@
+From: Lena Fischer <lena@parcelwise.example>
+To: marta@parcelwise.example, dev@parcelwise.example, helen@parcelwise.example, priya@parcelwise.example, tomas@parcelwise.example, aisha@parcelwise.example
+Subject: Notes: Leadership meeting 28 May
+Date: Fri, 29 May 2026 08:47:00 +0200
+Message-ID: <f38b12b342f8.D04_T1.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Liebe Alle,
+
+Notes: Leadership meeting, Thursday 28 May, 14:00, meeting room Rotterdam
+
+Attendees: Marta, Dev, Helen, Priya, Tomás, Lena (notes)
+
+Discussed:
+- Ledgerly cutover: Dev reported the reconciliation rewrite is done and the last two full sandbox cycles reconciled cleanly, including refunds and multi-currency. Jonas confirmed independently. Helen asked whether we could still make 1 July; Dev recommended after the June 30 billing close instead, so the first live settlement cycle starts from a closed ledger. 1 July would mean switching mid-cycle and partially reconciled June books.
+- v3 rollout: phased rollout completed on schedule, 100% of accounts live since 27 May. No payment-related incidents so far.
+- Office sublet: two interested parties, viewings next week
+
+Agreed:
+- Ledgerly cutover is fixed for Monday 6 July, after the June 30 billing close. Marta confirmed in the meeting. Dev to circulate the final plan.
+- No further changes to the payments timeline without Marta and Dev both agreeing.
+
+Actions:
+- Dev: send the confirmed cutover plan to Helen and Jonas
+- Aisha: prepare the customer communication for the card-statement change (draft due 10 July)
+- Lena: book the war room for 6-7 July
+
+Danke,
+Lena Fischer
+Ops & Office Manager, Parcelwise B.V.
+
+-- 
+Danke!
+Lena Fischer
+Ops & Office Manager
+Parcelwise B.V.

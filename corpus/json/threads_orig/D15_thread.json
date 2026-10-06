@@ -1,0 +1,49 @@
+{
+  "thread_id": "D15",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "priya@parcelwise.example",
+      "to": ["dev@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-01T09:15:00+02:00",
+      "subject": "scope options for the mid-May launch",
+      "body": "Hi both,\n\nAhead of tomorrow's product meeting, the two big open items against the mid-May target:\n\n1. Offline mode for the driver app - Jonas, what's the honest sizing?\n2. Route optimization v2 - Dev, you said the heavy lifting is done?\n\nWe can't comfortably fit both plus the 41-P1 burn-down. I'd like to walk into the meeting with real numbers, not vibes. Thanks!",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 2,
+      "from": "jonas@parcelwise.example",
+      "to": ["priya@parcelwise.example", "dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-01T10:41:00+02:00",
+      "subject": "RE: scope options for the mid-May launch",
+      "body": "offline mode honest sizing: full offline (cached routes + manifests, edits queued locally, conflict resolution on reconnect) is ~6 engineer-weeks. that's me plus ravi for most of it, and the conflict-resolution piece is genuinely hard, it eats entire days and spits out edge cases. we would not start until the P1 burn-down is done anyway, so add another 2 weeks of calendar. it does not fit in mid-may. fwiw.",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 3,
+      "from": "dev@parcelwise.example",
+      "to": ["priya@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-01T14:26:00+02:00",
+      "subject": "RE: scope options for the mid-May launch",
+      "body": "Route optimization v2 is feature-complete, it's just bugs and tuning from here - call it 1 engineer-week of remaining effort. So the choice is really:\n\n- Ship offline mode -> launch moves to late June or later\n- Cut offline mode -> mid-May holds\n\nIf we cut something, offline is the one. Route optimization is already customer-visible in the dashboard demos, and pulling it now would be more disruptive to what we've promised. My take: offline goes to v3.1.\n\nCheers, Dev",
+      "in_reply_to_idx": 2,
+      "role": "objection"
+    },
+    {
+      "idx": 4,
+      "from": "priya@parcelwise.example",
+      "to": ["dev@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": ["lena@parcelwise.example"],
+      "sent_at": "2026-04-01T16:58:00+02:00",
+      "subject": "RE: scope options for the mid-May launch",
+      "body": "Agreed with Dev's read - offline is the item to cut from v3. Jonas's numbers make it unarguable: 6 engineer-weeks against a mid-May target that is already tight. Route optimization stays. I'll propose exactly that at tomorrow's product meeting so it's on the record. Thanks!",
+      "in_reply_to_idx": 3,
+      "role": "proposal"
+    }
+  ]
+}

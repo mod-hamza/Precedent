@@ -1,0 +1,28 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: dev@parcelwise.example, helen@parcelwise.example
+Subject: RE: PayForge fees - updated analysis and what a switch would take
+Date: Tue, 03 Mar 2026 14:27:00 +0100
+Message-ID: <616feb07cf0a.D02_T1.003@parcelwise.example>
+In-Reply-To: <1ca32acbd8b4.D02_T1.002@parcelwise.example>
+References: <0f023782edc0.D02_T1.001@parcelwise.example> <1ca32acbd8b4.D02_T1.002@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+spiked it as dev said. their sandbox is actually usable, which is more than i can say for payforge's.
+
+one thing nobody mentioned: refunds. payforge does them in-line, ledgerly batches them overnight. nobody will notice except aisha's team on the phone with an angry customer once or twice a month. fwiw.
+
+also their webhook signing uses the same hmac scheme as everyone else, so no drama there.
+
+On 3 Mar 2026, Dev Raman wrote:
+> Helen,
+> 
+> My take, with numbers:
+> - Integration itself is smaller than I feared in January. Ledgerly's API is decent and I had Jonas spike it for two days. Call it 2-3 engineer-weeks for the billing service, webhooks, and invoice generation.
+> - The tail is reconciliation: we need one full billing cycle running both providers in shadow mode, so realistically 4-6 weeks end to end.
+> - Their native multi-currency invoicing removes a whole module we would otherwise build ourselves, which is maybe another 2 weeks we do not have to spend.
+> 
+> Honest assessment: this no longer competes with v3 the way I thought it did in January, provided we start the shadow-mode cycle soon rather than mid-launch.
+> 
+> Cheers, Dev

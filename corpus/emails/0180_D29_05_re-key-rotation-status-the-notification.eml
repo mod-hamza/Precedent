@@ -1,0 +1,33 @@
+From: Dev Raman <dev@parcelwise.example>
+To: aisha@parcelwise.example
+Cc: marta@parcelwise.example, helen@parcelwise.example
+Subject: RE: Key rotation status + the notification question
+Date: Wed, 04 Mar 2026 14:08:00 +0100
+Message-ID: <57993dcb272a.D29.005@parcelwise.example>
+In-Reply-To: <57a666ca1e4a.D29.004@parcelwise.example>
+References: <252874ea9da9.D29.001@parcelwise.example> <d98ec2d5c1af.D29.002@parcelwise.example> <bea8ed538ea7.D29.003@parcelwise.example> <57a666ca1e4a.D29.004@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Good ask — yes. I'll send you a per-customer table tonight with: token rotation completed-at timestamp, whether the token was dual-valid (all of them), and one plain-language line on what the exposed credential could and could not access. Use exactly that table in the letters; no adjectives beyond it.
+
+Wording rule for the draft: "we rotated all credentials as a precaution" is accurate, "there is no evidence of misuse" is accurate, "no data was accessed" is NOT — we cannot prove that. Nadia will strike it if you try.
+
+Cheers,
+Dev
+Dev Raman | CTO | Parcelwise B.V.
+
+On 4 Mar 2026, Aisha Bello wrote:
+> Hi team 😊
+> 
+> Understood — draft coming to Dev and Nadia before end of day tomorrow. I will call the two accounts I know best personally first: the owners of both have told me before that they would rather get a phone call than a formal letter on anything scary, and I agree with them. The other seven get the written notice plus a direct contact person (me) for questions.
+> 
+> One ask: can the notice include the exact date the rotation of their token completed? In my experience customers calm down considerably when the letter says "your new credentials were active as of..." rather than "we are investigating".
+> 
+> Aisha
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

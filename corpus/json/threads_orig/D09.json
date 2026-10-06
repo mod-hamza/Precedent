@@ -1,0 +1,60 @@
+{
+  "thread_id": "D09",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "dev@parcelwise.example",
+      "to": ["marta@parcelwise.example", "helen@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-02T09:47:00+01:00",
+      "subject": "hosting: proposal to move off NimbusHost",
+      "body": "All,\n\nProposal: migrate our hosting from NimbusHost to Corvid Cloud.\n\n- Compute is roughly 30% cheaper at Corvid for our current footprint; I modelled our GPU-free workload across their EU regions and it lands around EUR 1,400/month less at peak.\n- Corvid has an EU-region residency option with data at rest and in transit confined to Amsterdam/Frankfurt. Swiftbox has been asking for exactly that in their security questionnaires.\n- NimbusHost renewal is due end of March, so if we move we should start the migration by early March to avoid paying twice.\n\nMy take: we should do it, but before the v3 launch crunch, not during.\n\nCheers, Dev",
+      "in_reply_to_idx": null,
+      "role": "proposal"
+    },
+    {
+      "idx": 2,
+      "from": "helen@parcelwise.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-02-02T14:12:00+01:00",
+      "subject": "RE: hosting: proposal to move off NimbusHost",
+      "body": "Dear Dev,\n\nThank you for the detailed proposal. I have checked the numbers against our current NimbusHost invoices and your estimate of the saving appears broadly correct, although I would gently suggest we budget for one month of overlap where both providers are live, which reduces the first-quarter saving somewhat. I note the NimbusHost renewal notice requires cancellation before 15 March to avoid an automatic 12-month extension, so the timing you propose is sensible from a cash perspective.\n\nKind regards, Helen\n\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 3,
+      "from": "jonas@parcelwise.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-03T08:31:00+01:00",
+      "subject": "RE: hosting: proposal to move off NimbusHost",
+      "body": "mild concern: their managed postgres is a different flavour than what we run now. extensions we use (pg_trgm is fine, but we lean on some cron jobs via pg_cron) may need re-testing. fwiw the compute side looks painless, it's the database bit i'd want a week of staging time for.",
+      "in_reply_to_idx": 1,
+      "role": "objection"
+    },
+    {
+      "idx": 4,
+      "from": "marta@parcelwise.example",
+      "to": ["dev@parcelwise.example", "helen@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-04T08:05:00+01:00",
+      "subject": "RE: hosting: proposal to move off NimbusHost",
+      "body": "ok. druk met redline nu, dev lead.\n\nSent from my iPhone",
+      "in_reply_to_idx": 1,
+      "role": "confirmation"
+    },
+    {
+      "idx": 5,
+      "from": "dev@parcelwise.example",
+      "to": ["marta@parcelwise.example", "helen@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-04T09:20:00+01:00",
+      "subject": "RE: hosting: proposal to move off NimbusHost",
+      "body": "Confirmed, we're going with Corvid Cloud.\n\nPlan:\n- Send NimbusHost cancellation before 15 March\n- Staging environment on Corvid first week of March (addresses Jonas's pg_cron concern)\n- App tier + managed Postgres move in March, well before the v3 launch\n- I'll circulate a runbook before we touch production\n\nCheers, Dev",
+      "in_reply_to_idx": 4,
+      "role": "confirmation"
+    }
+  ]
+}

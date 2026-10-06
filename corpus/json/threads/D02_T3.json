@@ -1,0 +1,73 @@
+{
+ "thread_id": "D02_T3",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "lena@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "helen@parcelwise.example",
+    "priya@parcelwise.example",
+    "tomas@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-10T17:22:00+01:00",
+   "subject": "Notes: Leadership meeting 10 March",
+   "body": "Liebe Alle,\n\nNotes: Leadership meeting, Tuesday 10 March, 14:00, meeting room Rotterdam\n\nAttendees: Marta, Dev, Helen, Priya, Tomás, Aisha, Lena (notes)\n\nDiscussed:\n- v3 status: Priya reported the bug count is trending down but launch risk is real; more on this next week\n- Payments: Helen presented the updated fee comparison (PayForge 2.9% + €0.30 vs Ledgerly 2.3% + €0.25, ≈ €1,860/month saved on ≈ €310k processed). Dev confirmed integration is 2-3 engineer-weeks plus one shadow billing cycle, and that this no longer collides with v3 if we start soon. Tomás flagged that Redline is now explicitly asking for local-currency invoicing ahead of the renewal.\n- Office: nothing new, sublet question postponed\n\nAgreed:\n- Direction of travel on payments is Ledgerly, pending Marta's final go and a cutover date\n- Sales will keep a list of accounts asking for local-currency invoicing\n\nActions:\n- Dev: prepare a cutover plan for review\n- Helen: model cash-flow impact of two providers running in parallel for one cycle\n- Lena: circulate these notes\n\nDanke,\nLena Fischer\nOps & Office Manager, Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "recap"
+  },
+  {
+   "idx": 2,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "cc": [
+    "lena@parcelwise.example"
+   ],
+   "sent_at": "2026-03-11T09:03:00+01:00",
+   "subject": "RE: Notes: Leadership meeting 10 March",
+   "body": "Quick recap of my concern from yesterday, so it does not get lost:\n\n1. Whatever cutover date we pick, it cannot land inside the v3 launch window. 2. I would like the shadow billing cycle to run against real (non-production) customer segments first, not all accounts at once. 3. If either of those cannot be honoured, product would rather wait until after launch.\n\nThanks!\nPriya",
+   "in_reply_to_idx": 1,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example",
+    "helen@parcelwise.example",
+    "priya@parcelwise.example",
+    "tomas@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-11T10:12:00+01:00",
+   "subject": "RE: Notes: Leadership meeting 10 March",
+   "body": "ledgerly. dev pls plan cutover.\n\npriya - agreed, nothing inside the launch window.\n\nM\nSent from my iPhone",
+   "in_reply_to_idx": 1,
+   "role": "decisive"
+  },
+  {
+   "idx": 5,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "cc": [
+    "jonas@parcelwise.example"
+   ],
+   "sent_at": "2026-03-11T10:44:00+01:00",
+   "subject": "RE: Notes: Leadership meeting 10 March",
+   "body": "On it. First pass: start the Ledgerly sandbox work next week, shadow cycle across one full billing run, target cutover 1 May with Priya's constraint respected (that puts it before the launch window tightens). Will circulate a proper plan by Friday.\n\nCheers, Dev",
+   "in_reply_to_idx": 4,
+   "role": "confirmation"
+  }
+ ]
+}

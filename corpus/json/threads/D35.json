@@ -1,0 +1,64 @@
+{
+ "thread_id": "D35",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "chloe@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-25T16:40:00+01:00",
+   "subject": "LogiConnect sponsorship — proposed change",
+   "in_reply_to_idx": null,
+   "role": "proposal",
+   "body": "Dear Chloe, dear Marta,\n\nI have been reviewing our Q2 cash position and I must raise the LogiConnect sponsorship. With the migration costs now firming up, the pentest engagement coming, and the Ledgerly project, I would gently suggest that we reconsider the Silver tier at €6,000.\n\nLooking at the benefits schedule Paula sent: beyond the booth itself, Silver buys us the lightning talk and a contact list, and I remain unconvinced of their value — industry contacts tell me those lists typically convert below one percent, and our sales cycle is relationship-driven anyway. The booth-only option at €2,500 preserves the presence at LogiConnect at a third of the cost.\n\nI recognise this undoes an agreement Chloe negotiated, and I am sorry for the awkwardness, but I do think it is the responsible call at this moment. May I propose we inform Paula before the end of the month?\n\nKind regards,\nHelen\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V."
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example",
+    "chloe@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-27T08:41:00+01:00",
+   "subject": "RE: LogiConnect sponsorship — proposed change",
+   "in_reply_to_idx": 1,
+   "role": "decisive",
+   "body": "helen's right this quarter. booth only. chloe, tell paula today.\n\nM\nSent from my iPhone"
+  },
+  {
+   "idx": 5,
+   "from": "chloe@parcelwise.example",
+   "to": [
+    "paula.reyes@logiconnect.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-03-27T10:20:00+01:00",
+   "subject": "RE: LogiConnect Europe 2026 — partnership tiers closing Friday",
+   "in_reply_to_idx": 4,
+   "role": "reversal",
+   "body": "Hi Paula,\n\nChange of plan, and I'm sorry for the back-and-forth: we need to switch from the Silver sponsorship to booth-only at €2,500. I understand the lightning talk slot may already be gone — please just confirm the booth invoice at €2,500 and let me know about placement options.\n\nThanks for understanding!\nChloe"
+  },
+  {
+   "idx": 6,
+   "from": "paula.reyes@logiconnect.example",
+   "to": [
+    "chloe@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-03-27T14:55:00+01:00",
+   "subject": "RE: LogiConnect Europe 2026 — partnership tiers closing Friday",
+   "in_reply_to_idx": 5,
+   "role": "confirmation",
+   "body": "Hi Chloe,\n\nNo problem, these things happen. Booth-only at €2,500 confirmed — invoice follows today. On placement: the entrance row is taken by Gold partners, but I can offer you a corner spot at the end of aisle B, which had good footfall last year.\n\nBest,\nPaula"
+  }
+ ]
+}

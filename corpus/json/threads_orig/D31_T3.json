@@ -1,0 +1,49 @@
+{
+  "thread_id": "D31_T3",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "helen@parcelwise.example",
+      "to": ["ines@blackthorn-audit.example"],
+      "cc": ["dev@parcelwise.example"],
+      "sent_at": "2026-04-29T09:41:00+02:00",
+      "subject": "Engagement: penetration test for Parcelwise B.V. - June window",
+      "body": "Dear Ms Marquez,\n\nFurther to the proposal your firm provided last week, I am pleased to confirm that Parcelwise B.V. would like to engage Blackthorn Audit for the penetration test as scoped: our production environment, comprising the web dashboard, the API, and the driver-app backend, including the retest of any findings.\n\nOn scheduling: we would like to secure your week of 1 June 2026 window, with the report to follow within ten working days thereafter. Our customers' renewal timeline makes the June window strongly preferable to any later date.\n\nCould you please send the engagement letter and invoice schedule (50% on engagement, 50% on report delivery, as quoted) for signature? Mr Dev Raman, copied here, will be your technical contact for scoping and access arrangements.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer | Parcelwise B.V.",
+      "in_reply_to_idx": null,
+      "role": "proposal"
+    },
+    {
+      "idx": 2,
+      "from": "ines@blackthorn-audit.example",
+      "to": ["helen@parcelwise.example"],
+      "cc": ["dev@parcelwise.example"],
+      "sent_at": "2026-04-29T11:58:00+02:00",
+      "subject": "RE: Engagement: penetration test for Parcelwise B.V. - June window",
+      "body": "Dear Ms Oyelaran,\n\nThank you for confirming. The week of 1 June 2026 is now reserved for Parcelwise B.V. — I will hold it contractually once the engagement letter is countersigned, which I am sending under separate cover today together with the first invoice.\n\nFor Mr Raman, the practicalities: we will need read-only access to the staging environment two working days before the test starts, a named internal contact available during testing hours, and written authorisation for testing against the production endpoints listed in the scope annex. We will schedule a 45-minute scoping call with you next week to finalise the annex.\n\nKind regards,\nInes Marquez\nBlackthorn Audit",
+      "in_reply_to_idx": 1,
+      "role": "confirmation"
+    },
+    {
+      "idx": 3,
+      "from": "dev@parcelwise.example",
+      "to": ["ines@blackthorn-audit.example"],
+      "cc": ["helen@parcelwise.example"],
+      "sent_at": "2026-04-29T13:16:00+02:00",
+      "subject": "RE: Engagement: penetration test for Parcelwise B.V. - June window",
+      "body": "Ines,\n\nAll three are doable:\n\n- Staging read-only access: fine, I will provision it for 27-28 May.\n- Named contact: me, reachable during CET business hours throughout; Jonas Eklund is the backup.\n- Written authorisation for production testing: I will draft it against the scope annex and have it signed before your scoping call. One note: our customer integration tokens are being rotated again mid-May, so the annex should reference endpoints, not credentials — I will explain on the call.\n\nScoping call: any afternoon next week works. Helen, engagement letter will be with you for signature as soon as it lands.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+      "in_reply_to_idx": 2,
+      "role": "confirmation"
+    },
+    {
+      "idx": 4,
+      "from": "helen@parcelwise.example",
+      "to": ["dev@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-04T09:22:00+02:00",
+      "subject": "Blackthorn engagement signed - pentest week of 1 June",
+      "body": "Dear all,\n\nFor the record: the Blackthorn Audit engagement letter is countersigned as of this morning. Total fee €12,000 ex-VAT, first tranche invoiced, test confirmed for the week of 1 June, report within ten working days thereafter. The signed engagement letter satisfies the requirement in Swiftbox's questionnaire, and I have sent Carla a copy with the test window stated.\n\nDev is handling access and authorisation with their team.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+      "in_reply_to_idx": null,
+      "role": "confirmation"
+    }
+  ]
+}

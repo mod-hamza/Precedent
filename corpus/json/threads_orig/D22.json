@@ -1,0 +1,49 @@
+{
+  "thread_id": "D22",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "priya@parcelwise.example",
+      "to": ["marta@parcelwise.example", "dev@parcelwise.example"],
+      "cc": ["lena@parcelwise.example"],
+      "sent_at": "2026-05-19T16:44:00+02:00",
+      "subject": "rollout coordination vs focus Wednesdays - collision",
+      "body": "Heads-up before I build the rollout schedule:\n\nQuick recap of the problem:\n1. Phased rollout runs Wed May 13 (20%) to Wed May 27 (100%)\n2. During rollout weeks we need daily syncs, including Wednesdays, to catch issues from that morning's cohort fast\n3. Focus Wednesdays (the no-meeting trial from February) blocks exactly those syncs\n\nOptions as I see them:\n- move daily syncs to Thursday-Friday only (slow feedback during the riskiest weeks), or\n- pause focus Wednesdays until the rollout is done\n\nI lean towards the second but it is Marta's call since it touches a company-wide arrangement. I know Greg and Aisha will have views on timing too.\n\nThanks!\nPriya",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 2,
+      "from": "aisha@parcelwise.example",
+      "to": ["priya@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-19T17:38:00+02:00",
+      "subject": "RE: rollout coordination vs focus Wednesdays - collision",
+      "body": "Hi team 😊\n\nJust to add my two cents: support volume spiked noticeably on the first rollout Wednesday, and having the whole company unreachable for internal coordination for a day made the escalation path slower than I would have liked. I don't have strong feelings about the policy itself - it's been lovely for the team, honestly - but for these three weeks I'd rather we can all reach each other.\n\nWarmly,\nAisha",
+      "in_reply_to_idx": 1,
+      "role": "objection"
+    },
+    {
+      "idx": 3,
+      "from": "marta@parcelwise.example",
+      "to": ["priya@parcelwise.example", "lena@parcelwise.example"],
+      "cc": ["all@parcelwise.example"],
+      "sent_at": "2026-05-20T08:52:00+02:00",
+      "subject": "RE: rollout coordination vs focus Wednesdays - collision",
+      "body": "focus wednesdays paused until june 15. after that we go back to normal.\n\nM\n\nSent from my iPhone",
+      "in_reply_to_idx": 1,
+      "role": "decisive"
+    },
+    {
+      "idx": 4,
+      "from": "lena@parcelwise.example",
+      "to": ["all@parcelwise.example"],
+      "cc": ["priya@parcelwise.example"],
+      "sent_at": "2026-05-20T09:47:00+02:00",
+      "subject": "RE: rollout coordination vs focus Wednesdays - collision",
+      "body": "Liebe Alle,\n\nUpdate on focus Wednesdays:\n- paused as of today, Wednesday May 20\n- back in effect from Monday June 15 onwards (calendar blocks restored then)\n- daily rollout syncs will appear in your calendar for the next three weeks\n\nDanke für die Geduld during launch season,\nLena",
+      "in_reply_to_idx": 3,
+      "role": "confirmation"
+    }
+  ]
+}

@@ -1,0 +1,738 @@
+[
+ {
+  "id": "F174",
+  "category": "sales_pipeline",
+  "date": "2026-06-30",
+  "time": "14:53",
+  "from": "marta@parcelwise.example",
+  "to": [
+   "jonas@parcelwise.example",
+   "priya@parcelwise.example",
+   "tomas@parcelwise.example"
+  ],
+  "topic_seed": "expansion chatter at Swiftbox (more seats)",
+  "trap": "Include a retraction ('scratch that', 'ignore my last email') about something trivial",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F300",
+  "category": "hr_admin",
+  "date": "2026-03-09",
+  "time": "13:38",
+  "from": "helen@parcelwise.example",
+  "to": [
+   "chloe@parcelwise.example",
+   "jonas@parcelwise.example"
+  ],
+  "topic_seed": "office key handover for the sublet tenant (admin note)",
+  "trap": "trivial logistics decision: book the small meeting room for the Swiftbox call; no significance beyond the booking",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F126",
+  "category": "support_escalations",
+  "date": "2026-03-18",
+  "time": "14:47",
+  "from": "samir@parcelwise.example",
+  "to": [
+   "helen@parcelwise.example"
+  ],
+  "topic_seed": "driver can't scan in rain mode",
+  "trap": "Include a forward ('FYI see below') of a trivial earlier note",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F140",
+  "category": "support_escalations",
+  "date": "2026-03-05",
+  "time": "11:00",
+  "from": "bruno@redlinecouriers.example",
+  "to": [
+   "ingrid@parcelwise.example"
+  ],
+  "topic_seed": "API rate limit hit by an integration",
+  "trap": null,
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F021",
+  "category": "scheduling",
+  "date": "2026-03-17",
+  "time": "12:23",
+  "from": "helen@parcelwise.example",
+  "to": [
+   "jonas@parcelwise.example"
+  ],
+  "topic_seed": "book the Corvid Cloud technical review",
+  "trap": "trivial logistics decision: decide the parking spot swap between two staff",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F297",
+  "category": "hr_admin",
+  "date": "2026-02-03",
+  "time": "08:00",
+  "from": "lena@parcelwise.example",
+  "to": [
+   "ingrid@parcelwise.example",
+   "aisha@parcelwise.example",
+   "ravi@parcelwise.example"
+  ],
+  "topic_seed": "update emergency contact details",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F127",
+  "category": "support_escalations",
+  "date": "2026-05-27",
+  "time": "10:05",
+  "from": "bruno@redlinecouriers.example",
+  "to": [
+   "ravi@parcelwise.example"
+  ],
+  "topic_seed": "driver can't scan in rain mode",
+  "trap": null,
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F169",
+  "category": "sales_pipeline",
+  "date": "2026-01-28",
+  "time": "08:05",
+  "from": "tomas@parcelwise.example",
+  "to": [
+   "samir@parcelwise.example"
+  ],
+  "topic_seed": "prospect asks about Scan Pack",
+  "trap": "Include hypothetical language ('what if we...', 'we could...') without any commitment",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F235",
+  "category": "vendor_newsletters_spam",
+  "date": "2026-02-18",
+  "time": "08:23",
+  "from": "products@scanhardware.example",
+  "to": [
+   "jonas@parcelwise.example"
+  ],
+  "topic_seed": "Helpdesk Co. release notes",
+  "trap": "Include a forward ('FYI see below') of a trivial earlier note",
+  "count": 3,
+  "split": "holdout"
+ },
+ {
+  "id": "F302",
+  "category": "eng_status_incident_noise",
+  "date": "2026-05-18",
+  "time": "11:42",
+  "from": "greg@ferrante-ops.example",
+  "to": [
+   "dev@parcelwise.example"
+  ],
+  "topic_seed": "minor DNS TTL change note",
+  "trap": "Include an enthusiastic agreement to something the sender has no authority over, but nothing happens",
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F109",
+  "category": "support_escalations",
+  "date": "2026-05-07",
+  "time": "09:47",
+  "from": "tomas@parcelwise.example",
+  "to": [
+   "ingrid@parcelwise.example"
+  ],
+  "topic_seed": "customer confused by new plan page",
+  "trap": "Include a retraction ('scratch that', 'ignore my last email') about something trivial",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F240",
+  "category": "out_of_office",
+  "date": "2026-05-12",
+  "time": "08:38",
+  "from": "aisha@parcelwise.example",
+  "to": [
+   "priya@parcelwise.example"
+  ],
+  "topic_seed": "Greg auto-reply (contractor, slow replies)",
+  "trap": "Include a retraction ('scratch that', 'ignore my last email') about something trivial",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F027",
+  "category": "scheduling",
+  "date": "2026-02-03",
+  "time": "12:53",
+  "from": "chloe@parcelwise.example",
+  "to": [
+   "lena@parcelwise.example",
+   "tomas@parcelwise.example"
+  ],
+  "topic_seed": "find a slot for the v3 QA dry run",
+  "trap": "trivial logistics decision: decide the office snack order for launch week",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F271",
+  "category": "internal_banter",
+  "date": "2026-04-09",
+  "time": "10:31",
+  "from": "priya@parcelwise.example",
+  "to": [
+   "ravi@parcelwise.example"
+  ],
+  "topic_seed": "fantasy football league in the office",
+  "trap": "Include an enthusiastic agreement to something the sender has no authority over, but nothing happens",
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F305",
+  "category": "eng_status_incident_noise",
+  "date": "2026-06-02",
+  "time": "08:53",
+  "from": "elena@parcelwise.example",
+  "to": [
+   "dev@parcelwise.example"
+  ],
+  "topic_seed": "noisy alert suppressed (disk on staging)",
+  "trap": "Include a forward ('FYI see below') of a trivial earlier note",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F051",
+  "category": "scheduling",
+  "date": "2026-03-03",
+  "time": "15:17",
+  "from": "priya@parcelwise.example",
+  "to": [
+   "ingrid@parcelwise.example",
+   "chloe@parcelwise.example"
+  ],
+  "topic_seed": "book onboarding for a new customer",
+  "trap": "trivial logistics decision: choose the day for the office plant watering rota",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F236",
+  "category": "out_of_office",
+  "date": "2026-01-05",
+  "time": "17:23",
+  "from": "owen@northbridge.example",
+  "to": [
+   "marta@parcelwise.example"
+  ],
+  "topic_seed": "Dev OOO after the migration weekend",
+  "trap": null,
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F220",
+  "category": "vendor_newsletters_spam",
+  "date": "2026-02-12",
+  "time": "18:53",
+  "from": "updates@helpdesk-co.example",
+  "to": [
+   "lena@parcelwise.example"
+  ],
+  "topic_seed": "marketing webinar invite from a competitor of Chloe's tool",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F168",
+  "category": "sales_pipeline",
+  "date": "2026-03-09",
+  "time": "15:00",
+  "from": "aisha@parcelwise.example",
+  "to": [
+   "priya@parcelwise.example"
+  ],
+  "topic_seed": "renewal heads-up for a July customer",
+  "trap": null,
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F040",
+  "category": "scheduling",
+  "date": "2026-06-23",
+  "time": "10:05",
+  "from": "priya@parcelwise.example",
+  "to": [
+   "aisha@parcelwise.example"
+  ],
+  "topic_seed": "move the 1:1 because of school pickup",
+  "trap": "trivial logistics decision: pick the date of the team lunch for Elena's first week",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F245",
+  "category": "out_of_office",
+  "date": "2026-03-24",
+  "time": "19:05",
+  "from": "lena@parcelwise.example",
+  "to": [
+   "ravi@parcelwise.example"
+  ],
+  "topic_seed": "generic internal 'I'm out this afternoon' note",
+  "trap": "Include a forward ('FYI see below') of a trivial earlier note",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F278",
+  "category": "internal_banter",
+  "date": "2026-06-30",
+  "time": "17:23",
+  "from": "lena@parcelwise.example",
+  "to": [
+   "dev@parcelwise.example"
+  ],
+  "topic_seed": "coffee machine debate",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F015",
+  "category": "scheduling",
+  "date": "2026-05-18",
+  "time": "15:47",
+  "from": "dev@parcelwise.example",
+  "to": [
+   "ingrid@parcelwise.example"
+  ],
+  "topic_seed": "schedule the Beacon Desk demo",
+  "trap": "trivial logistics decision: order lunch for the Thursday demo (wrap platter vs pizza) — sender settles it themselves",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F270",
+  "category": "internal_banter",
+  "date": "2026-06-23",
+  "time": "10:05",
+  "from": "aisha@parcelwise.example",
+  "to": [
+   "marta@parcelwise.example",
+   "dev@parcelwise.example"
+  ],
+  "topic_seed": "coffee machine debate",
+  "trap": "trivial logistics decision: pick the date of the team lunch for Elena's first week",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F285",
+  "category": "internal_banter",
+  "date": "2026-04-14",
+  "time": "12:58",
+  "from": "chloe@parcelwise.example",
+  "to": [
+   "ravi@parcelwise.example",
+   "tomas@parcelwise.example"
+  ],
+  "topic_seed": "Elena's desk setup welcome",
+  "trap": "trivial logistics decision: move the retro to Thursday because Wednesday is meeting-free",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F081",
+  "category": "invoices_finance_admin",
+  "date": "2026-03-11",
+  "time": "18:05",
+  "from": "tomas@parcelwise.example",
+  "to": [
+   "ravi@parcelwise.example",
+   "helen@parcelwise.example"
+  ],
+  "topic_seed": "Redline monthly invoice clarification",
+  "trap": null,
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F309",
+  "category": "eng_status_incident_noise",
+  "date": "2026-01-29",
+  "time": "12:42",
+  "from": "ravi@parcelwise.example",
+  "to": [
+   "samir@parcelwise.example"
+  ],
+  "topic_seed": "weekend monitoring summary: all quiet",
+  "trap": "Include an enthusiastic agreement to something the sender has no authority over, but nothing happens",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F239",
+  "category": "out_of_office",
+  "date": "2026-06-18",
+  "time": "15:53",
+  "from": "priya@parcelwise.example",
+  "to": [
+   "aisha@parcelwise.example",
+   "jonas@parcelwise.example"
+  ],
+  "topic_seed": "Ravi OOO dentist",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F138",
+  "category": "support_escalations",
+  "date": "2026-06-25",
+  "time": "13:09",
+  "from": "tomas@parcelwise.example",
+  "to": [
+   "jonas@parcelwise.example"
+  ],
+  "topic_seed": "API rate limit hit by an integration",
+  "trap": "Include a retraction ('scratch that', 'ignore my last email') about something trivial",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F106",
+  "category": "support_escalations",
+  "date": "2026-04-15",
+  "time": "11:53",
+  "from": "samir@parcelwise.example",
+  "to": [
+   "marta@parcelwise.example",
+   "ingrid@parcelwise.example"
+  ],
+  "topic_seed": "Harbor Express asks for an extension on usage report",
+  "trap": null,
+  "count": 2,
+  "split": "holdout"
+ },
+ {
+  "id": "F092",
+  "category": "invoices_finance_admin",
+  "date": "2026-06-04",
+  "time": "17:05",
+  "from": "helen@parcelwise.example",
+  "to": [
+   "jonas@parcelwise.example",
+   "ravi@parcelwise.example"
+  ],
+  "topic_seed": "expense report question from Jonas",
+  "trap": "Include a retraction ('scratch that', 'ignore my last email') about something trivial",
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F066",
+  "category": "invoices_finance_admin",
+  "date": "2026-05-18",
+  "time": "15:58",
+  "from": "lena@parcelwise.example",
+  "to": [
+   "chloe@parcelwise.example"
+  ],
+  "topic_seed": "PayForge monthly statement reconciliation",
+  "trap": "Include an enthusiastic agreement to something the sender has no authority over, but nothing happens",
+  "count": 2,
+  "split": "holdout"
+ },
+ {
+  "id": "F283",
+  "category": "internal_banter",
+  "date": "2026-02-11",
+  "time": "13:00",
+  "from": "dev@parcelwise.example",
+  "to": [
+   "priya@parcelwise.example",
+   "helen@parcelwise.example",
+   "ingrid@parcelwise.example"
+  ],
+  "topic_seed": "someone's loud keyboard",
+  "trap": "trivial logistics decision: move Monday stand-up 15 minutes later; sender just informs the team",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F085",
+  "category": "invoices_finance_admin",
+  "date": "2026-02-11",
+  "time": "16:05",
+  "from": "kofi@parcelwise.example",
+  "to": [
+   "lena@parcelwise.example"
+  ],
+  "topic_seed": "NimbusHost invoice query",
+  "trap": "Include a forward ('FYI see below') of a trivial earlier note",
+  "count": 2,
+  "split": "holdout"
+ },
+ {
+  "id": "F032",
+  "category": "scheduling",
+  "date": "2026-03-30",
+  "time": "16:09",
+  "from": "tomas@parcelwise.example",
+  "to": [
+   "samir@parcelwise.example",
+   "chloe@parcelwise.example"
+  ],
+  "topic_seed": "schedule Elena's first-week 1:1s",
+  "trap": "Include a retraction ('scratch that', 'ignore my last email') about something trivial",
+  "count": 2,
+  "split": "dev"
+ },
+ {
+  "id": "F120",
+  "category": "support_escalations",
+  "date": "2026-06-29",
+  "time": "12:47",
+  "from": "kofi@parcelwise.example",
+  "to": [
+   "priya@parcelwise.example"
+  ],
+  "topic_seed": "driver app crash on Android 14",
+  "trap": null,
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F049",
+  "category": "scheduling",
+  "date": "2026-04-28",
+  "time": "18:53",
+  "from": "samir@parcelwise.example",
+  "to": [
+   "ingrid@parcelwise.example"
+  ],
+  "topic_seed": "reschedule the Redline check-in",
+  "trap": "trivial logistics decision: settle who takes the demo iPad to the client meeting",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F228",
+  "category": "vendor_newsletters_spam",
+  "date": "2026-04-28",
+  "time": "18:42",
+  "from": "updates@helpdesk-co.example",
+  "to": [
+   "jonas@parcelwise.example"
+  ],
+  "topic_seed": "bank newsletter about interest rates",
+  "trap": "Include hypothetical language ('what if we...', 'we could...') without any commitment",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F162",
+  "category": "sales_pipeline",
+  "date": "2026-02-18",
+  "time": "14:00",
+  "from": "chloe@parcelwise.example",
+  "to": [
+   "aisha@parcelwise.example"
+  ],
+  "topic_seed": "new inbound lead from a Ghent courier",
+  "trap": "Include hypothetical language ('what if we...', 'we could...') without any commitment",
+  "count": 3,
+  "split": "dev"
+ },
+ {
+  "id": "F144",
+  "category": "support_escalations",
+  "date": "2026-06-03",
+  "time": "17:38",
+  "from": "ravi@parcelwise.example",
+  "to": [
+   "priya@parcelwise.example",
+   "ingrid@parcelwise.example"
+  ],
+  "topic_seed": "driver app offline sync complaint",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F233",
+  "category": "vendor_newsletters_spam",
+  "date": "2026-05-28",
+  "time": "16:58",
+  "from": "news@payforge.example",
+  "to": [
+   "helen@parcelwise.example"
+  ],
+  "topic_seed": "hardware vendor end-of-life notice for scanners",
+  "trap": "Include a retraction ('scratch that', 'ignore my last email') about something trivial",
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F185",
+  "category": "sales_pipeline",
+  "date": "2026-02-25",
+  "time": "15:42",
+  "from": "tomas@parcelwise.example",
+  "to": [
+   "marta@parcelwise.example",
+   "samir@parcelwise.example",
+   "priya@parcelwise.example"
+  ],
+  "topic_seed": "win-back email to a churned account",
+  "trap": "Include a retraction ('scratch that', 'ignore my last email') about something trivial",
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F044",
+  "category": "scheduling",
+  "date": "2026-06-11",
+  "time": "16:53",
+  "from": "ravi@parcelwise.example",
+  "to": [
+   "lena@parcelwise.example",
+   "dev@parcelwise.example"
+  ],
+  "topic_seed": "move the 1:1 because of school pickup",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F050",
+  "category": "scheduling",
+  "date": "2026-02-23",
+  "time": "17:53",
+  "from": "ravi@parcelwise.example",
+  "to": [
+   "samir@parcelwise.example"
+  ],
+  "topic_seed": "reschedule the Redline check-in",
+  "trap": null,
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F294",
+  "category": "hr_admin",
+  "date": "2026-06-16",
+  "time": "09:31",
+  "from": "helen@parcelwise.example",
+  "to": [
+   "ravi@parcelwise.example",
+   "lena@parcelwise.example"
+  ],
+  "topic_seed": "laptop ergonomics assessment request",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F286",
+  "category": "hr_admin",
+  "date": "2026-04-15",
+  "time": "10:05",
+  "from": "ravi@parcelwise.example",
+  "to": [
+   "chloe@parcelwise.example",
+   "samir@parcelwise.example"
+  ],
+  "topic_seed": "holiday balance question",
+  "trap": "Include a question that sounds like a decision ('so we're going with X?') that receives no answer",
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F234",
+  "category": "vendor_newsletters_spam",
+  "date": "2026-05-04",
+  "time": "19:53",
+  "from": "products@scanhardware.example",
+  "to": [
+   "tomas@parcelwise.example"
+  ],
+  "topic_seed": "generic SaaS cold pitch (recruiting tool)",
+  "trap": "Include a forward ('FYI see below') of a trivial earlier note",
+  "count": 1,
+  "split": "holdout"
+ },
+ {
+  "id": "F100",
+  "category": "invoices_finance_admin",
+  "date": "2026-05-26",
+  "time": "08:42",
+  "from": "aisha@parcelwise.example",
+  "to": [
+   "ingrid@parcelwise.example"
+  ],
+  "topic_seed": "Redline monthly invoice clarification",
+  "trap": "Include a forward ('FYI see below') of a trivial earlier note",
+  "count": 3,
+  "split": "holdout"
+ },
+ {
+  "id": "F205",
+  "category": "vendor_newsletters_spam",
+  "date": "2026-03-06",
+  "time": "15:09",
+  "from": "news@payforge.example",
+  "to": [
+   "tomas@parcelwise.example"
+  ],
+  "topic_seed": "newsletter: EU e-invoicing regulation explainer",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ },
+ {
+  "id": "F141",
+  "category": "support_escalations",
+  "date": "2026-02-18",
+  "time": "15:12",
+  "from": "bruno@redlinecouriers.example",
+  "to": [
+   "ravi@parcelwise.example"
+  ],
+  "topic_seed": "API rate limit hit by an integration",
+  "trap": null,
+  "count": 2,
+  "split": "holdout"
+ },
+ {
+  "id": "F253",
+  "category": "out_of_office",
+  "date": "2026-02-05",
+  "time": "17:42",
+  "from": "helen@parcelwise.example",
+  "to": [
+   "aisha@parcelwise.example"
+  ],
+  "topic_seed": "Marta OOO for a board trip to London",
+  "trap": null,
+  "count": 1,
+  "split": "dev"
+ }
+]

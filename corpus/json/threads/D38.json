@@ -1,0 +1,77 @@
+{
+ "thread_id": "D38",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "lena@parcelwise.example",
+   "to": [
+    "leadership@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-25T17:10:00+01:00",
+   "subject": "Notes: leadership meeting, Wed 25 March",
+   "body": "Liebe Alle,\n\nNotes from today's leadership meeting:\n\nAttendees: Marta, Dev, Helen, Priya, Tomás, Aisha, Lena\n\nDiscussed:\n- v3 launch timing (still on track for the current plan)\n- support load after the key rotation, Aisha's numbers look healthy\n- SLA expectations for the Pro plan, prompted by Swiftbox's contract questions\n\nAgreed:\n- Pro customers get a first-response SLA of 2 business hours, effective with the v3 launch\n- Standard plan keeps the current best-effort response, no formal SLA\n\nActions:\n- Aisha: update the support playbook and staffing model to match\n- Tomás: share the SLA terms with key accounts as contracts come up for renewal\n- Lena: circulate these notes\n\nDanke,\nLena",
+   "in_reply_to_idx": null,
+   "role": "recap"
+  },
+  {
+   "idx": 2,
+   "from": "aisha@parcelwise.example",
+   "to": [
+    "lena@parcelwise.example",
+    "leadership@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-26T09:34:00+01:00",
+   "subject": "RE: Notes: leadership meeting, Wed 25 March",
+   "body": "Hi team 😊\n\nThanks Lena, notes received and understood. Just so everyone knows what this means on my side: 2 business hours first response for Pro will need a small shift in the rota so the queue is watched continuously during business hours, and I'll fold that into the playbook this week. I'll also set up a monitoring alert so we can see how we're actually performing against it before we promise it too loudly anywhere.\n\nWarmly,\nAisha",
+   "in_reply_to_idx": 1,
+   "role": "confirmation"
+  },
+  {
+   "idx": 6,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "samir@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-07T10:31:00+02:00",
+   "subject": "RE: Nordvik Logistics - SLA question",
+   "body": "Hey Samir,\n\nExactly right, that's the standard Pro commitment now, reuse it wherever it helps close 🚀 Just keep me in cc on anything contract-shaped.\n\nSaludos,\nTomás",
+   "in_reply_to_idx": null,
+   "role": "confirmation"
+  },
+  {
+   "idx": 8,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "aisha@parcelwise.example",
+    "lena@parcelwise.example"
+   ],
+   "cc": [
+    "dev@parcelwise.example"
+   ],
+   "sent_at": "2026-04-08T11:47:00+02:00",
+   "subject": "RE: Discrepancy in the Pro first-response SLA - need to fix before it ships",
+   "body": "Hola Aisha,\n\nI'm certain it was 1 hour. We discussed it in the March leadership meeting, I remember it clearly because Carla's requirements were the whole reason it came up, and I put it in writing to her immediately afterwards. I would never have put a number in an email to a customer without it being agreed.\n\nIf the rota is built around 2 hours then honestly the rota should be adjusted - the commitment is the commitment.\n\nSaludos,\nTomás",
+   "in_reply_to_idx": null,
+   "role": "objection"
+  },
+  {
+   "idx": 9,
+   "from": "lena@parcelwise.example",
+   "to": [
+    "aisha@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [
+    "dev@parcelwise.example"
+   ],
+   "sent_at": "2026-04-09T08:56:00+02:00",
+   "subject": "RE: Discrepancy in the Pro first-response SLA - need to fix before it ships",
+   "body": "Hallo ihr beiden,\n\nI went back to my notes from the 25 March meeting this morning. What I wrote down at the time, and what I circulated the same evening, was 2 business hours - I would not have invented that number, it came out of the discussion as I heard it. I don't remember anyone saying 1 hour, and nobody corrected the notes when I sent them, which is normally how we catch these things.\n\nThat said, Tomás is equally sure, and he has a customer email to point at, so arguing from memory is getting us nowhere. I suggest we put this to Marta with both versions side by side and let her say which one we honour - and importantly, what we tell Carla and Nordvik if the written promise was wrong. Until then I'd ask nobody to quote the SLA externally.\n\nLena",
+   "in_reply_to_idx": 8,
+   "role": "recap"
+  }
+ ]
+}

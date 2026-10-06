@@ -1,0 +1,79 @@
+{
+ "thread_id": "D31_T2",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-04-28T08:15:00+02:00",
+   "subject": "Pentest quotes: Blackthorn €12,000 vs Greyline €9,000",
+   "body": "Helen,\n\nQuotes are in for the pentest, comparison below:\n\n- Blackthorn Audit: €12,000. Scope: full production environment, web dashboard, API, driver-app backend, plus a retest of findings included in the price. Reported timeline: two weeks on-site equivalent, report in 10 working days after. They will provide the engagement letter Swiftbox's auditor wants.\n- Greyline Security: €9,000. Scope: web dashboard and API only — explicitly excludes the mobile backend and offers retest as a separate engagement. Report quality is fine, but they are a two-person shop.\n\nMy take: Greyline saves €3,000 but does not cover the scanner and driver-app surface, which is where our actual customers live, and the retest would cost extra anyway. Also — and this is the commercial part — the report lands on Swiftbox's auditor's desk. An attesting firm they recognise does work that a cheaper report does not.\n\nRecommendation: Blackthorn. Need your call this week to hit the mid-June dates.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 2,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-04-28T08:40:00+02:00",
+   "subject": "RE: Pentest quotes: Blackthorn €12,000 vs Greyline €9,000",
+   "body": "Dear Dev,\n\nThank you for the clear comparison. Before I commit to the higher figure, may I ask two questions?\n\nFirst, has Swiftbox itself indicated any preference or requirement as to the attesting firm — you mention recognition, and I would like to know whether that is a formal requirement or your assessment. If Greyline would satisfy their auditor equally, the €3,000 difference is not nothing against this quarter's budget.\n\nSecond, is the €12,000 inclusive of VAT and expenses, and when would payment fall due — on engagement or on delivery of the report? I ask because our June cash position is already carrying the migration costs.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": 1,
+   "role": "objection"
+  },
+  {
+   "idx": 3,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-04-28T09:12:00+02:00",
+   "subject": "RE: Pentest quotes: Blackthorn €12,000 vs Greyline €9,000",
+   "body": "Answers:\n\n- Greyline fails Swiftbox's requirement on scope alone — their letter of engagement would state the exclusions, and item 12 asks for production environment coverage including app backends. Their auditor checks the scope line, we both know it. So the €3,000 saving buys us a report we cannot submit.\n- €12,000 is ex-VAT, 50% on engagement, 50% on report delivery. With the engagement signed this week and the test in their June window, the second half lands in early July.\n\nIf it helps the cash picture: the engagement letter alone satisfies Swiftbox's 15 June requirement, so the spend starts as soon as we sign, but nothing hinges on speed beyond that.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+   "in_reply_to_idx": 2,
+   "role": "discussion"
+  },
+  {
+   "idx": 4,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-04-28T10:05:00+02:00",
+   "subject": "RE: Pentest quotes: Blackthorn €12,000 vs Greyline €9,000",
+   "body": "Dear Dev,\n\nThat settles it — if Greyline cannot satisfy item 12, the cheaper quote is the expensive option in disguise. Please proceed with Blackthorn at €12,000, ex-VAT, on the 50/50 payment schedule. Do send me the engagement letter before signature purely for the file, and book the first tranche against the security budget line so June does not surprise us.\n\nI will draft the engagement email to them this morning.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": 3,
+   "role": "decisive"
+  },
+  {
+   "idx": 5,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-04-28T10:19:00+02:00",
+   "subject": "RE: Pentest quotes: Blackthorn €12,000 vs Greyline €9,000",
+   "body": "ok. good catch on the scope.\n\nSent from my iPhone",
+   "in_reply_to_idx": 4,
+   "role": "confirmation"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "thread_id": "D29",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-03-04T09:05:00+01:00",
+   "subject": "Key rotation status + the notification question",
+   "body": "Marta,\n\nRotation status: 4 of 6 internal keys done overnight, customer integration tokens running now under the 24-hour dual-validity window, done by tonight. No broken syncs so far.\n\nThe open item is customer notification. Ravi's timeline doc confirms the exposed fork was public for ~3 weeks. The staging key could not read customer data directly, but the token inventory shows 9 customer integrations whose credentials share the exposed prefix and must be treated as potentially compromised. My take: those 9 need to hear from us regardless of what the lawyers say — I would rather they hear it from us than from a security blogger.\n\nCan you and Helen make the call on whether and when we notify? If yes, Aisha drafts, I supply the technical wording.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 3,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example",
+    "nadia@okafor-lindqvist.example"
+   ],
+   "sent_at": "2026-03-04T11:50:00+01:00",
+   "subject": "RE: Key rotation status + the notification question",
+   "body": "then we notify. all 9, by friday. aisha drafts, dev checks the technical wording, nadia sees the final text before it goes. no guessing in the letters — facts and what we fixed.\n\nSent from my iPhone",
+   "in_reply_to_idx": 1,
+   "role": "decisive"
+  },
+  {
+   "idx": 4,
+   "from": "aisha@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-03-04T13:26:00+01:00",
+   "subject": "RE: Key rotation status + the notification question",
+   "body": "Hi team 😊\n\nUnderstood — draft coming to Dev and Nadia before end of day tomorrow. I will call the two accounts I know best personally first: the owners of both have told me before that they would rather get a phone call than a formal letter on anything scary, and I agree with them. The other seven get the written notice plus a direct contact person (me) for questions.\n\nOne ask: can the notice include the exact date the rotation of their token completed? In my experience customers calm down considerably when the letter says \"your new credentials were active as of...\" rather than \"we are investigating\".\n\nAisha",
+   "in_reply_to_idx": 3,
+   "role": "discussion"
+  },
+  {
+   "idx": 5,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "aisha@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-03-04T14:08:00+01:00",
+   "subject": "RE: Key rotation status + the notification question",
+   "body": "Good ask — yes. I'll send you a per-customer table tonight with: token rotation completed-at timestamp, whether the token was dual-valid (all of them), and one plain-language line on what the exposed credential could and could not access. Use exactly that table in the letters; no adjectives beyond it.\n\nWording rule for the draft: \"we rotated all credentials as a precaution\" is accurate, \"there is no evidence of misuse\" is accurate, \"no data was accessed\" is NOT — we cannot prove that. Nadia will strike it if you try.\n\nCheers,\nDev\nDev Raman | CTO | Parcelwise B.V.",
+   "in_reply_to_idx": 4,
+   "role": "discussion"
+  },
+  {
+   "idx": 6,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "dev@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-03-04T16:41:00+01:00",
+   "subject": "RE: Key rotation status + the notification question",
+   "body": "Dear Marta,\n\nConfirming the plan is on my record as well: notification to all nine affected customers to be completed by Friday 6 March, per Nadia's advice on the 72-hour duty, with final text cleared by Nadia before sending. I will also log the notification dates for each account in case questions arise later from customers or the authority.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": 3,
+   "role": "confirmation"
+  }
+ ]
+}

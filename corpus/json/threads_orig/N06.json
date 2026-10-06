@@ -1,0 +1,49 @@
+{
+  "thread_id": "N06",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "chloe@parcelwise.example",
+      "to": ["marta@parcelwise.example"],
+      "cc": ["helen@parcelwise.example"],
+      "sent_at": "2026-02-24T10:12:00+01:00",
+      "subject": "Idea: dedicated DevRel hire",
+      "in_reply_to_idx": null,
+      "role": "proposal",
+      "body": "Hi Marta!\n\nIdea I can't stop thinking about: a dedicated DevRel hire. Someone who writes the integration guides, speaks at courier-tech meetups, works the developer communities — all the things I do at 20% capacity and badly.\n\nOur API is becoming the product as much as the dashboard is, and we have zero developer-facing content right now. Indicative cost for a mid-level person would be €70–80k. I've got a rough role sketch here (share.parcelwise.example/chloe/devrel-role-sketch) if you want a peek!\n\nChloe"
+    },
+    {
+      "idx": 2,
+      "from": "helen@parcelwise.example",
+      "to": ["marta@parcelwise.example", "chloe@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-25T09:38:00+01:00",
+      "subject": "RE: Idea: dedicated DevRel hire",
+      "in_reply_to_idx": 1,
+      "role": "discussion",
+      "body": "Dear Marta, dear Chloe,\n\nJust to note for the record: a DevRel hire at €70–80k would be a meaningful addition to the payroll, and with Elena's role budgeted and the senior backend search concluding, I would want us to be clear on the revenue case before adding a third hire this year. That is not an objection to the concept — developer content could well support the API usage revenue — merely a caution about the sequencing.\n\nKind regards,\nHelen\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V."
+    },
+    {
+      "idx": 3,
+      "from": "marta@parcelwise.example",
+      "to": ["chloe@parcelwise.example", "helen@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-25T14:21:00+01:00",
+      "subject": "RE: Idea: dedicated DevRel hire",
+      "in_reply_to_idx": 2,
+      "role": "discussion",
+      "body": "interesting. maybe q3 if the numbers allow.\n\nM\nSent from my iPhone"
+    },
+    {
+      "idx": 4,
+      "from": "chloe@parcelwise.example",
+      "to": ["marta@parcelwise.example", "helen@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-25T14:40:00+01:00",
+      "subject": "RE: Idea: dedicated DevRel hire",
+      "in_reply_to_idx": 3,
+      "role": "chatter",
+      "body": "Sounds good! I'll keep sketching the role so we can move fast if Q3 opens up 🚀\n\nChloe"
+    }
+  ]
+}

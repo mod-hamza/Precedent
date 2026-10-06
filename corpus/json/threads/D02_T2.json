@@ -1,0 +1,50 @@
+{
+ "thread_id": "D02_T2",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "bruno@redlinecouriers.example",
+   "to": [
+    "aisha@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-05T10:18:00+01:00",
+   "subject": "Invoicing in EUR only - this is now a problem",
+   "body": "Aisha, Tomás,\n\nThird time asking, so I will be blunt. Our finance team needs Redline invoices in PLN for the Warsaw entity and in EUR for Rotterdam. Your platform bills everything in EUR and then my people spend days at quarter-end reconciling FX differences by hand. That is real cost for us, roughly a full person-week per quarter.\n\nI was told in January this was \"on the roadmap\". I need a date, not a roadmap. If you cannot invoice us in local currency by the time we sign the renewal paperwork, that becomes a term of the renewal discussion, and not a small one.\n\nBruno Alvarez\nCOO, Redline Couriers",
+   "in_reply_to_idx": null,
+   "role": "objection"
+  },
+  {
+   "idx": 2,
+   "from": "aisha@parcelwise.example",
+   "to": [
+    "bruno@redlinecouriers.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-05T11:40:00+01:00",
+   "subject": "RE: Invoicing in EUR only - this is now a problem",
+   "body": "Hi Bruno,\n\nThank you for spelling it out so clearly - I completely understand the quarter-end pain your finance team is dealing with, and I am sorry it has dragged across three conversations now. You deserve a proper answer rather than another \"we hear you\".\n\nI am looping in Tomás on the commercial side, and I will raise it internally today with a concrete timeline rather than a vague promise. There is a genuine piece of work happening on our billing side that I believe directly addresses multi-currency invoicing, and I would rather give you an honest date than an optimistic one. Can I come back to you by Monday with something specific?\n\nWarm regards,\nAisha\n\nAisha Bello\nHead of Customer Success, Parcelwise B.V.",
+   "in_reply_to_idx": 1,
+   "role": "discussion"
+  },
+  {
+   "idx": 3,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "helen@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-03-05T12:05:00+01:00",
+   "subject": "RE: Invoicing in EUR only - this is now a problem - REDLINE, our biggest account",
+   "body": "Team,\n\nSee below from Bruno. Redline is ~18% of our revenue and the renewal is in play. He is explicitly making local-currency invoicing a renewal condition 🚨\n\nThe good news: the Ledgerly integration everyone has been discussing does multi-currency invoicing natively. This is no longer just a fee-saving exercise - it is now a retention issue for our largest client. Can we please make a call on the payments switch this month? Every week we wait is a week closer to renewal talks without an answer for Bruno.\n\nSaludos,\nTomás",
+   "in_reply_to_idx": 2,
+   "role": "discussion"
+  }
+ ]
+}

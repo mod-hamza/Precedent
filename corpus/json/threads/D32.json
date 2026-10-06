@@ -1,0 +1,64 @@
+{
+ "thread_id": "D32",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "leasing@vdb-vastgoed.example",
+   "to": [
+    "lena@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-01-26T09:40:00+01:00",
+   "subject": "Keizersgracht unit — lease expiry 1 April, renewal options",
+   "in_reply_to_idx": null,
+   "role": "discussion",
+   "body": "Dear Ms Fischer,\n\nYour current lease for the ground floor and first floor unit runs until 1 April 2026. For a renewal we can offer:\n\n- 12 months at the current rate of EUR 6,200 per month, indexation deferred to the next term\n- 24 months at EUR 6,350 per month with one rent-free month\n- 12 months at EUR 5,900 per month for a reduced footprint (ground floor only)\n\nPlease let us know your preference before 13 February so we can prepare the addendum.\n\nKind regards,\nRob Verhoeven\nVdB Vastgoedbeheer B.V."
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "lena@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-29T14:22:00+01:00",
+   "subject": "RE: Keizersgracht unit — lease expiry 1 April, renewal options",
+   "in_reply_to_idx": 1,
+   "role": "proposal",
+   "body": "Dear Marta, dear Lena,\n\nI have reviewed the landlord's proposal and I would gently suggest that the 12-month renewal at the current €6,200 per month is the most prudent option available to us. Lena's coworking comparison confirms my own impression: a move would involve not only higher running costs but also roughly €4–5k of one-off fit-out, cabling and insurance transfer costs, which we would not recover within a year. Furthermore, with the v3 launch and the hosting migration both consuming cash this quarter, I would very much prefer to avoid any avoidable disruption to the office in the same period.\n\nThe 24-month option's single rent-free month is attractive on paper, but the €150/month uplift compounds to €3,600 over the term, which exceeds the value of the free month.\n\nI therefore propose we proceed with the 12-month renewal, and I am happy to sign the addendum once Lena confirms the details with Mr Verhoeven.\n\nKind regards,\nHelen\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V."
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example",
+    "lena@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-30T09:12:00+01:00",
+   "subject": "RE: Keizersgracht unit — lease expiry 1 April, renewal options",
+   "in_reply_to_idx": 3,
+   "role": "decisive",
+   "body": "12 months at 6200 sounds right. lena, go ahead.\n\nM\nSent from my iPhone"
+  },
+  {
+   "idx": 5,
+   "from": "lena@parcelwise.example",
+   "to": [
+    "leasing@vdb-vastgoed.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-01-30T10:47:00+01:00",
+   "subject": "RE: Keizersgracht unit — lease expiry 1 April, renewal options",
+   "in_reply_to_idx": 4,
+   "role": "confirmation",
+   "body": "Beste Rob,\n\nWe accept the 12-month renewal at €6,200/month. Please send the addendum for signature — Helen will countersign.\n\nDanke,\nLena Fischer\nOps & Office Manager, Parcelwise B.V."
+  }
+ ]
+}

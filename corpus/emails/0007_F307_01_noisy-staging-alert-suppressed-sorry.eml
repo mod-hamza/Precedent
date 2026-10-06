@@ -1,0 +1,15 @@
+From: Ravi Menon <ravi@parcelwise.example>
+To: priya@parcelwise.example
+Subject: noisy staging alert suppressed (sorry!)
+Date: Thu, 08 Jan 2026 18:00:00 +0100
+Message-ID: <d1f716abcba0.F307.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Priya, sorry to bother you with infra noise — the staging disk-space alert has been firing 6-8 times a day since Monday and it is always the same false alarm (log rotation, known quirk). I've muted just that one alert on staging only; production alerts are untouched. Sorry if that was actually Dev's call to make — I can undo it right away if so! Could someone review the mute next week? Sorry again! Ravi
+
+-- 
+Thanks for your patience,
+Ravi Menon
+Junior Engineer, Parcelwise

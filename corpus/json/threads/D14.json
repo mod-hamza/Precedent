@@ -1,0 +1,79 @@
+{
+ "thread_id": "D14",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "jonas@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-23T10:14:00+01:00",
+   "subject": "v3 bug triage - Monday numbers",
+   "body": "Hi all,\n\nQuick recap of today's triage against the 15 April launch:\n\n1. 41 open P1 bugs across driver sync, route optimization, and the dashboard\n2. Of those, 12 block the Redline pilot scenarios specifically\n3. Our burn-down says 23 business days of work; 15 April is 17 business days away\n4. On top of this, the Corvid app-tier cutover is booked for the weekend of 18-19 April, which collides with what would have been our launch week anyway\n\nEven at full burn we land past 15 April. I'd rather say that now than on the 14th. Thanks!",
+   "in_reply_to_idx": null,
+   "role": "discussion"
+  },
+  {
+   "idx": 3,
+   "from": "aisha@parcelwise.example",
+   "to": [
+    "priya@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-23T14:37:00+01:00",
+   "subject": "RE: v3 bug triage - Monday numbers",
+   "body": "Hi team 😊\n\nJust adding the customer angle to what Priya laid out. If we launch on the 15th with even half of those P1s open, our support queue the following week will be brutal, and I'd honestly rather have that conversation with Bruno before the Redline pilot than after. Swiftbox has also been asking when they can see the new dashboard, and Carla is the type to remember a broken demo far longer than a delayed one. A launch that slips three weeks hurts much less than a launch that breaks.\n\nWarm regards,\nAisha",
+   "in_reply_to_idx": 1,
+   "role": "objection"
+  },
+  {
+   "idx": 5,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-24T11:27:00+01:00",
+   "subject": "RE: v3 bug triage - Monday numbers",
+   "body": "So mid-May realistically? Targeting the week of 11 May, RC freeze the week before. Offline mode is the obvious thing to look at separately - I'll bring options to Thursday's product meeting. Thanks!",
+   "in_reply_to_idx": 1,
+   "role": "proposal"
+  },
+  {
+   "idx": 6,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "priya@parcelwise.example",
+    "dev@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-24T11:44:00+01:00",
+   "subject": "RE: v3 bug triage - Monday numbers",
+   "body": "yes. tell redline.\n\nSent from my iPhone",
+   "in_reply_to_idx": 5,
+   "role": "decisive"
+  },
+  {
+   "idx": 7,
+   "from": "priya@parcelwise.example",
+   "to": [
+    "tomas@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-24T13:02:00+01:00",
+   "subject": "RE: v3 bug triage - Monday numbers",
+   "body": "Tomás, Aisha - Marta has confirmed the new target: week of 11 May. Tomás, can you take the Redline conversation with Bruno? Aisha, same for Swiftbox when you next speak to Carla. Let's keep it to mid-May externally until I've locked the exact day. Thanks!",
+   "in_reply_to_idx": 6,
+   "role": "confirmation"
+  }
+ ]
+}

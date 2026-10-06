@@ -1,0 +1,76 @@
+{
+ "thread_id": "D24",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "bruno@redlinecouriers.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-09T09:40:00+01:00",
+   "subject": "Redline renewal - a proposal you are going to like 🚀",
+   "body": "Hola Bruno!\n\nGreat catching up last week — and I have been thinking about how to make the renewal a total no-brainer for you.\n\nHere it is: sign a 2-year renewal and I will take 15% off your current rate, across the board, locked for the full term. ✅ On top of that you keep your place at the front of the queue for the v3 pilot (April 20 start — I heard Dev say the build is on track).",
+   "in_reply_to_idx": null,
+   "role": "decisive"
+  },
+  {
+   "idx": 2,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-02-09T10:05:00+01:00",
+   "subject": "FYI: Redline renewal offer sent - 15% for 2 years ✅",
+   "body": "Team,\n\nFYI — offer is out to Bruno: 15% discount for a 2-year Redline renewal, plus the v3 pilot slot. Worth every point of it, they are ~18% of our revenue and I am not losing them to RouteBee's telematics bundle 🚀\n\nMarta was fine with it (we spoke about Redline last week and she gave me the green light), so no action needed from anyone — just so you all know what Bruno will be referring to if it comes up.\n\nSamir and I will drive it over the line before month-end. Any questions, shout!\n\nTomás",
+   "in_reply_to_idx": null,
+   "role": "discussion"
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "tomas@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-02-09T11:32:00+01:00",
+   "subject": "RE: FYI: Redline renewal offer sent - 15% for 2 years ✅",
+   "body": "Dear Tomás,\n\nThank you for keeping us informed — Redline is indeed a relationship we must look after carefully. I do have one question, and I hope you will not mind me asking it here rather than in person: I cannot find anything in writing from Marta confirming the 15% level. As I am sure you recall, our internal guideline is that sales may approve discounts up to 5%, with anything above that requiring Marta's explicit sign-off.\n\nI would be most grateful if you could forward me the approval, purely so the file is complete before contracts go out.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": 2,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-09T11:58:00+01:00",
+   "subject": "RE: FYI: Redline renewal offer sent - 15% for 2 years ✅",
+   "body": "Helen,\n\nAll good! Marta and I spoke in the corridor last Thursday after the forecast review — she said something like \"do what you need to do to keep them\", which for Redline means a serious number. I did not want to bury her in approval emails for something she already backed ✅\n\nHappy to walk you through the margin math if useful, but honestly at 18% of revenue the priority is keeping Bruno signed. Paper goes out this week!\n\nTomás",
+   "in_reply_to_idx": 3,
+   "role": "discussion"
+  },
+  {
+   "idx": 5,
+   "from": "samir@parcelwise.example",
+   "to": [
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-09T14:21:00+01:00",
+   "subject": "Redline 🔥",
+   "body": "hey! saw the offer — 15% is big. want me to prep the renewal pack and the pilot onboarding checklist so we can move the second Bruno says yes? also, if he signs before the 20th do we still walk him through the v3 demo? cheers",
+   "in_reply_to_idx": 1,
+   "role": "chatter"
+  }
+ ]
+}

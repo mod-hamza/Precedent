@@ -1,0 +1,61 @@
+{
+ "thread_id": "D21",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "ingrid@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "all@parcelwise.example"
+   ],
+   "sent_at": "2026-02-23T10:20:00+01:00",
+   "subject": "Proposal: protected focus time on Wednesdays",
+   "body": "Hi all,\n\nA small experiment I would like to float: making Wednesdays meeting-free across the company. No internal meetings, no stand-ups moved there, no 'quick syncs'. Focus blocks are the single most requested item in the last two pulse surveys, and a protected day is the simplest version of them.\n\nPractical bits:\n- Customer-facing calls with clients in other time zones can still happen - this is about internal meetings only\n- Existing recurring Wednesday meetings (the product review) would move to Thursday\n- We could try it for a defined period and check in on how it feels, rather than treating it as permanent\n\nMarta, I realise this touches everyone's calendar, so I would like your view before I propose anything more concretely.\n\nWarm regards,\nIngrid Solberg\nPeople & Culture, Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 2,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "ingrid@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-23T13:47:00+01:00",
+   "subject": "RE: Proposal: protected focus time on Wednesdays",
+   "body": "Hola Ingrid,\n\nConcern from my side: Wednesday is prime demo day. Redline, Swiftbox and two prospects currently have calls on Wednesday afternoons, and Samir and I plan our week around them. If 'no internal meetings' also means no internal prep sessions before client calls, that part I can live with ✅. But if anyone later decides it should block client calls too, sales will revolt 🚀\n\nAs long as the scope is internal-only, I think it's worth trying!\n\nSaludos,\nTomás",
+   "in_reply_to_idx": 1,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "ingrid@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-24T11:05:00+01:00",
+   "subject": "RE: Proposal: protected focus time on Wednesdays",
+   "body": "ok let's try it for a few weeks. internal only, tomás's client calls untouched.\n\nM",
+   "in_reply_to_idx": 1,
+   "role": "decisive"
+  },
+  {
+   "idx": 5,
+   "from": "lena@parcelwise.example",
+   "to": [
+    "ingrid@parcelwise.example",
+    "all@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-24T14:26:00+01:00",
+   "subject": "RE: Proposal: protected focus time on Wednesdays",
+   "body": "Liebe Alle,\n\nI'll update the calendars this afternoon:\n- recurring meetings currently on Wednesdays move to Thursday (product review goes to Thursday 10:00)\n- I'll block Wednesday as 'focus day' so nobody books over it by accident\n- trial period: we review how it's working at the leadership meeting in a few weeks\n\nDanke,\nLena",
+   "in_reply_to_idx": 4,
+   "role": "confirmation"
+  }
+ ]
+}

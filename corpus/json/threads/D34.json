@@ -1,0 +1,62 @@
+{
+ "thread_id": "D34",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "paula.reyes@logiconnect.example",
+   "to": [
+    "chloe@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-10T11:20:00+01:00",
+   "subject": "LogiConnect Europe 2026 — partnership tiers closing Friday",
+   "in_reply_to_idx": null,
+   "role": "discussion",
+   "body": "Hi Chloe,\n\nFollowing up on our call last week! The LogiConnect Europe partner tiers close this Friday, 13 March, and I wanted to make sure you had the full picture:\n\n- Silver sponsorship: €6,000 — includes the booth, your logo on stage screens and the event app, one 10-minute lightning talk slot, and the attendee contact list post-event (last year: 2,300 opted-in contacts)\n- Booth only: €2,500 — booth space plus app listing, no talk, no contact list\n\nGiven your growth in the courier vertical, Silver has been our best-converting tier for logistics SaaS vendors. Happy to hold either option for you until Friday.\n\nBest,\nPaula Reyes\nPartnerships, LogiConnect Europe"
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "chloe@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-11T15:48:00+01:00",
+   "subject": "RE: LogiConnect Europe 2026 — partnership tiers closing Friday",
+   "in_reply_to_idx": 1,
+   "role": "objection",
+   "body": "Dear Marta, dear Chloe,\n\nA word of caution before we commit. I have no objection to the event itself, but €6,000 is at the top of what I would consider for a single marketing activity this quarter, and I would gently note that the lightning talk and contact list are unproven channels for us. If we attend, the booth-only option at €2,500 achieves the presence; the incremental €3,500 buys us a contact list of questionable opt-in quality — Paula's figure includes every past attendee who ticked a box, not leads.\n\nThat said, if Marta sees the lead-generation value, I will not stand in the way; I merely ask that we measure the outcome.\n\nKind regards,\nHelen\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V."
+  },
+  {
+   "idx": 5,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "chloe@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-12T10:02:00+01:00",
+   "subject": "RE: LogiConnect Europe 2026 — partnership tiers closing Friday",
+   "in_reply_to_idx": 1,
+   "role": "decisive",
+   "body": "do silver. chloe send paula the confirmation. measure the leads after.\n\nM"
+  },
+  {
+   "idx": 6,
+   "from": "chloe@parcelwise.example",
+   "to": [
+    "paula.reyes@logiconnect.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example",
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-03-12T10:31:00+01:00",
+   "subject": "RE: LogiConnect Europe 2026 — partnership tiers closing Friday",
+   "in_reply_to_idx": 5,
+   "role": "confirmation",
+   "body": "Hi Paula!\n\nWe're in for Silver at €6,000 — confirm us please! 🎉 Talk title to follow by Monday.\n\nChloe"
+  }
+ ]
+}

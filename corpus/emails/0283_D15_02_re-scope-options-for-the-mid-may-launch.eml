@@ -1,0 +1,22 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: priya@parcelwise.example, dev@parcelwise.example
+Subject: RE: scope options for the mid-May launch
+Date: Wed, 01 Apr 2026 10:41:00 +0200
+Message-ID: <c1e8463f98c0.D15.002@parcelwise.example>
+In-Reply-To: <93a1ad303261.D15.001@parcelwise.example>
+References: <93a1ad303261.D15.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+offline mode honest sizing: full offline (cached routes + manifests, edits queued locally, conflict resolution on reconnect) is ~6 engineer-weeks. that's me plus ravi for most of it, and the conflict-resolution piece is genuinely hard, it eats entire days and spits out edge cases. we would not start until the P1 burn-down is done anyway, so add another 2 weeks of calendar. it does not fit in mid-may. fwiw.
+
+On Wednesday 01 April, Priya Natarajan wrote:
+> Hi both,
+> 
+> Ahead of tomorrow's product meeting, the two big open items against the mid-May target:
+> 
+> 1. Offline mode for the driver app - Jonas, what's the honest sizing?
+> 2. Route optimization v2 - Dev, you said the heavy lifting is done?
+> 
+> We can't comfortably fit both plus the 41-P1 burn-down. I'd like to walk into the meeting with real numbers, not vibes. Thanks!

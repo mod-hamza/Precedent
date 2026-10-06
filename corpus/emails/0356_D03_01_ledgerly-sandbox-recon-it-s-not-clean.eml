@@ -1,0 +1,16 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: dev@parcelwise.example
+Subject: ledgerly sandbox recon - it's not clean
+Date: Wed, 22 Apr 2026 09:47:00 +0200
+Message-ID: <60c0c5e05a6c.D03.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+ran the reconciliation job against the ledgerly sandbox again last night. it's not clean.
+
+- refunds: 6 of 41 test refunds failed to reconcile. ledgerly's batch settlement nets refunds against the next day's charges, so amounts don't match line by line. our recon expects gross line items.
+- multi-currency: the PLN and SEK test invoices round trip with a cent-level rounding difference on fx conversion. sounds trivial but it fails the recon every time.
+- 3 settlement reports this week didn't match the ledger at all, off by varying amounts. maya chen's team says it's a sandbox export bug and prod is fine, which is exactly what you'd say.
+
+i can hack the recon to tolerate netting and rounding but then it stops catching real errors. fwiw.

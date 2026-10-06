@@ -1,0 +1,77 @@
+{
+ "thread_id": "D01",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-20T09:05:00+01:00",
+   "subject": "Payment processing fees - Q1 review and a recommendation",
+   "body": "Dear all,\n\nWhile closing the December books I took a closer look at our processing costs. We processed approximately €310k last month, and PayForge charges us 2.9% plus €0.30 per transaction, which works out to roughly €9,700 in fees for the month. I have been reviewing the proposal from Ledgerly that came in before the holidays: they quote 2.3% plus €0.25 per transaction. On comparable volume that would save us approximately €1,860 per month, or a little over €22k on an annualised basis.\n\nI would gently suggest that we at least put a migration plan on paper this quarter, even if we do not commit to a date yet. I have attached my fee comparison sheet (please let me know if the attachment does not come through, this mail client has been temperamental).\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.\nRotterdam | +31 10 555 0142",
+   "in_reply_to_idx": null,
+   "role": "discussion"
+  },
+  {
+   "idx": 2,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-20T10:41:00+01:00",
+   "subject": "RE: Payment processing fees - Q1 review and a recommendation",
+   "body": "Helen,\n\nThe saving is real, but my take: a payments migration is not a weekend job. We would need to re-plumb the billing service, redo PCI scoping, and keep dual settlement running for at least one full billing cycle so we can reconcile. Realistically that is 4-6 weeks of engineering time, and most of it touches the same billing code the v3 launch depends on.\n\nIf we start this while v3 is in flight, one of the two slips. My bet would be the payments work, and then we are mid-migration when the launch traffic hits.\n\nCheers, Dev",
+   "in_reply_to_idx": 1,
+   "role": "objection"
+  },
+  {
+   "idx": 4,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "dev@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "sent_at": "2026-01-20T13:48:00+01:00",
+   "subject": "RE: Payment processing fees - Q1 review and a recommendation",
+   "body": "Dear Marta,\n\nTo summarise so we can close this out: the saving is approximately €1,860 per month, Dev estimates the migration at 4-6 weeks of engineering time that conflicts with the v3 launch, and Tomás sees local-currency invoicing as a deal opener rather than a current requirement. My question, and I would like your read before I model anything further: do we attempt the switch now, or defer it until after the launch and revisit in the summer?\n\nI would gently suggest the latter, but the call is yours and I will support whichever you choose.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+   "in_reply_to_idx": 2,
+   "role": "discussion"
+  },
+  {
+   "idx": 5,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example",
+    "dev@parcelwise.example",
+    "tomas@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-20T15:02:00+01:00",
+   "subject": "RE: Payment processing fees - Q1 review and a recommendation",
+   "body": "stay on payforge till q2. revisit after v3.\n\ntomás - collect the multi-currency asks so we have real numbers when we do.\n\nM\nSent from my iPhone",
+   "in_reply_to_idx": 4,
+   "role": "decisive"
+  },
+  {
+   "idx": 6,
+   "from": "tomas@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-20T15:11:00+01:00",
+   "subject": "RE: Payment processing fees - Q1 review and a recommendation",
+   "body": "Will do! I'll have a list of the multi-currency asks from prospects and existing accounts by end of week ✅",
+   "in_reply_to_idx": 5,
+   "role": "confirmation"
+  }
+ ]
+}

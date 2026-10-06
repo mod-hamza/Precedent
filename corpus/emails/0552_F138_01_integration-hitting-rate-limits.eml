@@ -1,0 +1,15 @@
+From: Tomás Ibarra <tomas@parcelwise.example>
+To: jonas@parcelwise.example
+Subject: Integration hitting rate limits?
+Date: Thu, 25 Jun 2026 13:09:00 +0200
+Message-ID: <d16ac0358e96.F138.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Jonas!\\nOne of the mid-size accounts says their integration is throwing limit errors since Friday. Can you check whether their key got throttled? If it's something on our side I'd like to know before they escalate to me properly. 🚀\\nEdit: scratch that, ignore the email above — found it in the support dashboard myself, it's their own batch job hammering the endpoint at 03:00. No action needed, sorry for the noise!\\nTomás\\nSent from my iPhone
+
+-- 
+Saludos!
+Tomás Ibarra
+Head of Sales, Parcelwise

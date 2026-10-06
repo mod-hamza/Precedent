@@ -1,0 +1,38 @@
+{
+  "thread_id": "D20_T1",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "jonas@parcelwise.example",
+      "to": ["ingrid@parcelwise.example", "dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-02T17:48:00+01:00",
+      "subject": "interview feedback - elena voss (systems design round)",
+      "body": "did the systems design round with elena voss today.\n\nfwiw strongest candidate we've had for this role. she actually asked about our failure modes instead of talking about hers. nailed the queue/backpressure question, and drew a sane sharding plan for the tracking ingest without prompting.\n\nonly knock: she hasn't touched react native. don't care, wrong role.\n\nwould be mildly annoyed if we don't hire her.",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 2,
+      "from": "dev@parcelwise.example",
+      "to": ["ingrid@parcelwise.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-03-02T20:31:00+01:00",
+      "subject": "interview feedback: Elena Voss (round 2, my write-up)",
+      "body": "Interview feedback - Elena Voss, senior backend (round 2 + coding).\n\nmy take: hire.\n\n- systems design: clean event-driven design for tracking ingest; asked the right capacity and retention questions before sketching\n- coding round: solid, readable, no framework worship, debugged the planted off-by-one in under ten minutes (which is more than I can say for most)\n- complement to jonas rather than a duplicate: she's stronger on data modeling, he's stronger on ops gnarliness\n- communication: direct, no fluff. good fit\n\nOnly flag: limited mobile exposure, irrelevant for this opening.\n\nCheers, Dev",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 3,
+      "from": "ingrid@parcelwise.example",
+      "to": ["jonas@parcelwise.example", "dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-03-03T09:22:00+01:00",
+      "subject": "RE: interview feedback - elena voss (systems design round)",
+      "body": "Thank you both - that is remarkably aligned feedback, which does not always happen. I have one more reference call to complete and then I will circulate a short comparison of our final candidates, including Mark Teller from the earlier loop, so we can move to an offer while Elena is still available. She mentioned last week that another process is wrapping up, so speed does matter here.\n\nWarm regards,\nIngrid",
+      "in_reply_to_idx": 2,
+      "role": "discussion"
+    }
+  ]
+}

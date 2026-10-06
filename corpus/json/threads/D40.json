@@ -1,0 +1,80 @@
+{
+ "thread_id": "D40",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "chloe@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-02-27T09:26:00+01:00",
+   "subject": "Q2 marketing budget - ask",
+   "body": "Hi Marta!\n\nPutting my Q2 ask in writing so nothing lives only in my head: I need €40,000 for the quarter. That covers the LogiConnect sponsorship conversation, the launch campaign around v3, content production (two customer case-study videos), and ~€6,000 of paid search and social to feed the pipeline while Tomás chases the big renewal.\n\nThe full breakdown is in the deck attached (slide 3 has the spend table). Every euro maps to a launch or lead-gen line — this is the quarter where marketing spend actually compounds because v3 gives us something new to shout about!\n\nSuper excited to hear your thoughts 🚀\n\nChloe",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 2,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "chloe@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-02-27T11:47:00+01:00",
+   "subject": "RE: Q2 marketing budget - ask",
+   "body": "go. keep helen in the loop on spend.\n\nSent from my iPhone",
+   "in_reply_to_idx": 1,
+   "role": "decisive"
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "chloe@parcelwise.example",
+    "dev@parcelwise.example",
+    "tomas@parcelwise.example",
+    "priya@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-02T08:50:00+01:00",
+   "subject": "Q2 budget sheet - updated draft for review",
+   "body": "Dear all,\n\nAttached is the updated Q2 budget sheet, reflecting the leadership discussion last week. The marketing line for Q2 is set at €30,000, prioritising the launch campaign and the content production; the paid search allocation is scaled to fit. Total company Q2 spend is €142,000 across all lines, and I would gently draw attention to the hosting migration costs on the infrastructure line when reviewing your own sections.\n\nPlease send me any comments by Thursday 5 March, after which I will treat the sheet as the working baseline for the quarter.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": null,
+   "role": "recap"
+  },
+  {
+   "idx": 5,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "chloe@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-03-03T11:32:00+01:00",
+   "subject": "RE: Q2 budget sheet - updated draft for review",
+   "body": "Dear Chloe,\n\nThank you for the quick review. I have adjusted the content line from €6,000 to €9,000, which was the headroom available within the marketing section, and taken the difference out of the contingency line rather than paid search. The sheet now balances as attached.\n\nIf additional funds prove necessary once the launch campaign performance data exists, we can of course revisit, but any material movement would need to be weighed against the other Q2 lines in the same conversation.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": 3,
+   "role": "confirmation"
+  },
+  {
+   "idx": 7,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example"
+   ],
+   "cc": [
+    "chloe@parcelwise.example"
+   ],
+   "sent_at": "2026-03-05T09:18:00+01:00",
+   "subject": "Q2 budget sheet - comments received, finalising Friday",
+   "body": "Dear Marta,\n\nA short note for completeness: comments on the Q2 budget sheet are in from marketing and product, and I have incorporated the agreed adjustments. Unless anything further arrives by tomorrow, I will finalise the sheet on Friday 6 March as the working baseline for the quarter and circulate it as such.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+   "in_reply_to_idx": 5,
+   "role": "recap"
+  }
+ ]
+}

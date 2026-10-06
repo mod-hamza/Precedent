@@ -1,0 +1,82 @@
+{
+  "thread_id": "D27",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "walt@harborexpress.example",
+      "to": ["helen@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-15T08:41:00+02:00",
+      "subject": "Our outstanding balance - an honest word from Walt",
+      "body": "Morning Helen,\n\nWalt Pruitt here, Harbor Express. I reckon you all have been more than patient with us and I want you to hear it straight from the horse's mouth: we're behind, and I'm sorry as can be about it.\n\nTruth is our biggest fleet customer stretched their payments to 75 days this spring and we've been robbing Peter to pay Paul ever since. It ain't that the work ain't coming in — it's that the cash arrives late and leaves early.\n\nI'd be mighty obliged if you could hold off on anything drastic a few more weeks. You've been good folks to us and I don't want that changing over an invoice.\n\nWarmly,\nWalt Pruitt\nOwner, Harbor Express",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 2,
+      "from": "helen@parcelwise.example",
+      "to": ["walt@harborexpress.example"],
+      "cc": [],
+      "sent_at": "2026-05-15T10:12:00+02:00",
+      "subject": "RE: Our outstanding balance - an honest word from Walt",
+      "body": "Dear Walt,\n\nThank you for your candour; it is genuinely appreciated, and I want to be equally straightforward with you in return.\n\nYour account currently stands at €27,400 overdue, which places it past the 60-day threshold in our terms of service. I must inform you that at 60 days overdue we are required to suspend access to the platform, and that at 90 days the agreement may be terminated unless the balance is settled.\n\nI have no wish to take either step — a payment plan, or a part-payment now with the remainder scheduled, would let me hold the suspension. But I cannot simply let the balance continue to grow.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 3,
+      "from": "walt@harborexpress.example",
+      "to": ["helen@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-05-15T13:07:00+02:00",
+      "subject": "RE: Our outstanding balance - an honest word from Walt",
+      "body": "Helen,\n\nThat number stings worse than a June hornet, but I can't argue with the maths. Truth be told I'd hoped to get my truck-loan refinanced first and clear a chunk of it in one go, but the bank's dragging their feet like a mule on a Sunday.\n\nI can likely get you €8,000 inside two weeks if that helps any, and the rest once the refinance comes through — though I'd be lying if I gave you a firm date on that. I know that's not much of an answer, and I'm sorry. You've been fair with us and I hate being the fella who isn't.\n\nWalt",
+      "in_reply_to_idx": 2,
+      "role": "discussion"
+    },
+    {
+      "idx": 4,
+      "from": "helen@parcelwise.example",
+      "to": ["marta@parcelwise.example"],
+      "cc": ["nadia@okafor-lindqvist.example", "aisha@parcelwise.example"],
+      "sent_at": "2026-05-15T15:44:00+02:00",
+      "subject": "Harbor Express - €27,400 overdue, propose suspending at 60 days",
+      "body": "Dear Marta,\n\nHarbor Express is now €27,400 overdue, past 60 days. The owner is apologetic and responsive, and has offered €8,000 within two weeks with no firm date on the remainder, pending a refinancing he cannot evidence.\n\nI would gently propose the following: suspend service at the 60-day mark in accordance with our terms, and terminate at 90 days unless the balance is paid in full. Aisha estimates service impact as low — they use basic routing only. Writing it off would set an unhappy precedent for the other small accounts, and an open-ended payment plan simply converts our receivable into a loan we never agreed to make.\n\nMay I proceed on that basis?\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+      "in_reply_to_idx": 3,
+      "role": "proposal"
+    },
+    {
+      "idx": 5,
+      "from": "nadia@okafor-lindqvist.example",
+      "to": ["helen@parcelwise.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-05-15T16:52:00+02:00",
+      "subject": "RE: Harbor Express - €27,400 overdue, propose suspending at 60 days",
+      "body": "Dear Ms Oyelaran,\n\nWe concur with the proposed course of action. Suspension at 60 days and termination at 90 days absent payment are both available under clause 11.2 of the standard terms, provided written notice is given to the address designated therein and any suspension is applied consistently with the terms of clause 11.4. We recommend that the suspension notice be issued by registered mail in addition to email, and that correspondence in the interim be preserved.\n\nYours sincerely,\nNadia Petrova\nOkafor Lindqvist Advocaten",
+      "in_reply_to_idx": 4,
+      "role": "confirmation"
+    },
+    {
+      "idx": 6,
+      "from": "marta@parcelwise.example",
+      "to": ["helen@parcelwise.example"],
+      "cc": ["nadia@okafor-lindqvist.example", "aisha@parcelwise.example"],
+      "sent_at": "2026-05-15T17:05:00+02:00",
+      "subject": "RE: Harbor Express - €27,400 overdue, propose suspending at 60 days",
+      "body": "ok. suspend at 60, terminate at 90 if unpaid. take the €8,000 if it actually arrives.\n\nSent from my iPhone",
+      "in_reply_to_idx": 4,
+      "role": "decisive"
+    },
+    {
+      "idx": 7,
+      "from": "helen@parcelwise.example",
+      "to": ["walt@harborexpress.example"],
+      "cc": ["aisha@parcelwise.example"],
+      "sent_at": "2026-05-18T09:30:00+02:00",
+      "subject": "Harbor Express - formal notice of service suspension",
+      "body": "Dear Walt,\n\nFurther to my email of Friday, and having concluded our internal review, I regret to inform you that we must proceed formally.\n\nYour account is more than 60 days overdue. In accordance with clause 11.2 of our terms of service, access to the Parcelwise platform will be suspended as of 25 May 2026, and the agreement may be terminated if the outstanding balance of €27,400 is not settled within 90 days of the original due date. If the €8,000 you mentioned arrives within two weeks, I will treat it in good faith and note it against the balance; the suspension itself, however, cannot be held open beyond the terms.\n\nA formal notice will follow by registered mail. I am genuinely sorry it has come to this, Walt, and I hope the refinancing resolves swiftly.\n\nKind regards,\nHelen\n\nHelen Oyelaran | Chief Financial Officer | Parcelwise B.V.",
+      "in_reply_to_idx": 3,
+      "role": "confirmation"
+    }
+  ]
+}

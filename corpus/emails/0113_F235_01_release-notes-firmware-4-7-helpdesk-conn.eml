@@ -1,0 +1,21 @@
+From: Products <products@scanhardware.example>
+To: jonas@parcelwise.example
+Subject: Release notes: firmware 4.7 + helpdesk connector update
+Date: Wed, 18 Feb 2026 08:23:00 +0100
+Message-ID: <aed0e8268e7e.F235.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Jonas,
+
+Fresh from the ScanHardware lab: firmware 4.7 for the S-series handhelds is out. Highlights:
+
+- Faster barcode decode in low light
+- New battery health API endpoint
+- Updated release notes for our Helpdesk Co. connector (ticket auto-attach now supports custom fields)
+
+Full notes: https://scanhardware.example/releases/4.7
+
+Happy scanning!
+The ScanHardware Product Team

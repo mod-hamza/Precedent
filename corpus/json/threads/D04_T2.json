@@ -1,0 +1,70 @@
+{
+ "thread_id": "D04_T2",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "dev@parcelwise.example",
+   "to": [
+    "helen@parcelwise.example",
+    "jonas@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example",
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-05-29T14:12:00+02:00",
+   "subject": "Ledgerly cutover - confirmed plan, Monday 6 July",
+   "body": "Helen, Jonas,\n\nConfirmed plan, as agreed yesterday and now fixed:\n\n- Cutover: Monday 6 July, first live Ledgerly settlement cycle starts that day\n- 29-30 June: final PayForge billing run, June books close on a single provider\n- 1-3 July: production config freeze, final ledgerly prod checks, dry run of the reconciliation job against the closed June ledger\n- 6 July: switch billing service to Ledgerly, PayForge moves to read-only\n- PayForge notice: 30 days, so I will send termination on 6 July; contract ends 5 August. Helen, that answers your minimum-fee question - no overlap beyond the notice we must honour.\n- Aisha: customer comms draft due 10 July, statement-name change flagged two weeks ahead per her request\n\nRollback: PayForge stays live in read-only until 5 August, so we can fail back within one working day if a settlement misbehaves.\n\nCheers, Dev",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 2,
+   "from": "jonas@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example"
+   ],
+   "cc": [
+    "helen@parcelwise.example"
+   ],
+   "sent_at": "2026-05-29T16:03:00+02:00",
+   "subject": "RE: Ledgerly cutover - confirmed plan, Monday 6 July",
+   "body": "plan looks right. one thing: the 1-3 july dry run needs the june ledger fully closed, and last month's close slipped two days because of the v3 rollout. can we make the ledger close a hard dependency, i'll put an alert on it.\n\nalso maya's team owes us the gross refund line config in prod - i'll chase them this week.",
+   "in_reply_to_idx": 1,
+   "role": "chatter"
+  },
+  {
+   "idx": 3,
+   "from": "helen@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example",
+    "jonas@parcelwise.example"
+   ],
+   "cc": [
+    "marta@parcelwise.example"
+   ],
+   "sent_at": "2026-05-30T09:21:00+02:00",
+   "subject": "RE: Ledgerly cutover - confirmed plan, Monday 6 July",
+   "body": "Dear Dev,\n\nThank you, this is exactly the level of detail I needed, and I am pleased to see the PayForge termination handled so that we do not pay a single avoidable day of overlap. I will make sure the June close is completed by 30 June even if I have to sit with the books myself on the 30th - Jonas, your alert idea has my full support.\n\nWith a fixed date of Monday 6 July I can now commit the approximately €1,860 monthly saving in the July forecast. I would gently suggest we treat this date as immovable.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+   "in_reply_to_idx": 1,
+   "role": "confirmation"
+  },
+  {
+   "idx": 4,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "dev@parcelwise.example",
+    "helen@parcelwise.example",
+    "jonas@parcelwise.example"
+   ],
+   "cc": [
+    "aisha@parcelwise.example"
+   ],
+   "sent_at": "2026-05-30T09:48:00+02:00",
+   "subject": "RE: Ledgerly cutover - confirmed plan, Monday 6 July",
+   "body": "good. 6 july it is. nobody moves it again, not helen's forecast, not dev's dry run, not anything else. thanks all.\n\nM\nSent from my iPhone",
+   "in_reply_to_idx": 3,
+   "role": "decisive"
+  }
+ ]
+}

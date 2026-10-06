@@ -1,0 +1,71 @@
+{
+  "thread_id": "D23",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "priya@parcelwise.example",
+      "to": ["helen@parcelwise.example", "dev@parcelwise.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-04-08T10:12:00+02:00",
+      "subject": "QA coverage gap before the v3 rollout",
+      "body": "Hi both,\n\nQuick recap of the gap:\n\n1. Bug triage last week surfaced that regression testing is effectively manual and ad hoc right now\n2. With the phased rollout in May we will need real regression passes between cohorts (May 13, then the 100% step)\n3. Nobody on the eng team has spare cycles - Jonas and Ravi are on the migration and Elena is only just starting\n\nOptions: hire a full-time QA engineer, or bring in a contractor for the launch window and see how far structured manual + light automation gets us.\n\nDev, you've worked with contractors before - thoughts? Helen, I don't know what the cost delta looks like.\n\nThanks!\nPriya",
+      "in_reply_to_idx": null,
+      "role": "discussion"
+    },
+    {
+      "idx": 2,
+      "from": "helen@parcelwise.example",
+      "to": ["priya@parcelwise.example"],
+      "cc": ["marta@parcelwise.example", "dev@parcelwise.example"],
+      "sent_at": "2026-04-09T11:26:00+02:00",
+      "subject": "RE: QA coverage gap before the v3 rollout",
+      "body": "Dear Priya,\n\nThank you for flagging this now rather than in May. On costs: a full-time QA engineer would land at roughly EUR 75,000 fully loaded in the first year, which is a permanent commitment I would rather not make while the migration spend is still running through the books. A contractor at around EUR 500-550 per day, three days per week, annualises to something in the region of EUR 55,000, and gives us the option to scale down after the launch settles.\n\nI would gently suggest the contractor route is the better fit for a known, time-bounded need. That said, I am conscious that a stop-gap can quietly become permanent, so whichever way we go I would like a review point after the rollout.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+      "in_reply_to_idx": 1,
+      "role": "discussion"
+    },
+    {
+      "idx": 3,
+      "from": "dev@parcelwise.example",
+      "to": ["priya@parcelwise.example", "helen@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-10T09:03:00+02:00",
+      "subject": "RE: QA coverage gap before the v3 rollout",
+      "body": "my take: contractor.\n\n- the work in May is regression passes between rollout cohorts - well-defined, bounded, perfect contractor work\n- a full-time hire would take 2+ months to source and onboard, which lands us after the 100% cutoff on May 27. useless timing\n- if we later want permanent QA capacity we can convert, and we'll know from real work whether we need test-automation skills or manual-first\n\nOne condition: the person needs to write up defects properly (repro steps, build, severity), not just 'it's broken'. Most can't.\n\nCheers, Dev",
+      "in_reply_to_idx": 2,
+      "role": "discussion"
+    },
+    {
+      "idx": 4,
+      "from": "priya@parcelwise.example",
+      "to": ["helen@parcelwise.example", "dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-04-14T10:41:00+02:00",
+      "subject": "RE: QA coverage gap before the v3 rollout",
+      "body": "Good news on the contractor question: I called Kofi Mensah, who did the QA contract for the tracking-api rewrite last year (Dev, you rated him highly at the time, repro steps always immaculate). He is freelance now and Kofi's available from the 20th.\n\nIf that timing works, he could run the first regression pass before the May 13 cohort and be embedded for the whole rollout window.\n\nThanks!\nPriya",
+      "in_reply_to_idx": 3,
+      "role": "proposal"
+    },
+    {
+      "idx": 5,
+      "from": "helen@parcelwise.example",
+      "to": ["priya@parcelwise.example", "dev@parcelwise.example"],
+      "cc": ["marta@parcelwise.example"],
+      "sent_at": "2026-04-14T14:55:00+02:00",
+      "subject": "RE: QA coverage gap before the v3 rollout",
+      "body": "Dear Priya,\n\nThat is indeed convenient timing. If Kofi is available from Monday the 20th and his day rate sits within the range I outlined, then I shall prepare his contract for three days a week through the end of June, with the review point I mentioned before any extension.\n\nPlease pass me his details and rate so the paperwork can go out this week.\n\nKind regards,\nHelen Oyelaran\nChief Financial Officer, Parcelwise B.V.",
+      "in_reply_to_idx": 4,
+      "role": "confirmation"
+    },
+    {
+      "idx": 6,
+      "from": "priya@parcelwise.example",
+      "to": ["helen@parcelwise.example"],
+      "cc": ["dev@parcelwise.example"],
+      "sent_at": "2026-04-14T15:20:00+02:00",
+      "subject": "RE: QA coverage gap before the v3 rollout",
+      "body": "Will do - sending his rate and contact details within the hour. Starting Monday the 20th gives him two clear weeks before the first cohort. Thanks!\n\nPriya",
+      "in_reply_to_idx": 5,
+      "role": "confirmation"
+    }
+  ]
+}

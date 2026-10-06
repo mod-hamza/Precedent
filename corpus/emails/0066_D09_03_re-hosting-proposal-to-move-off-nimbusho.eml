@@ -1,0 +1,25 @@
+From: Jonas Eklund <jonas@parcelwise.example>
+To: dev@parcelwise.example
+Subject: RE: hosting: proposal to move off NimbusHost
+Date: Tue, 03 Feb 2026 08:31:00 +0100
+Message-ID: <cb48c156361c.D09.003@parcelwise.example>
+In-Reply-To: <5466ad15f2ac.D09.001@parcelwise.example>
+References: <5466ad15f2ac.D09.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+mild concern: their managed postgres is a different flavour than what we run now. extensions we use (pg_trgm is fine, but we lean on some cron jobs via pg_cron) may need re-testing. fwiw the compute side looks painless, it's the database bit i'd want a week of staging time for.
+
+On 2026-02-02, Dev Raman wrote:
+> All,
+> 
+> Proposal: migrate our hosting from NimbusHost to Corvid Cloud.
+> 
+> - Compute is roughly 30% cheaper at Corvid for our current footprint; I modelled our GPU-free workload across their EU regions and it lands around EUR 1,400/month less at peak.
+> - Corvid has an EU-region residency option with data at rest and in transit confined to Amsterdam/Frankfurt. Swiftbox has been asking for exactly that in their security questionnaires.
+> - NimbusHost renewal is due end of March, so if we move we should start the migration by early March to avoid paying twice.
+> 
+> My take: we should do it, but before the v3 launch crunch, not during.
+> 
+> Cheers, Dev

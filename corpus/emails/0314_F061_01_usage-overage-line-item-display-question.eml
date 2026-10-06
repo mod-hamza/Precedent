@@ -1,0 +1,28 @@
+From: Priya Natarajan <priya@parcelwise.example>
+To: chloe@parcelwise.example, ravi@parcelwise.example, dev@parcelwise.example
+Subject: Usage overage line item - display question
+Date: Thu, 09 Apr 2026 09:17:00 +0200
+Message-ID: <3f30614c31ff.F061.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Quick recap:
+
+1. One customer queried an overage line on their dashboard; it turns out the scan counter is fine, the tooltip is just misleading (says "per month", resets weekly).
+2. FYI see below - Aisha's note from Tuesday on the same thing, worth reading before we touch anything.
+3. This is copy, not logic, so I'd like Chloe and Ravi to pair on wording today.
+
+No roadmap impact. Thanks!
+
+Priya
+
+> From: aisha@parcelwise.example
+> Sent: Tuesday
+>
+> Hi team, just flagging: the customer wasn't disputing the count, only what the label promised. Kind wording fix should do it 😊
+
+-- 
+Thanks!
+Priya Natarajan
+Head of Product, Parcelwise B.V.

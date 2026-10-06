@@ -1,0 +1,39 @@
+From: Dev Raman <dev@parcelwise.example>
+To: helen@parcelwise.example, marta@parcelwise.example
+Subject: RE: Payment processing fees - Q1 review and a recommendation
+Date: Tue, 20 Jan 2026 10:41:00 +0100
+Message-ID: <31db542cf7ab.D01.002@parcelwise.example>
+In-Reply-To: <f42aa06c3e87.D01.001@parcelwise.example>
+References: <f42aa06c3e87.D01.001@parcelwise.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Helen,
+
+The saving is real, but my take: a payments migration is not a weekend job. We would need to re-plumb the billing service, redo PCI scoping, and keep dual settlement running for at least one full billing cycle so we can reconcile. Realistically that is 4-6 weeks of engineering time, and most of it touches the same billing code the v3 launch depends on.
+
+If we start this while v3 is in flight, one of the two slips. My bet would be the payments work, and then we are mid-migration when the launch traffic hits.
+
+Cheers, Dev
+-----Original Message-----
+From: Helen Oyelaran <helen@parcelwise.example>
+Sent: Tue, 20 Jan 2026 09:05:00 +0100
+To: marta@parcelwise.example, dev@parcelwise.example
+Subject: Payment processing fees - Q1 review and a recommendation
+
+Dear all,
+
+While closing the December books I took a closer look at our processing costs. We processed approximately €310k last month, and PayForge charges us 2.9% plus €0.30 per transaction, which works out to roughly €9,700 in fees for the month. I have been reviewing the proposal from Ledgerly that came in before the holidays: they quote 2.3% plus €0.25 per transaction. On comparable volume that would save us approximately €1,860 per month, or a little over €22k on an annualised basis.
+
+I would gently suggest that we at least put a migration plan on paper this quarter, even if we do not commit to a date yet. I have attached my fee comparison sheet (please let me know if the attachment does not come through, this mail client has been temperamental).
+
+Kind regards,
+Helen Oyelaran
+Chief Financial Officer, Parcelwise B.V.
+Rotterdam | +31 10 555 0142
+
+-- 
+Cheers, Dev
+Dev Raman
+CTO & co-founder, Parcelwise B.V.

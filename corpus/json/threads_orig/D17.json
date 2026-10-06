@@ -1,0 +1,71 @@
+{
+  "thread_id": "D17",
+  "messages": [
+    {
+      "idx": 1,
+      "from": "ravi@parcelwise.example",
+      "to": ["dev@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-10T14:22:00+01:00",
+      "subject": "driver app tech stack - sorry to bother",
+      "in_reply_to_idx": null,
+      "role": "chatter",
+      "body": "Hi Dev,\n\nSorry to bother - I was reading up for the driver app work and got a bit lost. Do we know yet whether we're writing the app natively for iOS and Android separately? I ask because I'd like to start learning whatever we'll use, and I don't want to spend my evenings on Swift if we end up not using Swift. Also is Flutter the same thing as React Native? Some blog posts seem to treat them as interchangeable which confused me.\n\nSorry again if this is obvious,\nRavi"
+    },
+    {
+      "idx": 2,
+      "from": "dev@parcelwise.example",
+      "to": ["ravi@parcelwise.example", "jonas@parcelwise.example", "priya@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-11T09:15:00+01:00",
+      "subject": "driver app stack - proposal: React Native",
+      "in_reply_to_idx": 1,
+      "role": "proposal",
+      "body": "Ravi - good timing, this needs settling this week. My proposal: build the driver app in React Native.\n\nThe three options:\n- Native (Swift + Kotlin): best raw performance, but two codebases, two skill sets, and nobody here writes Kotlin today\n- Flutter: one codebase, but a niche language (Dart) and a smaller hiring pool in NL\n- React Native: one codebase, TypeScript, and the whole team already lives in JS\n\nThe app is forms, maps and background sync - nothing that needs native-level graphics. One codebase with our current team beats theoretical performance we won't notice.\n\nMy take: React Native. Jonas, anything I'm missing? Cheers, Dev"
+    },
+    {
+      "idx": 3,
+      "from": "jonas@parcelwise.example",
+      "to": ["dev@parcelwise.example", "ravi@parcelwise.example", "priya@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-11T11:02:00+01:00",
+      "subject": "RE: driver app stack - proposal: React Native",
+      "in_reply_to_idx": 2,
+      "role": "objection",
+      "body": "one concern, not a blocker: background location tracking + the scanner sdk are the two places we'll touch native code anyway. react native gives us a js bridge to maintain on both platforms for exactly the parts that matter most. fwiw i still think it's the right call - two native codebases with our headcount would be malpractice - but let's budget for the fact that maybe 15% of the app is still platform-specific. scanner sdk also needs a RN wrapper written, that's ravi's learning project imo."
+    },
+    {
+      "idx": 4,
+      "from": "ravi@parcelwise.example",
+      "to": ["dev@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-11T15:48:00+01:00",
+      "subject": "RE: driver app stack - proposal: React Native",
+      "in_reply_to_idx": 3,
+      "role": "discussion",
+      "body": "Thank you both, that's much clearer! So React Native is the framework and Dart is the other one's language, got it. The scanner wrapper project sounds great, I'd genuinely like to take that on. One more question (sorry): if it's one codebase, does that mean one code review for both platforms, or do we still test everything twice? Asking so I plan my testing time properly."
+    },
+    {
+      "idx": 5,
+      "from": "dev@parcelwise.example",
+      "to": ["ravi@parcelwise.example", "jonas@parcelwise.example", "priya@parcelwise.example", "marta@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-12T10:33:00+01:00",
+      "subject": "RE: driver app stack - proposal: React Native",
+      "in_reply_to_idx": 4,
+      "role": "decisive",
+      "body": "Going with React Native. Jonas's 15% native estimate is the budget, not an argument against.\n\nRavi: one codebase, but we still test on both platforms - the wrapper project is yours. Jonas: scan the RN scanner wrappers that exist before we write one.\n\nCheers, Dev"
+    },
+    {
+      "idx": 6,
+      "from": "ravi@parcelwise.example",
+      "to": ["dev@parcelwise.example", "jonas@parcelwise.example"],
+      "cc": [],
+      "sent_at": "2026-02-12T11:14:00+01:00",
+      "subject": "RE: driver app stack - proposal: React Native",
+      "in_reply_to_idx": 5,
+      "role": "confirmation",
+      "body": "Understood - testing on both it is. I'll start on React Native fundamentals this week and put together a shortlist of existing scanner wrappers by Monday. Thanks again!"
+    }
+  ]
+}

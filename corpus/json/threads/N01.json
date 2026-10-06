@@ -1,0 +1,47 @@
+{
+ "thread_id": "N01",
+ "messages": [
+  {
+   "idx": 1,
+   "from": "chloe@parcelwise.example",
+   "to": [
+    "ingrid@parcelwise.example",
+    "marta@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-01-26T14:12:00+01:00",
+   "subject": "Idea: 4-day work week pilot - super excited about this",
+   "body": "Hi Ingrid!\n\nSo I keep seeing companies our size moving to a 4-day week and honestly I think we could be a poster child for it - we already have people working remotely ~40% of the time, and employer branding-wise this would be AMAZING for the two engineering roles we're about to open. Imagine the job posting: 'Ship v3, keep your Fridays.'!\n\nI put together a few slides on how it could work (same pay, same hours compressed, Fridays off): [deck - 6 slides, '4-day week @ Parcelwise']\n\nWould love to explore this together! Chloe",
+   "in_reply_to_idx": null,
+   "role": "proposal"
+  },
+  {
+   "idx": 3,
+   "from": "marta@parcelwise.example",
+   "to": [
+    "chloe@parcelwise.example",
+    "ingrid@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-02T09:21:00+01:00",
+   "subject": "RE: Idea: 4-day work week pilot - super excited about this",
+   "body": "sounds good on paper. right now everything is about shipping v3. let's revisit after launch.\n\nM",
+   "in_reply_to_idx": 1,
+   "role": "discussion"
+  },
+  {
+   "idx": 4,
+   "from": "chloe@parcelwise.example",
+   "to": [
+    "marta@parcelwise.example",
+    "ingrid@parcelwise.example"
+   ],
+   "cc": [],
+   "sent_at": "2026-02-02T09:47:00+01:00",
+   "subject": "RE: Idea: 4-day work week pilot - super excited about this",
+   "body": "Sounds good, Marta! 👍 I'll keep the deck warm and we can pick it up the moment the launch dust settles - it'll be the perfect recruitment hook for the Q3 roles too!\n\nChloe",
+   "in_reply_to_idx": 3,
+   "role": "chatter"
+  }
+ ]
+}
