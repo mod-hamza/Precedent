@@ -233,7 +233,10 @@ def confidence(conn: sqlite3.Connection, ans: Answer, cites: list[dict], errors:
 async def ask(conn: sqlite3.Connection, llm: LLM, embedder: Embedder, question: str) -> dict:
     t0 = time.perf_counter()
     loop = asyncio.get_running_loop()
-    qc_task = asyncio.create_task(llm.structured("FAST", CLASSIFY_PROMPT, question, QuestionClass, stage="classify"))
+    span = conn.execute("SELECT MIN(sent_at), MAX(sent_at) FROM emails").fetchone()
+    period = f"Mailbox period: {(span[0] or '')[:10]} to {(span[1] or '')[:10]}."
+    qc_task = asyncio.create_task(llm.structured("FAST", CLASSIFY_PROMPT, f"{period}\nQuestion: {question}",
+                                                 QuestionClass, stage="classify"))
     dec_ids, pas_ids = await loop.run_in_executor(None, retrieve, conn, embedder, question)
     try:
         qc = await qc_task

@@ -91,7 +91,11 @@ class Embedder:
         if self.backend == "st":
             if self._st is None:
                 from sentence_transformers import SentenceTransformer
-                self._st = SentenceTransformer(os.environ.get("PRECEDENT_ST_MODEL", "all-MiniLM-L6-v2"))
+                name = os.environ.get("PRECEDENT_ST_MODEL", "all-MiniLM-L6-v2")
+                try:  # cached copy first: no network round-trip, and demo mode works offline
+                    self._st = SentenceTransformer(name, local_files_only=True)
+                except Exception:
+                    self._st = SentenceTransformer(name)
             return np.asarray(self._st.encode(texts, batch_size=64, show_progress_bar=False))
         if self.backend == "voyage":
             import httpx

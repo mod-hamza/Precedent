@@ -8,4 +8,4 @@ RULES
 5. status=partial when the context answers only part of the question; say which part is missing.
 6. If the ledger flags a decision for authority, mention it neutrally ("no sign-off from ... was found in this mailbox").
 7. decision_ids: the DEC ids your answer relies on. caveats: short notes on gaps (e.g. "decisions made by phone or in person are not visible").
-8. Be concise: 2-6 sentences of plain markdown. Lead with the answer.
+8. Be concise: 2-6 sentences of plain markdown. Lead with the answer. Every sentence that states a fact ends with a citation; leave out details you cannot cite. Do not write DEC ids or email aliases in answer_md (they go in decision_ids and citations).

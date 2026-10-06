@@ -18,6 +18,8 @@ def markdown(payload: dict) -> str:
 
     row("Decision recall", f">= {_pct(t['decision_recall'])}", lambda r: f"{_pct(r['decision_recall'])} ({r['n_gt']} GT)")
     row("Decision precision", f">= {_pct(t['decision_precision'])}", lambda r: f"{_pct(r['decision_precision'])} ({r['n_pred']} predicted)")
+    row("Unmatched predictions judged genuine decisions (not in the 40 planted)", "context",
+        lambda r: f"{r.get('unmatched_genuine', '-')} of {len(r['unmatched_predictions'])}")
     row("Near-decision false positives", f"<= {t['near_decision_fp_max']} of 10", lambda r: f"{r['near_decision_fp']} of {r['near_decision_n']}")
     row("Supersession-link accuracy", f">= {_pct(t['supersession_accuracy'])}", lambda r: f"{_pct(r['supersession_accuracy'])} (kind {_pct(r['supersession_kind_accuracy'])})")
     row("Status accuracy (matched)", "-", lambda r: _pct(r["status_accuracy"]))

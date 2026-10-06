@@ -10,4 +10,4 @@ type:
 - other: anything else
 
 entities: the specific things asked about (vendors, products, customers, people, topics), as short phrases.
-as_of_date: YYYY-MM-DD only for as_of questions with a resolvable date (use the last day of a named month), else null.
+as_of_date: YYYY-MM-DD only for as_of questions with a resolvable date, else null. Use the exact day when one is given; use the last day of the month only when just a month is named. Dates without a year fall inside the mailbox period given below.

@@ -24,7 +24,7 @@ from backend.embed import Embedder
 from backend.llm import LLM
 from backend.pipeline.ask import ask
 
-from .judge import asserts_decided, grade_answer, supports
+from .judge import asserts_decided, genuine, grade_answer, supports
 from .match import match_decisions
 from .report import markdown
 
@@ -156,8 +156,14 @@ async def eval_split(conn, llm, emb, gt, manifest, split: str, run_qa: bool) -> 
          "pred_date": pred_by[match[d["id"]][0]]["date"] if d["id"] in match else None,
          "pred_status": pred_by[match[d["id"]][0]]["status"] if d["id"] in match else None}
         for d in gtd]
-    res["unmatched_predictions"] = [{"pred_id": p["decision_id"], "text": p["text"], "date": p["date"]}
-                                    for p in preds if p["decision_id"] not in {x for x, _ in match.values()}]
+    unmatched = [p for p in preds if p["decision_id"] not in {x for x, _ in match.values()}]
+    verdicts = await asyncio.gather(*(genuine(llm, p["text"]) for p in unmatched))
+    res["unmatched_predictions"] = [{"pred_id": p["decision_id"], "text": p["text"], "date": p["date"],
+                                     "judged_genuine_decision": v.genuine_decision, "reason": v.reason}
+                                    for p, v in zip(unmatched, verdicts)]
+    # Context for precision: the GT lists 40 planted decisions, so genuine decisions it does not list count against
+    # strict precision. Reported separately; the strict number stays the headline.
+    res["unmatched_genuine"] = sum(v.genuine_decision for v in verdicts)
 
     # triage recall
     thread_of = {r[0]: r[1] for r in conn.execute("SELECT message_id, thread_id FROM emails")}
@@ -184,7 +190,9 @@ async def eval_qa(conn, llm, emb, gt, split: str) -> dict:
         a = await ask(conn, LLM(conn, run_id=f"eval-qa-{split}"), emb, q["question"])
         cited = {c["message_id"] for c in a["citations"]} | {c["message_id"] for c in a["closest"]}
         gold = set().union(*(gold_msgs.get(r, set()) for r in refs))
-        j = await grade_answer(llm, q["question"], q["expected"], a["answer_md"], [c["quote"] for c in a["citations"]])
+        ledger = [f"{d['decided_at']} [{d['status']}] {d['canonical_text']}" for d in a["decisions"]]
+        j = await grade_answer(llm, q["question"], q["expected"], a["answer_md"], [c["quote"] for c in a["citations"]],
+                               ledger)
         status_ok = a["status"] == expected or (expected == "found" and a["status"] == "partial" and j.facts_present)
         gold_cited = bool(cited & gold)
         full = j.facts_present and status_ok and gold_cited and not j.unsupported_claims
