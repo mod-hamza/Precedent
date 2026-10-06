@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 
 from rapidfuzz import fuzz
 
-from ..models import IdentityVerdict
+from ..models import IdentityVerdict, RoleGuess
 from .parse import ParsedEmail
 
 NAME_RATIO = 90
@@ -163,4 +163,31 @@ async def resolve_identities(emails: list[ParsedEmail], llm=None) -> tuple[list[
                      "identities": idents})
         for a in g.addrs:
             addr_to_pid[a] = pid
+    if llm is not None:
+        await infer_roles(emails, rows, groups, llm)
     return rows, addr_to_pid
+
+
+ROLE_PROMPT = """You infer a person's job role at their company from emails they sent and emails sent to them. Judge from
+behaviour: who approves what, who others ask for sign-off, what they are responsible for. Give a short job title
+(e.g. "CEO", "Head of Sales") only if the emails make it reasonably clear; otherwise null."""
+
+
+async def infer_roles(emails: list[ParsedEmail], rows: list[dict], groups: list[_Person], llm) -> None:
+    """Internal people whose signatures show no role get one inferred from behaviour (marked as inferred)."""
+    for row, g in zip(rows, groups):
+        if row["role_guess"] or not row["is_internal"]:
+            continue
+        sent = [e for e in emails if e.from_addr in g.addrs and e.new_text.strip()]
+        if len(sent) < 3:
+            continue
+        first = row["canonical_name"].split()[0]
+        received = [e for e in emails if g.addrs & set(e.to_addrs) and re.search(rf"\b{re.escape(first)}\b",
+                                                                                   e.new_text, re.I)]
+        parts = [f"PERSON: {row['canonical_name']}", "", "SENT BY THEM:"]
+        parts += [f"- {e.subject}: {e.new_text.strip()[:300]}" for e in sent[:8]]
+        parts += ["", "SENT TO THEM BY OTHERS:"]
+        parts += [f"- from {e.from_name}: {e.new_text.strip()[:300]}" for e in received[:8]]
+        guess = await llm.structured("FAST", ROLE_PROMPT, "\n".join(parts), RoleGuess, stage="identity_role")
+        if guess.role:
+            row["role_guess"] = f"{guess.role} (inferred from behaviour)"

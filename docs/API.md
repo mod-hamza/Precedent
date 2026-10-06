@@ -35,42 +35,42 @@ Counter strip, funnel and cost panel.
  "people": 43,
  "candidate_threads": 198,
  "filtered_pct": 46.8,
- "records": 97,
- "decisions": 63,
+ "records": 92,
+ "decisions": 65,
  "decisions_by_status": {
-  "active": 47,
+  "active": 51,
   "amended": 6,
   "contested": 2,
-  "superseded": 8
+  "superseded": 6
  },
  "conflicts": 2,
  "authority_flags": 2,
- "implicit": 1,
- "quotes_total": 510,
+ "implicit": 0,
+ "quotes_total": 474,
  "quotes_snapped": 2,
- "quotes_dropped": 11,
+ "quotes_dropped": 6,
  "evidence_verified_ratio": 1.0,
  "stage_seconds": {
-  "cluster": 104.1,
-  "extract": 310.6,
-  "index": 86.0,
-  "parse": null,
-  "reconcile": 178.5,
-  "triage": 7.5
+  "cluster": 0.0,
+  "extract": 271.6,
+  "index": 15.6,
+  "parse": 21.0,
+  "reconcile": 0.4,
+  "triage": 0.8
  },
  "usage_by_stage": [
   {
    "stage": "answer",
-   "calls": 3,
-   "tokens_in": 18806,
-   "tokens_out": 1029,
+   "calls": 281,
+   "tokens_in": 1792274,
+   "tokens_out": 168980,
    "cost_usd": 0.0
   },
   {
    "stage": "classify",
-   "calls": 3,
-   "tokens_in": 1002,
-   "tokens_out": 85,
+   "calls": 205,
+   "tokens_in": 79484,
+   "tokens_out": 7285,
    "cost_usd": 0.0
   },
   "..."
@@ -87,13 +87,13 @@ Ledger list. `status` may be comma-separated.
 [
  {
   "decision_id": "DEC-0001",
-  "cluster_id": "C-aee295a9",
-  "text": "Corvid hosting migration takes priority over v3 launch preparation work.",
+  "cluster_id": "C-ec2140ef",
+  "text": "V3 will launch on Wednesday 15 April 2026, with Corvid hosting migration taking priority in March and the date not communicated as a hard commitment to custo...",
   "decided_by": [
    "Marta Kowalczyk"
   ],
   "decided_at": "2026-01-15",
-  "status": "active",
+  "status": "superseded",
   "decision_type": "explicit",
   "authority_flag": false,
   "cross_thread": false,
@@ -101,12 +101,12 @@ Ledger list. `status` may be comma-separated.
  },
  {
   "decision_id": "DEC-0002",
-  "cluster_id": "C-e4307306",
-  "text": "v3 will launch on Wednesday 15 April 2026.",
+  "cluster_id": "C-2f06c705",
+  "text": "Stay on PayForge until Q2 2026 and revisit the switch to Ledgerly after the v3 launch.",
   "decided_by": [
-   "Priya Natarajan"
+   "Marta Kowalczyk"
   ],
-  "decided_at": "2026-01-15",
+  "decided_at": "2026-01-20",
   "status": "superseded",
   "decision_type": "explicit",
   "authority_flag": false,
@@ -124,21 +124,42 @@ Decision Drawer: evidence (with `forwarded`, `original_author`), history chain, 
 ```json
 {
  "decision_id": "DEC-0001",
- "cluster_id": "C-aee295a9",
- "text": "Corvid hosting migration takes priority over v3 launch preparation work.",
+ "cluster_id": "C-ec2140ef",
+ "text": "V3 will launch on Wednesday 15 April 2026, with Corvid hosting migration taking priority in March and the date not communicated as a hard commitment to custo...",
  "decided_by": [
   "Marta Kowalczyk"
  ],
  "decided_at": "2026-01-15",
- "status": "active",
+ "status": "superseded",
  "decision_type": "explicit",
  "authority_flag": false,
  "cross_thread": false,
  "confidence": 0.95,
- "rationale": "Dev raised the conflict between Corvid migration and v3 launch prep in March; Marta directed that Corvid goes first.",
- "alternatives": [],
+ "rationale": "Dev raised concern about overlap with Corvid migration and suggested treating the date as ambitious rather than promised. Marta confirmed the 15th with Corvi...",
+ "alternatives": [
+  "Treat 15 April as ambitious rather than promised"
+ ],
  "authority_note": null,
  "evidence": [
+  {
+   "message_id": "<6cee3c2553641796233c@parcelwise.example>",
+   "thread_id": "T-e84b70dd59",
+   "subject": "v3 launch date - proposing Wednesday 15 April",
+   "sender": "Priya Natarajan",
+   "sender_addr": "priya@parcelwise.example",
+   "sender_role": "Head of Product",
+   "date": "2026-01-13 11:20",
+   "sent_at": "2026-01-13T10:20:00+00:00",
+   "to": [
+    "marta@parcelwise.example",
+    "dev@parcelwise.example",
+    "..."
+   ],
+   "cc": [],
+   "quote": "I propose we launch v3 on Wednesday 15 April",
+   "role": "proposal",
+   "forwarded": false
+  },
   {
    "message_id": "<4ee982c19ab3280f2c1d@parcelwise.example>",
    "thread_id": "T-e84b70dd59",
@@ -153,27 +174,8 @@ Decision Drawer: evidence (with `forwarded`, `original_author`), history chain, 
     "marta@parcelwise.example"
    ],
    "cc": [],
-   "quote": "We also committed to the Corvid hosting migration in March, so launch prep and infrastructure work overlap in the same month",
+   "quote": "hold the 15th, but nobody sells a hard date to customers until we clear feature-complete in March",
    "role": "discussion",
-   "forwarded": false
-  },
-  {
-   "message_id": "<aa0bebe5a89fc61fcf35@parcelwise.example>",
-   "thread_id": "T-e84b70dd59",
-   "subject": "RE: v3 launch date - proposing Wednesday 15 April",
-   "sender": "Marta Kowalczyk",
-   "sender_addr": "marta@parcelwise.example",
-   "sender_role": null,
-   "date": "2026-01-15 08:12",
-   "sent_at": "2026-01-15T07:12:00+00:00",
-   "to": [
-    "priya@parcelwise.example",
-    "dev@parcelwise.example",
-    "..."
-   ],
-   "cc": [],
-   "quote": "dev, korvid idzie pierwsze",
-   "role": "confirmation",
    "forwarded": false
   },
   "..."
@@ -181,18 +183,42 @@ Decision Drawer: evidence (with `forwarded`, `original_author`), history chain, 
  "history": [
   {
    "decision_id": "DEC-0001",
-   "text": "Corvid hosting migration takes priority over v3 launch preparation work.",
+   "text": "V3 will launch on Wednesday 15 April 2026, with Corvid hosting migration taking priority in March and the date not communicated as a hard commitment to custo...",
    "decided_at": "2026-01-15",
+   "status": "superseded"
+  },
+  {
+   "decision_id": "DEC-0035",
+   "text": "The V3 launch is moved to the week of 11 May 2026, with RC freeze the week before.",
+   "decided_at": "2026-03-24",
    "status": "active"
+  },
+  "..."
+ ],
+ "edges": [
+  {
+   "src": "DEC-0035",
+   "dst": "DEC-0001",
+   "kind": "supersedes",
+   "scope": "full",
+   "aspect": null,
+   "rationale": "Burn-down data and Corvid migration collision made the original 15 April date unfeasible."
+  },
+  {
+   "src": "DEC-0054",
+   "dst": "DEC-0035",
+   "kind": "refines",
+   "scope": "partial",
+   "aspect": "rollout method",
+   "rationale": "Specifies the phased rollout within the already agreed launch week of 11 May."
   }
  ],
- "edges": [],
- "topic": "Corvid hosting migration and v3 launch timeline",
- "current_state": "As of 9 April 2026, the app tier is scheduled to move to Corvid on 18-19 April with Greg Ferrante performing the cutover under a EUR 18k budget cap and Ravi ...",
+ "topic": "v3 launch date and rollout",
+ "current_state": "The original 15 April 2026 launch date was superseded by a move to the week of 11 May due to bug burn-down and a Corvid migration collision. The launch appro...",
  "conflict_ids": [],
  "confidence_label": {
   "label": "high",
-  "why": "Explicit decision backed by 3 verified quotes from 3 emails."
+  "why": "Explicit decision backed by 4 verified quotes from 4 emails."
  }
 }
 ```
@@ -204,28 +230,27 @@ Topic lanes for the Timeline.
 ```json
 [
  {
-  "cluster_id": "C-aee295a9",
-  "topic": "Corvid hosting migration and v3 launch timeline",
-  "current_state": "As of 9 April 2026, the app tier is scheduled to move to Corvid on 18-19 April with Greg Ferrante performing the cutover under a EUR 18k budget cap and Ravi ...",
-  "n_decisions": 5,
+  "cluster_id": "C-ec2140ef",
+  "topic": "v3 launch date and rollout",
+  "current_state": "The original 15 April 2026 launch date was superseded by a move to the week of 11 May due to bug burn-down and a Corvid migration collision. The launch appro...",
+  "n_decisions": 4,
   "first_at": "2026-01-15",
-  "last_at": "2026-04-09",
+  "last_at": "2026-05-04",
   "statuses": [
    "active",
-   "amended"
+   "superseded"
   ]
  },
  {
-  "cluster_id": "C-e4307306",
-  "topic": "v3 launch planning and execution",
-  "current_state": "The v3 launch target shifted from 15 April to the week of 11 May, then was amended to a phased rollout starting 13 May (20%, Swiftbox in wave one) and comple...",
-  "n_decisions": 10,
-  "first_at": "2026-01-15",
-  "last_at": "2026-06-03",
+  "cluster_id": "C-2f06c705",
+  "topic": "Payment processor switch from PayForge to Ledgerly",
+  "current_state": "The company has committed to switch payment processing from PayForge to Ledgerly. The earlier decision to defer the switch until after Q2 and v3 launch was s...",
+  "n_decisions": 6,
+  "first_at": "2026-01-20",
+  "last_at": "2026-05-30",
   "statuses": [
    "active",
-   "amended",
-   "..."
+   "superseded"
   ]
  },
  "..."
@@ -238,48 +263,56 @@ One lane with its decisions and edges.
 
 ```json
 {
- "cluster_id": "C-aee295a9",
- "topic": "Corvid hosting migration and v3 launch timeline",
- "current_state": "As of 9 April 2026, the app tier is scheduled to move to Corvid on 18-19 April with Greg Ferrante performing the cutover under a EUR 18k budget cap and Ravi ...",
+ "cluster_id": "C-ec2140ef",
+ "topic": "v3 launch date and rollout",
+ "current_state": "The original 15 April 2026 launch date was superseded by a move to the week of 11 May due to bug burn-down and a Corvid migration collision. The launch appro...",
  "decisions": [
   {
    "decision_id": "DEC-0001",
-   "cluster_id": "C-aee295a9",
-   "text": "Corvid hosting migration takes priority over v3 launch preparation work.",
+   "cluster_id": "C-ec2140ef",
+   "text": "V3 will launch on Wednesday 15 April 2026, with Corvid hosting migration taking priority in March and the date not communicated as a hard commitment to custo...",
    "decided_by": [
     "Marta Kowalczyk"
    ],
    "decided_at": "2026-01-15",
-   "status": "active",
+   "status": "superseded",
    "decision_type": "explicit",
    "authority_flag": false,
    "cross_thread": false,
    "confidence": 0.95
   },
   {
-   "decision_id": "DEC-0008",
-   "cluster_id": "C-aee295a9",
-   "text": "Migrate hosting from NimbusHost to Corvid Cloud, with NimbusHost cancellation before 15 March and migration completed in March before v3 launch.",
+   "decision_id": "DEC-0035",
+   "cluster_id": "C-ec2140ef",
+   "text": "The V3 launch is moved to the week of 11 May 2026, with RC freeze the week before.",
    "decided_by": [
-    "Dev Raman"
+    "Marta Kowalczyk"
    ],
-   "decided_at": "2026-02-04",
-   "status": "amended",
+   "decided_at": "2026-03-24",
+   "status": "active",
    "decision_type": "explicit",
    "authority_flag": false,
-   "cross_thread": false,
+   "cross_thread": true,
    "confidence": 0.95
   },
   "..."
  ],
  "edges": [
   {
-   "src": "DEC-0042",
-   "dst": "DEC-0008",
-   "kind": "amends",
+   "src": "DEC-0035",
+   "dst": "DEC-0001",
+   "kind": "supersedes",
+   "scope": "full",
+   "aspect": null,
+   "rationale": "Burn-down data and Corvid migration collision made the original 15 April date unfeasible."
+  },
+  {
+   "src": "DEC-0054",
+   "dst": "DEC-0035",
+   "kind": "refines",
    "scope": "partial",
-   "aspect": "database stays on NimbusHost; only app tier moves to Corvid",
-   "rationale": "Cross-provider latency of ~40 ms p95 would break driver sync, and a full DB move this close to the v3 launch is too risky."
+   "aspect": "rollout method",
+   "rationale": "Specifies the phased rollout within the already agreed launch week of 11 May."
   }
  ]
 }
@@ -294,25 +327,10 @@ Nodes (with `lane`), edges and lanes for the lifecycle view.
  "nodes": [
   {
    "decision_id": "DEC-0001",
-   "cluster_id": "C-aee295a9",
-   "text": "Corvid hosting migration takes priority over v3 launch preparation work.",
+   "cluster_id": "C-ec2140ef",
+   "text": "V3 will launch on Wednesday 15 April 2026, with Corvid hosting migration taking priority in March and the date not communicated as a hard commitment to custo...",
    "decided_by": [
     "Marta Kowalczyk"
-   ],
-   "decided_at": "2026-01-15",
-   "status": "active",
-   "decision_type": "explicit",
-   "authority_flag": false,
-   "cross_thread": false,
-   "confidence": 0.95,
-   "lane": "Corvid hosting migration and v3 launch timeline"
-  },
-  {
-   "decision_id": "DEC-0002",
-   "cluster_id": "C-e4307306",
-   "text": "v3 will launch on Wednesday 15 April 2026.",
-   "decided_by": [
-    "Priya Natarajan"
    ],
    "decided_at": "2026-01-15",
    "status": "superseded",
@@ -320,37 +338,52 @@ Nodes (with `lane`), edges and lanes for the lifecycle view.
    "authority_flag": false,
    "cross_thread": false,
    "confidence": 0.95,
-   "lane": "v3 launch planning and execution"
+   "lane": "v3 launch date and rollout"
+  },
+  {
+   "decision_id": "DEC-0002",
+   "cluster_id": "C-2f06c705",
+   "text": "Stay on PayForge until Q2 2026 and revisit the switch to Ledgerly after the v3 launch.",
+   "decided_by": [
+    "Marta Kowalczyk"
+   ],
+   "decided_at": "2026-01-20",
+   "status": "superseded",
+   "decision_type": "explicit",
+   "authority_flag": false,
+   "cross_thread": false,
+   "confidence": 0.95,
+   "lane": "Payment processor switch from PayForge to Ledgerly"
   },
   "..."
  ],
  "edges": [
   {
-   "src": "DEC-0035",
-   "dst": "DEC-0029",
+   "src": "DEC-0057",
+   "dst": "DEC-0055",
    "kind": "supersedes",
    "scope": "full",
    "aspect": null,
-   "rationale": "Cash position review prompted downgrade from Silver to booth-only, reversing the prior commitment."
+   "rationale": "The formal suspension notice and termination policy replaced the friendly check-in outreach, as the account remained unpaid and legal steps were initiated."
   },
   {
-   "src": "DEC-0013",
-   "dst": "DEC-0005",
-   "kind": "amends",
-   "scope": "partial",
-   "aspect": "grandfathering of existing accounts",
-   "rationale": "Customer complaints and financial analysis showed the immediate increase for all accounts would cause churn and bad PR, leading to a 12-month grandfathering ..."
+   "src": "DEC-0028",
+   "dst": "DEC-0002",
+   "kind": "supersedes",
+   "scope": "full",
+   "aspect": "payment processor switch timing",
+   "rationale": "Leadership meeting and Marta's approval on 11 March 2026 committed to switching to Ledgerly, overriding the earlier decision to stay on PayForge until Q2 and..."
   },
   "..."
  ],
  "lanes": [
   {
-   "cluster_id": "C-e4307306",
-   "topic": "v3 launch planning and execution"
+   "cluster_id": "C-ec2140ef",
+   "topic": "v3 launch date and rollout"
   },
   {
-   "cluster_id": "C-aee295a9",
-   "topic": "Corvid hosting migration and v3 launch timeline"
+   "cluster_id": "C-2f06c705",
+   "topic": "Payment processor switch from PayForge to Ledgerly"
   },
   "..."
  ]
@@ -366,59 +399,14 @@ Contested topics, both sides with evidence.
  {
   "conflict_id": "CON-001",
   "cluster_id": "C-5141854b",
-  "topic": "Pro first-response SLA number dispute",
-  "summary": "After the March 25 leadership meeting, Lena Fischer circulated notes stating 2 business hours; Tomás Ibarra later claimed the agreement was 1 hour, and had c...",
-  "decision_id": "DEC-0034",
+  "topic": "Pro plan first-response SLA",
+  "summary": "Disagreement over the duration of the Pro plan first-response SLA agreed at the March 25 leadership meeting: Tomás Ibarra asserts 1 hour, while Lena Fischer'...",
+  "decision_id": "DEC-0036",
   "sides": [
    {
     "side": "A",
-    "claimant": "Lena Fischer (and meeting notes)",
-    "claim": "The agreed SLA for Pro customers is 2 business hours, based on the meeting notes circulated the same evening and not corrected at the time.",
-    "evidence": [
-     {
-      "message_id": "<095044386d6574958170@parcelwise.example>",
-      "thread_id": "T-18634db185",
-      "subject": "Notes: leadership meeting, Wed 25 March",
-      "sender": "Lena Fischer",
-      "sender_addr": "lena@parcelwise.example",
-      "sender_role": "Ops & Office Manager",
-      "date": "2026-03-25 17:10",
-      "sent_at": "2026-03-25T16:10:00+00:00",
-      "to": [
-       "leadership@parcelwise.example"
-      ],
-      "cc": [],
-      "quote": "Pro customers get a first-response SLA of 2 business hours, effective with the v3 launch",
-      "role": "recap",
-      "forwarded": false
-     },
-     {
-      "message_id": "<96c99aa09cd6b9f84091@parcelwise.example>",
-      "thread_id": "T-18634db185",
-      "subject": "RE: Discrepancy in the Pro first-response SLA - need to fix before it ships",
-      "sender": "Lena Fischer",
-      "sender_addr": "lena@parcelwise.example",
-      "sender_role": "Ops & Office Manager",
-      "date": "2026-04-09 08:56",
-      "sent_at": "2026-04-09T06:56:00+00:00",
-      "to": [
-       "aisha@parcelwise.example",
-       "tomas@parcelwise.example"
-      ],
-      "cc": [
-       "dev@parcelwise.example"
-      ],
-      "quote": "What I wrote down at the time, and what I circulated the same evening, was 2 business hours - I would not have invented that number, it came out of the discu...",
-      "role": "confirmation",
-      "forwarded": false
-     },
-     "..."
-    ]
-   },
-   {
-    "side": "B",
     "claimant": "Tomás Ibarra",
-    "claim": "The agreed SLA for Pro customers is 1 hour, as per his recollection of the meeting and the written commitment he made to customer Carla.",
+    "claim": "The agreed first-response SLA for Pro customers is 1 hour.",
     "evidence": [
      {
       "message_id": "<1e834432600f1c061700@parcelwise.example>",
@@ -439,22 +427,47 @@ Contested topics, both sides with evidence.
       "quote": "I'm certain it was 1 hour. We discussed it in the March leadership meeting, I remember it clearly because Carla's requirements were the whole reason it came ...",
       "role": "confirmation",
       "forwarded": false
-     },
+     }
+    ]
+   },
+   {
+    "side": "B",
+    "claimant": "Lena Fischer",
+    "claim": "The agreed first-response SLA for Pro customers is 2 business hours.",
+    "evidence": [
      {
-      "message_id": "<696c3c1690a5c6419658@parcelwise.example>",
+      "message_id": "<095044386d6574958170@parcelwise.example>",
       "thread_id": "T-18634db185",
-      "subject": "RE: Nordvik Logistics - SLA question",
-      "sender": "Tomás Ibarra",
-      "sender_addr": "tomas@parcelwise.example",
-      "sender_role": "Head of Sales",
-      "date": "2026-04-07 10:31",
-      "sent_at": "2026-04-07T08:31:00+00:00",
+      "subject": "Notes: leadership meeting, Wed 25 March",
+      "sender": "Lena Fischer",
+      "sender_addr": "lena@parcelwise.example",
+      "sender_role": "Ops & Office Manager",
+      "date": "2026-03-25 17:10",
+      "sent_at": "2026-03-25T16:10:00+00:00",
       "to": [
-       "samir@parcelwise.example"
+       "leadership@parcelwise.example"
       ],
       "cc": [],
-      "quote": "that's the standard Pro commitment now, reuse it wherever it helps",
-      "role": "discussion",
+      "quote": "Pro customers get a first-response SLA of 2 business hours, effective with the v3 launch",
+      "role": "recap",
+      "forwarded": false
+     },
+     {
+      "message_id": "<f3e25747c925263b35a7@parcelwise.example>",
+      "thread_id": "T-18634db185",
+      "subject": "RE: Notes: leadership meeting, Wed 25 March",
+      "sender": "Aisha Bello",
+      "sender_addr": "aisha@parcelwise.example",
+      "sender_role": "Head of Customer Success",
+      "date": "2026-03-26 09:34",
+      "sent_at": "2026-03-26T08:34:00+00:00",
+      "to": [
+       "lena@parcelwise.example",
+       "leadership@parcelwise.example"
+      ],
+      "cc": [],
+      "quote": "2 business hours first response for Pro will need a small shift in the rota so the queue is watched continuously during business hours",
+      "role": "confirmation",
       "forwarded": false
      }
     ]
@@ -464,15 +477,15 @@ Contested topics, both sides with evidence.
  },
  {
   "conflict_id": "CON-002",
-  "cluster_id": "C-3c59e4c3",
+  "cluster_id": "C-b8f22f04",
   "topic": "On-call rotation structure",
-  "summary": "Dev Raman announced a two-person weekly rotation on April 21; Priya Natarajan objected that a four-person rotation had been agreed in an earlier roadmap revi...",
-  "decision_id": "DEC-0045",
+  "summary": "Two incompatible descriptions of the on-call rotation exist. Dev Raman and Jonas Eklund state it was decided as a two-person alternation; Priya Natarajan ass...",
+  "decision_id": "DEC-0049",
   "sides": [
    {
     "side": "A",
     "claimant": "Dev Raman",
-    "claim": "The on-call rotation will be two people alternating weekly: Jonas Eklund and Ravi Menon, with escalation to Dev.",
+    "claim": "Two-person weekly rotation: Jonas Eklund one week, Ravi Menon the next, escalation to Dev Raman for issues beyond P1.",
     "evidence": [
      {
       "message_id": "<30378dcc71acbe443450@parcelwise.example>",
@@ -492,7 +505,7 @@ Contested topics, both sides with evidence.
        "priya@parcelwise.example"
       ],
       "quote": "on-call: we're starting a weekly rotation next week. Two people, alternating: Jonas one week, Ravi the next. Simple, covers evenings and weekends, escalation...",
-      "role": "recap",
+      "role": "confirmation",
       "forwarded": false
      },
      {
@@ -501,7 +514,7 @@ Contested topics, both sides with evidence.
       "subject": "RE: recap: standup + on-call rotation",
       "sender": "Jonas Eklund",
       "sender_addr": "jonas@parcelwise.example",
-      "sender_role": null,
+      "sender_role": "Head of Engineering (inferred from behaviour)",
       "date": "2026-04-21 10:04",
       "sent_at": "2026-04-21T08:04:00+00:00",
       "to": [
@@ -510,15 +523,16 @@ Contested topics, both sides with evidence.
       ],
       "cc": [],
       "quote": "two is fine. fwiw",
-      "role": "discussion",
+      "role": "approval",
       "forwarded": false
-     }
+     },
+     "..."
     ]
    },
    {
     "side": "B",
     "claimant": "Priya Natarajan",
-    "claim": "The on-call rotation was previously agreed in a roadmap review to include four people: Jonas, Ravi, Greg, and Elena once onboarded.",
+    "claim": "Four-person weekly rotation: Jonas Eklund, Ravi Menon, Greg Ferrante, and Elena Voss once onboarded.",
     "evidence": [
      {
       "message_id": "<c7a1e8b92d1a3e0c712f@parcelwise.example>",
@@ -538,28 +552,7 @@ Contested topics, both sides with evidence.
        "..."
       ],
       "quote": "In the roadmap review two weeks ago we discussed exactly this, and my understanding was that the rotation would include Greg and Elena once she's onboarded -...",
-      "role": "objection",
-      "forwarded": false
-     },
-     {
-      "message_id": "<58b6bc7515f2b2abda3e@parcelwise.example>",
-      "thread_id": "T-dad84e2173",
-      "subject": "RE: recap: standup + on-call rotation",
-      "sender": "Priya Natarajan",
-      "sender_addr": "priya@parcelwise.example",
-      "sender_role": "Head of Product",
-      "date": "2026-04-22 09:30",
-      "sent_at": "2026-04-22T07:30:00+00:00",
-      "to": [
-       "dev@parcelwise.example"
-      ],
-      "cc": [
-       "jonas@parcelwise.example",
-       "ravi@parcelwise.example",
-       "..."
-      ],
-      "quote": "can we take 20 minutes in Thursday's product-eng sync and come out with one written rotation - who is in, when it starts, and what Greg is and isn't contract...",
-      "role": "discussion",
+      "role": "confirmation",
       "forwarded": false
      }
     ]
@@ -576,21 +569,22 @@ URL-encode the message id (it contains `<`, `@`, `>`). Returns the split text an
 
 ```json
 {
- "message_id": "<4ee982c19ab3280f2c1d@parcelwise.example>",
+ "message_id": "<6cee3c2553641796233c@parcelwise.example>",
  "thread_id": "T-e84b70dd59",
- "subject": "RE: v3 launch date - proposing Wednesday 15 April",
- "sender": "Dev Raman",
- "sender_addr": "dev@parcelwise.example",
- "sender_role": "CTO & co-founder",
- "date": "2026-01-14 09:38",
- "sent_at": "2026-01-14T08:38:00+00:00",
+ "subject": "v3 launch date - proposing Wednesday 15 April",
+ "sender": "Priya Natarajan",
+ "sender_addr": "priya@parcelwise.example",
+ "sender_role": "Head of Product",
+ "date": "2026-01-13 11:20",
+ "sent_at": "2026-01-13T10:20:00+00:00",
  "to": [
-  "priya@parcelwise.example",
-  "marta@parcelwise.example"
+  "marta@parcelwise.example",
+  "dev@parcelwise.example",
+  "..."
  ],
  "cc": [],
- "new_text": "Concern: 15 April is tight. We also committed to the Corvid hosting migration in March, so launch prep and infrastructure work overlap in the same month. If ...",
- "quoted_text": "-----Original Message-----\nFrom: Priya Natarajan <priya@parcelwise.example>\nSent: Tue, 13 Jan 2026 11:20:00 +0100\nTo: marta@parcelwise.example, dev@parcelwis...",
+ "new_text": "Hi all,\n\nQuick recap of where v3 stands and a date proposal:\n\n1. Route optimization and the new dashboard are on track for feature-complete by mid-March\n2. R...",
+ "quoted_text": "",
  "fwd_text": "",
  "fwd_meta": null,
  "attachments": [],
@@ -643,67 +637,59 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
 
 ```json
 {
- "question": "What is the first-response SLA for Pro customers?",
- "status": "contested",
- "answer_md": "The first-response SLA for Pro customers is disputed. Lena Fischer's meeting notes record it as 2 business hours, effective with the v3 launch [^1]. Tomás Ib...",
+ "question": "Why is the database still on NimbusHost?",
+ "status": "found",
+ "answer_md": "The database remains on NimbusHost because cross-provider latency of ~40 ms p95 between Corvid (app tier) and NimbusHost (database) would break driver sync, ...",
  "citations": [
   {
    "n": 1,
-   "message_id": "<095044386d6574958170@parcelwise.example>",
-   "quote": "Pro customers get a first-response SLA of 2 business hours, effective with the v3 launch",
-   "sender": "Lena Fischer",
-   "date": "2026-03-25",
-   "subject": "Notes: leadership meeting, Wed 25 March"
+   "message_id": "<5a103cb72730ca717fad@parcelwise.example>",
+   "quote": "40 ms p95 added latency would break driver sync, and a full DB move with cross-provider replication this close to the v3 launch is exactly the kind of risk G...",
+   "sender": "Dev Raman",
+   "date": "2026-04-09",
+   "subject": "RE: benchmark: app tier on corvid vs db on nimbus - latency"
   },
   {
    "n": 2,
-   "message_id": "<1e834432600f1c061700@parcelwise.example>",
-   "quote": "I'm certain it was 1 hour. We discussed it in the March leadership meeting, I remember it clearly because Carla's requirements were the whole reason it came ...",
-   "sender": "Tomás Ibarra",
-   "date": "2026-04-08",
-   "subject": "RE: Discrepancy in the Pro first-response SLA - need to fix before it ships"
+   "message_id": "<5a103cb72730ca717fad@parcelwise.example>",
+   "quote": "We're keeping the production database on NimbusHost managed Postgres. Only the app tier moves to Corvid",
+   "sender": "Dev Raman",
+   "date": "2026-04-09",
+   "subject": "RE: benchmark: app tier on corvid vs db on nimbus - latency"
   },
   "..."
  ],
  "decision_ids": [
-  "DEC-0034",
-  "DEC-0041"
+  "DEC-0007",
+  "DEC-0044"
  ],
  "decisions": [
   {
-   "decision_id": "DEC-0034",
-   "canonical_text": "Pro customers get a first-response SLA of either 1 hour (as claimed by Tomás Ibarra) or 2 business hours (as recorded by Lena Fischer), effective with the v3...",
-   "status": "contested",
-   "decided_at": "2026-03-25",
+   "decision_id": "DEC-0007",
+   "canonical_text": "Migrate hosting from NimbusHost to Corvid Cloud, including app tier and managed Postgres, with NimbusHost cancellation before 15 March and migration complete...",
+   "status": "amended",
+   "decided_at": "2026-02-04",
    "decision_type": "explicit",
    "authority_flag": 0
   },
   {
-   "decision_id": "DEC-0041",
-   "canonical_text": "Pause all external quotation of the Pro SLA until Marta resolves whether the correct first-response time is 1 hour or 2 business hours.",
+   "decision_id": "DEC-0044",
+   "canonical_text": "Keep the production database on NimbusHost managed Postgres; only the app tier moves to Corvid (hybrid setup), with DB migration revisited after v3 launch.",
    "status": "active",
    "decided_at": "2026-04-09",
    "decision_type": "explicit",
    "authority_flag": 0
   }
  ],
- "confidence": "high",
+ "confidence": "medium",
  "model_confidence": "high",
  "caveats": [
-  "No evidence of Marta's final ruling on the dispute is present in the mailbox."
+  "No subsequent decision to actually execute the deferred DB migration has been found in this mailbox"
  ],
- "closest": [
-  {
-   "message_id": "<f3e25747c925263b35a7@parcelwise.example>",
-   "why": "Aisha Bello discusses operational planning for the 2-hour version but does not resolve the dispute.",
-   "sender": "Aisha Bello",
-   "date": "2026-03-26",
-   "subject": "RE: Notes: leadership meeting, Wed 25 March"
-  }
- ],
- "question_type": "current_state",
+ "closest": [],
+ "question_type": "why",
  "verification_errors": [],
- "latency_ms": 8207
+ "latency_ms": 17
 }
 ```
 
@@ -715,7 +701,7 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
 {
  "question": "Did we decide to open a Lisbon office?",
  "status": "no_decision",
- "answer_md": "No decision was found to open a Lisbon office. Tomás Ibarra proposed a small satellite office in Lisbon on 12 February 2026 [^1], but Marta Kowalczyk deferre...",
+ "answer_md": "No decision was found to open a Lisbon office. Tomás Ibarra proposed a small satellite office in Lisbon on 2026-02-12, citing growing Portuguese courier dema...",
  "citations": [
   {
    "n": 1,
@@ -739,19 +725,20 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
  "confidence": "medium",
  "model_confidence": "high",
  "caveats": [
-  "Decisions made by phone or in person are not visible"
+  "Marta's reply is a deferral, not a formal rejection; the idea could resurface if the Iberian pipeline grows.",
+  "1 statement(s) without a verified citation were removed (citations or silence)."
  ],
  "closest": [
   {
    "message_id": "<bce0a5c0da4b5354db26@parcelwise.example>",
-   "why": "Proposal from Tomás Ibarra to open a Lisbon satellite office; no approval was given",
+   "why": "Tomás's proposal to open a Lisbon satellite office — never approved, only deferred by Marta.",
    "sender": "Tomás Ibarra",
    "date": "2026-02-12",
    "subject": "Lisbon satellite office - big opportunity 🚀"
   },
   {
    "message_id": "<fb364b03dcb49d93ca90@parcelwise.example>",
-   "why": "Marta Kowalczyk deferred the proposal with a condition (Iberian pipeline justification) that was never recorded as met",
+   "why": "Marta's reply explicitly defers the idea ('not now') rather than approving or formally rejecting it.",
    "sender": "Marta Kowalczyk",
    "date": "2026-02-17",
    "subject": "RE: Lisbon satellite office - big opportunity 🚀"
@@ -759,7 +746,7 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
  ],
  "question_type": "existence",
  "verification_errors": [],
- "latency_ms": 7611
+ "latency_ms": 18
 }
 ```
 

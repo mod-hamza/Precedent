@@ -23,6 +23,9 @@ CLARIFICATIONS
 - Trivial logistics are out of scope even when settled: office furniture, equipment colours, kitchen or snack
   supplies, desk or room bookings, meeting slots, social events. Do not output them.
 - A plan the sender takes back ("scratch that", "ignore my last email", "actually, hold off") is stance=retracted.
+- An offer, price or commitment that has already been communicated to an outside party (a customer, vendor or
+  candidate) is stance=final from the company's side, even if the sender may lack authority for it; record the doubt
+  in authority_note instead of downgrading the stance. Whether it was later replaced is decided in a later step.
 - When someone with authority announces something as settled ("we're starting X next week", a recap stating X was
   agreed), that is a decision record with stance=final even if others object afterwards; objections that do not
   reverse it are evidence with role=objection, not a reason to drop the record.

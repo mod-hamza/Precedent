@@ -152,7 +152,9 @@ def _fix_statuses(out: ClusterOutcome) -> None:
 
 async def reconcile_cluster(llm: LLM, conn: sqlite3.Connection, cid: str, stats: QuoteStats) -> ClusterOutcome:
     recs = _records(conn, cid)
-    if len(recs) == 1 and recs[0]["stance"] not in NON_FINAL:
+    # A lone final record becomes a decision directly, unless the extractor raised an authority doubt: whether that
+    # is a real flag (nobody with authority approved before it went out) needs the reasoning step.
+    if len(recs) == 1 and recs[0]["stance"] not in NON_FINAL and not recs[0]["authority_note"]:
         return direct_decision(conn, cid, recs[0])
 
     prompt, r_map, e_map = build_prompt(conn, recs)

@@ -10,7 +10,8 @@ def markdown(payload: dict) -> str:
     t = payload["targets"]
     g = payload["global"]
     lines = [f"# Precedent scorecard", "", f"_{payload['banner']}_  commit `{payload['git_commit']}`", "",
-             "| Metric | Target | " + " | ".join(s.title() for s in payload["splits"]) + " |",
+             "| Metric | Target | " + " | ".join(f"{s.title()} (`{r.get('git_commit', '?')}`)"
+                                                  for s, r in payload["splits"].items()) + " |",
              "|---|---|" + "---|" * len(payload["splits"])]
 
     def row(name, target, fn):

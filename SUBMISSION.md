@@ -4,11 +4,10 @@
 
 We help small teams that run on email solve lost and re-argued decisions through a decision ledger and an AI that
 extracts, links and cites every decision, cutting the time to answer "why did we choose this?" from minutes of inbox
-searching to seconds, with **{RECALL}** recall and **100%** verbatim evidence on a 560-email benchmark with hidden
-ground truth (holdout split).
+searching to seconds, with **87%** decision recall and **100%** verbatim evidence on the held-out part of a 560-email
+benchmark with hidden ground truth.
 
-> Numbers in `{BRACES}` are filled from `eval/results/scorecard.md` after the frozen holdout run.
-> Sections marked **[TEAM]** need your input.
+> Sections marked **[TEAM]** need your input. All numbers come from `eval/results/scorecard.md`.
 
 ---
 
@@ -88,7 +87,7 @@ threading breaks, reply quoting styles and signatures. Split: dev 349 emails / h
 **Integrity.** The pipeline never reads the ground truth (a test enforces it). During the build we found and fixed a
 label leak: the original Message-IDs and filenames contained the planted thread keys (D13 / F176), which would have
 let a model tell decisions from filler by ID; they were replaced with opaque IDs before any tuning. Prompts were tuned
-on dev only; the holdout was run once, after freezing (git tag `{HOLDOUT_TAG}`).
+on dev only; the holdout was run once, after freezing (git tags `holdout-freeze` and `holdout-results`).
 
 **Development tools.** **[TEAM: list the tools and assistants used to build this, honestly.]**
 
@@ -99,24 +98,40 @@ with no network access.
 
 ## 06 Business Value
 
-Scorecard (holdout unless noted; full table in `eval/results/scorecard.md`):
+Scorecard. Dev was used for tuning; the holdout was run **once** on the frozen commit (`holdout-freeze`, 0de46ce).
+Full tables in `eval/results/scorecard.md`.
 
-| Metric | Target | Result |
-|---|---|---|
-| Decision recall | >= 85% | {RECALL} |
-| Decision precision (strict, vs 40 planted) | >= 85% | {PRECISION} |
-| Near-decision false positives | <= 2 of 10 | {NEAR_FP} |
-| Supersession-link accuracy | >= 80% | {EDGES} |
-| Conflicts detected | >= 2 of 3 | {CONFLICTS} |
-| Quote validity | 100% | 100% (enforced in code, proven by a test) |
-| Evidence support | >= 90% | {EVIDENCE} |
-| Q&A accuracy | >= 85% of 30 | {QA} |
-| "No decision" correctness | 5/5 | {NO_DECISION} |
-| Answer latency p50 | < 8 s | {LATENCY} |
-| Pipeline wall-clock, 560 emails | < 25 min | {PIPELINE_MIN} |
+| Metric | Target | Dev (25 decisions) | Holdout (15 decisions) |
+|---|---|---|---|
+| Decision recall | >= 85% | 98% | **87%** |
+| Decision precision (strict, vs the planted set) | >= 85% | 74% | **46%** |
+| ... of the unmatched predictions, judged genuine decisions | context | 8 of 8 | 12 of 15 |
+| Near-decision false positives | <= 2 of 10 | 0 of 5 | **0 of 5** (0 of 10 overall) |
+| Supersession-link accuracy | >= 80% | 90% | **33%** (1 of 3) |
+| Conflicts detected | >= 2 of 3 | 2 of 2 | **0 of 1** (2 of 3 overall) |
+| Quote validity | 100% | 100% | **100%** (enforced in code, proven by a test) |
+| Evidence support | >= 90% | 100% | **100%** |
+| Q&A accuracy (rubric, LLM-judged) | >= 85% of 30 | 68% of 19 | **68% of 11** |
+| "No decision" correctness | 5/5 | 4/4 | **1/1** (5/5 overall) |
+| Answer latency p50 | < 8 s | 15.8 s | **17.3 s** |
+| Triage recall | >= 98% | 100% | **100%** |
+| Pipeline wall-clock, 560 emails | < 25 min | 9.8 min (Stages 1-5, cached re-runs are free) | |
 
-Below-target numbers are reported as measured. **Stopwatch test [TEAM]:** manual search in a raw mailbox viewer vs
-Precedent's p50 on 5 questions.
+**Reading the numbers honestly.**
+- *Precision* is strict against the 40 planted decisions, so real decisions the planted set does not list count as
+  errors; the judge rated 12 of the 15 unmatched holdout predictions as genuine decisions (e.g. small approvals).
+- *Holdout misses.* The Redline 15% discount (an offer a salesperson sent without sign-off) was extracted as a
+  "proposal" instead of an unauthorised commitment, which also cost its supersession link. The office-lease renewal
+  *is* in the ledger ("Renew the Keizersgracht office lease for 12 months at EUR 6,200") but the judge did not match it
+  to the reference wording ("Rotterdam office lease"); we report the judged number unchanged. The Q2 marketing budget
+  dispute (EUR 40k vs 30k) was recorded as separate decisions instead of a conflict.
+- *Latency.* Answers use a 2k-token reasoning budget: dev Q&A was 63% without it at ~7 s. We chose accuracy over the
+  8 s target; demo mode serves cached answers instantly.
+- *Post-holdout change.* After the holdout run we fixed the first miss (offers already sent to a customer are now
+  recorded as decisions with an authority note). The holdout column above is from the frozen commit and was not
+  re-run; the demo runs the fixed version. Two further post-holdout changes: internal people whose signatures show no role get one inferred from behaviour (e.g. the CEO signs "M"), and sentences without a verified citation are removed from answers. Dev after these changes: recall 96%, precision 67%, supersession 80%, conflicts 2 of 2, near-decision false positives 0 of 5, Q&A 68% of 19, no-decision 4/4. Live Q&A scores vary by about +/-7 points between identical runs (the answer model and the LLM judge both vary), so treat single Q&A numbers as approximate.
+
+**Stopwatch test [TEAM]:** manual search in a raw mailbox viewer vs Precedent's answer time on 5 questions.
 
 ## 07 Risks & Next Steps
 

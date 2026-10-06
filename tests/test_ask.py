@@ -55,3 +55,20 @@ def test_redaction_keeps_ids_and_numbers():
     out = redact({"message_id": "<a@b.example>", "quote": "mail ines@audit.example, EUR 18,000, +31 10 123 4567"})
     assert out["message_id"] == "<a@b.example>"
     assert out["quote"] == "mail [email], EUR 18,000, [phone]"
+
+
+def test_citations_or_silence_drops_uncited_sentences():
+    from backend.pipeline.ask import enforce_citations
+    md = "We switch to Ledgerly on 6 July [^1]. It saves money. Helen agreed [^2]. Marta signed off [^3]."
+    out, dropped = enforce_citations(md, {1, 2}, "found")
+    assert out == "We switch to Ledgerly on 6 July [^1]. Helen agreed [^2]."
+    assert dropped == 2
+    out, dropped = enforce_citations("No decision was found on a free tier. Chloe proposed it [^1].", {1}, "found")
+    assert out.startswith("No decision was found") and dropped == 0
+
+
+def test_no_decision_status_detection():
+    from backend.pipeline.ask import _NO_DECISION_RE
+    assert _NO_DECISION_RE.match("No decision to rewrite the backend in Kotlin was made.")
+    assert _NO_DECISION_RE.match("No decision was found to open a Lisbon office.")
+    assert not _NO_DECISION_RE.match("We decided to switch providers.")

@@ -11,7 +11,6 @@ from __future__ import annotations
 
 import asyncio
 import json
-import os
 import sqlite3
 import sys
 
@@ -54,14 +53,17 @@ def warm(extra: list[str] | None = None) -> None:
 def serve() -> None:
     if not DEMO_DB.exists():
         sys.exit("no snapshot: run python -m backend.demo snapshot first")
-    os.environ["PRECEDENT_OFFLINE"] = "1"
     conn = connect()
     src = sqlite3.connect(DEMO_DB)
     src.backup(conn)
     src.close()
     conn.close()
-    from .app import main
-    main()
+    from . import app as app_mod
+    from . import llm as llm_mod
+    # settings were read at import time, so switch the running app into demo mode explicitly
+    app_mod.STATE["demo_mode"] = True
+    llm_mod.RUNTIME["offline"] = True
+    app_mod.main()
 
 
 if __name__ == "__main__":

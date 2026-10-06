@@ -192,6 +192,35 @@ def build_context(conn: sqlite3.Connection, dec_ids: list[str], pas_ids: list[in
     return "\n".join(out), alias, list(decs)
 
 
+_NO_DECISION_RE = re.compile(r"\s*(no\b[^.]{0,80}?\bdecision\b|there (is|was) no (recorded )?decision|"
+                             r"(we|the company) (did not|never) decide)", re.I)
+_MARKER_RE = re.compile(r"\s*\[\^(\d+)\]")
+
+
+def enforce_citations(md: str, verified: set[int], status: str) -> tuple[str, int]:
+    """Citations or silence (PRD §10.1): drop markers whose citation failed verification, then drop every sentence
+    left without a verified citation. A leading status sentence ("No decision was found ...", "This is contested")
+    is kept, since it states the outcome rather than a fact from an email. Returns (text, sentences dropped)."""
+    md = _MARKER_RE.sub(lambda m: m.group(0) if int(m.group(1)) in verified else "", md)
+    kept, dropped = [], 0
+    for li, line in enumerate(md.split("\n")):
+        if not line.strip():
+            kept.append(line)
+            continue
+        sentences = re.split(r"(?<=[.!?\]])\s+(?=[A-Z\"“(*])", line)
+        out = []
+        for si, s in enumerate(sentences):
+            first = li == 0 and si == 0
+            status_line = first and (status in ("no_decision", "contested", "partial") or _NO_DECISION_RE.match(s))
+            if _MARKER_RE.search(s) or status_line or not re.search(r"\w", s):
+                out.append(s)
+            else:
+                dropped += 1
+        kept.append(" ".join(out))
+    text = "\n".join(kept).strip()
+    return re.sub(r"\n{3,}", "\n\n", text), dropped
+
+
 def check_answer(ans: Answer, texts: dict[str, tuple[str, str]], rev: dict[str, str], known_decisions: set[str]
                  ) -> tuple[list[dict], list[str]]:
     """Verify citations; returns (verified citations with real message ids, error strings)."""
@@ -257,8 +286,14 @@ async def ask(conn: sqlite3.Connection, llm: LLM, embedder: Embedder, question: 
         cites2, errors2 = check_answer(ans2, texts, rev, set(known))
         if len(errors2) <= len(errors):
             ans, cites, errors = ans2, cites2, errors2
+    # The status drives the UI state; keep it consistent with what the answer actually says.
+    if ans.status in ("found", "partial") and _NO_DECISION_RE.match(ans.answer_md):
+        ans.status = "no_decision"
     caveats = list(ans.caveats)
-    if errors:
+    answer_md, dropped = enforce_citations(ans.answer_md, {c["n"] for c in cites}, ans.status)
+    if dropped:
+        caveats.append(f"{dropped} statement(s) without a verified citation were removed (citations or silence).")
+    elif errors:
         caveats.append("Some citations could not be verified against the emails and were removed.")
     conf = confidence(conn, ans, cites, errors)
 
@@ -277,7 +312,7 @@ async def ask(conn: sqlite3.Connection, llm: LLM, embedder: Embedder, question: 
         f"SELECT decision_id, canonical_text, status, decided_at, decision_type, authority_flag FROM decisions "
         f"WHERE decision_id IN ({','.join('?' * len(ans.decision_ids))})", ans.decision_ids)] if ans.decision_ids else []
     latency = int((time.perf_counter() - t0) * 1000)
-    result = {"question": question, "status": ans.status, "answer_md": ans.answer_md, "citations": cite_meta,
+    result = {"question": question, "status": ans.status, "answer_md": answer_md, "citations": cite_meta,
               "decision_ids": [d["decision_id"] for d in used], "decisions": used, "confidence": conf,
               "model_confidence": ans.confidence, "caveats": caveats, "closest": closest,
               "question_type": qc.type if qc else None, "verification_errors": errors, "latency_ms": latency}

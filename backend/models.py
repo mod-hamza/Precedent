@@ -14,6 +14,11 @@ class IdentityVerdict(BaseModel):
     reason: str = Field(description="one short sentence")
 
 
+class RoleGuess(BaseModel):
+    role: str | None = Field(description="short job title, or null if the emails do not show it")
+    basis: str = Field(description="one short sentence")
+
+
 # ---------- Stage 1: triage (FAST) ----------
 Signal = Literal["none", "discussion", "proposal", "approval", "decision", "reversal", "commitment", "question"]
 
