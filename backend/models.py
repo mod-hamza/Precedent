@@ -135,3 +135,13 @@ class Answer(BaseModel):
     confidence: Literal["high", "medium", "low"]
     caveats: list[str]
     closest: list[Closest]
+
+
+# ---------- Stage 3: clustering (REASON) ----------
+class TopicGroup(BaseModel):
+    label: str = Field(description="short topic name, e.g. 'Payment provider'")
+    record_ids: list[str]
+
+
+class ClusterResult(BaseModel):
+    groups: list[TopicGroup]

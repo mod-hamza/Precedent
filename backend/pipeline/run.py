@@ -15,7 +15,10 @@ from typing import Callable
 
 from ..llm import LLM, LLMError
 from .context import _names, load_thread, thread_ids
+from .cluster import run_cluster
 from .extract import extract_thread
+from .index import run_index
+from .reconcile import reconcile_cluster, write_ledger
 from .triage import triage_thread
 from .verify import QuoteStats
 
@@ -102,7 +105,56 @@ async def stage_extract(llm: LLM, conn: sqlite3.Connection, tids: list[str], emi
     return notes
 
 
-STAGES = {"triage": stage_triage, "extract": stage_extract}
+async def stage_cluster(llm: LLM, conn: sqlite3.Connection, tids: list[str], emit: Emit) -> dict:
+    started, t0 = _now(), time.perf_counter()
+    notes = await run_cluster(conn, llm=llm)
+    notes["seconds"] = round(time.perf_counter() - t0, 1)
+    _log_run(conn, llm.run_id, "cluster", started, notes["records"], notes["clusters"], notes)
+    emit({"event": "stage_done", "stage": "cluster", **notes})
+    return notes
+
+
+async def stage_reconcile(llm: LLM, conn: sqlite3.Connection, tids: list[str], emit: Emit) -> dict:
+    started, t0 = _now(), time.perf_counter()
+    cids = [r[0] for r in conn.execute("SELECT cluster_id FROM clusters ORDER BY cluster_id")]
+    stats = QuoteStats()
+    done, errors, outcomes = 0, [], []
+
+    async def one(cid: str) -> None:
+        nonlocal done
+        local = QuoteStats()
+        try:
+            outcomes.append(await reconcile_cluster(llm, conn, cid, local))
+        except (LLMError, ValueError) as ex:
+            errors.append(f"{cid}: {ex}"[:200])
+        stats.add(local)
+        done += 1
+        emit({"event": "progress", "stage": "reconcile", "done": done, "total": len(cids)})
+
+    await asyncio.gather(*(one(c) for c in cids))
+    notes = write_ledger(conn, outcomes)
+    for o in outcomes:
+        for d in o.decisions:
+            emit({"event": "decision_found", "decision_id": d.final_id, "text": d.canonical_text,
+                  "date": d.decided_at, "status": d.status})
+    notes.update({"clusters": len(cids), **stats.as_dict(), "dropped_examples": stats.dropped_examples[:5],
+                  "errors": errors[:10], "n_errors": len(errors), "seconds": round(time.perf_counter() - t0, 1)})
+    _log_run(conn, llm.run_id, "reconcile", started, len(cids), notes["decisions"], notes)
+    emit({"event": "stage_done", "stage": "reconcile", **notes})
+    return notes
+
+
+async def stage_index(llm: LLM, conn: sqlite3.Connection, tids: list[str], emit: Emit) -> dict:
+    started, t0 = _now(), time.perf_counter()
+    notes = await asyncio.get_running_loop().run_in_executor(None, run_index, conn)
+    notes["seconds"] = round(time.perf_counter() - t0, 1)
+    _log_run(conn, llm.run_id, "index", started, notes["passages"], notes["decisions"], notes)
+    emit({"event": "stage_done", "stage": "index", **notes})
+    return notes
+
+
+STAGES = {"triage": stage_triage, "extract": stage_extract, "cluster": stage_cluster, "reconcile": stage_reconcile,
+          "index": stage_index}
 
 
 async def run_pipeline(conn: sqlite3.Connection, stages: list[str], run_id: str | None = None,

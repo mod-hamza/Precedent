@@ -43,10 +43,19 @@ _ROLE_DEFAULTS = {
     # spot check at ~26 s.
     "openai": {"FAST": ("qwen3.8-flash", None, 4000, False, None),
                "CORE": ("qwen3.8-max", None, 16000, True, 3000),
-               "REASON": ("deepseek-v4-pro", None, 32000, True, 6000)},
+               "REASON": ("deepseek-v4-pro", None, 32000, True, 12000),
+               # eval judge: a different model family from the extractor (PRD §11)
+               "JUDGE": ("deepseek-v4-pro", None, 8000, True, 4000),
+               # second pass for hard threads: CORE found nothing although triage saw a decision signal
+               "CORE_DEEP": ("qwen3.8-max", None, 24000, True, 12000),
+               # Ask-time answers: same model as CORE, reasoning off for the p50 < 8 s latency target
+               "ANSWER": ("qwen3.8-max", None, 8000, False, None)},
     "anthropic": {"FAST": ("claude-haiku-4-5-20251001", None, 4000, False, None),
                   "CORE": ("claude-sonnet-5-5", "medium", 16000, True, None),
-                  "REASON": ("claude-opus-5-5", "high", 32000, True, None)},
+                  "REASON": ("claude-opus-5-5", "high", 32000, True, None),
+                  "CORE_DEEP": ("claude-sonnet-5-5", "high", 24000, True, None),
+                  "JUDGE": ("claude-opus-5-5", "medium", 8000, True, None),
+                  "ANSWER": ("claude-sonnet-5-5", "low", 8000, True, None)},
 }
 
 

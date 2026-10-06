@@ -16,7 +16,7 @@ from .run import STAGES, run_pipeline
 
 def main() -> None:
     ap = argparse.ArgumentParser(description="Run pipeline stages over the ingested mailbox")
-    ap.add_argument("--stages", default="triage,extract")
+    ap.add_argument("--stages", default="triage,extract,cluster,reconcile,index")
     ap.add_argument("--thread", action="append", help="restrict to these thread ids (repeatable)")
     ap.add_argument("--limit", type=int, help="first N threads only (smoke runs)")
     ap.add_argument("--quiet", action="store_true")
@@ -38,7 +38,7 @@ def main() -> None:
             if e["done"] == e["total"] or e["done"] % 25 == 0:
                 print(f"  {e['stage']}: {e['done']}/{e['total']}", flush=True)
         elif e["event"] == "decision_found":
-            print(f"  + {e['date']}  {e['text'][:100]}", flush=True)
+            print(f"  + {e['date']}  {e.get('status', ''):10} {e['text'][:100]}", flush=True)
         elif e["event"] == "stage_start":
             print(f"[{e['stage']}]", flush=True)
 

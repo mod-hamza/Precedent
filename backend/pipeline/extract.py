@@ -23,6 +23,13 @@ CLARIFICATIONS
 - Trivial logistics are out of scope even when settled: office furniture, equipment colours, kitchen or snack
   supplies, desk or room bookings, meeting slots, social events. Do not output them.
 - A plan the sender takes back ("scratch that", "ignore my last email", "actually, hold off") is stance=retracted.
+- When someone with authority announces something as settled ("we're starting X next week", a recap stating X was
+  agreed), that is a decision record with stance=final even if others object afterwards; objections that do not
+  reverse it are evidence with role=objection, not a reason to drop the record.
+- When people disagree about what was agreed (one says X was decided, another says the agreement or their
+  understanding was Y), output one record per version, each with stance=final, decided_by = the person asserting it,
+  and that person's own evidence; mention the disagreement in rationale. Do not merge the versions or pick one; a
+  later step decides whether it is a real conflict.
 
 FORMAT NOTES
 - evidence.message_id is the message alias exactly as shown in the thread (m1, m2, ...).
@@ -96,9 +103,18 @@ def store_records(conn: sqlite3.Connection, t: Thread, result: ExtractionResult,
     return stored
 
 
+def _strong_signal(conn: sqlite3.Connection, thread_id: str) -> bool:
+    return conn.execute("SELECT 1 FROM triage WHERE thread_id=? AND signal IN ('decision','approval','reversal') "
+                        "LIMIT 1", (thread_id,)).fetchone() is not None
+
+
 async def extract_thread(llm: LLM, conn: sqlite3.Connection, t: Thread, stats: QuoteStats) -> tuple[list[dict], int]:
     """Returns (stored records, number of records discarded for lack of verified evidence)."""
-    res = await llm.structured("CORE", SYSTEM, build_prompt(conn, t), ExtractionResult, stage="extract")
+    prompt = build_prompt(conn, t)
+    res = await llm.structured("CORE", SYSTEM, prompt, ExtractionResult, stage="extract")
+    if not res.records and _strong_signal(conn, t.thread_id):
+        # capped reasoning sometimes reads a disputed or informal decision as "nothing settled"; think longer
+        res = await llm.structured("CORE_DEEP", SYSTEM, prompt, ExtractionResult, stage="extract_deep")
     stored = store_records(conn, t, res, stats)
     return stored, len(res.records) - len(stored)
 

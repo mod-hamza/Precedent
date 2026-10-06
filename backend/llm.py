@@ -34,6 +34,9 @@ _UNSUPPORTED_KEYS = {"minimum", "maximum", "exclusiveMinimum", "exclusiveMaximum
                      "maxLength", "pattern", "minItems", "maxItems", "default", "title"}
 
 
+RUNTIME = {"offline": False}  # flipped by the API in demo mode; settings.offline is the env default
+
+
 class LLMError(RuntimeError):
     pass
 
@@ -118,7 +121,7 @@ class LLM:
                 return out
             except ValidationError:
                 pass  # schema changed since this was cached; fall through and re-ask
-        if settings.offline:
+        if settings.offline or RUNTIME["offline"]:
             raise LLMOffline(f"cache miss in offline mode ({stage})")
 
         async with self.sem:
@@ -167,8 +170,9 @@ class LLM:
         }
         if cfg.thinking and cfg.thinking_budget:
             body["thinking_budget"] = cfg.thinking_budget
+        force_object = False
         for attempt in range(6):
-            schema_mode = cfg.model not in _JSON_OBJECT_ONLY
+            schema_mode = cfg.model not in _JSON_OBJECT_ONLY and not force_object
             body["response_format"] = ({"type": "json_schema", "json_schema": {"name": "output", "schema": json_schema,
                                                                                "strict": True}}
                                        if schema_mode else {"type": "json_object"})
@@ -179,6 +183,9 @@ class LLM:
                 continue
             if r.status_code == 400 and schema_mode and "response_format" in r.text:
                 _JSON_OBJECT_ONLY.add(cfg.model)  # e.g. deepseek-v4.1-flash
+                continue
+            if r.status_code == 400 and schema_mode and "grammar" in r.text:
+                force_object = True  # server failed to compile the schema grammar for this input; Pydantic still checks
                 continue
             if r.status_code in (408, 429, 500, 502, 503, 504):
                 await asyncio.sleep(min(2 ** attempt, 30))
