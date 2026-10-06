@@ -71,9 +71,9 @@ def fmt_hdr_date(iso):
     return format_datetime(dtobj)
 
 def msg_id(tkey, idx):
-    h = hashlib.sha1(f"{tkey}-{idx}".encode()).hexdigest()[:12]
-    dom = "parcelwise.example"
-    return f"<{h}.{tkey}.{idx:03d}@{dom}>"
+    # opaque: the thread key (D13 / N04 / F176) must not leak into headers the pipeline reads
+    h = hashlib.sha1(f"precedent-corpus-v2|{tkey}|{idx}".encode()).hexdigest()[:20]
+    return f"<{h}@parcelwise.example>"
 
 def slugify(s, maxlen=40):
     s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -194,7 +194,7 @@ for m in all_msgs:
     hdr.append('Content-Transfer-Encoding: 8bit')
     eml = "\n".join(hdr) + "\n\n" + body + "\n"
 
-    fname = f"{eml_count+1:04d}_{t['key']}_{idx:02d}_{slugify(subject)}.eml"
+    fname = f"{eml_count+1:04d}_{slugify(subject)}.eml"
     with open(os.path.join(EML_DIR, fname), "w", encoding="utf-8", newline="\n") as f:
         f.write(eml)
     eml_count += 1
