@@ -27,7 +27,7 @@ from .verify import QuoteStats, verify_quote
 PROMPTS = Path(__file__).resolve().parent.parent / "prompts"
 ANSWER_PROMPT = (PROMPTS / "answer.md").read_text(encoding="utf-8")
 CLASSIFY_PROMPT = (PROMPTS / "classify.md").read_text(encoding="utf-8")
-TOP_DECISIONS, TOP_PASSAGES, RRF_K = 8, 12, 60
+TOP_DECISIONS, TOP_PASSAGES, RRF_K = 8, 8, 60
 _STOP = set("""a an the and or but of to in on at by for with from as is are was were be been being do does did have has
 had what which who whom whose why how when where whether if then than that this these those it its we our us you your
 they their them i me my ever any some there here about into over under after before again ever did decide decided

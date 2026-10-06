@@ -1,6 +1,6 @@
 # Precedent scorecard
 
-_Synthetic corpus; ground truth hidden from the pipeline._  commit `d15d55a`
+_Synthetic corpus; ground truth hidden from the pipeline._  commit `94eefb2`
 
 | Metric | Target | Dev |
 |---|---|---|
@@ -12,9 +12,9 @@ _Synthetic corpus; ground truth hidden from the pipeline._  commit `d15d55a`
 | Status accuracy (matched) | - | 88% |
 | Conflicts detected | >= 2 of 3 | 2 of 2 |
 | Evidence support | >= 90% | 100% (strict 100%) |
-| Q&A accuracy | >= 85% | 74% of 19 |
+| Q&A accuracy | >= 85% | 68% of 19 |
 | 'No decision' correct | 5/5 | 4/4 |
-| Answer latency p50 | < 8 s | 8.7 s |
+| Answer latency p50 | < 8 s | 15.8 s |
 | Triage recall | >= 98% | 100% |
 
 Quote validity (all verified quotes are verbatim substrings): **100%** of 478 quotes. Pipeline wall-clock (Stages 1-5): **9.8 min**.

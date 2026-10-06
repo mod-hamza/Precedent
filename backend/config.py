@@ -48,8 +48,8 @@ _ROLE_DEFAULTS = {
                "JUDGE": ("deepseek-v4-pro", None, 8000, True, 4000),
                # second pass for hard threads: CORE found nothing although triage saw a decision signal
                "CORE_DEEP": ("qwen3.8-max", None, 24000, True, 12000),
-               # Ask-time answers: same model as CORE, reasoning off for the p50 < 8 s latency target
-               "ANSWER": ("qwen3.8-max", None, 8000, False, None)},
+               # Ask-time answers: dev Q&A 74% with a 2k reasoning budget vs 63% without (p50 ~15 s vs ~7 s); accuracy wins
+               "ANSWER": ("qwen3.8-max", None, 8000, True, 2000)},
     "anthropic": {"FAST": ("claude-haiku-4-5-20251001", None, 4000, False, None),
                   "CORE": ("claude-sonnet-5-5", "medium", 16000, True, None),
                   "REASON": ("claude-opus-5-5", "high", 32000, True, None),

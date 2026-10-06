@@ -34,7 +34,7 @@ _UNSUPPORTED_KEYS = {"minimum", "maximum", "exclusiveMinimum", "exclusiveMaximum
                      "maxLength", "pattern", "minItems", "maxItems", "default", "title"}
 
 
-RUNTIME = {"offline": False}  # flipped by the API in demo mode; settings.offline is the env default
+RUNTIME = {"offline": False, "bypass_cache": False}  # offline: demo mode; bypass_cache: live latency measurement
 
 
 class LLMError(RuntimeError):
@@ -113,7 +113,7 @@ class LLM:
         key = cache_key(model=cfg.model, effort=cfg.effort, thinking=cfg.thinking, budget=cfg.thinking_budget,
                         system=system, user=user, schema=json_schema)
 
-        hit = self.cache.get(key)
+        hit = None if RUNTIME["bypass_cache"] else self.cache.get(key)
         if hit is not None:
             try:
                 out = schema.model_validate_json(hit["response"])

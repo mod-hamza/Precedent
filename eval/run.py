@@ -21,7 +21,7 @@ from pathlib import Path
 
 from backend.db import connect
 from backend.embed import Embedder
-from backend.llm import LLM
+from backend.llm import LLM, RUNTIME
 from backend.pipeline.ask import ask
 
 from .judge import asserts_decided, genuine, grade_answer, supports
@@ -187,10 +187,15 @@ async def eval_qa(conn, llm, emb, gt, split: str) -> dict:
             continue
         expected = "no_decision" if any(r.startswith("N") for r in refs) else \
             "contested" if any(status_of.get(r) == "CONTESTED" for r in refs) else "found"
-        a = await ask(conn, LLM(conn, run_id=f"eval-qa-{split}"), emb, q["question"])
+        RUNTIME["bypass_cache"] = True  # answers are generated live so latency (and the answer) is real
+        try:
+            a = await ask(conn, LLM(conn, run_id=f"eval-qa-{split}"), emb, q["question"])
+        finally:
+            RUNTIME["bypass_cache"] = False
         cited = {c["message_id"] for c in a["citations"]} | {c["message_id"] for c in a["closest"]}
         gold = set().union(*(gold_msgs.get(r, set()) for r in refs))
         ledger = [f"{d['decided_at']} [{d['status']}] {d['canonical_text']}" for d in a["decisions"]]
+        ledger += [f"closest discussion: {c['date']} {c['sender']}: {c['why']}" for c in a["closest"]]
         j = await grade_answer(llm, q["question"], q["expected"], a["answer_md"], [c["quote"] for c in a["citations"]],
                                ledger)
         status_ok = a["status"] == expected or (expected == "found" and a["status"] == "partial" and j.facts_present)
@@ -233,7 +238,10 @@ async def main_async(args) -> None:
     prev = json.loads((OUT / "eval_results.json").read_text(encoding="utf-8")) if (OUT / "eval_results.json").exists() else {}
     results = prev.get("splits", {})
     for s in splits:
-        results[s] = await eval_split(conn, llm, emb, gt, manifest, s, not args.no_qa)
+        if args.qa_only and s in results:  # re-score the Q&A pass only, keep the decision-level metrics
+            results[s].update(await eval_qa(conn, llm, emb, gt, s))
+        else:
+            results[s] = await eval_split(conn, llm, emb, gt, manifest, s, not args.no_qa)
         results[s]["evaluated_at"] = datetime.now(timezone.utc).isoformat()
         results[s]["git_commit"] = _git()
     payload = {"generated_at": datetime.now(timezone.utc).isoformat(), "git_commit": _git(),
@@ -252,6 +260,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--split", default="dev", choices=["dev", "holdout", "both"])
     ap.add_argument("--no-qa", action="store_true")
+    ap.add_argument("--qa-only", action="store_true", help="re-run only the Q&A pass on an existing result")
     asyncio.run(main_async(ap.parse_args()))
 
 
