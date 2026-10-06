@@ -1,8 +1,8 @@
 # Precedent scorecard
 
-_Synthetic corpus; ground truth hidden from the pipeline._  commit `479f069`
+_Synthetic corpus; ground truth hidden from the pipeline._  commit `ffe7db6`
 
-| Metric | Target | Dev (`479f069`) | Holdout (`0de46ce`) |
+| Metric | Target | Dev (`ffe7db6`) | Holdout (`0de46ce`) |
 |---|---|---|---|
 | Decision recall | >= 85% | 96% (25 GT) | 87% (15 GT) |
 | Decision precision | >= 85% | 67% (36 predicted) | 46% (28 predicted) |
@@ -14,7 +14,7 @@ _Synthetic corpus; ground truth hidden from the pipeline._  commit `479f069`
 | Evidence support | >= 90% | 100% (strict 97%) | 100% (strict 100%) |
 | Q&A accuracy | >= 85% | 68% of 19 | 68% of 11 |
 | 'No decision' correct | 5/5 | 4/4 | 1/1 |
-| Answer latency p50 | < 8 s | 17.0 s | 17.3 s |
+| Answer latency p50 | < 8 s | 8.9 s | 17.3 s |
 | Triage recall | >= 98% | 100% | 100% |
 
 Quote validity (all verified quotes are verbatim substrings): **100%** of 487 quotes. Pipeline wall-clock (Stages 1-5): **4.8 min**.

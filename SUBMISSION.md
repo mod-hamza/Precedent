@@ -71,7 +71,7 @@ Conflicts, Scorecard. **[TEAM: screenshots]**
 | FAST | qwen3.8-flash (reasoning off) | triage, identity adjudication, question classification |
 | CORE | qwen3.8-max (reasoning capped at 3k tokens; 12k second pass on hard threads) | extraction |
 | REASON | deepseek-v4-pro | clustering, reconciliation |
-| ANSWER | qwen3.8-max (reasoning off, for latency) | cited answers |
+| ANSWER | qwen3.8-max (reasoning off; the frozen holdout run used a 2k budget) | cited answers |
 | JUDGE | deepseek-v4-pro | evaluation only (a different model family from the extractor) |
 | Embeddings | all-MiniLM-L6-v2, local (sentence-transformers) | retrieval |
 
@@ -125,11 +125,19 @@ Full tables in `eval/results/scorecard.md`.
   *is* in the ledger ("Renew the Keizersgracht office lease for 12 months at EUR 6,200") but the judge did not match it
   to the reference wording ("Rotterdam office lease"); we report the judged number unchanged. The Q2 marketing budget
   dispute (EUR 40k vs 30k) was recorded as separate decisions instead of a conflict.
-- *Latency.* Answers use a 2k-token reasoning budget: dev Q&A was 63% without it at ~7 s. We chose accuracy over the
-  8 s target; demo mode serves cached answers instantly.
-- *Post-holdout change.* After the holdout run we fixed the first miss (offers already sent to a customer are now
-  recorded as decisions with an authority note). The holdout column above is from the frozen commit and was not
-  re-run; the demo runs the fixed version. Two further post-holdout changes: internal people whose signatures show no role get one inferred from behaviour (e.g. the CEO signs "M"), and sentences without a verified citation are removed from answers. Dev after these changes: recall 96%, precision 67%, supersession 80%, conflicts 2 of 2, near-decision false positives 0 of 5, Q&A 68% of 19, no-decision 4/4. Live Q&A scores vary by about +/-7 points between identical runs (the answer model and the LLM judge both vary), so treat single Q&A numbers as approximate.
+- *Latency.* The frozen holdout run generated answers with a 2k-token reasoning budget (p50 17.3 s).
+- *Post-holdout changes* (the holdout column above is from the frozen commit and was **not** re-run; the demo runs
+  the changed version; all numbers below are dev only):
+  1. Offers already sent to an outside party are recorded as decisions with an authority note (fixes the Redline
+     15% miss).
+  2. Internal people whose signatures show no role get one inferred from behaviour (the CEO signs only "M").
+  3. Citations or silence, enforced in code: any answer sentence without a verified citation is removed.
+  4. With (3) in place, answers no longer need the reasoning budget: dev Q&A over three runs was 74%, 79% and 68%
+     (vs a mean of about 65% with reasoning), at a p50 of 8.3-8.9 s instead of about 16 s.
+
+  Dev after these changes: recall 96%, precision 67%, supersession 80%, conflicts 2 of 2, near-decision false
+  positives 0 of 5, no-decision 4/4. Live Q&A scores vary by about +/-7 points between identical runs (the answer
+  model and the LLM judge both vary), so read single Q&A numbers as approximate.
 
 **Stopwatch test [TEAM]:** manual search in a raw mailbox viewer vs Precedent's answer time on 5 questions.
 

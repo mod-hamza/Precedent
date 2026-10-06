@@ -61,16 +61,16 @@ Counter strip, funnel and cost panel.
  "usage_by_stage": [
   {
    "stage": "answer",
-   "calls": 281,
-   "tokens_in": 1792274,
-   "tokens_out": 168980,
+   "calls": 341,
+   "tokens_in": 2178062,
+   "tokens_out": 187904,
    "cost_usd": 0.0
   },
   {
-   "stage": "classify",
-   "calls": 205,
-   "tokens_in": 79484,
-   "tokens_out": 7285,
+   "stage": "answer_retry",
+   "calls": 1,
+   "tokens_in": 4870,
+   "tokens_out": 291,
    "cost_usd": 0.0
   },
   "..."
@@ -639,7 +639,7 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
 {
  "question": "Why is the database still on NimbusHost?",
  "status": "found",
- "answer_md": "The database remains on NimbusHost because cross-provider latency of ~40 ms p95 between Corvid (app tier) and NimbusHost (database) would break driver sync, ...",
+ "answer_md": "The database remains on NimbusHost because cross-provider latency of ~40 ms p95 would break driver sync, and a full database move with cross-provider replica...",
  "citations": [
   {
    "n": 1,
@@ -651,13 +651,12 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
   },
   {
    "n": 2,
-   "message_id": "<5a103cb72730ca717fad@parcelwise.example>",
-   "quote": "We're keeping the production database on NimbusHost managed Postgres. Only the app tier moves to Corvid",
+   "message_id": "<2d8b0346dc0446ce9d9e@parcelwise.example>",
+   "quote": "App tier + managed Postgres move in March, well before the v3 launch",
    "sender": "Dev Raman",
-   "date": "2026-04-09",
-   "subject": "RE: benchmark: app tier on corvid vs db on nimbus - latency"
-  },
-  "..."
+   "date": "2026-02-04",
+   "subject": "RE: hosting: proposal to move off NimbusHost"
+  }
  ],
  "decision_ids": [
   "DEC-0007",
@@ -681,15 +680,13 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
    "authority_flag": 0
   }
  ],
- "confidence": "medium",
+ "confidence": "high",
  "model_confidence": "high",
- "caveats": [
-  "No subsequent decision to actually execute the deferred DB migration has been found in this mailbox"
- ],
+ "caveats": [],
  "closest": [],
  "question_type": "why",
  "verification_errors": [],
- "latency_ms": 17
+ "latency_ms": 5851
 }
 ```
 
@@ -701,7 +698,7 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
 {
  "question": "Did we decide to open a Lisbon office?",
  "status": "no_decision",
- "answer_md": "No decision was found to open a Lisbon office. Tomás Ibarra proposed a small satellite office in Lisbon on 2026-02-12, citing growing Portuguese courier dema...",
+ "answer_md": "No decision was found to open a Lisbon office. Tomás proposed a small satellite office in Lisbon on 2026-02-12, but Marta deferred it on 2026-02-17, stating ...",
  "citations": [
   {
    "n": 1,
@@ -724,21 +721,18 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
  "decisions": [],
  "confidence": "medium",
  "model_confidence": "high",
- "caveats": [
-  "Marta's reply is a deferral, not a formal rejection; the idea could resurface if the Iberian pipeline grows.",
-  "1 statement(s) without a verified citation were removed (citations or silence)."
- ],
+ "caveats": [],
  "closest": [
   {
    "message_id": "<bce0a5c0da4b5354db26@parcelwise.example>",
-   "why": "Tomás's proposal to open a Lisbon satellite office — never approved, only deferred by Marta.",
+   "why": "Proposal by Tomás to open a Lisbon satellite office; no approval was given.",
    "sender": "Tomás Ibarra",
    "date": "2026-02-12",
    "subject": "Lisbon satellite office - big opportunity 🚀"
   },
   {
    "message_id": "<fb364b03dcb49d93ca90@parcelwise.example>",
-   "why": "Marta's reply explicitly defers the idea ('not now') rather than approving or formally rejecting it.",
+   "why": "Marta explicitly deferred the proposal rather than approving or rejecting it outright.",
    "sender": "Marta Kowalczyk",
    "date": "2026-02-17",
    "subject": "RE: Lisbon satellite office - big opportunity 🚀"
@@ -746,7 +740,7 @@ Cited answer. Replace `[^n]` in `answer_md` with citation chips from `citations`
  ],
  "question_type": "existence",
  "verification_errors": [],
- "latency_ms": 18
+ "latency_ms": 16
 }
 ```
 

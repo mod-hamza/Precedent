@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-06T21:54:48.402292+00:00",
- "git_commit": "479f069",
+ "generated_at": "2026-10-06T22:21:16.064933+00:00",
+ "git_commit": "ffe7db6",
  "banner": "Synthetic corpus; ground truth hidden from the pipeline.",
  "targets": {
   "decision_recall": 0.85,
@@ -540,15 +540,15 @@
      "expected": "Ledgerly; Mon 2026-07-06",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "The cutover is fixed for **Monday 6 July 2026**, after the June 30 billing close, with the first live Ledgerly settlement cycle starting that day [^1][^2]. Marta Kowalczyk declared the date immovable [^3]. PayForge termination notice will be sent on 6 July, with the contract ending 5 August [^2].",
+     "answer_md": "The company will switch its payment provider from PayForge to Ledgerly, with the cutover fixed for Monday 6 July 2026 [^1]. This date was set after the June 30 billing close so that the first live Ledgerly settlement cycle starts on a closed ledger [^2]. The decision to use Ledgerly was originally approved on 11 March 2026, superseding an earlier deferral, and the specific 6 July cutover date was confirmed on 30 May 2026 as immovable [^3][^4].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": true,
-     "judge_reason": "The reference facts (Ledgerly and date) are present. However, the answer states 'Marta Kowalczyk declared the date immovable', which is not directly supported by the cited quotes (only confirmation of the date being fixed) nor the ledger entries (which state the date is immovable but do not attribute the declaration to Marta).",
-     "score": 0.5,
-     "latency_ms": 15161
+     "unsupported_claims": false,
+     "judge_reason": "The answer correctly states the provider (Ledgerly) and cutover date (Monday 6 July 2026), matching the reference. All extra details are supported by the cited quotes and ledger entries.",
+     "score": 1.0,
+     "latency_ms": 8915
     },
     {
      "id": "Q02",
@@ -556,15 +556,15 @@
      "expected": "lower fees (2.3% + EUR 0.25 vs 2.9% + EUR 0.30 ~ EUR 1,860/mo), local-currency invoicing, Redline's request",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "Ledgerly's rate (2.3% + €0.25 per transaction) saves approximately €1,860 per month compared to PayForge's 2.9% + €0.30, which had cost the company roughly €9,700 in February alone [^1]. By March, the switch also became a retention issue because Redline Couriers—about 18% of revenue—made local-currency invoicing a renewal condition, and Ledgerly supports multi-currency invoicing natively [^2]. Dev Raman's updated technical assessment in March confirmed the migration no longer conflicted with the v3 launch, removing the original reason for deferral [^3]. Marta Kowalczyk approved the switch on 11 March 2026 [^4].",
+     "answer_md": "The company decided to switch payment processing from PayForge to Ledgerly primarily to save approximately €1,860 per month in transaction fees [^1]. The switch also became a retention issue because Ledgerly natively supports multi-currency invoicing, which the company's largest client made a renewal condition [^2]. Additionally, Ledgerly's native multi-currency capability eliminates roughly two weeks of engineering work that would otherwise be needed to build it internally [^3].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": true,
-     "judge_reason": "The answer contains the core reasons (lower fees, local-currency invoicing, Redline's request). However, it includes unsupported claims: 'cost the company roughly €9,700 in February alone' (not in quotes or ledger entries) and 'Marta Kowalczyk approved the switch on 11 March 2026' (no source for the approver's identity).",
-     "score": 0.5,
-     "latency_ms": 21423
+     "unsupported_claims": false,
+     "judge_reason": "The answer captures all reference facts: fee savings with exact amount, local-currency invoicing, and the client's renewal condition. Extra detail about saved engineering time is supported by a cited quote and does not contradict.",
+     "score": 1.0,
+     "latency_ms": 8071
     },
     {
      "id": "Q03",
@@ -572,15 +572,15 @@
      "expected": "failed sandbox reconciliation (refunds, multi-currency, 3 mismatched reports)",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "The Ledgerly cutover was originally targeted for 1 May 2026, but was delayed because the sandbox reconciliation was not clean, requiring a rewrite and additional full sandbox cycles before the switch could proceed safely [^1]. Dev Raman recommended moving the cutover to after the June 30 billing close so that the first live Ledgerly settlement cycle would start from a closed ledger, rather than switching mid-cycle with partially reconciled June books [^2]. Helen Oyelaran acknowledged the delay's cash-flow cost (approximately €1,860/month in extra PayForge fees) but accepted the technical reasoning [^3]. The final cutover was fixed at Monday 6 July 2026, declared immovable by Marta Kowalczyk [^4].",
+     "answer_md": "The Ledgerly cutover was delayed from the originally targeted 1 May because sandbox reconciliation was not clean, prompting a move to after the June billing cycle [^1][^2]. It was then set for 6 July rather than 1 July to avoid switching mid-cycle and leaving partially reconciled June books, ensuring the first live settlement cycle starts from a closed ledger [^3]. A standing constraint also required that the cutover not land inside the v3 launch window [^4].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
      "unsupported_claims": true,
-     "judge_reason": "The answer correctly states the delay was due to sandbox reconciliation issues, matching the reference fact. However, the specific claim about 'sandbox reconciliation not clean' is not present in the cited quotes or ledger entries; they only mention a technical assessment and Dev's recommendation, not the cause of the delay.",
+     "judge_reason": "The answer captures the core fact that the sandbox reconciliation failed (stating it was 'not clean'), matching the reference. However, the claim that the sandbox reconciliation was the reason for the delay is not explicitly supported by the cited quotes (which refer only to a 'technical assessment' and 'broken may') or the provided ledger entries; therefore, it is an unsupported claim.",
      "score": 0.5,
-     "latency_ms": 38486
+     "latency_ms": 9208
     },
     {
      "id": "Q04",
@@ -588,15 +588,15 @@
      "expected": "EUR 59 for new signups from Mar 1; existing grandfathered at EUR 49 for 12 months",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "The Starter plan costs **€59/month for new signups** from 1 March 2026 [^1]. Existing Starter accounts remain at **€49/month for 12 months**, after which they will move to €59; the existing base is to be revisited in February 2027 [^2]. The original decision (28 January 2026) raised all accounts to €59, but was amended on 18 February 2026 after customer complaints to grandfather existing accounts at €49 for 12 months [^3].",
+     "answer_md": "The Starter plan costs €59/month for new signups from 1 March 2026, while existing accounts remain at €49/month for 12 months until February 2027 [^1]. The initial decision on 28 January 2026 to raise all accounts to €59 was amended on 18 February 2026 after customer complaints prompted a grandfathering compromise [^2][^3]. Marta approved the amendment, directing that existing accounts stay at €49 for 12 months and new signups pay €59 from 1 March [^1].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
      "unsupported_claims": true,
-     "judge_reason": "The answer includes the core facts: €59 for new signups from 1 March, existing accounts at €49 for 12 months. However, the statement that after 12 months they 'will move to €59' is not supported by the provided quotes or ledger entries (the ledger only says 'revisit'), making it an unsupported claim.",
+     "judge_reason": "The answer claims Marta approved the amendment and that customer complaints prompted the grandfathering compromise, but neither the cited quotes nor ledger entries mention Marta or complaints.",
      "score": 0.5,
-     "latency_ms": 18867
+     "latency_ms": 8730
     },
     {
      "id": "Q05",
@@ -604,15 +604,15 @@
      "expected": "No; dropped 06-10; 500 scans/month included in Pro",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "The original decision to approve a usage-based Scan Pack add-on at €0.08 per scan (decided 2026-05-06) was superseded on 2026-06-10, when Marta Kowalczyk decided to drop Scan Pack entirely and instead include 500 scans per month in the Pro plan [^1]. The rationale was that Scan Pack was causing sales friction, customer confusion, and billing risk during the Ledgerly cutover [^2]. All Scan Pack changes were also explicitly kept out of the cutover [^1].",
+     "answer_md": "On 6 May 2026 the company approved a usage-based Scan Pack add-on at €0.08 per scan with a free allowance [^1], but that decision was superseded on 10 June 2026 when Marta Kowalczyk directed the team to drop Scan Pack entirely and instead include 500 scans per month in the Pro plan [^2]. Sales staff have already been instructed to tell prospects that Scan Pack was dropped and scans are bundled into Pro [^3].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": false,
-     "judge_reason": "Answer includes all facts from reference: No launch, dropped 06-10, 500 scans in Pro. Additional details are supported by cited quotes and ledger entries.",
-     "score": 1.0,
-     "latency_ms": 13395
+     "unsupported_claims": true,
+     "judge_reason": "The answer states Marta Kowalczyk directed the decision and that sales staff were instructed to tell prospects, but these details are not supported by the provided quotes or ledger entries.",
+     "score": 0.5,
+     "latency_ms": 7908
     },
     {
      "id": "Q06",
@@ -620,15 +620,15 @@
      "expected": "NimbusHost managed Postgres; only the app tier moves to Corvid",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "The original migration plan (February 2026) included moving both the app tier and database to Corvid Cloud [^1], but this was amended on 9 April 2026: the database was kept on NimbusHost due to cross-provider latency (~40 ms p95) that would break driver sync, with a full DB move deferred until after v3 launch [^2]. As of the most recent deploy notes (3 June 2026), the database remains untouched on NimbusHost [^3].",
+     "answer_md": "An earlier decision to migrate both the app tier and database to Corvid Cloud was amended on 9 April 2026 to keep the database on NimbusHost in a hybrid setup, because cross-provider latency would break driver sync [^1]. As of 3 June 2026, the database remains untouched on NimbusHost [^2].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
      "unsupported_claims": true,
-     "judge_reason": "The answer correctly states the database is on NimbusHost managed Postgres and only the app tier moves to Corvid, matching the reference. However, it adds a claim about cross-provider latency (~40 ms p95) breaking driver sync, which is not supported by the cited quotes or ledger entries.",
+     "judge_reason": "The answer asserts the amendment was made because cross-provider latency would break driver sync, but neither the cited quotes nor the ledger entries mention that reason, making it an unsupported claim.",
      "score": 0.5,
-     "latency_ms": 27627
+     "latency_ms": 5957
     },
     {
      "id": "Q07",
@@ -636,15 +636,15 @@
      "expected": "Greg Ferrante, cap EUR 18,000",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "Greg Ferrante runs the hosting migration (app tier from NimbusHost to Corvid Cloud), with a firm budget cap of EUR 18,000 all-in approved by Helen Oyelaran [^1]. Ravi shadows Greg during weekday hours to retain internal knowledge [^2]. The original scope included the database, but that was later amended to keep the production database on NimbusHost due to cross-provider latency risks [^3].",
-     "confidence": "high",
+     "answer_md": "Greg Ferrante runs the hosting migration, with Ravi shadowing him during weekday hours [^1][^2]. Helen Oyelaran approved a firm budget cap of EUR 18,000 all-in for the work [^1][^2].",
+     "confidence": "medium",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
      "unsupported_claims": true,
-     "judge_reason": "The answer claims that the database was kept on NimbusHost 'due to cross-provider latency risks', but this reason is not supported by any cited quote or ledger entry.",
+     "judge_reason": "The answer correctly states Greg Ferrante runs the migration and the budget cap is EUR 18,000, matching the reference. However, it claims Helen Oyelaran approved the cap, but neither the cited quotes nor the ledger entries identify the approver; this claim is unsupported by the provided sources.",
      "score": 0.5,
-     "latency_ms": 13155
+     "latency_ms": 5921
     },
     {
      "id": "Q08",
@@ -652,15 +652,15 @@
      "expected": "Wed May 13 (slipped from Apr 15), phased 20% -> 100% by May 27",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "The original date of 15 April 2026 was superseded on 24 March due to burn-down data showing insufficient time and a Corvid migration collision [^1][^2]. The rollout plan is phased: 20% of accounts on Wednesday 13 May, reaching 100% by Wednesday 27 May [^3][^4]. A QA contractor (Kofi Mensah) was engaged from 20 April through end of June to cover regression testing between cohorts [^5].",
+     "answer_md": "The v3 launch was originally set for 15 April 2026 but was superseded on 24 March 2026 and moved to the week of 11 May 2026 due to burn-down pressure and a Corvid migration collision [^1][^2]. On 4 May 2026, the rollout plan was refined to a phased approach: 20% of accounts go live on Wednesday 13 May, reaching 100% by Wednesday 27 May [^3]. A QA contractor was engaged starting 20 April to cover regression testing between cohorts during this phased rollout [^4].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": false,
-     "judge_reason": "All material facts from the reference are present, and all claims are supported by the cited quotes and ledger entries.",
-     "score": 1.0,
-     "latency_ms": 15313
+     "unsupported_claims": true,
+     "judge_reason": "Answer includes unsupported claim that the launch moved due to burn-down pressure and a Corvid migration collision; neither the cited quotes nor ledger entries mention burn-down pressure, and the Corvid mention only says migration taking priority.",
+     "score": 0.5,
+     "latency_ms": 9431
     },
     {
      "id": "Q09",
@@ -668,15 +668,15 @@
      "expected": "41 open P1 bugs + migration collision",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "The 15 April launch date was changed because the bug burn-down showed 23 business days of remaining work against only 17 available business days before that date, making it impossible to hit even at full capacity [^1]. Additionally, the Corvid app-tier cutover was scheduled for the weekend of 18–19 April, which collided with what would have been launch week [^1]. Aisha Bello reinforced the risk argument, noting that a launch slipping three weeks is preferable to one that breaks [^2]. Marta Kowalczyk approved the move to the week of 11 May on 24 March 2026 [^3].",
+     "answer_md": "The original 15 April 2026 launch date was superseded on 24 March 2026 by a move to the week of 11 May [^1]. The change was driven by burn-down data showing 23 business days of remaining work against only 17 available days before 15 April, combined with a scheduling collision from the Corvid app-tier cutover booked for 18–19 April [^2]. Leadership also weighed the customer risk of launching too early, noting that a delayed launch is preferable to one that breaks [^3].",
      "confidence": "high",
      "facts_present": false,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": true,
-     "judge_reason": "The reference answer states '41 open P1 bugs + migration collision' as the reason. The answer to grade discusses a bug burn-down showing 23 business days of work against 17 available days and the Corvid migration collision, but it never mentions the specific fact that there were 41 open P1 bugs. The unsupported claim about Corvid app-tier cutover on 18–19 April is also not backed by the cited quotes or ledger entries.",
+     "unsupported_claims": false,
+     "judge_reason": "The answer omits the reference fact of '41 open P1 bugs', mentioning only burn-down data and migration collision.",
      "score": 0.0,
-     "latency_ms": 14379
+     "latency_ms": 8877
     },
     {
      "id": "Q10",
@@ -684,15 +684,15 @@
      "expected": "Read-only offline mode yes; full offline in v3.1",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "Full offline mode was cut from v3 on 2 April 2026 and deferred to v3.1 [^1]. However, that decision was amended on 29 April 2026: a **read-only** offline mode (cached routes and manifests, no editing) was added back into v3 for the Redline pilot, estimated at ~1.5 engineer-weeks [^2]. Full offline with edit queuing remains on the v3.1 roadmap [^3].",
+     "answer_md": "A read-only offline mode (cached routes and manifests, no editing) is included in v3 for the Redline pilot [^1]. Full offline mode with edit queuing was originally cut from v3 and remains deferred to v3.1 [^2]. The read-only version was added back after Redline made offline capability a non-negotiable renewal condition [^3].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": true,
-     "judge_reason": "Answer claims read-only offline mode estimated at ~1.5 engineer-weeks, which is not mentioned in cited quotes or ledger entries.",
-     "score": 0.5,
-     "latency_ms": 20143
+     "unsupported_claims": false,
+     "judge_reason": "The answer correctly states that read-only offline mode is in v3 and full offline in v3.1, matching the reference. All claims are supported by the provided quotes and ledger entries.",
+     "score": 1.0,
+     "latency_ms": 6923
     },
     {
      "id": "Q11",
@@ -700,15 +700,15 @@
      "expected": "Marta; Redline made it a renewal condition",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "Marta Kowalczyk decided on 2026-04-29 to re-add a read-only offline mode (cached routes and manifests, no editing) into v3 for the Redline pilot [^1]. The reason was that Bruno Alvarez of Redline Couriers made offline capability a non-negotiable condition for renewal, and Redline represents approximately 18% of revenue [^2]. Dev Raman proposed the phased approach—read-only offline at ~1.5 engineer-weeks instead of the full 6-week offline—and Marta confirmed the plan both on the call and in writing [^3]. This decision amended the earlier cut of offline mode from v3 (DEC-0041), which had been made on 2026-04-02 [^4].",
+     "answer_md": "Marta Kowalczyk decided to re-add a read-only offline mode (cached routes and manifests) into v3 for the Redline pilot, amending the earlier decision that had cut offline mode entirely [^1]. The reason was that Bruno Alvarez of Redline made offline capability a non-negotiable condition for their renewal, and Dev Raman proposed a phased approach where the read-only version could be delivered in roughly 1.5 engineer-weeks [^2]. Full offline mode with edit queuing remains deferred to v3.1 [^1].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": false,
-     "judge_reason": "Answer states Marta decided and Redline made it a renewal condition, matching reference. Extra details are supported by quotes and ledger entries.",
-     "score": 1.0,
-     "latency_ms": 17932
+     "unsupported_claims": true,
+     "judge_reason": "The answer claims 'Marta Kowalczyk decided' but neither the provided cited quotes nor the ledger entries mention Marta or any decision-maker. This material claim is unsupported by the given evidence.",
+     "score": 0.5,
+     "latency_ms": 7524
     },
     {
      "id": "Q21",
@@ -716,15 +716,15 @@
      "expected": "CONTESTED: 2 business hours vs 1 hour",
      "expected_status": "contested",
      "status": "contested",
-     "answer_md": "The Pro plan first-response SLA is contested between two versions. **Version A (Tomás Ibarra):** 1 hour, based on his recollection of the March 25 leadership meeting and a written promise he sent to a customer immediately afterwards [^1]. **Version B (Lena Fischer):** 2 business hours, based on her contemporaneous meeting notes circulated the same evening [^2], corroborated by Aisha Bello's operational planning [^3]. No resolution has been reached; Lena proposed putting both versions to Marta for a final ruling and asked that nobody quote the SLA externally until then [^4].",
+     "answer_md": "The first-response SLA for Pro customers is contested and remains unconfirmed. One version, held by Tomás Ibarra, states the agreed SLA is 1 hour [^1]. The other version, recorded in Lena Fischer's contemporaneous meeting notes from 25 March 2026, states the SLA is 2 business hours effective with the v3 launch [^2], which Aisha Bello acknowledged would require a rota shift [^3]. No resolution has been reached, and the team was asked not to quote the SLA externally until Marta decides [^4].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
      "unsupported_claims": true,
-     "judge_reason": "The answer states that the SLA is contested between 2 business hours and 1 hour, which matches the reference answer. However, it claims that Tomás Ibarra's version includes a written promise sent to a customer, which is not supported by the cited quotes or ledger entries.",
+     "judge_reason": "The answer states that Aisha Bello acknowledged the need for a rota shift, but this attribution is not supported by the cited quotes or ledger entries, which do not name Aisha Bello in connection to that statement.",
      "score": 0.5,
-     "latency_ms": 13307
+     "latency_ms": 10451
     },
     {
      "id": "Q22",
@@ -732,15 +732,15 @@
      "expected": "CONTESTED: Jonas+Ravi vs including Greg and Elena",
      "expected_status": "contested",
      "status": "contested",
-     "answer_md": "The on-call rotation structure is contested. **Version A** (held by Dev Raman and endorsed by Jonas Eklund): a two-person weekly rotation alternating Jonas Eklund and Ravi Menon, with escalation to Dev Raman for issues beyond P1 [^1][^2]. **Version B** (held by Priya Natarajan): a four-person weekly rotation including Jonas Eklund, Ravi Menon, Greg Ferrante, and Elena Voss once onboarded, based on a prior roadmap review [^3]. Greg Ferrante has stated he is not contracted for on-call work [^4]. Priya requested a 20-minute slot in the Thursday product-eng sync to settle the matter, but no resolution appears in this mailbox [^5].",
+     "answer_md": "The on-call rotation is contested as of 2026-04-22, with no resolution found in this mailbox. Dev Raman and Jonas Eklund assert a two-person weekly alternation between Jonas Eklund and Ravi Menon, with escalation to Dev Raman for issues beyond P1 [^1][^2]. Priya Natarajan claims a prior roadmap review agreed on a four-person weekly rotation that would also include Greg Ferrante and Elena Voss once onboarded [^3]. Greg Ferrante objected that his contract covers only migration and handover, not weekly rotations [^4]. Priya requested a meeting to settle the disagreement, but no outcome appears in the available records [^5].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
      "unsupported_claims": false,
-     "judge_reason": "The answer accurately reflects the reference answer, presenting the contested nature and both potential rotations (Jonas+Ravi and including Greg and Elena) with supporting citations.",
+     "judge_reason": "The answer correctly states the decision is contested between a two-person rotation of Jonas and Ravi, and a four-person rotation including Greg and Elena. All claims are supported by the provided quotes and ledger entries, with no unsupported material.",
      "score": 1.0,
-     "latency_ms": 15959
+     "latency_ms": 12428
     },
     {
      "id": "Q24",
@@ -748,15 +748,15 @@
      "expected": "Stay on PayForge through Q2",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "As of 1 February 2026, the payments plan was to **stay on PayForge until Q2 2026 and revisit the switch to Ledgerly after the v3 launch** [^1]. This decision was made by Marta Kowalczyk on 20 January 2026, after Dev Raman flagged that a 4–6 week migration would conflict with the v3 launch timeline [^2]. A switch to Ledgerly would have saved approximately €1,860/month but was deferred to avoid that collision [^3]. Separately, the Starter plan price increase to €59/month (effective 1 March 2026) had been decided on 28 January 2026, applying to all accounts at that point [^4].",
+     "answer_md": "As of February 1, 2026, the payments plan was to stay on PayForge until Q2 2026 and revisit switching to Ledgerly after the v3 launch [^1]. This decision had been made on January 20, 2026, because a 4-6 week migration would conflict with the v3 launch timeline [^2]. The later decision to switch to Ledgerly (March 11) and the fixed July 6 cutover date (May 30) had not yet occurred as of February 1 [^3][^4]. Separately, a Starter plan price increase from €49 to €59 effective March 1 had been decided on January 28, but it was not yet amended by the February 18 grandfathering compromise for existing accounts [^5][^6].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": true,
-     "judge_reason": "The answer correctly states the payments plan was to stay on PayForge until Q2 (through Q2). The core required fact is present. However, the answer makes unsupported claims about individuals (Marta Kowalczyk as the decision-maker and Dev Raman as the flagger) that are not found in the cited quotes or ledger entries. All other details (timing, savings, deferral reason, separate price increase) are supported.",
-     "score": 0.5,
-     "latency_ms": 24660
+     "unsupported_claims": false,
+     "judge_reason": "The answer correctly states the plan to stay on PayForge through Q2, matching the reference. Additional details about pricing are supported by the provided quotes and ledger entries and do not contradict the reference.",
+     "score": 1.0,
+     "latency_ms": 10863
     },
     {
      "id": "Q25",
@@ -764,15 +764,15 @@
      "expected": "Elena Voss, EUR 92k + 0.15% options",
      "expected_status": "found",
      "status": "found",
-     "answer_md": "Elena Voss was hired for the senior backend role at EUR 92,000 per annum plus 0.15% stock options (vesting over four years with a one-year cliff) [^1][^2]. The role had been approved on 22 January 2026 with a EUR 95,000 ceiling [^3]. Marta Kowalczyk made the selection decision on 5 March 2026, choosing Elena over Mark Teller [^1]. Elena accepted the offer and her start date was confirmed as Tuesday 21 April 2026 [^4].",
+     "answer_md": "Elena Voss was hired for the senior backend role [^1]. Her terms are a salary of EUR 92,000 per annum and 0.15% in stock options vesting over four years with a one-year cliff, plus standard benefits including an 8% holiday allowance, 25 vacation days, and a pension scheme [^2]. The role was initially approved on 22 January 2026 with a EUR 95,000 ceiling [^3], Elena's offer was decided on 5 March 2026 [^1], and her start date was confirmed as 21 April 2026 on 16 March 2026 [^4].",
      "confidence": "high",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": true,
-     "judge_reason": "The answer contains the core facts: Elena Voss hired at EUR 92k + 0.15% options. However, it adds material claims not supported by the cited quotes or ledger entries: that the options vest over four years with a one-year cliff, and that Marta Kowalczyk made the selection decision. These are unsupported.",
-     "score": 0.5,
-     "latency_ms": 15914
+     "unsupported_claims": false,
+     "judge_reason": "The answer includes Elena Voss, EUR 92k salary, and 0.15% options, matching the reference facts. All additional details are directly supported by the cited quotes and ledger entries.",
+     "score": 1.0,
+     "latency_ms": 9824
     },
     {
      "id": "Q26",
@@ -780,15 +780,15 @@
      "expected": "NO DECISION; closest: Tomas's pitch, Marta's 'not now'",
      "expected_status": "no_decision",
      "status": "no_decision",
-     "answer_md": "No decision was found to open a Lisbon office. Tomás Ibarra proposed a small satellite office in Lisbon on 2026-02-12, citing growing Portuguese courier demand and lower labour costs [^1]. Marta Kowalczyk replied on 2026-02-17 with \"interesting. not now,\" deferring the idea until the Iberian pipeline justifies revisiting it [^2].",
+     "answer_md": "No decision was found to open a Lisbon office. Tomás proposed a small satellite office in Lisbon on 2026-02-12, but Marta deferred it on 2026-02-17, stating \"interesting. not now\" and noting the company was mid-launch and mid-lease [^1][^2]. She indicated the idea could be revisited only if the Iberian pipeline ever justifies it [^2].",
      "confidence": "medium",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
      "unsupported_claims": false,
-     "judge_reason": "Answer correctly states no decision was made, includes Tomas's proposal and Marta's 'not now' deferral, matching the reference. Dates, names, and details are drawn from the cited quotes and ledger entries.",
+     "judge_reason": "The answer correctly states no decision was made, mentions Tomas's pitch on 2026-02-12 and Marta's 'not now' deferral on 2026-02-17, and all details align with the cited quotes and ledger entries.",
      "score": 1.0,
-     "latency_ms": 17049
+     "latency_ms": 8826
     },
     {
      "id": "Q27",
@@ -796,15 +796,15 @@
      "expected": "NO DECISION",
      "expected_status": "no_decision",
      "status": "no_decision",
-     "answer_md": "No decision was found to acquire RouteBee. The context shows only exploratory discussion: Marta asked Helen to pull together RouteBee's numbers and a view, and Helen delivered a preliminary financial summary, but no approval or rejection of an acquisition was ever recorded [^1][^2]. Owen Caldwell followed up asking about movement, indicating the matter was still open [^3].",
+     "answer_md": "No decision was found to acquire RouteBee. Marta asked Helen to pull together RouteBee's numbers and a view, noting \"no rush but not never\" [^1], and Owen later followed up that the founder was getting restless and another party might be interested [^2], but no approval or rejection of an acquisition appears in the provided context.",
      "confidence": "medium",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
      "unsupported_claims": false,
-     "judge_reason": "The answer clearly states that no decision was made to acquire RouteBee, matching the reference. The quotes and ledger entries show only exploratory steps and confirm the matter remained open.",
+     "judge_reason": "The answer correctly states no decision was made, and the supporting details about Marta's request and Owen's follow-up are backed by the cited quotes and ledger entries.",
      "score": 1.0,
-     "latency_ms": 21344
+     "latency_ms": 9021
     },
     {
      "id": "Q28",
@@ -812,15 +812,15 @@
      "expected": "NO DECISION",
      "expected_status": "no_decision",
      "status": "no_decision",
-     "answer_md": "No decision was found to launch a free tier. Chloe Winters proposed a free tier on 6 May 2026 as a growth lever, but Helen Oyelaran raised concerns about cost, conversion assumptions, and cannibalisation risk, stating she would want \"a much firmer conversion estimate and a support-cost model before this went anywhere near a plan\" [^1].",
+     "answer_md": "No decision was found to launch a free tier. Chloe Winters proposed a permanently free plan for small couriers on 6 May 2026 [^1], but Helen Oyelaran raised concerns about infrastructure costs, conversion assumptions, and cannibalisation of the Starter plan, requesting firmer estimates before it could proceed [^2]. The proposal was intended for Q3 planning but no approval or rejection appears in the ledger or emails [^1].",
      "confidence": "medium",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": false,
-     "judge_reason": "The answer correctly states that no decision was made, aligning with the reference. It provides accurate context (proposal by Chloe, concerns by Helen) that is supported by the given quotes and ledger entries.",
-     "score": 1.0,
-     "latency_ms": 13066
+     "unsupported_claims": true,
+     "judge_reason": "The answer clearly states no decision was made, matching the reference. However, it claims Helen Oyelaran raised concerns about cannibalisation of the Starter plan, which is not supported by the cited quotes or ledger entries.",
+     "score": 0.5,
+     "latency_ms": 8943
     },
     {
      "id": "Q29",
@@ -828,25 +828,25 @@
      "expected": "NO DECISION",
      "expected_status": "no_decision",
      "status": "no_decision",
-     "answer_md": "No decision to rewrite the backend in Kotlin was made. The discussion was explicitly deferred: Dev Raman rejected the rewrite for the current quarter due to competing priorities (v3 launch, Ledgerly cutover, Corvid migration) and committed to revisiting the topic after May 2026 [^1]. Jonas Eklund accepted the deferral and noted his prototype branch remains available [^2].",
+     "answer_md": "No decision was made to rewrite the backend in Kotlin. The discussion of a Kotlin rewrite was explicitly deferred until after May 2026, with no rewrite happening in the current quarter [^1]. Dev Raman acknowledged the proposal's merits but rejected it for Q2 due to competing priorities and cost, agreeing only to revisit the topic later [^1][^2].",
      "confidence": "medium",
      "facts_present": true,
      "status_ok": true,
      "gold_cited": true,
-     "unsupported_claims": false,
-     "judge_reason": "Answer states no decision was made, which matches the reference. All described details (deferral, rejection for current quarter, Jonas's acceptance and prototype branch) are supported by the cited quotes and ledger entry.",
-     "score": 1.0,
-     "latency_ms": 17708
+     "unsupported_claims": true,
+     "judge_reason": "The answer correctly states no decision was made, matching the reference 'NO DECISION'. However, it claims Dev Raman acknowledged the proposal's merits and mentioned cost, which are not supported by the cited quotes or ledger entries.",
+     "score": 0.5,
+     "latency_ms": 6169
     }
    ],
    "qa_accuracy": 0.684,
    "qa_n": 19,
    "no_decision_correct": 4,
    "no_decision_n": 4,
-   "latency_p50_ms": 17049,
-   "latency_p90_ms": 24660,
-   "evaluated_at": "2026-10-06T21:54:48.299601+00:00",
-   "git_commit": "479f069"
+   "latency_p50_ms": 8877,
+   "latency_p90_ms": 10451,
+   "evaluated_at": "2026-10-06T22:21:15.972616+00:00",
+   "git_commit": "ffe7db6"
   },
   "holdout": {
    "split": "holdout",
