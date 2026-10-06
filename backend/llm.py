@@ -107,7 +107,8 @@ class LLM:
     async def structured(self, role: str, system: str, user: str, schema: type[T], stage: str) -> T:
         cfg = settings.role(role)
         json_schema = strict_schema(schema)
-        key = cache_key(model=cfg.model, effort=cfg.effort, system=system, user=user, schema=json_schema)
+        key = cache_key(model=cfg.model, effort=cfg.effort, thinking=cfg.thinking, budget=cfg.thinking_budget,
+                        system=system, user=user, schema=json_schema)
 
         hit = self.cache.get(key)
         if hit is not None:
@@ -164,6 +165,8 @@ class LLM:
             "temperature": 0,
             "enable_thinking": cfg.thinking,
         }
+        if cfg.thinking and cfg.thinking_budget:
+            body["thinking_budget"] = cfg.thinking_budget
         for attempt in range(6):
             schema_mode = cfg.model not in _JSON_OBJECT_ONLY
             body["response_format"] = ({"type": "json_schema", "json_schema": {"name": "output", "schema": json_schema,

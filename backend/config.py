@@ -32,28 +32,32 @@ class RoleConfig:
     effort: str | None  # anthropic only; None = do not send output_config.effort (Haiku 4.5 rejects it)
     max_tokens: int
     thinking: bool = True  # openai-compatible only: sent as enable_thinking
+    thinking_budget: int | None = None  # openai-compatible only: caps reasoning tokens (latency control)
 
 
-# provider -> role -> (model, effort, max_tokens, thinking)
+# provider -> role -> (model, effort, max_tokens, thinking, thinking_budget)
 _ROLE_DEFAULTS = {
     # Hackathon Alibaba Cloud Model Studio (OpenAI-compatible). CORE and REASON are different model families so the
     # eval judge (REASON) is not the extractor (CORE); neither is GLM, which generated the synthetic corpus.
-    "openai": {"FAST": ("qwen3.8-flash", None, 4000, False),
-               "CORE": ("qwen3.8-max", None, 16000, True),
-               "REASON": ("deepseek-v4-pro", None, 32000, True)},
-    "anthropic": {"FAST": ("claude-haiku-4-5-20251001", None, 4000, False),
-                  "CORE": ("claude-sonnet-5-5", "medium", 16000, True),
-                  "REASON": ("claude-opus-5-5", "high", 32000, True)},
+    # Uncapped reasoning on qwen3.8-max ran 1-11k tokens (30-300 s) per thread; a 2k cap gave identical records on a
+    # spot check at ~26 s.
+    "openai": {"FAST": ("qwen3.8-flash", None, 4000, False, None),
+               "CORE": ("qwen3.8-max", None, 16000, True, 3000),
+               "REASON": ("deepseek-v4-pro", None, 32000, True, 6000)},
+    "anthropic": {"FAST": ("claude-haiku-4-5-20251001", None, 4000, False, None),
+                  "CORE": ("claude-sonnet-5-5", "medium", 16000, True, None),
+                  "REASON": ("claude-opus-5-5", "high", 32000, True, None)},
 }
 
 
 def _role(provider: str, name: str) -> RoleConfig:
-    model, effort, max_tokens, thinking = _ROLE_DEFAULTS[provider][name]
+    model, effort, max_tokens, thinking, budget = _ROLE_DEFAULTS[provider][name]
     return RoleConfig(
         model=_env(f"PRECEDENT_{name}_MODEL", model),
         effort=_env(f"PRECEDENT_{name}_EFFORT", effort or "") or None,
         max_tokens=int(_env(f"PRECEDENT_{name}_MAX_TOKENS", str(max_tokens))),
         thinking=_env(f"PRECEDENT_{name}_THINKING", "1" if thinking else "0") == "1",
+        thinking_budget=int(_env(f"PRECEDENT_{name}_THINKING_BUDGET", str(budget or 0))) or None,
     )
 
 
@@ -65,7 +69,7 @@ class Settings:
     openai_base_url: str = field(default_factory=lambda: _env("OPENAI_COMPAT_BASE_URL", ""))
     # Explicit base URL so the app never inherits a gateway configured for some other tool via ANTHROPIC_BASE_URL.
     anthropic_base_url: str = field(default_factory=lambda: _env("PRECEDENT_ANTHROPIC_BASE_URL", "https://api.anthropic.com"))
-    concurrency: int = field(default_factory=lambda: int(_env("PRECEDENT_CONCURRENCY", "8")))
+    concurrency: int = field(default_factory=lambda: int(_env("PRECEDENT_CONCURRENCY", "16")))
     # Server-side refusal fallback (beta) on the Claude 5.x models; set to 0 to disable.
     fallbacks: bool = field(default_factory=lambda: _env("PRECEDENT_FALLBACKS", "1") == "1")
     offline: bool = field(default_factory=lambda: _env("PRECEDENT_OFFLINE", "0") == "1")  # cache-only; demo mode

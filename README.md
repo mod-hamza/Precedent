@@ -20,6 +20,8 @@ REASON `deepseek-v4-pro`. Override any role with `PRECEDENT_<ROLE>_MODEL`. Embed
 | Step | Command |
 | --- | --- |
 | Stage 0: parse, thread, identities | `python -m backend.ingest [paths...] [--no-llm]` |
+| Stages 1-2: triage, extraction, quote verification | `python -m backend.pipeline --stages triage,extract` |
+| Dev-split stage checks (eval side) | `python -m eval.stage_checks` |
 | LLM smoke test (one call per role) | `python -m backend.llm` |
 | Tests | `python -m pytest -q tests` |
 
@@ -29,8 +31,10 @@ REASON `deepseek-v4-pro`. Override any role with `PRECEDENT_<ROLE>_MODEL`. Embed
 
 ```
 backend/   config.py db.py (schema) llm.py cache.py embed.py models.py
-           ingest/  parse.py thread.py identity.py
-           prompts/ extract.md
+           ingest/   parse.py thread.py identity.py
+           pipeline/ context.py triage.py extract.py verify.py run.py
+           prompts/  triage.md extract.md
+eval/      stage_checks.py
 tests/     test_stage0.py test_llm.py
 corpus/    emails/*.eml (input)   json/ (generation sources, not read by the pipeline)
 eval_private/  ground truth + manifest: only eval/ may read these
