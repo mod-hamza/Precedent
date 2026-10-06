@@ -83,3 +83,25 @@ def test_pipeline_cannot_see_ground_truth():
     for p in (ROOT / "backend").rglob("*.py"):
         text = p.read_text(encoding="utf-8")
         assert "eval_private" not in text and "ground_truth" not in text and "manifest.csv" not in text, p
+
+
+def test_html_only_email_and_mbox_and_zip(tmp_path):
+    import mailbox
+    import zipfile
+
+    from backend.ingest.parse import iter_path
+
+    html = ("From: Marta <marta@x.example>\nTo: dev@x.example\nSubject: Re: cutover\nDate: Mon, 06 Jul 2026 09:00:00 +0200\n"
+            "Message-ID: <h1@x>\nMIME-Version: 1.0\nContent-Type: text/html; charset=utf-8\n\n"
+            "<html><body><p>ok, <b>6 July</b> it is.</p><blockquote>can we do 6 July?</blockquote>"
+            "<p>M</p></body></html>")
+    e = parse_bytes(html.encode())
+    assert e.new_text == "ok, 6 July it is." and "can we do 6 July?" in e.quoted_text
+    box = mailbox.mbox(str(tmp_path / "x.mbox"))
+    box.add(mailbox.mboxMessage(html.encode()))
+    box.flush()
+    zp = tmp_path / "x.zip"
+    with zipfile.ZipFile(zp, "w") as z:
+        z.writestr("a.eml", html)
+    assert [m.message_id for m in iter_path(tmp_path / "x.mbox")] == ["<h1@x>"]
+    assert [m.message_id for m in iter_path(zp)] == ["<h1@x>"]
