@@ -9,7 +9,9 @@ import asyncio
 import json
 import shutil
 import sqlite3
+import threading
 import uuid
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -27,7 +29,7 @@ from .embed import Embedder
 from .ingest import run_stage0
 from .llm import LLM, LLMOffline
 from .pipeline.ask import ask as ask_question
-from .pipeline.ask import chain
+from .pipeline.ask import chain, load_index
 from .pipeline.context import _local
 from .pipeline.run import run_pipeline
 from .render import redact
@@ -38,9 +40,6 @@ UPLOADS = ROOT / "data" / "uploads"
 PIPELINE_STAGES = ["triage", "extract", "cluster", "reconcile", "index"]
 DERIVED_TABLES = ["triage", "thread_triage", "records", "evidence", "clusters", "decisions", "decision_edges",
                   "conflicts", "conflict_sides", "passages", "qa_log", "feedback"]
-
-app = FastAPI(title="Precedent", version="1.0")
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 CONN = connect()
 _EMBEDDER: Embedder | None = None
@@ -54,6 +53,25 @@ def embedder() -> Embedder:
     if _EMBEDDER is None:
         _EMBEDDER = Embedder(CONN)
     return _EMBEDDER
+
+
+def _warm_up() -> None:
+    # the sentence-transformers model loads lazily inside embed(); pay that cost at startup, not on the first ask
+    try:
+        embedder().embed(["warm up"])
+        load_index(CONN)
+    except Exception:
+        pass
+
+
+@asynccontextmanager
+async def _lifespan(_: FastAPI):
+    threading.Thread(target=_warm_up, name="warmup", daemon=True).start()
+    yield
+
+
+app = FastAPI(title="Precedent", version="1.0", lifespan=_lifespan)
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 
 def out(request: Request, payload: Any) -> JSONResponse:
