@@ -41,10 +41,7 @@ was chosen or which number was approved, so decisions get re-argued or quietly c
 
 ## 03 Solution & Flow
 
-```
-.eml/.mbox -> 0 Parse, thread, identities -> 1 Triage -> 2 Extract + quote verifier -> 3 Cluster by topic
-           -> 4 Reconcile (decisions, edges, conflicts, current state) -> 5 Index -> 6 Ask (cited answers)
-```
+<!-- PIPELINE_DIAGRAM -->
 
 - **Stage 0** (code): MIME parsing, splitting each email into the sender's new words / quoted history / forwarded
   text (forwarded evidence is attributed to the original author and date), signature stripping, threading
@@ -59,8 +56,7 @@ was chosen or which number was approved, so decisions get re-argued or quietly c
 - **Stage 5-6 Ask**: hybrid search (BM25 + embeddings), decision chains expanded, answer generated, every citation
   re-verified in code (one retry), confidence computed deterministically.
 
-UI: Ingest (live pipeline + funnel), Timeline (topic swimlanes with lifecycle arrows), Decision drawer, Ask,
-Conflicts, Scorecard. **[TEAM: screenshots]**
+**Core flow** (the screenshots in 05 follow it): drop in a mailbox -> watch the pipeline and the decisions appear -> browse the Timeline of topics with lifecycle arrows -> open a decision to see its history and quoted evidence -> ask a question and get a cited answer (or an honest "no decision") -> review contested decisions -> check the scorecard.
 
 ## 04 AI, Data & Tools
 
@@ -93,8 +89,11 @@ on dev only; the holdout was run once, after freezing (git tags `holdout-freeze`
 
 ## 05 Demo Evidence
 
-**[TEAM: 8 screenshots from `demo/screenshots/` and the video link.]** Demo mode (`make demo`) replays the cached run
-with no network access.
+<!-- VIDEO -->
+
+<!-- SCREENSHOTS -->
+
+Everything shown runs from the cached run in demo mode (`make demo`), with no network access; the same flow runs live on an uploaded mailbox.
 
 ## 06 Business Value
 
